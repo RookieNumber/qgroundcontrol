@@ -357,6 +357,11 @@ VisualMissionItem* MissionController::insertSimpleMissionItem(QGeoCoordinate coo
     return _insertSimpleMissionItemWorker(coordinate, MAV_CMD_NAV_WAYPOINT, visualItemIndex, makeCurrentItem);
 }
 
+VisualMissionItem* MissionController::insertLoiterMissionItem(QGeoCoordinate coordinate, int visualItemIndex, bool makeCurrentItem)
+{
+    return _insertSimpleMissionItemWorker(coordinate, MAV_CMD_NAV_LOITER_TO_ALT, visualItemIndex, makeCurrentItem);
+}
+
 VisualMissionItem* MissionController::insertTakeoffItem(QGeoCoordinate /*coordinate*/, int visualItemIndex, bool makeCurrentItem)
 {
     int sequenceNumber = _nextSequenceNumber();

@@ -21,8 +21,12 @@ SurveyPlanCreator::SurveyPlanCreator(PlanMasterController* planMasterController,
 void SurveyPlanCreator::createPlan(const QGeoCoordinate& mapCenterCoord)
 {
     _planMasterController->removeAll();
-    VisualMissionItem* takeoffItem = _missionController->insertTakeoffItem(mapCenterCoord, -1);
+     VisualMissionItem* takeoffItem = _missionController->insertTakeoffItem(mapCenterCoord, -1);
+     VisualMissionItem* loiterItem = _missionController->insertLoiterMissionItem(mapCenterCoord, -1);
     _missionController->insertComplexMissionItem(SurveyComplexItem::name, mapCenterCoord, -1);
     _missionController->insertLandItem(mapCenterCoord, -1);
     _missionController->setCurrentPlanViewSeqNum(takeoffItem->sequenceNumber(), true);
+    _missionController->setCurrentPlanViewSeqNum(loiterItem->sequenceNumber(), true);
+
+
 }

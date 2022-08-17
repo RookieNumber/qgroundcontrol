@@ -128,6 +128,8 @@ public:
     /// @return Newly created item
     Q_INVOKABLE VisualMissionItem* insertTakeoffItem(QGeoCoordinate coordinate, int visualItemIndex, bool makeCurrentItem = false);
 
+    // Add a Loiter item to the list
+    Q_INVOKABLE VisualMissionItem* insertLoiterMissionItem(QGeoCoordinate coordinate, int visualItemIndex, bool makeCurrentItem = false);
     /// Add a new land item to the list
     ///     @param coordinate: Coordinate for item
     ///     @param visualItemIndex: index to insert at, -1 for end of list
