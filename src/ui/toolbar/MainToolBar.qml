@@ -32,6 +32,9 @@ Rectangle {
     property var    _activeVehicle:     QGroundControl.multiVehicleManager.activeVehicle
     property bool   _communicationLost: _activeVehicle ? _activeVehicle.vehicleLinkManager.communicationLost : false
     property color  _mainStatusBGColor: qgcPal.brandingPurple
+    property bool   _armed:             _activeVehicle ? _activeVehicle.armed : false
+
+
 
     QGCPalette { id: qgcPal }
 
@@ -55,6 +58,66 @@ Rectangle {
             GradientStop { position: currentButton.x + currentButton.width; color: _mainStatusBGColor }
             GradientStop { position: 1;                                     color: _root.color }
         }
+    }
+
+
+    // Slider
+
+
+
+    RowLayout {
+
+
+        anchors.bottomMargin:   1
+        anchors.top:            parent.top
+        anchors.bottom:         parent.bottom
+        spacing:                ScreenTools.defaultFontPixelWidth
+        Layout.preferredHeight: viewButtonRow.height
+        anchors.horizontalCenter: parent.horizontalCenter
+        z: 5
+        visible:               _armed
+
+
+        SliderSwitch {
+            id:                     slider
+            confirmText:            qsTr("Slide to Disarm")
+            Layout.minimumWidth:    Math.max(implicitWidth, ScreenTools.defaultFontPixelWidth * 30)
+
+
+            onAccept: {
+                if (_armed) {
+                    mainWindow.disarmVehicleRequest()
+                } else {
+                    if (forceArm) {
+                        mainWindow.forceArmVehicleRequest()
+                    } else {
+                        mainWindow.armVehicleRequest()
+                    }
+                }
+                forceArm = false
+                mainWindow.hideIndicatorPopup()
+            }
+        }
+
+//        Rectangle {
+//            height: slider.height * 0.75
+//            width:  height
+//            radius: height / 2
+//            color:  qgcPal.primaryButton
+
+//            QGCColoredImage {
+//                anchors.margins:    parent.height / 4
+//                anchors.fill:       parent
+//                source:             "/res/XDelete.svg"
+//                fillMode:           Image.PreserveAspectFit
+//                color:              qgcPal.text
+//            }
+
+//            QGCMouseArea {
+//                fillItem:   parent
+//                onClicked:  confirmCancelled()
+//            }
+//        }
     }
 
     RowLayout {

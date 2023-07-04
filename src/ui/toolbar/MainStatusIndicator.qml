@@ -143,6 +143,7 @@ RowLayout {
         }
     }
 
+
     Component {
         id: sensorStatusInfoComponent
 
