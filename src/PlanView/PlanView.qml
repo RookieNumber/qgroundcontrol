@@ -588,6 +588,7 @@ Item {
                         iconSource:             "/qmlimages/MapSync.svg"
                         alternateIconSource:    "/qmlimages/MapSyncChanged.svg"
                         dropPanelComponent:     syncDropPanel
+
                     },
                     ToolStripAction {
                         text:       qsTr("Takeoff")

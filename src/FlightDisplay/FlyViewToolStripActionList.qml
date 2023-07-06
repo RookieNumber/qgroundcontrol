@@ -17,10 +17,24 @@ ToolStripActionList {
 
     signal displayPreFlightChecklist
 
+
+
+
+
     model: [
         ToolStripAction {
-            text:           qsTr("Plan")
-            iconSource:     "/qmlimages/Plan.svg"
+            text:           qsTr("Fly")
+            iconSource:     "/qmlimages/PaperPlane.svg"
+//            onTriggered:    mainWindow.showFlyView()
+        },
+        ToolStripAction {
+            text:                   qsTr("File")
+//            enabled:                !_planMasterController.syncInProgress
+            visible:                true
+            showAlternateIcon:      _planMasterController.dirty
+            iconSource:             "/qmlimages/MapSync.svg"
+            alternateIconSource:    "/qmlimages/MapSyncChanged.svg"
+//            dropPanelComponent:     syncDropPanel
             onTriggered:    mainWindow.showPlanView()
         },
         PreFlightCheckListShowAction { onTriggered: displayPreFlightChecklist() },

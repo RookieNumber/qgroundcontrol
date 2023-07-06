@@ -140,9 +140,10 @@ ApplicationWindow {
     }
 
     function showPlanView() {
-        viewSwitch(toolbar.planViewToolbar)
+//        viewSwitch(toolbar.planViewToolbar)
         planView.visible = true
     }
+
 
     function showTool(toolTitle, toolSource, toolIcon) {
         toolDrawer.backIcon     = flightView.visible ? "/qmlimages/PaperPlane.svg" : "/qmlimages/Plan.svg"
