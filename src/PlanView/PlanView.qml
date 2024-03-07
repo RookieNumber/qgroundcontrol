@@ -708,14 +708,14 @@ Item {
                     QGCTabButton {
                         text:       qsTr("Mission")
                     }
-                    QGCTabButton {
-                        text:       qsTr("Fence")
-                        enabled:    _geoFenceController.supported
-                    }
-                    QGCTabButton {
-                        text:       qsTr("Rally")
-                        enabled:    _rallyPointController.supported
-                    }
+//                    QGCTabButton {
+//                        text:       qsTr("Fence")
+//                        enabled:    _geoFenceController.supported
+//                    }
+//                    QGCTabButton {
+//                        text:       qsTr("Rally")
+//                        enabled:    _rallyPointController.supported
+//                    }
                 }
 
                 QGCTabBar {
@@ -995,7 +995,7 @@ Item {
             }
 
             GridLayout {
-                columns:            2
+                columns:            4
                 columnSpacing:      _margin
                 rowSpacing:         _margin
                 Layout.fillWidth:   true

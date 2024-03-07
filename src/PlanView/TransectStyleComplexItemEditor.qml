@@ -99,7 +99,7 @@ Rectangle {
                     cameraCalc:                     _missionItem.cameraCalc
                     vehicleFlightIsFrontal:         true
                     distanceToSurfaceLabel:         qsTr("Altitude")
-                    frontalDistanceLabel:           qsTr("Trigger Dist")
+//                    frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
                 }
 
@@ -119,7 +119,7 @@ Rectangle {
 
                 QGCButton {
                     Layout.alignment:   Qt.AlignHCenter
-                    text:               qsTr("Rotate Entry Point")
+                    text:               qsTr("Rotasi Jalur")
                     onClicked:          _missionItem.rotateEntryPoint()
                     visible:            transectValuesHeader.checked
                 }
@@ -139,7 +139,7 @@ Rectangle {
             // Camera Tab
             CameraCalcCamera {
                 Layout.fillWidth:   true
-                visible:            tabBar.currentIndex === 1
+                visible:            tabBar.currentIndex === 2
                 cameraCalc:         _missionItem.cameraCalc
             }
 
@@ -147,7 +147,7 @@ Rectangle {
             TransectStyleComplexItemTerrainFollow {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 2
+                visible:            tabBar.currentIndex === 1
                 missionItem:        _missionItem
             }
 

@@ -369,7 +369,7 @@ SetupPage {
                 rowSpacing:     _margins
                 columnSpacing:  _margins
 
-                QGCLabel { text: qsTr("Battery monitor:") }
+                QGCLabel { text: qsTr("Kecepatan Sprayer:") }
 
                 FactComboBox {
                     id:         monitorCombo

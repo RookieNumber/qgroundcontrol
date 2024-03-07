@@ -15,7 +15,7 @@ import QGroundControl.FlightMap
 TransectStyleComplexItemEditor {
     transectAreaDefinitionComplete: missionItem.surveyAreaPolygon.isValid
     transectAreaDefinitionHelp:     qsTr("Use the Polygon Tools to create the polygon which outlines your survey area.")
-    transectValuesHeaderName:       qsTr("Transects")
+    transectValuesHeaderName:       qsTr("Grid")
     transectValuesComponent:        _transectValuesComponent
     presetsTransectValuesComponent: _transectValuesComponent
 
@@ -35,7 +35,7 @@ TransectStyleComplexItemEditor {
             rowSpacing:         _margin
             columns:            2
 
-            QGCLabel { text: qsTr("Angle") }
+            QGCLabel { text: qsTr("Sudut") }
             FactTextField {
                 fact:                   missionItem.gridAngle
                 Layout.fillWidth:       true
@@ -57,7 +57,7 @@ TransectStyleComplexItemEditor {
             }
 
             QGCLabel {
-                text:       qsTr("Turnaround dist")
+                text:       qsTr("Jarak Memutar")
                 visible:    !forPresets
             }
             FactTextField {
@@ -66,38 +66,38 @@ TransectStyleComplexItemEditor {
                 visible:            !forPresets
             }
 
-            QGCOptionsComboBox {
-                Layout.columnSpan:  2
-                Layout.fillWidth:   true
-                visible:            !forPresets
+//            QGCOptionsComboBox {
+//                Layout.columnSpan:  2
+//                Layout.fillWidth:   true
+//                visible:            !forPresets
 
-                model: [
-                    {
-                        text:       qsTr("Hover and capture image"),
-                        fact:       missionItem.hoverAndCapture,
-                        enabled:    missionItem.cameraCalc.distanceMode === QGroundControl.AltitudeModeRelative || missionItem.cameraCalc.distanceMode === QGroundControl.AltitudeModeAbsolute,
-                        visible:    missionItem.hoverAndCaptureAllowed
-                    },
-                    {
-                        text:       qsTr("Refly at 90 deg offset"),
-                        fact:       missionItem.refly90Degrees,
-                        enabled:    missionItem.cameraCalc.distanceMode !== QGroundControl.AltitudeModeCalcAboveTerrain,
-                        visible:    true
-                    },
-                    {
-                        text:       qsTr("Images in turnarounds"),
-                        fact:       missionItem.cameraTriggerInTurnAround,
-                        enabled:    missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : true,
-                        visible:    true
-                    },
-                    {
-                        text:       qsTr("Fly alternate transects"),
-                        fact:       missionItem.flyAlternateTransects,
-                        enabled:    true,
-                        visible:    _vehicle ? (_vehicle.fixedWing || _vehicle.vtol) : false
-                    }
-                ]
-            }
+//                model: [
+//                    {
+//                        text:       qsTr("Hover and capture image"),
+//                        fact:       missionItem.hoverAndCapture,
+//                        enabled:    missionItem.cameraCalc.distanceMode === QGroundControl.AltitudeModeRelative || missionItem.cameraCalc.distanceMode === QGroundControl.AltitudeModeAbsolute,
+//                        visible:    missionItem.hoverAndCaptureAllowed
+//                    },
+//                    {
+//                        text:       qsTr("Refly at 90 deg offset"),
+//                        fact:       missionItem.refly90Degrees,
+//                        enabled:    missionItem.cameraCalc.distanceMode !== QGroundControl.AltitudeModeCalcAboveTerrain,
+//                        visible:    true
+//                    },
+//                    {
+//                        text:       qsTr("Images in turnarounds"),
+//                        fact:       missionItem.cameraTriggerInTurnAround,
+//                        enabled:    missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : true,
+//                        visible:    true
+//                    },
+//                    {
+//                        text:       qsTr("Fly alternate transects"),
+//                        fact:       missionItem.flyAlternateTransects,
+//                        enabled:    true,
+//                        visible:    _vehicle ? (_vehicle.fixedWing || _vehicle.vtol) : false
+//                    }
+//                ]
+//            }
         }
     }
 
