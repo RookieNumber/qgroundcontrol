@@ -57,15 +57,15 @@ Rectangle {
 
         gradient: Gradient {
             orientation: Gradient.Horizontal
-            GradientStop { position: 0;                                     color: _mainStatusBGColor }
+            GradientStop { position: 0.2;                                     color: _mainStatusBGColor }
             GradientStop { position: currentButton.x + currentButton.width; color: _mainStatusBGColor }
-            GradientStop { position: 1;                                     color: _root.color }
+            GradientStop { position: 0.5;                                     color: _root.color }
         }
     }
 
     RowLayout {
         id:                     viewButtonRow
-        anchors.bottomMargin:   1
+        anchors.bottomMargin:   0
         anchors.top:            parent.top
         anchors.bottom:         parent.bottom
         spacing:                ScreenTools.defaultFontPixelWidth / 2

@@ -107,7 +107,7 @@ SetupPage {
                 visible:    _batt1MonitorEnabled && _batt1ParamsAvailable
 
                 QGCLabel {
-                    text:       qsTr("Battery 1")
+                    text:       qsTr("Sprayer Monitor")
                     font.family: ScreenTools.demiboldFontFamily
                 }
 
@@ -123,10 +123,10 @@ SetupPage {
                         anchors.left:       parent.left
                         sourceComponent:    _batt1FullSettings.visible ? powerSetupComponent : undefined
 
-                        property Fact armVoltMin:       controller.getParameterFact(-1, "r.BATT_ARM_VOLT", false /* reportMissing */)
+                        property Fact armVoltMin:       controller.getParameterFact(-1, "SPRAY_PUMP_MIN", false /* reportMissing */)
                         property Fact battAmpPerVolt:   controller.getParameterFact(-1, "r.BATT_AMP_PERVLT", false /* reportMissing */)
                         property Fact battAmpOffset:    controller.getParameterFact(-1, "BATT_AMP_OFFSET", false /* reportMissing */)
-                        property Fact battCapacity:     controller.getParameterFact(-1, "BATT_CAPACITY", false /* reportMissing */)
+                        property Fact battCapacity:     controller.getParameterFact(-1, "SPRAY_PUMP_RATE", false /* reportMissing */)
                         property Fact battCurrPin:      controller.getParameterFact(-1, "BATT_CURR_PIN", false /* reportMissing */)
                         property Fact battMonitor:      controller.getParameterFact(-1, "BATT_MONITOR", false /* reportMissing */)
                         property Fact battVoltMult:     controller.getParameterFact(-1, "BATT_VOLT_MULT", false /* reportMissing */)
@@ -194,7 +194,7 @@ SetupPage {
                 visible:    _batt2MonitorEnabled && _batt2ParamsAvailable
 
                 QGCLabel {
-                    text:       qsTr("Battery 2")
+                    text:       qsTr("Volume Monitor")
                     font.family: ScreenTools.demiboldFontFamily
                 }
 
@@ -369,7 +369,7 @@ SetupPage {
                 rowSpacing:     _margins
                 columnSpacing:  _margins
 
-                QGCLabel { text: qsTr("Kecepatan Sprayer:") }
+//                QGCLabel { text: qsTr("Kecepatan Sprayer:") }
 
                 FactComboBox {
                     id:         monitorCombo
@@ -381,100 +381,104 @@ SetupPage {
                 QGCLabel {
                     Layout.row:     1
                     Layout.column:  0
-                    text:           qsTr("Battery capacity:")
+                    text:           qsTr("Sprayer Rate:")
+                    visible: !_showAdvanced
                 }
 
                 FactTextField {
                     id:     capacityField
                     width:  _fieldWidth
                     fact:   battCapacity
+                    visible: !_showAdvanced
                 }
 
                 QGCLabel {
                     Layout.row:     2
                     Layout.column:  0
-                    text:           qsTr("Minimum arming voltage:")
+                    text:           qsTr("Sprayer Rate Min:")
+                    visible: !_showAdvanced
                 }
 
                 FactTextField {
                     id:     armVoltField
                     width:  _fieldWidth
                     fact:   armVoltMin
+                    visible: !_showAdvanced
                 }
 
-                QGCLabel {
-                    Layout.row:     3
-                    Layout.column:  0
-                    text:           qsTr("Power sensor:")
-                }
+//                QGCLabel {
+//                    Layout.row:     3
+//                    Layout.column:  0
+//                    text:           qsTr("Power sensor:")
+//                }
 
-                QGCComboBox {
-                    id:                     sensorCombo
-                    Layout.minimumWidth:    _fieldWidth
-                    model:                  sensorModel
-                    textRole:               "text"
+//                QGCComboBox {
+//                    id:                     sensorCombo
+//                    Layout.minimumWidth:    _fieldWidth
+//                    model:                  sensorModel
+//                    textRole:               "text"
 
-                    onActivated: {
-                        if (index < sensorModel.count - 1) {
-                            battVoltPin.value = sensorModel.get(index).voltPin
-                            battCurrPin.value = sensorModel.get(index).currPin
-                            battVoltMult.value = sensorModel.get(index).voltMult
-                            battAmpPerVolt.value = sensorModel.get(index).ampPerVolt
-                            battAmpOffset.value = sensorModel.get(index).ampOffset
-                        } else {
+//                    onActivated: {
+//                        if (index < sensorModel.count - 1) {
+//                            battVoltPin.value = sensorModel.get(index).voltPin
+//                            battCurrPin.value = sensorModel.get(index).currPin
+//                            battVoltMult.value = sensorModel.get(index).voltMult
+//                            battAmpPerVolt.value = sensorModel.get(index).ampPerVolt
+//                            battAmpOffset.value = sensorModel.get(index).ampOffset
+//                        } else {
 
-                        }
-                    }
-                }
+//                        }
+//                    }
+//                }
 
-                QGCLabel {
-                    Layout.row:     4
-                    Layout.column:  0
-                    text:           qsTr("Current pin:")
-                    visible:        _showAdvanced
-                }
+//                QGCLabel {
+//                    Layout.row:     4
+//                    Layout.column:  0
+//                    text:           qsTr("Current pin:")
+//                    visible:        _showAdvanced
+//                }
 
-                FactComboBox {
-                    Layout.minimumWidth:    _fieldWidth
-                    fact:                   battCurrPin
-                    indexModel:             false
-                    visible:                _showAdvanced
-                    sizeToContents:         true
-                }
+//                FactComboBox {
+//                    Layout.minimumWidth:    _fieldWidth
+//                    fact:                   battCurrPin
+//                    indexModel:             false
+//                    visible:                _showAdvanced
+//                    sizeToContents:         true
+//                }
 
-                QGCLabel {
-                    Layout.row:     5
-                    Layout.column:  0
-                    text:           qsTr("Voltage pin:")
-                    visible:        _showAdvanced
-                }
+//                QGCLabel {
+//                    Layout.row:     5
+//                    Layout.column:  0
+//                    text:           qsTr("Voltage pin:")
+//                    visible:        _showAdvanced
+//                }
 
-                FactComboBox {
-                    Layout.minimumWidth:    _fieldWidth
-                    fact:                   battVoltPin
-                    indexModel:             false
-                    visible:                _showAdvanced
-                    sizeToContents:         true
-                }
+//                FactComboBox {
+//                    Layout.minimumWidth:    _fieldWidth
+//                    fact:                   battVoltPin
+//                    indexModel:             false
+//                    visible:                _showAdvanced
+//                    sizeToContents:         true
+//                }
 
-                QGCLabel {
-                    Layout.row:     6
-                    Layout.column:  0
-                    text:           qsTr("Voltage multiplier:")
-                    visible:        _showAdvanced
-                }
+//                QGCLabel {
+//                    Layout.row:     6
+//                    Layout.column:  0
+//                    text:           qsTr("Voltage multiplier:")
+//                    visible:        _showAdvanced
+//                }
 
-                FactTextField {
-                    width:      _fieldWidth
-                    fact:       battVoltMult
-                    visible:    _showAdvanced
-                }
+//                FactTextField {
+//                    width:      _fieldWidth
+//                    fact:       battVoltMult
+//                    visible:    _showAdvanced
+//                }
 
-                QGCButton {
-                    text:       qsTr("Calculate")
-                    visible:    _showAdvanced
-                    onClicked:  calcVoltageMultiplierDlgComponent.createObject(mainWindow, { vehicleVoltageFact: vehicleVoltage, battVoltMultFact: battVoltMult }).open()
-                }
+//                QGCButton {
+//                    text:       qsTr("Calculate")
+//                    visible:    _showAdvanced
+//                    onClicked:  calcVoltageMultiplierDlgComponent.createObject(mainWindow, { vehicleVoltageFact: vehicleVoltage, battVoltMultFact: battVoltMult }).open()
+//                }
 
                 QGCLabel {
                     Layout.columnSpan:  3
@@ -485,22 +489,22 @@ SetupPage {
                     visible:            _showAdvanced
                 }
 
-                QGCLabel {
-                    text:       qsTr("Amps per volt:")
-                    visible:    _showAdvanced
-                }
+//                QGCLabel {
+//                    text:       qsTr("Amps per volt:")
+//                    visible:    _showAdvanced
+//                }
 
-                FactTextField {
-                    width:      _fieldWidth
-                    fact:       battAmpPerVolt
-                    visible:    _showAdvanced
-                }
+//                FactTextField {
+//                    width:      _fieldWidth
+//                    fact:       battAmpPerVolt
+//                    visible:    _showAdvanced
+//                }
 
-                QGCButton {
-                    text:       qsTr("Calculate")
-                    visible:    _showAdvanced
-                    onClicked:  calcAmpsPerVoltDlgComponent.createObject(mainWindow, { vehicleCurrentFact: vehicleCurrent, battAmpPerVoltFact: battAmpPerVolt }).open()
-                }
+//                QGCButton {
+//                    text:       qsTr("Calculate")
+//                    visible:    _showAdvanced
+//                    onClicked:  calcAmpsPerVoltDlgComponent.createObject(mainWindow, { vehicleCurrentFact: vehicleCurrent, battAmpPerVoltFact: battAmpPerVolt }).open()
+//                }
 
                 QGCLabel {
                     Layout.columnSpan:  3
@@ -512,13 +516,13 @@ SetupPage {
                 }
 
                 QGCLabel {
-                    text:       qsTr("Amps Offset:")
+                    text:       qsTr("Volume:")
                     visible:    _showAdvanced
                 }
 
                 FactTextField {
                     width:      _fieldWidth
-                    fact:       battAmpOffset
+                    fact:       battCapacity
                     visible:    _showAdvanced
                 }
 
