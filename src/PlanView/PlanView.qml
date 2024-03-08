@@ -874,7 +874,7 @@ Item {
             SectionHeader {
                 id:                 createSection
                 Layout.fillWidth:   true
-                text:               qsTr("Create Plan")
+                text:               qsTr("Misi Terbang")
                 showSpacer:         false
             }
 
