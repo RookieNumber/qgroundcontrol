@@ -99,7 +99,7 @@ Rectangle {
                     Layout.fillWidth:               true
                     cameraCalc:                     _missionItem.cameraCalc
                     vehicleFlightIsFrontal:         true
-                    distanceToSurfaceLabel:         qsTr("Altitude")
+                    distanceToSurfaceLabel:         qsTr("Ketinggian")
 //                    frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
                 }
@@ -128,7 +128,7 @@ Rectangle {
                 SectionHeader {
                     id:                 statsHeader
                     Layout.fillWidth:   true
-                    text:               qsTr("Statistics")
+                    text:               qsTr("")
                 }
 
                 TransectStyleComplexItemStats {

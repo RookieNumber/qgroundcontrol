@@ -60,7 +60,7 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "QGroundControl"
+QGC_APP_NAME        = "Full Drone Stations"
 QGC_ORG_NAME        = "QGroundControl.org"
 QGC_ORG_DOMAIN      = "org.qgroundcontrol"
 QGC_APP_DESCRIPTION = "Open source ground control app provided by QGroundControl dev team"
@@ -356,8 +356,8 @@ CustomBuild {
         RESOURCES += $$PWD/resources/InstrumentValueIcons/InstrumentValueIcons.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"QGroundControl\\\"\"
-    DEFINES += QGC_ORG_NAME=\"\\\"QGroundControl.org\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"FullDrone\\\"\"
+    DEFINES += QGC_ORG_NAME=\"\\\"FullDroneSolutions\\\"\"
     DEFINES += QGC_ORG_DOMAIN=\"\\\"org.qgroundcontrol\\\"\"
     RESOURCES += \
         $$PWD/qgroundcontrol.qrc \

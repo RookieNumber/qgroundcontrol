@@ -18,13 +18,13 @@ import QGroundControl.SettingsManager 1.0
 import QGroundControl.Controls 1.0
 
 FirstRunPrompt {
-    title:      qsTr("Measurement Units")
+    title:      qsTr("Satuan Pengukuran")
     promptId:   QGroundControl.corePlugin.unitsFirstRunPromptId
 
     property real   _margins:           ScreenTools.defaultFontPixelHeight / 2
     property var    _unitsSettings:     QGroundControl.settingsManager.unitsSettings
     property var    _rgFacts:           [ _unitsSettings.horizontalDistanceUnits, _unitsSettings.verticalDistanceUnits, _unitsSettings.areaUnits, _unitsSettings.speedUnits, _unitsSettings.temperatureUnits ]
-    property var    _rgLabels:          [ qsTr("Horizontal Distance"), qsTr("Vertical Distance"), qsTr("Area"), qsTr("Speed"), qsTr("Temperature") ]
+    property var    _rgLabels:          [ qsTr("Jarak Horizontal"), qsTr("Jarak Vertikal"), qsTr("Area"), qsTr("Kecepatan"), qsTr("Temperatur") ]
     property int    _cVisibleFacts:     0
 
     Component.onCompleted: {
@@ -61,7 +61,7 @@ FirstRunPrompt {
 
         QGCLabel {
             id:         unitsSectionLabel
-            text:       qsTr("Choose the measurement units you want to use. You can also change it later in General Settings.")
+            text:       qsTr("Pilih unit pengukuran yang ingin anda gunakan. Anda bisa mengubahnya nanti di Pengaturan Umum.")
 
             Layout.preferredWidth: unitsGrid.width
             wrapMode: Text.WordWrap
@@ -81,7 +81,7 @@ FirstRunPrompt {
                 rows:               _cVisibleFacts + 1
                 flow:               GridLayout.TopToBottom
 
-                QGCLabel { text: qsTr("System of units") }
+                QGCLabel { text: qsTr("Unit Sistem") }
 
                 Repeater {
                     model: _rgFacts.length
@@ -94,7 +94,7 @@ FirstRunPrompt {
                 QGCComboBox {
                     Layout.fillWidth:   true
                     sizeToContents:     true
-                    model:              [ qsTr("Metric System"), qsTr("Imperial System") ]
+                    model:              [ qsTr("Metris"), qsTr("Imperial") ]
                     currentIndex:       _unitsSettings.horizontalDistanceUnits.value === UnitsSettings.HorizontalDistanceUnitsMeters ? 0 : 1
                     onActivated:        changeSystemOfUnits(currentIndex === 0 /* metric */)
                 }

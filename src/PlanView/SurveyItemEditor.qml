@@ -16,7 +16,7 @@ import QGroundControl.FlightMap     1.0
 TransectStyleComplexItemEditor {
     transectAreaDefinitionComplete: missionItem.surveyAreaPolygon.isValid
     transectAreaDefinitionHelp:     qsTr("Use the Polygon Tools to create the polygon which outlines your survey area.")
-    transectValuesHeaderName:       qsTr("Grid")
+    transectValuesHeaderName:       qsTr("")
     transectValuesComponent:        _transectValuesComponent
     presetsTransectValuesComponent: _transectValuesComponent
 
@@ -57,15 +57,15 @@ TransectStyleComplexItemEditor {
                 updateValueWhileDragging: true
             }
 
-            QGCLabel {
-                text:       qsTr("Jarak Memutar")
-                visible:    !forPresets
-            }
-            FactTextField {
-                Layout.fillWidth:   true
-                fact:               missionItem.turnAroundDistance
-                visible:            !forPresets
-            }
+//            QGCLabel {
+//                text:       qsTr("Jarak Memutar")
+//                visible:    !forPresets
+//            }
+//            FactTextField {
+//                Layout.fillWidth:   true
+//                fact:               missionItem.turnAroundDistance
+//                visible:            !forPresets
+//            }
 
 //            QGCOptionsComboBox {
 //                Layout.columnSpan:  2

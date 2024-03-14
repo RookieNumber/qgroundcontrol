@@ -188,7 +188,7 @@ Item {
 
                 QGCLabel {
                     Layout.alignment:   Qt.AlignCenter
-                    text:               qsTr("Battery Status")
+                    text:               qsTr("Drone Status")
                     font.family:        ScreenTools.demiboldFontFamily
                 }
 
@@ -240,11 +240,39 @@ Item {
                                 }
 
                                 QGCLabel { text: "" }
-                                QGCLabel { text: object.chargeState.enumStringValue;                                        visible: batteryValuesAvailable.chargeStateAvailable }
+                                QGCLabel  { text: object.chargeState.enumStringValue;
+                                    visible: {
+                                        if (object.id.rawValue === 0) {
+                                            return true }
+                                        else
+                                            return false
+                                             }}
                                 QGCLabel { text: object.timeRemainingStr.value;                                             visible: batteryValuesAvailable.timeRemainingAvailable }
-                                QGCLabel { text: object.percentRemaining.valueString + " " + object.percentRemaining.units }
-                                QGCLabel { text: object.voltage.valueString + " " + object.voltage.units }
-                                QGCLabel { text: object.mahConsumed.valueString + " " + object.mahConsumed.units;           visible: batteryValuesAvailable.mahConsumedAvailable }
+                                QGCLabel { text: object.percentRemaining.valueString + " " + object.percentRemaining.units;
+                                    visible: {
+                                     if (object.id.rawValue === 0) {
+                                         return false}
+
+                                     else
+                                        return true
+                                     } }
+                                QGCLabel { text: object.voltage.valueString + " " + object.voltage.units
+                                    visible: {
+                                    if (object.id.rawValue === 0) {
+                                        return true }
+                                    else
+                                        return false
+                                     }}
+                                QGCLabel { // text: object.mahConsumed.valueString + " " + object.mahConsumed.units;
+                                    text: {
+                                        if (object.id.rawValue === 1) {
+                                            return object.mahConsumed.valueString + " " + qsTr("mL");
+                                        } else {
+                                            return object.mahConsumed.valueString + " " + object.mahConsumed.units;
+                                        }
+                                    }
+
+                                    visible: batteryValuesAvailable.mahConsumedAvailable }
                                 QGCLabel { text: object.temperature.valueString + " " + object.temperature.units;           visible: batteryValuesAvailable.temperatureAvailable }
                                 QGCLabel { text: object.function.enumStringValue;                                           visible: batteryValuesAvailable.functionAvailable }
                             }

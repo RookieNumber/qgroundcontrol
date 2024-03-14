@@ -57,7 +57,7 @@ Item {
     readonly property int       _layerMission:              1
     readonly property int       _layerGeoFence:             2
     readonly property int       _layerRallyPoints:          3
-    readonly property string    _armedVehicleUploadPrompt:  qsTr("Vehicle is currently armed. Do you want to upload the mission to the vehicle?")
+    readonly property string    _armedVehicleUploadPrompt:  qsTr("Drone saat ini dalam kondisi Arming. Apakah Anda tetap ingin mengunggah misi ke drone tersebut?")
 
     function mapCenter() {
         var coordinate = editorMap.center
@@ -93,8 +93,8 @@ Item {
         target: _appSettings ? _appSettings.defaultMissionItemAltitude : null
         function onRawValueChanged() {
             if (_visualItems.count > 1) {
-                mainWindow.showMessageDialog(qsTr("Apply new altitude"),
-                                             qsTr("You have changed the default altitude for mission items. Would you like to apply that altitude to all the items in the current mission?"),
+                mainWindow.showMessageDialog(qsTr("Terapkan ketinggian baru"),
+                                             qsTr("Anda telah mengubah ketinggian default untuk item misi. Apakah Anda ingin menerapkan ketinggian itu ke semua item dalam misi saat ini?"),
                                              StandardButton.Yes | StandardButton.No,
                                              function() { _missionController.applyDefaultMissionAltitude() })
             }
@@ -104,7 +104,7 @@ Item {
     Component {
         id: promptForPlanUsageOnVehicleChangePopupComponent
         QGCPopupDialog {
-            title:      _planMasterController.managerVehicle.isOfflineEditingVehicle ? qsTr("Plan View - Vehicle Disconnected") : qsTr("Plan View - Vehicle Changed")
+            title:      _planMasterController.managerVehicle.isOfflineEditingVehicle ? qsTr("Plan View - Drone Terputus") : qsTr("Plan View - Drone Diganti")
             buttons:    StandardButton.NoButton
 
             ColumnLayout {
@@ -112,17 +112,17 @@ Item {
                     Layout.maximumWidth:    parent.width
                     wrapMode:               QGCLabel.WordWrap
                     text:                   _planMasterController.managerVehicle.isOfflineEditingVehicle ?
-                                                qsTr("The vehicle associated with the plan in the Plan View is no longer available. What would you like to do with that plan?") :
-                                                qsTr("The plan being worked on in the Plan View is not from the current vehicle. What would you like to do with that plan?")
+                                                qsTr("Kendaraan yang terkait dengan rencana dalam Plan View tidak lagi tersedia. Apa yang ingin Anda lakukan dengan rencana tersebut?") :
+                                                qsTr("Rencana yang sedang dikerjakan dalam Plan View bukan berasal dari kendaraan saat ini. Apa yang ingin Anda lakukan dengan rencana tersebut?")
                 }
 
                 QGCButton {
                     Layout.fillWidth:   true
                     text:               _planMasterController.dirty ?
                                             (_planMasterController.managerVehicle.isOfflineEditingVehicle ?
-                                                 qsTr("Discard Unsaved Changes") :
-                                                 qsTr("Discard Unsaved Changes, Load New Plan From Vehicle")) :
-                                            qsTr("Load New Plan From Vehicle")
+                                                 qsTr("Buang perubahan yang belum tersimpan") :
+                                                 qsTr("Buang perubahan yang belum tersimpan, Muat misi yang ada dalam drone")) :
+                                            qsTr("Muat misi yang ada dalam drone")
                     onClicked: {
                         _planMasterController.showPlanFromManagerVehicle()
                         _promptForPlanUsageShowing = false
@@ -133,8 +133,8 @@ Item {
                 QGCButton {
                     Layout.fillWidth:   true
                     text:               _planMasterController.managerVehicle.isOfflineEditingVehicle ?
-                                            qsTr("Keep Current Plan") :
-                                            qsTr("Keep Current Plan, Don't Update From Vehicle")
+                                            qsTr("Pertahankan Misi Saat ini") :
+                                            qsTr("Pertahankan Misi Saat ini, Jangan diupdate dari drone")
                     onClicked: {
                         if (!_planMasterController.managerVehicle.isOfflineEditingVehicle) {
                             _planMasterController.dirty = true
@@ -165,13 +165,13 @@ Item {
         }
 
         function waitingOnIncompleteDataMessage(save) {
-            var saveOrUpload = save ? qsTr("Save") : qsTr("Upload")
-            mainWindow.showMessageDialog(qsTr("Unable to %1").arg(saveOrUpload), qsTr("Plan has incomplete items. Complete all items and %1 again.").arg(saveOrUpload))
+            var saveOrUpload = save ? qsTr("Simpan") : qsTr("Unggah")
+            mainWindow.showMessageDialog(qsTr("Tidak bisa untuk %1").arg(saveOrUpload), qsTr("Rencana memiliki item yang belum lengkap. Lengkapi semua item dan %1 lagi.").arg(saveOrUpload))
         }
 
         function waitingOnTerrainDataMessage(save) {
-            var saveOrUpload = save ? qsTr("Save") : qsTr("Upload")
-            mainWindow.showMessageDialog(qsTr("Unable to %1").arg(saveOrUpload), qsTr("Plan is waiting on terrain data from server for correct altitude values."))
+            var saveOrUpload = save ? qsTr("Simpan") : qsTr("Unggah")
+            mainWindow.showMessageDialog(qsTr("Tidak bisa untuk %1").arg(saveOrUpload), qsTr("Rencana sedang menunggu data medan dari server untuk nilai ketinggian yang benar."))
         }
 
         function checkReadyForSaveUpload(save) {
@@ -194,7 +194,7 @@ Item {
                     sendToVehicle()
                     break
                 case MissionController.SendToVehiclePreCheckStateActiveMission:
-                    mainWindow.showMessageDialog(qsTr("Send To Vehicle"), qsTr("Current mission must be paused prior to uploading a new Plan"))
+                    mainWindow.showMessageDialog(qsTr("Unggah ke dalam Drone"), qsTr("Misi saat ini harus dijeda sebelum mengunggah Misi baru."))
                     break
                 case MissionController.SendToVehiclePreCheckStateFirwmareVehicleMismatch:
                     mainWindow.showMessageDialog(qsTr("Plan Upload"),
@@ -209,7 +209,7 @@ Item {
         }
 
         function loadFromSelectedFile() {
-            fileDialog.title =          qsTr("Select Plan File")
+            fileDialog.title =          qsTr("Pilih File Misi")
             fileDialog.planFiles =      true
             fileDialog.selectExisting = true
             fileDialog.nameFilters =    _planMasterController.loadNameFilters
@@ -220,7 +220,7 @@ Item {
             if (!checkReadyForSaveUpload(true /* save */)) {
                 return
             }
-            fileDialog.title =          qsTr("Save Plan")
+            fileDialog.title =          qsTr("Simpan Misi")
             fileDialog.planFiles =      true
             fileDialog.selectExisting = false
             fileDialog.nameFilters =    _planMasterController.saveNameFilters
@@ -235,7 +235,7 @@ Item {
             if (!checkReadyForSaveUpload(true /* save */)) {
                 return
             }
-            fileDialog.title =          qsTr("Save KML")
+            fileDialog.title =          qsTr("Simpan KML")
             fileDialog.planFiles =      false
             fileDialog.selectExisting = false
             fileDialog.nameFilters =    ShapeFileHelper.fileDialogKMLFilters
@@ -501,7 +501,7 @@ Item {
             anchors.top:        parent.top
             z:                  QGroundControl.zOrderWidgets
             maxHeight:          parent.height - toolStrip.y
-            title:              qsTr("Plan")
+            title:              qsTr("Misi Terbang")
 
             readonly property int flyButtonIndex:       0
             readonly property int fileButtonIndex:      1
@@ -519,7 +519,7 @@ Item {
                 id: toolStripActionList
                 model: [
                     ToolStripAction {
-                        text:           qsTr("Fly")
+                        text:           qsTr("Pelaksanaan Misi")
                         iconSource:     "/qmlimages/PaperPlane.svg"
                         onTriggered:    mainWindow.showFlyView()
                     },
@@ -643,7 +643,7 @@ Item {
                     visible:    QGroundControl.corePlugin.options.enablePlanViewSelector
                     Component.onCompleted: currentIndex = 0
                     QGCTabButton {
-                        text:       qsTr("Mission")
+                        text:       qsTr("Misi")
                     }
 //                    QGCTabButton {
 //                        text:       qsTr("Fence")
@@ -779,7 +779,7 @@ Item {
 
     function showLoadFromFileOverwritePrompt(title) {
         mainWindow.showMessageDialog(title,
-                                     qsTr("You have unsaved/unsent changes. Loading from a file will lose these changes. Are you sure you want to load from a file?"),
+                                     qsTr("Anda memiliki perubahan yang belum tersimpan. Mengambil dari file akan menghilangkan perubahan yang belum tersimpan, anda yakin ingin melanjutkan?"),
                                      StandardButton.Yes | StandardButton.Cancel,
                                      function() { _planMasterController.loadFromSelectedFile() } )
     }
@@ -788,8 +788,8 @@ Item {
         id: createPlanRemoveAllPromptDialog
 
         QGCSimpleMessageDialog {
-            title:      qsTr("Create Plan")
-            text:       qsTr("Are you sure you want to remove current plan and create a new plan? ")
+            title:      qsTr("Buat Misi Baru")
+            text:       qsTr("Apakah Anda yakin ingin menghapus misi saat ini dan membuat misi baru?")
             buttons:    StandardButton.Yes | StandardButton.No
 
             property var mapCenter
@@ -800,8 +800,8 @@ Item {
     }
 
     function clearButtonClicked() {
-        mainWindow.showMessageDialog(qsTr("Clear"),
-                                     qsTr("Are you sure you want to remove all mission items and clear the mission from the vehicle?"),
+        mainWindow.showMessageDialog(qsTr("Bersihkan"),
+                                     qsTr("Apakah Anda yakin ingin menghapus semua item misi dan membersihkan misi dari drone?"),
                                      StandardButton.Yes | StandardButton.Cancel,
                                      function() { _planMasterController.removeAllFromVehicle(); _missionController.setCurrentPlanViewSeqNum(0, true) })
     }
@@ -844,7 +844,7 @@ Item {
     function downloadClicked(title) {
         if (_planMasterController.dirty) {
             mainWindow.showMessageDialog(title,
-                                         qsTr("You have unsaved/unsent changes. Loading from the Vehicle will lose these changes. Are you sure you want to load from the Vehicle?"),
+                                         qsTr("Anda memiliki perubahan yang belum tersimpan. Memuat misi dari drone akan menghapus perubahan ini. Anda yakin ingin memuat misi dari drone?"),
                                          StandardButton.Yes | StandardButton.Cancel,
                                          function() { _planMasterController.loadFromVehicle() })
         } else {
@@ -859,15 +859,15 @@ Item {
             id:         columnHolder
             spacing:    _margin
 
-            property string _overwriteText: qsTr("Plan overwrite")
+            property string _overwriteText: qsTr("Misi tertimpa")
 
             QGCLabel {
                 id:                 unsavedChangedLabel
                 Layout.fillWidth:   true
                 wrapMode:           Text.WordWrap
                 text:               globals.activeVehicle ?
-                                        qsTr("You have unsaved changes. You should upload to your vehicle, or save to a file.") :
-                                        qsTr("You have unsaved changes.")
+                                        qsTr("Anda memiliki perubahan yang belum disimpan. Anda sebaiknya mengunggah ke misi Anda atau simpan ke file.") :
+                                        qsTr("Anda memiliki perubahan yang belum disimpan.")
                 visible:            _planMasterController.dirty
             }
 
@@ -943,7 +943,7 @@ Item {
             SectionHeader {
                 id:                 storageSection
                 Layout.fillWidth:   true
-                text:               qsTr("Storage")
+                text:               qsTr("Penyimpanan")
             }
 
             GridLayout {
@@ -953,7 +953,7 @@ Item {
                 visible:            storageSection.visible
 
                 QGCButton {
-                    text:               qsTr("Open...")
+                    text:               qsTr("Buka...")
                     Layout.fillWidth:   true
                     enabled:            !_planMasterController.syncInProgress
                     onClicked: {
@@ -967,7 +967,7 @@ Item {
                 }
 
                 QGCButton {
-                    text:               qsTr("Save")
+                    text:               qsTr("Simpan")
                     Layout.fillWidth:   true
                     enabled:            !_planMasterController.syncInProgress && _planMasterController.currentPlanFile !== ""
                     onClicked: {
@@ -981,7 +981,7 @@ Item {
                 }
 
                 QGCButton {
-                    text:               qsTr("Save As...")
+                    text:               qsTr("Simpan Sebagai...")
                     Layout.fillWidth:   true
                     enabled:            !_planMasterController.syncInProgress && _planMasterController.containsItems
                     onClicked: {
@@ -993,12 +993,12 @@ Item {
                 QGCButton {
                     Layout.columnSpan:  3
                     Layout.fillWidth:   true
-                    text:               qsTr("Save Mission Waypoints As KML...")
+                    text:               qsTr("Simpan Waypoint sebagai KML...")
                     enabled:            !_planMasterController.syncInProgress && _visualItems.count > 1
                     onClicked: {
                         // First point does not count
                         if (_visualItems.count < 2) {
-                            mainWindow.showMessageDialog(qsTr("KML"), qsTr("You need at least one item to create a KML."))
+                            mainWindow.showMessageDialog(qsTr("KML"), qsTr("Setidaknya membutuhkan satu item untuk menyimpan sebagai KML."))
                             return
                         }
                         dropPanel.hide()
@@ -1010,7 +1010,7 @@ Item {
             SectionHeader {
                 id:                 vehicleSection
                 Layout.fillWidth:   true
-                text:               qsTr("Vehicle")
+                text:               qsTr("Drone")
             }
 
             RowLayout {
@@ -1019,7 +1019,7 @@ Item {
                 visible:            vehicleSection.visible
 
                 QGCButton {
-                    text:               qsTr("Upload")
+                    text:               qsTr("Unggah")
                     Layout.fillWidth:   true
                     enabled:            !_planMasterController.offline && !_planMasterController.syncInProgress && _planMasterController.containsItems
                     visible:            !QGroundControl.corePlugin.options.disableVehicleConnection
@@ -1030,7 +1030,7 @@ Item {
                 }
 
                 QGCButton {
-                    text:               qsTr("Download")
+                    text:               qsTr("Unduh")
                     Layout.fillWidth:   true
                     enabled:            !_planMasterController.offline && !_planMasterController.syncInProgress
                     visible:            !QGroundControl.corePlugin.options.disableVehicleConnection
@@ -1042,7 +1042,7 @@ Item {
                 }
 
                 QGCButton {
-                    text:               qsTr("Clear")
+                    text:               qsTr("Bersihkan")
                     Layout.fillWidth:   true
                     Layout.columnSpan:  2
                     enabled:            !_planMasterController.offline && !_planMasterController.syncInProgress

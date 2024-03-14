@@ -159,55 +159,55 @@ Popup {
             acceptButton.text = qsTr("Ok")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Open) {
-            acceptButton.text = qsTr("Open")
+            acceptButton.text = qsTr("Buka")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Save) {
-            acceptButton.text = qsTr("Save")
+            acceptButton.text = qsTr("Simpan")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Apply) {
-            acceptButton.text = qsTr("Apply")
+            acceptButton.text = qsTr("Terapkan")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Open) {
-            acceptButton.text = qsTr("Open")
+            acceptButton.text = qsTr("Buka")
             acceptButton.visible = true
         } else if (buttons & StandardButton.SaveAll) {
-            acceptButton.text = qsTr("Save All")
+            acceptButton.text = qsTr("Simpan Semua")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Yes) {
-            acceptButton.text = qsTr("Yes")
+            acceptButton.text = qsTr("Ya")
             acceptButton.visible = true
         } else if (buttons & StandardButton.YesToAll) {
-            acceptButton.text = qsTr("Yes to All")
+            acceptButton.text = qsTr("Ya untuk semua")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Retry) {
-            acceptButton.text = qsTr("Retry")
+            acceptButton.text = qsTr("Coba lagi")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Reset) {
             acceptButton.text = qsTr("Reset")
             acceptButton.visible = true
         } else if (buttons & StandardButton.RestoreToDefaults) {
-            acceptButton.text = qsTr("Restore to Defaults")
+            acceptButton.text = qsTr("Kembalikan ke default")
             acceptButton.visible = true
         } else if (buttons & StandardButton.Ignore) {
-            acceptButton.text = qsTr("Ignore")
+            acceptButton.text = qsTr("Abaikan")
             acceptButton.visible = true
         }
 
         // Reject role buttons
         if (buttons & StandardButton.Cancel) {
-            rejectButton.text = qsTr("Cancel")
+            rejectButton.text = qsTr("Urungkan")
             rejectButton.visible = true
         } else if (buttons & StandardButton.Close) {
-            rejectButton.text = qsTr("Close")
+            rejectButton.text = qsTr("Tutup")
             rejectButton.visible = true
         } else if (buttons & StandardButton.No) {
-            rejectButton.text = qsTr("No")
+            rejectButton.text = qsTr("Tidak")
             rejectButton.visible = true
         } else if (buttons & StandardButton.NoToAll) {
-            rejectButton.text = qsTr("No to All")
+            rejectButton.text = qsTr("Tidak untuk semua")
             rejectButton.visible = true
         } else if (buttons & StandardButton.Abort) {
-            rejectButton.text = qsTr("Abort")
+            rejectButton.text = qsTr("Batalkan")
             rejectButton.visible = true
         }
 

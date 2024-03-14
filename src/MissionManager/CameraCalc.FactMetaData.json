@@ -17,12 +17,12 @@
 },
 {
     "name":             "DistanceToSurface",
-    "shortDesc":        "Distance vehicle is away from surface.",
+    "shortDesc":        "Jarak pesawat dengan permukaan.",
     "type":             "double",
-    "min":              0.1,
+    "min":              1,
     "units":            "m",
     "decimalPlaces":    2,
-    "default":          50.0
+    "default":          4
 },
 {
     "name":             "ImageDensity",
@@ -63,11 +63,12 @@
 },
 {
     "name":             "AdjustedFootprintSide",
+    "shortDesc":        "Jarak antara jalur penerbangan.",
     "type":             "double",
     "decimalPlaces":    2,
-    "min":              0,
+    "min":              0.1,
     "units":            "m",
-    "default":          25
+    "default":          4
 }
 ]
 }
