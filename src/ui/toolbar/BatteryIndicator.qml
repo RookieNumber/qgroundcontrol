@@ -76,19 +76,65 @@ Item {
                 }
             }
 
-            function getBatteryPercentageText() {
-                if (!isNaN(battery.percentRemaining.rawValue)) {
+            function getSprayerConsumedText() {
+                if (!isNaN(battery.mahConsumed.rawValue)) {
+                    return battery.mahConsumed.valueString + qsTr(" mL") + qsTr("   ")
+                }  else if (!isNaN(battery.percentRemaining.rawValue)) {
                     if (battery.percentRemaining.rawValue > 98.9) {
                         return qsTr("100%")
                     } else {
                         return battery.percentRemaining.valueString + battery.percentRemaining.units
                     }
-                } else if (!isNaN(battery.voltage.rawValue)) {
-                    return battery.voltage.valueString + battery.voltage.units
-                } else if (battery.chargeState.rawValue !== MAVLink.MAV_BATTERY_CHARGE_STATE_UNDEFINED) {
+                }
+                else if (battery.chargeState.rawValue !== MAVLink.MAV_BATTERY_CHARGE_STATE_UNDEFINED) {
                     return battery.chargeState.enumStringValue
                 }
                 return ""
+            }
+
+            function getBatteryPercentageText() {
+                if (!isNaN(battery.voltage.rawValue)) {
+                    return battery.voltage.valueString + battery.voltage.units + qsTr("  ")
+                }  else if (!isNaN(battery.percentRemaining.rawValue)) {
+                    if (battery.percentRemaining.rawValue > 98.9) {
+                        return qsTr("100%")
+                    } else {
+                        return battery.percentRemaining.valueString + battery.percentRemaining.units
+                    }
+                }
+                else if (battery.chargeState.rawValue !== MAVLink.MAV_BATTERY_CHARGE_STATE_UNDEFINED) {
+                    return battery.chargeState.enumStringValue
+                }
+                return ""
+            }
+
+            function disOption() {
+                if (battery.id.rawValue === 0) {
+                    return getBatteryPercentageText()
+                } else if (battery.id.rawValue === 1){
+                    return getSprayerConsumedText()
+                }
+
+                return ""
+            }
+
+
+
+
+
+            function imageOption() {
+                if (battery.id.rawValue === 0) {
+                    return '/qmlimages/Battery.svg';
+                } else if (battery.id.rawValue === 1) {
+                    return '/qmlimages/Test.svg';
+                }
+
+                return ""
+
+
+                /*else if (battery.id.rawValue === 2) {
+                    return '/qmlimages/VehicleSummaryIcon.png';
+                }*/
             }
 
             QGCColoredImage {
@@ -96,13 +142,13 @@ Item {
                 anchors.bottom:     parent.bottom
                 width:              height
                 sourceSize.width:   width
-                source:             "/qmlimages/Battery.svg"
+                source:             imageOption()
                 fillMode:           Image.PreserveAspectFit
                 color:              getBatteryColor()
             }
 
             QGCLabel {
-                text:                   getBatteryPercentageText()
+                text:                   disOption()
                 font.pointSize:         ScreenTools.mediumFontPointSize
                 color:                  getBatteryColor()
                 anchors.verticalCenter: parent.verticalCenter

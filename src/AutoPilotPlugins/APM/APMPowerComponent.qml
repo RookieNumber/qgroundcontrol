@@ -409,7 +409,7 @@ SetupPage {
 
 
             GridLayout {
-                columns:        3
+                columns:        2
                 rowSpacing:     _margins
                 columnSpacing:  _margins
 
