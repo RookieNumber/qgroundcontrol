@@ -40,7 +40,7 @@ SetupPage {
             property bool _batt2MonitorAvailable:   controller.parameterExists(-1, "BATT2_MONITOR")
             property bool _batt1MonitorEnabled:     _batt1Monitor.rawValue !== 0
             property bool _batt2MonitorEnabled:     _batt2MonitorAvailable && _batt2Monitor.rawValue !== 0
-            property bool _batt1ParamsAvailable:    controller.parameterExists(-1, "BATT_CAPACITY")
+            property bool _batt1ParamsAvailable:    controller.parameterExists(-1, "SPRAY_PUMP_RATE")
             property bool _batt2ParamsAvailable:    controller.parameterExists(-1, "BATT2_CAPACITY")
             property bool _showBatt1Reboot:         _batt1MonitorEnabled && !_batt1ParamsAvailable
             property bool _showBatt2Reboot:         _batt2MonitorEnabled && !_batt2ParamsAvailable
@@ -107,7 +107,7 @@ SetupPage {
                 visible:    _batt1MonitorEnabled && _batt1ParamsAvailable
 
                 QGCLabel {
-                    text:       qsTr("Sprayer Monitor")
+                    text:       qsTr("Sprayer")
                     font.family: ScreenTools.demiboldFontFamily
                 }
 
@@ -164,7 +164,7 @@ SetupPage {
                             id:                 batt2MonitorRow
                             spacing:            ScreenTools.defaultFontPixelWidth
 
-                            QGCLabel { text: qsTr("Battery2 monitor:") }
+                            QGCLabel { text: qsTr("Flow Meter Monitor:") }
                             FactComboBox {
                                 id:         monitor2Combo
                                 fact:       _batt2Monitor
@@ -194,7 +194,7 @@ SetupPage {
                 visible:    _batt2MonitorEnabled && _batt2ParamsAvailable
 
                 QGCLabel {
-                    text:       qsTr("Volume Monitor")
+                    text:       qsTr("Sensor Sprayer")
                     font.family: ScreenTools.demiboldFontFamily
                 }
 
@@ -208,9 +208,9 @@ SetupPage {
                         anchors.margins:    _margins
                         anchors.top:        parent.top
                         anchors.left:       parent.left
-                        sourceComponent:    batt2FullSettings.visible ? powerSetupComponent : undefined
+                        sourceComponent:    batt2FullSettings.visible ? powerSetupComponentBatt2 : undefined
 
-                        property Fact armVoltMin:       controller.getParameterFact(-1, "r.BATT2_ARM_VOLT", false /* reportMissing */)
+                        property Fact armVoltMin:       controller.getParameterFact(-1, "SPRAY_PUMP_MIN", false /* reportMissing */)
                         property Fact battAmpPerVolt:   controller.getParameterFact(-1, "r.BATT2_AMP_PERVLT", false /* reportMissing */)
                         property Fact battAmpOffset:    controller.getParameterFact(-1, "BATT2_AMP_OFFSET", false /* reportMissing */)
                         property Fact battCapacity:     controller.getParameterFact(-1, "BATT2_CAPACITY", false /* reportMissing */)
@@ -225,62 +225,106 @@ SetupPage {
                 }
             }
 
-            Column {
-                spacing:    _margins / 2
-                visible:    _escCalibrationAvailable
+//            Column {
+//                spacing:    _margins / 2
+//                visible:    _escCalibrationAvailable
 
-                QGCLabel {
-                    text:       qsTr("ESC Calibration")
-                    font.family: ScreenTools.demiboldFontFamily
-                }
+//                QGCLabel {
+//                    text:       qsTr("ESC Calibration")
+//                    font.family: ScreenTools.demiboldFontFamily
+//                }
 
-                Rectangle {
-                    width:  escCalibrationHolder.x + escCalibrationHolder.width + _margins
-                    height: escCalibrationHolder.y + escCalibrationHolder.height + _margins
-                    color:  ggcPal.windowShade
+//                Rectangle {
+//                    width:  escCalibrationHolder.x + escCalibrationHolder.width + _margins
+//                    height: escCalibrationHolder.y + escCalibrationHolder.height + _margins
+//                    color:  ggcPal.windowShade
 
-                    Column {
-                        id:         escCalibrationHolder
-                        x:          _margins
-                        y:          _margins
-                        spacing:    _margins
+//                    Column {
+//                        id:         escCalibrationHolder
+//                        x:          _margins
+//                        y:          _margins
+//                        spacing:    _margins
 
-                        Column {
-                            spacing: _margins
+//                        Column {
+//                            spacing: _margins
 
-                            QGCLabel {
-                                text:   qsTr("WARNING: Remove props prior to calibration!")
-                                color:  qgcPal.warningText
-                            }
+//                            QGCLabel {
+//                                text:   qsTr("WARNING: Remove props prior to calibration!")
+//                                color:  qgcPal.warningText
+//                            }
 
-                            Row {
-                                spacing: _margins
+//                            Row {
+//                                spacing: _margins
 
-                                QGCButton {
-                                    text: qsTr("Calibrate")
-                                    enabled:    _escCalibration && _escCalibration.rawValue === 0
-                                    onClicked:  if(_escCalibration) _escCalibration.rawValue = 3
-                                }
+//                                QGCButton {
+//                                    text: qsTr("Calibrate")
+//                                    enabled:    _escCalibration && _escCalibration.rawValue === 0
+//                                    onClicked:  if(_escCalibration) _escCalibration.rawValue = 3
+//                                }
 
-                                Column {
-                                    enabled: _escCalibration && _escCalibration.rawValue === 3
-                                    QGCLabel { text:   _escCalibration ? (_escCalibration.rawValue === 3 ? qsTr("Now perform these steps:") : qsTr("Click Calibrate to start, then:")) : "" }
-                                    QGCLabel { text:   qsTr("- Disconnect USB and battery so flight controller powers down") }
-                                    QGCLabel { text:   qsTr("- Connect the battery") }
-                                    QGCLabel { text:   qsTr("- The arming tone will be played (if the vehicle has a buzzer attached)") }
-                                    QGCLabel { text:   qsTr("- If using a flight controller with a safety button press it until it displays solid red") }
-                                    QGCLabel { text:   qsTr("- You will hear a musical tone then two beeps") }
-                                    QGCLabel { text:   qsTr("- A few seconds later you should hear a number of beeps (one for each battery cell you're using)") }
-                                    QGCLabel { text:   qsTr("- And finally a single long beep indicating the end points have been set and the ESC is calibrated") }
-                                    QGCLabel { text:   qsTr("- Disconnect the battery and power up again normally") }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+//                                Column {
+//                                    enabled: _escCalibration && _escCalibration.rawValue === 3
+//                                    QGCLabel { text:   _escCalibration ? (_escCalibration.rawValue === 3 ? qsTr("Now perform these steps:") : qsTr("Click Calibrate to start, then:")) : "" }
+//                                    QGCLabel { text:   qsTr("- Disconnect USB and battery so flight controller powers down") }
+//                                    QGCLabel { text:   qsTr("- Connect the battery") }
+//                                    QGCLabel { text:   qsTr("- The arming tone will be played (if the vehicle has a buzzer attached)") }
+//                                    QGCLabel { text:   qsTr("- If using a flight controller with a safety button press it until it displays solid red") }
+//                                    QGCLabel { text:   qsTr("- You will hear a musical tone then two beeps") }
+//                                    QGCLabel { text:   qsTr("- A few seconds later you should hear a number of beeps (one for each battery cell you're using)") }
+//                                    QGCLabel { text:   qsTr("- And finally a single long beep indicating the end points have been set and the ESC is calibrated") }
+//                                    QGCLabel { text:   qsTr("- Disconnect the battery and power up again normally") }
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//            }
         } // Flow
     } // Component - powerPageComponent
+
+    Component {
+        id: powerSetupComponentBatt2
+
+        Column {
+            spacing: _margins
+
+            property real _margins:         ScreenTools.defaultFontPixelHeight / 2
+ //           property bool _showAdvanced:    sensorCombo.currentIndex === sensorModel.count - 1
+            property real _fieldWidth:      ScreenTools.defaultFontPixelWidth * 25
+
+            GridLayout {
+                columns:        2
+                rowSpacing:     _margins
+                columnSpacing:  _margins
+
+                QGCLabel {
+                    Layout.row:     1
+                    Layout.column:  0
+                    text:           qsTr("Volume Tangki")
+                    visible: true
+                }
+
+                FactTextField {
+                    id:     armVoltField
+                    width:  _fieldWidth
+                    fact:   battCapacity
+                    visible:   true
+                }
+
+                QGCLabel {
+
+
+                   Layout.columnSpan:  2
+                   Layout.fillWidth:  true
+                   font.pointSize:     ScreenTools.smallFontPointSize
+                   wrapMode:           Text.WordWrap
+                   text:               qsTr("Dengan mengisi nilai Volume Tangki diatas maka nilai cairan yang terpakai akan dihitung dan ditampilkan di Jendela Penerbangan.")
+                   visible:            true
+               }
+            }
+
+        }
+    }
 
     Component {
         id: powerSetupComponent
@@ -289,24 +333,24 @@ SetupPage {
             spacing: _margins
 
             property real _margins:         ScreenTools.defaultFontPixelHeight / 2
-            property bool _showAdvanced:    sensorCombo.currentIndex === sensorModel.count - 1
+//            property bool _showAdvanced:    sensorCombo.currentIndex === sensorModel.count - 1
             property real _fieldWidth:      ScreenTools.defaultFontPixelWidth * 25
 
-            Component.onCompleted: calcSensor()
+//            Component.onCompleted: calcSensor()
 
-            function calcSensor() {
-                for (var i=0; i<sensorModel.count - 1; i++) {
-                    if (sensorModel.get(i).voltPin === battVoltPin.value &&
-                            sensorModel.get(i).currPin === battCurrPin.value &&
-                            Math.abs(sensorModel.get(i).voltMult - battVoltMult.value) < 0.001 &&
-                            Math.abs(sensorModel.get(i).ampPerVolt - battAmpPerVolt.value) < 0.0001 &&
-                            Math.abs(sensorModel.get(i).ampOffset - battAmpOffset.value) < 0.0001) {
-                        sensorCombo.currentIndex = i
-                        return
-                    }
-                }
-                sensorCombo.currentIndex = sensorModel.count - 1
-            }
+//            function calcSensor() {
+//                for (var i=0; i<sensorModel.count - 1; i++) {
+//                    if (sensorModel.get(i).voltPin === battVoltPin.value &&
+//                            sensorModel.get(i).currPin === battCurrPin.value &&
+//                            Math.abs(sensorModel.get(i).voltMult - battVoltMult.value) < 0.001 &&
+//                            Math.abs(sensorModel.get(i).ampPerVolt - battAmpPerVolt.value) < 0.0001 &&
+//                            Math.abs(sensorModel.get(i).ampOffset - battAmpOffset.value) < 0.0001) {
+//                        sensorCombo.currentIndex = i
+//                        return
+//                    }
+//                }
+//                sensorCombo.currentIndex = sensorModel.count - 1
+//            }
 
             QGCPalette { id: palette; colorGroupEnabled: true }
 
@@ -371,40 +415,62 @@ SetupPage {
 
 //                QGCLabel { text: qsTr("Kecepatan Sprayer:") }
 
-                FactComboBox {
-                    id:         monitorCombo
-                    fact:       battMonitor
-                    indexModel: false
-                    sizeToContents: true
-                }
+//                FactComboBox {
+//                    id:         monitorCombo
+//                    fact:       battMonitor
+//                    indexModel: false
+//                    sizeToContents: true
+//                }
 
                 QGCLabel {
                     Layout.row:     1
                     Layout.column:  0
-                    text:           qsTr("Sprayer Rate:")
-                    visible: !_showAdvanced
+                    text:           qsTr("Sprayer Pump Rate:")
+                    visible: true
                 }
 
                 FactTextField {
                     id:     capacityField
                     width:  _fieldWidth
                     fact:   battCapacity
-                    visible: !_showAdvanced
+                    visible: true
                 }
+
+                QGCLabel {
+
+
+                   Layout.columnSpan:  2
+                   Layout.fillWidth:  true
+                   font.pointSize:     ScreenTools.smallFontPointSize
+                   wrapMode:           Text.WordWrap
+                   text:               qsTr("Bagian ini mengatur kecepatan aliran yang dihasilkan oleh pompa.")
+                   visible:            true
+               }
 
                 QGCLabel {
                     Layout.row:     2
                     Layout.column:  0
                     text:           qsTr("Sprayer Rate Min:")
-                    visible: !_showAdvanced
+                    visible: true
                 }
 
                 FactTextField {
                     id:     armVoltField
                     width:  _fieldWidth
                     fact:   armVoltMin
-                    visible: !_showAdvanced
+                    visible: true
                 }
+
+                QGCLabel {
+
+
+                   Layout.columnSpan:  2
+                   Layout.fillWidth:  true
+                   font.pointSize:     ScreenTools.smallFontPointSize
+                   wrapMode:           Text.WordWrap
+                   text:               qsTr("Kecepatan aliran minimum yang akan dihasilkan oleh pompa.")
+                   visible:            true
+               }
 
 //                QGCLabel {
 //                    Layout.row:     3
@@ -480,14 +546,14 @@ SetupPage {
 //                    onClicked:  calcVoltageMultiplierDlgComponent.createObject(mainWindow, { vehicleVoltageFact: vehicleVoltage, battVoltMultFact: battVoltMult }).open()
 //                }
 
-                QGCLabel {
-                    Layout.columnSpan:  3
-                    Layout.fillWidth:   true
-                    font.pointSize:     ScreenTools.smallFontPointSize
-                    wrapMode:           Text.WordWrap
-                    text:               qsTr("If the battery voltage reported by the vehicle is largely different than the voltage read externally using a voltmeter you can adjust the voltage multiplier value to correct this. Click the Calculate button for help with calculating a new value.")
-                    visible:            _showAdvanced
-                }
+//                QGCLabel {
+//                    Layout.columnSpan:  3
+//                    Layout.fillWidth:   true
+//                    font.pointSize:     ScreenTools.smallFontPointSize
+//                    wrapMode:           Text.WordWrap
+//                    text:               qsTr("If the battery voltage reported by the vehicle is largely different than the voltage read externally using a voltmeter you can adjust the voltage multiplier value to correct this. Click the Calculate button for help with calculating a new value.")
+//                    visible:            _showAdvanced
+//                }
 
 //                QGCLabel {
 //                    text:       qsTr("Amps per volt:")
