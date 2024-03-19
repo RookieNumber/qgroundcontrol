@@ -23,7 +23,7 @@ import QGroundControl.Controllers   1.0
 AnalyzePage {
     id:                 vibrationPage
     pageComponent:      pageComponent
-    pageDescription:    qsTr("Analyze vibration associated with your vehicle.")
+    pageDescription:    qsTr("Menganalisa vibrasi yang terjadi pada drone.")
     allowPopout:        true
 
     property var    _activeVehicle: QGroundControl.multiVehicleManager.activeVehicle ? QGroundControl.multiVehicleManager.activeVehicle : QGroundControl.multiVehicleManager.offlineEditingVehicle

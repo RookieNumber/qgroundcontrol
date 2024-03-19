@@ -24,7 +24,7 @@ import QGroundControl.Controllers   1.0
 AnalyzePage {
     id:                 mavlinkConsolePage
     pageComponent:      pageComponent
-    pageDescription:    qsTr("Provides a connection to the vehicle's system shell.")
+    pageDescription:    qsTr("Menyediakan koneksi ke dalam sistem shell.")
     allowPopout:        true
 
     property bool isLoaded: false

@@ -551,19 +551,19 @@ SetupPage {
                         height: landSpeedField.y + landSpeedField.height + _margins
                         color:  ggcPal.windowShade
 
-                        Image {
-                            id:                 icon
-                            anchors.margins:    _margins
-                            anchors.left:       parent.left
-                            anchors.top:        parent.top
-                            height:             ScreenTools.defaultFontPixelWidth * 20
-                            width:              ScreenTools.defaultFontPixelWidth * 20
-                            sourceSize.width:   width
-                            mipmap:             true
-                            fillMode:           Image.PreserveAspectFit
-                            visible:            false
-                            source:             "/qmlimages/ReturnToHomeAltitude.svg"
-                        }
+                        //                        Image {
+                        //                            id:                 icon
+                        //                            anchors.margins:    _margins
+                        //                            anchors.left:       parent.left
+                        //                            anchors.top:        parent.top
+                        //                            height:             ScreenTools.defaultFontPixelWidth * 20
+                        //                            width:              ScreenTools.defaultFontPixelWidth * 20
+                        //                            sourceSize.width:   width
+                        //                            mipmap:             true
+                        //                            fillMode:           Image.PreserveAspectFit
+                        //                            visible:            false
+                        //                            source:             "/qmlimages/ReturnToHomeAltitude.svg"
+                        //                        }
 
                         ColorOverlay {
                             anchors.fill:   icon

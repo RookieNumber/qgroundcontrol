@@ -213,7 +213,7 @@ ApplicationWindow {
     function checkForUnsavedMission() {
         if (globals.planMasterControllerPlanView && globals.planMasterControllerPlanView.dirty) {
             showMessageDialog(closeDialogTitle,
-                              qsTr("You have a mission edit in progress which has not been saved/sent. If you close you will lose changes. Are you sure you want to close?"),
+                              qsTr("Anda memiliki misi yang belum selesai/disimpan. Jika anda tutup, anda akan kehilangan progres, yakin masih ingin menutupnya?"),
                               StandardButton.Yes | StandardButton.No,
                               function() { checkForPendingParameterWrites() })
         } else {
@@ -225,7 +225,7 @@ ApplicationWindow {
         for (var index=0; index<QGroundControl.multiVehicleManager.vehicles.count; index++) {
             if (QGroundControl.multiVehicleManager.vehicles.get(index).parameterManager.pendingWrites) {
                 mainWindow.showMessageDialog(closeDialogTitle,
-                    qsTr("You have pending parameter updates to a vehicle. If you close you will lose changes. Are you sure you want to close?"),
+                    qsTr("Anda memiliki update parameter yang terjeda. Jika anda tutup, anda akan kehilangan progres, yakin masih ingin menutupnya?"),
                     StandardButton.Yes | StandardButton.No,
                     function() { checkForActiveConnections() })
                 return
@@ -237,7 +237,7 @@ ApplicationWindow {
     function checkForActiveConnections() {
         if (QGroundControl.multiVehicleManager.activeVehicle) {
             mainWindow.showMessageDialog(closeDialogTitle,
-                qsTr("There are still active connections to vehicles. Are you sure you want to exit?"),
+                qsTr("Masih ada drone yang terhubung, anda yakin ingin menutupnya?"),
                 StandardButton.Yes | StandardButton.No,
                 function() { finishCloseProcess() })
         } else {

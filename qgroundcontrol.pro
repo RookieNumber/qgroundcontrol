@@ -27,7 +27,7 @@ message(Qt version $$[QT_VERSION])
 
 include(QGCCommon.pri)
 
-TARGET   = QGroundControl
+TARGET   = FullDroneStations
 TEMPLATE = app
 QGCROOT  = $$PWD
 
@@ -60,15 +60,15 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "Full Drone Stations"
-QGC_ORG_NAME        = "QGroundControl.org"
+QGC_APP_NAME        = "FullDroneStations"
+QGC_ORG_NAME        = "FullDroneStations"
 QGC_ORG_DOMAIN      = "org.qgroundcontrol"
 QGC_APP_DESCRIPTION = "Open source ground control app provided by QGroundControl dev team"
 QGC_APP_COPYRIGHT   = "Copyright (C) 2019 QGroundControl Development Team. All rights reserved."
 
 WindowsBuild {
     QGC_INSTALLER_SCRIPT        = "$$SOURCE_DIR\\deploy\\windows\\nullsoft_installer.nsi"
-    QGC_INSTALLER_ICON          = "$$SOURCE_DIR\\deploy\\windows\\WindowsQGC.ico"
+    QGC_INSTALLER_ICON          = "$$SOURCE_DIR\\deploy\\windows\\WindowsFGC.ico"
     QGC_INSTALLER_HEADER_BITMAP = "$$SOURCE_DIR\\deploy\\windows\\installheader.bmp"
     QGC_INSTALLER_DRIVER_MSI    = "$$SOURCE_DIR\\deploy\\windows\\driver.msi"
 }
