@@ -62,14 +62,14 @@ WindowsBuild {
 
 QGC_APP_NAME        = "FullDroneStations"
 QGC_ORG_NAME        = "FullDroneStations"
-QGC_ORG_DOMAIN      = "org.qgroundcontrol"
-QGC_APP_DESCRIPTION = "Open source ground control app provided by QGroundControl dev team"
-QGC_APP_COPYRIGHT   = "Copyright (C) 2019 QGroundControl Development Team. All rights reserved."
+QGC_ORG_DOMAIN      = "www.fulldronesolutions.com"
+QGC_APP_DESCRIPTION = "Full Drone Solutions Ground Control"
+QGC_APP_COPYRIGHT   = "Copyright (C) 2022 Full Drone Solutions."
 
 WindowsBuild {
     QGC_INSTALLER_SCRIPT        = "$$SOURCE_DIR\\deploy\\windows\\nullsoft_installer.nsi"
     QGC_INSTALLER_ICON          = "$$SOURCE_DIR\\deploy\\windows\\WindowsFGC.ico"
-    QGC_INSTALLER_HEADER_BITMAP = "$$SOURCE_DIR\\deploy\\windows\\installheader.bmp"
+    QGC_INSTALLER_HEADER_BITMAP = "$$SOURCE_DIR\\deploy\\windows\\FDSandroid.png"
     QGC_INSTALLER_DRIVER_MSI    = "$$SOURCE_DIR\\deploy\\windows\\driver.msi"
 }
 
