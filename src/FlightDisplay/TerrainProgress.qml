@@ -84,7 +84,7 @@ Rectangle {
 
                 QGCLabel {
                     anchors.centerIn:   parent
-                    text:               qsTr("Done")
+                    text:               qsTr("Selesai")
                     visible:            _blocksPending == 0
                 }
             }

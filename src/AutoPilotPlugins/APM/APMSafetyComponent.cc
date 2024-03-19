@@ -17,7 +17,7 @@
 
 APMSafetyComponent::APMSafetyComponent(Vehicle* vehicle, AutoPilotPlugin* autopilot, QObject* parent)
     : VehicleComponent(vehicle, autopilot, parent)
-    , _name(tr("Safety"))
+    , _name(tr("Keamanan"))
 {
 }
 
@@ -30,7 +30,7 @@ QString APMSafetyComponent::description(void) const
 {
     switch (_vehicle->vehicleType()) {
     case MAV_TYPE_SUBMARINE:
-        return tr("Safety Setup is used to setup failsafe actions, leak detection, and arming checks.");
+        return tr("Sistem keamanan berfungsi untuk mengatur sistem antisipasi kegagalan.");
         break;
     case MAV_TYPE_GROUND_ROVER:
     case MAV_TYPE_FIXED_WING:
@@ -41,7 +41,7 @@ QString APMSafetyComponent::description(void) const
     case MAV_TYPE_OCTOROTOR:
     case MAV_TYPE_TRICOPTER:
     default:
-        return tr("Safety Setup is used to setup triggers for Return to Land as well as the settings for Return to Land itself.");
+        return tr("Sistem keamanan berfungsi untuk mengatur antisipasi kegagalan pada.");
         break;
     }
 }

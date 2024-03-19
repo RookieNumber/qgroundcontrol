@@ -28,7 +28,7 @@
             "id":                   16,
             "rawName":              "MAV_CMD_NAV_WAYPOINT",
             "friendlyName":         "Waypoint",
-            "description":          "Travel to a position in 3D space.",
+            "description":          "Bergerak menuju posisi dalam ruang 3 dimensi.",
             "specifiesCoordinate":  true,
             "friendlyEdit":         true,
             "category":             "Basic",

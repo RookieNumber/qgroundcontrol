@@ -26,10 +26,10 @@ ColumnLayout {
     property bool   showMission:          true
     property bool   showAllItems:         true
 
-    QGCLabel { text: qsTr("Center map on:") }
+    QGCLabel { text: qsTr("Pusatkan Peta:") }
 
     QGCButton {
-        text:               qsTr("Mission")
+        text:               qsTr("Misi")
         Layout.fillWidth:   true
         visible:            showMission
 
@@ -40,7 +40,7 @@ ColumnLayout {
     }
 
     QGCButton {
-        text:               qsTr("All items")
+        text:               qsTr("Semua")
         Layout.fillWidth:   true
         visible:            showAllItems
 
@@ -51,7 +51,7 @@ ColumnLayout {
     }
 
     QGCButton {
-        text:               qsTr("Launch")
+        text:               qsTr("Take-off")
         Layout.fillWidth:   true
 
         onClicked: {
@@ -61,7 +61,7 @@ ColumnLayout {
     }
 
     QGCButton {
-        text:               qsTr("Vehicle")
+        text:               qsTr("Drone")
         Layout.fillWidth:   true
         enabled:            globals.activeVehicle && globals.activeVehicle.coordinate.isValid
 
@@ -72,7 +72,7 @@ ColumnLayout {
     }
 
     QGCButton {
-        text:               qsTr("Current Location")
+        text:               qsTr("Lokasi Saat Ini")
         Layout.fillWidth:   true
         enabled:            map.gcsPosition.isValid
 
@@ -83,7 +83,7 @@ ColumnLayout {
     }
 
     QGCButton {
-        text:               qsTr("Specified Location")
+        text:               qsTr("Lokasi Spesifik")
         Layout.fillWidth:   true
 
         onClicked: {

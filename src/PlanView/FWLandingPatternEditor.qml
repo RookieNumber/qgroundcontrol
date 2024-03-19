@@ -323,7 +323,7 @@ Rectangle {
             }
 
             QGCButton {
-                text:               qsTr("Done")
+                text:               qsTr("Selesai")
                 Layout.fillWidth:   true
                 onClicked: {
                     missionItem.wizardMode = false

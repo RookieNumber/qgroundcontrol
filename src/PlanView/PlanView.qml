@@ -566,19 +566,19 @@ Item {
                         property bool myAddROIOnClick: _addROIOnClick
                         onMyAddROIOnClickChanged: checked = _addROIOnClick
                     },
-                    ToolStripAction {
-                        text:               _singleComplexItem ? _missionController.complexMissionItemNames[0] : qsTr("Pattern")
-                        iconSource:         "/qmlimages/MapDrawShape.svg"
-                        enabled:            _missionController.flyThroughCommandsAllowed
-                        visible:            toolStrip._isMissionLayer
-                        dropPanelComponent: _singleComplexItem ? undefined : patternDropPanel
-                        onTriggered: {
-                            toolStrip.allAddClickBoolsOff()
-                            if (_singleComplexItem) {
-                                insertComplexItemAfterCurrent(_missionController.complexMissionItemNames[0])
-                            }
-                        }
-                    },
+//                    ToolStripAction {
+//                        text:               _singleComplexItem ? _missionController.complexMissionItemNames[0] : qsTr("Pattern")
+//                        iconSource:         "/qmlimages/MapDrawShape.svg"
+//                        enabled:            _missionController.flyThroughCommandsAllowed
+//                        visible:            toolStrip._isMissionLayer
+//                        dropPanelComponent: _singleComplexItem ? undefined : patternDropPanel
+//                        onTriggered: {
+//                            toolStrip.allAddClickBoolsOff()
+//                            if (_singleComplexItem) {
+//                                insertComplexItemAfterCurrent(_missionController.complexMissionItemNames[0])
+//                            }
+//                        }
+//                    },
                     ToolStripAction {
                         text:       _planMasterController.controllerVehicle.multiRotor ? qsTr("Return") : qsTr("Land")
                         iconSource: "/res/rtl.svg"

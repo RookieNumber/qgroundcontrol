@@ -115,7 +115,7 @@ Item {
         font.pointSize:         ScreenTools.largeFontPointSize
         horizontalAlignment:    Text.AlignHCenter
         verticalAlignment:      Text.AlignVCenter
-        text:                   qsTr("Done")
+        text:                   qsTr("Selesai")
         visible:                false
     }
 

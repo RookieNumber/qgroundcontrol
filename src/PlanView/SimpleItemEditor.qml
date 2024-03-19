@@ -154,7 +154,7 @@ Rectangle {
 
                         QGCLabel {
                             Layout.alignment:   Qt.AlignBaseline
-                            text:               qsTr("Altitude")
+                            text:               qsTr("Ketinggian")
                             font.pointSize:     ScreenTools.smallFontPointSize
                         }
                         QGCLabel {
@@ -240,7 +240,7 @@ Rectangle {
 
                 QGCCheckBox {
                     id:         flightSpeedCheckbox
-                    text:       qsTr("Flight Speed")
+                    text:       qsTr("Kecepatan")
                     checked:    missionItem.speedSection.specifyFlightSpeed
                     onClicked:  missionItem.speedSection.specifyFlightSpeed = checked
                     visible:    missionItem.speedSection.available
@@ -277,10 +277,10 @@ Rectangle {
                 }
             }
 
-            CameraSection {
-                checked:    missionItem.cameraSection.settingsSpecified
-                visible:    missionItem.cameraSection.available
-            }
+//            CameraSection {
+//                checked:    missionItem.cameraSection.settingsSpecified
+//                visible:    missionItem.cameraSection.available
+//            }
         }
     }
 }

@@ -15,7 +15,7 @@
 
 APMPowerComponent::APMPowerComponent(Vehicle* vehicle, AutoPilotPlugin* autopilot, QObject* parent)
     : VehicleComponent(vehicle, autopilot, parent),
-    _name(tr("Power"))
+    _name(tr("Sprayer"))
 {
 }
 
@@ -26,12 +26,12 @@ QString APMPowerComponent::name(void) const
 
 QString APMPowerComponent::description(void) const
 {
-    return tr("The Power Component is used to setup battery parameters.");
+    return tr("Sistem sprayer berfungsi untuk mengatur kecepatan aliran dan menampilkan sisa cairan.");
 }
 
 QString APMPowerComponent::iconResource(void) const
 {
-    return QStringLiteral("/qmlimages/PowerComponentIcon.png");
+    return QStringLiteral("/qmlimages/CameraTrigger.svg");
 }
 
 QUrl APMPowerComponent::setupSource(void) const

@@ -78,7 +78,7 @@ SurveyComplexItem::SurveyComplexItem(PlanMasterController* masterController, boo
     // NULL check since object creation during unit testing passes NULL for vehicle
     if (_controllerVehicle && _controllerVehicle->multiRotor() && _turnAroundDistanceFact.rawValue().toDouble() == _turnAroundDistanceFact.rawDefaultValue().toDouble()) {
         // Note this is set to 10 meters to work around a problem with PX4 Pro turnaround behavior. Don't change unless firmware gets better as well.
-        _turnAroundDistanceFact.setRawValue(10);
+        _turnAroundDistanceFact.setRawValue(0);
     }
 
     if (_controllerVehicle && !(_controllerVehicle->fixedWing() || _controllerVehicle->vtol())) {

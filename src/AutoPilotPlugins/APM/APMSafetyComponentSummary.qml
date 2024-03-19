@@ -40,13 +40,13 @@ Item {
             property Fact fact: controller.getParameterFact(-1, "ARMING_CHECK")
         }
 
-        VehicleSummaryRow {
-            labelText:  qsTr("Throttle failsafe:")
-            valueText:  fact ? fact.enumStringValue : ""
-            visible:    controller.vehicle.multiRotor
+//        VehicleSummaryRow {
+//            labelText:  qsTr("Throttle failsafe:")
+//            valueText:  fact ? fact.enumStringValue : ""
+//            visible:    controller.vehicle.multiRotor
 
-            property Fact fact: controller.getParameterFact(-1, "FS_THR_ENABLE", false /* reportMissing */)
-        }
+//            property Fact fact: controller.getParameterFact(-1, "FS_THR_ENABLE", false /* reportMissing */)
+//        }
 
         VehicleSummaryRow {
             labelText:  qsTr("Throttle failsafe:")
@@ -81,49 +81,49 @@ Item {
         }
 
         VehicleSummaryRow {
-            labelText:  qsTr("Batt1 low failsafe:")
+            labelText:  qsTr("Batt low failsafe:")
             valueText:  _batt1MonitorEnabled ? _batt1FSLowAct.enumStringValue : ""
             visible:    _batt1MonitorEnabled
         }
 
         VehicleSummaryRow {
-            labelText:  qsTr("Batt1 critical failsafe:")
+            labelText:  qsTr("Batt critical failsafe:")
             valueText:  _batt1FSCritActAvailable ? _batt1FSCritAct.enumStringValue : ""
             visible:    _batt1FSCritActAvailable
         }
 
-        VehicleSummaryRow {
-            labelText:  qsTr("Batt2 low failsafe:")
-            valueText:  _batt2MonitorEnabled ? _batt2FSLowAct.enumStringValue : ""
-            visible:    _batt2MonitorEnabled
-        }
+//        VehicleSummaryRow {
+//            labelText:  qsTr("Batt2 low failsafe:")
+//            valueText:  _batt2MonitorEnabled ? _batt2FSLowAct.enumStringValue : ""
+//            visible:    _batt2MonitorEnabled
+//        }
 
-        VehicleSummaryRow {
-            labelText:  qsTr("Batt2 critical failsafe:")
-            valueText:  _batt2MonitorEnabled ? _batt2FSCritAct.enumStringValue : ""
-            visible:    _batt2MonitorEnabled
-        }
+//        VehicleSummaryRow {
+//            labelText:  qsTr("Batt2 critical failsafe:")
+//            valueText:  _batt2MonitorEnabled ? _batt2FSCritAct.enumStringValue : ""
+//            visible:    _batt2MonitorEnabled
+//        }
 
-        VehicleSummaryRow {
-            labelText: qsTr("GeoFence:")
-            valueText: {
-                if(_copterFenceEnable && _copterFenceType) {
-                    if(_copterFenceEnable.value == 0 || _copterFenceType == 0) {
-                        return qsTr("Disabled")
-                    } else {
-                        if(_copterFenceType.value == 1) {
-                            return qsTr("Altitude")
-                        }
-                        if(_copterFenceType.value == 2) {
-                            return qsTr("Circle")
-                        }
-                        return qsTr("Altitude,Circle")
-                    }
-                }
-                return ""
-            }
-            visible: controller.vehicle.multiRotor
-        }
+//        VehicleSummaryRow {
+//            labelText: qsTr("GeoFence:")
+//            valueText: {
+//                if(_copterFenceEnable && _copterFenceType) {
+//                    if(_copterFenceEnable.value == 0 || _copterFenceType == 0) {
+//                        return qsTr("Disabled")
+//                    } else {
+//                        if(_copterFenceType.value == 1) {
+//                            return qsTr("Altitude")
+//                        }
+//                        if(_copterFenceType.value == 2) {
+//                            return qsTr("Circle")
+//                        }
+//                        return qsTr("Altitude,Circle")
+//                    }
+//                }
+//                return ""
+//            }
+//            visible: controller.vehicle.multiRotor
+//        }
 
         VehicleSummaryRow {
             labelText: qsTr("GeoFence:")

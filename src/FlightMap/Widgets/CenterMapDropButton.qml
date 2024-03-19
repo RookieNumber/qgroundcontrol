@@ -159,10 +159,10 @@ DropButton {
         ColumnLayout {
             spacing: ScreenTools.defaultFontPixelWidth * 0.5
 
-            QGCLabel { text: qsTr("Center map on:") }
+            QGCLabel { text: qsTr("Pusatkan Peta:") }
 
             QGCButton {
-                text:               qsTr("Mission")
+                text:               qsTr("Misi")
                 Layout.fillWidth:   true
                 visible:            showMission
                 enabled:            !followVehicleCheckBox.checked
@@ -174,7 +174,7 @@ DropButton {
             }
 
             QGCButton {
-                text:               qsTr("All items")
+                text:               qsTr("Semua")
                 Layout.fillWidth:   true
                 visible:            showAllItems
                 enabled:            !followVehicleCheckBox.checked
@@ -186,7 +186,7 @@ DropButton {
             }
 
             QGCButton {
-                text:               qsTr("Launch")
+                text:               qsTr("Take Off")
                 Layout.fillWidth:   true
                 enabled:            !followVehicleCheckBox.checked
 
@@ -197,7 +197,7 @@ DropButton {
             }
 
             QGCButton {
-                text:               qsTr("Current Location")
+                text:               qsTr("Lokasi Saat Ini")
                 Layout.fillWidth:   true
                 enabled:            map.gcsPosition ? map.gcsPosition.isValid && !followVehicleCheckBox.checked : false
 
@@ -209,7 +209,7 @@ DropButton {
 
 
             QGCButton {
-                text:               qsTr("Specified Location")
+                text:               qsTr("Lokasi Spesifik")
                 Layout.fillWidth:   true
 
                 onClicked: {
@@ -219,7 +219,7 @@ DropButton {
             }
 
             QGCButton {
-                text:               qsTr("Vehicle")
+                text:               qsTr("Drone")
                 Layout.fillWidth:   true
                 enabled:            globals.activeVehicle && globals.activeVehicle.latitude != 0 && globals.activeVehicle.longitude != 0 && !followVehicleCheckBox.checked
 
@@ -231,7 +231,7 @@ DropButton {
 
             QGCCheckBox {
                 id:         followVehicleCheckBox
-                text:       qsTr("Follow Vehicle")
+                text:       qsTr("Ikuti Drone")
                 checked:    followVehicle
                 visible:    showFollowVehicle
 

@@ -134,11 +134,11 @@ Rectangle {
             spacing:            _margin
             visible:            !_simpleMissionStart
 
-            CameraSection {
-                id:         cameraSection
-                checked:    !_waypointsOnlyMode && missionItem.cameraSection.settingsSpecified
-                visible:    _showCameraSection
-            }
+//            CameraSection {
+//                id:         cameraSection
+//                checked:    !_waypointsOnlyMode && missionItem.cameraSection.settingsSpecified
+//                visible:    _showCameraSection
+//            }
 
             QGCLabel {
                 anchors.left:           parent.left

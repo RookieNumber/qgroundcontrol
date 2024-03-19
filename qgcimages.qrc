@@ -208,5 +208,9 @@
         <file alias="ZoomPlus.svg">src/FlightMap/Images/ZoomPlus.svg</file>
         <file>resources/icons/fdsico.ico</file>
         <file alias="Test.svg">src/ui/toolbar/Images/Test.svg</file>
+        <file alias="APM/BrandImage3">src/FirmwarePlugin/APM/Ferto2BrandImage.png</file>
+        <file alias="APM/BrandImage2">src/FirmwarePlugin/APM/FertoBrandImage.png</file>
+        <file alias="APM/BrandImage4">src/FirmwarePlugin/APM/Taka2BrandImage.png</file>
+        <file alias="APM/BrandImage5">src/FirmwarePlugin/APM/TakaBrandImage.png</file>
     </qresource>
 </RCC>

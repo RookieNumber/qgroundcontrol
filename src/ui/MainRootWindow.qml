@@ -156,15 +156,15 @@ ApplicationWindow {
     }
 
     function showAnalyzeTool() {
-        showTool(qsTr("Analyze Tools"), "AnalyzeView.qml", "/qmlimages/Analyze.svg")
+        showTool(qsTr("Data Terbang"), "AnalyzeView.qml", "/qmlimages/Analyze.svg")
     }
 
     function showSetupTool() {
-        showTool(qsTr("Vehicle Setup"), "SetupView.qml", "/qmlimages/Gears.svg")
+         showTool(qsTr("Pengaturan Drone"), "SetupView.qml", "/qmlimages/Gears.svg")
     }
 
     function showSettingsTool() {
-        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/QGCLogoWhite")
+        showTool(qsTr("Pengaturan Aplikasi"), "AppSettings.qml", "/res/QGCLogoWhite")
     }
 
     //-------------------------------------------------------------------------
@@ -282,7 +282,7 @@ ApplicationWindow {
 
         QGCPopupDialog {
             id:         toolSelectDialog
-            title:      qsTr("Select Tool")
+            title:      qsTr("Pengaturan")
             buttons:    StandardButton.Close
 
             property real _toolButtonHeight:    ScreenTools.defaultFontPixelHeight * 3
@@ -301,7 +301,7 @@ ApplicationWindow {
                         id:                 setupButton
                         height:             toolSelectDialog._toolButtonHeight
                         Layout.fillWidth:   true
-                        text:               qsTr("Vehicle Setup")
+                        text:               qsTr("Pengaturan Drone")
                         imageColor:         qgcPal.text
                         imageResource:      "/qmlimages/Gears.svg"
                         onClicked: {
@@ -316,7 +316,7 @@ ApplicationWindow {
                         id:                 analyzeButton
                         height:             toolSelectDialog._toolButtonHeight
                         Layout.fillWidth:   true
-                        text:               qsTr("Analyze Tools")
+                        text:               qsTr("Data Terbang")
                         imageResource:      "/qmlimages/Analyze.svg"
                         imageColor:         qgcPal.text
                         visible:            QGroundControl.corePlugin.showAdvancedUI
@@ -332,7 +332,7 @@ ApplicationWindow {
                         id:                 settingsButton
                         height:             toolSelectDialog._toolButtonHeight
                         Layout.fillWidth:   true
-                        text:               qsTr("Application Settings")
+                        text:               qsTr("Pengaturan Aplikasi")
                         imageResource:      "/res/QGCLogoFull"
                         imageColor:         "transparent"
                         visible:            !QGroundControl.corePlugin.options.combineSettingsAndSetup
@@ -478,7 +478,7 @@ ApplicationWindow {
 
                 QGCLabel {
                     id:     backTextLabel
-                    text:   qsTr("Back")
+                    text:   qsTr("Kembali")
                 }
 
                 QGCLabel {
