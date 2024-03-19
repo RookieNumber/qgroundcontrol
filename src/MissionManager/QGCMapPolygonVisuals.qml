@@ -47,8 +47,8 @@ Item {
     property real _zorderSplitHandle:   QGroundControl.zOrderMapItems + 2
     property real _zorderCenterHandle:  QGroundControl.zOrderMapItems + 1   // Lowest such that drag or split takes precedence
 
-    readonly property string _polygonToolsText: qsTr("Polygon Tools")
-    readonly property string _traceText:        qsTr("Click in the map to add vertices. Click 'Done Tracing' when finished.")
+    readonly property string _polygonToolsText: qsTr("Poligon")
+    readonly property string _traceText:        qsTr("Klik pada peta untuk menambahkan titik, klik selesai jika sudah cukup.")
 
     function addCommonVisuals() {
         if (_objMgrCommonVisuals.empty) {
@@ -217,7 +217,7 @@ Item {
 
     KMLOrSHPFileDialog {
         id:             kmlOrSHPLoadDialog
-        title:          qsTr("Select Polygon File")
+        title:          qsTr("Pilih File Poligon")
         selectExisting: true
 
         onAcceptedForLoad: {
@@ -245,7 +245,7 @@ Item {
         QGCMenuItem {
             id:             removeVertexItem
             visible:        !_circleMode
-            text:           qsTr("Remove vertex")
+            text:           qsTr("Hapus Titik")
             onTriggered: {
                 if (menu._editingVertexIndex >= 0) {
                     mapPolygon.removeVertex(menu._editingVertexIndex)
@@ -527,21 +527,21 @@ Item {
 
             QGCButton {
                 _horizontalPadding: 0
-                text:               qsTr("Basic")
+                text:               qsTr("Persegi")
                 visible:            !mapPolygon.traceMode
                 onClicked:          _resetPolygon()
             }
 
             QGCButton {
                 _horizontalPadding: 0
-                text:               qsTr("Circular")
+                text:               qsTr("Lingkaran")
                 visible:            !mapPolygon.traceMode
                 onClicked:          _resetCircle()
             }
 
             QGCButton {
                 _horizontalPadding: 0
-                text:               mapPolygon.traceMode ? qsTr("Done Tracing") : qsTr("Trace")
+                text:               mapPolygon.traceMode ? qsTr("Selesai") : qsTr("Manual")
                 onClicked: {
                     if (mapPolygon.traceMode) {
                         if (mapPolygon.count < 3) {
@@ -559,7 +559,7 @@ Item {
 
             QGCButton {
                 _horizontalPadding: 0
-                text:               qsTr("Load KML/SHP...")
+                text:               qsTr("Gunakan KML/SHP...")
                 onClicked:          kmlOrSHPLoadDialog.openForLoad()
                 visible:            !mapPolygon.traceMode
             }

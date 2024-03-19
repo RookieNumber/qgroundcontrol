@@ -65,7 +65,7 @@ Rectangle {
         spacing:            _margin
 
         QGCLabel {
-            text:           qsTr("All Altitudes")
+            text:           qsTr("Konfigurasi ketinggian")
             font.pointSize: ScreenTools.smallFontPointSize
         }
         MouseArea {
@@ -154,7 +154,7 @@ Rectangle {
                 id:             vehicleInfoSectionHeader
                 anchors.left:   parent.left
                 anchors.right:  parent.right
-                text:           qsTr("Vehicle Info")
+                text:           qsTr("Informasi Drone")
                 visible:        !_waypointsOnlyMode
                 checked:        false
             }
@@ -199,44 +199,44 @@ Rectangle {
                     visible:    _multipleVehicleTypes && !_allowFWVehicleTypeSelection
                 }
 
-                QGCLabel {
-                    Layout.columnSpan:      2
-                    Layout.alignment:       Qt.AlignHCenter
-                    Layout.fillWidth:       true
-                    wrapMode:               Text.WordWrap
-                    font.pointSize:         ScreenTools.smallFontPointSize
-                    text:                   qsTr("The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.")
-                    visible:                _showCruiseSpeed || _showHoverSpeed
-                }
+//                QGCLabel {
+//                    Layout.columnSpan:      2
+//                    Layout.alignment:       Qt.AlignHCenter
+//                    Layout.fillWidth:       true
+//                    wrapMode:               Text.WordWrap
+//                    font.pointSize:         ScreenTools.smallFontPointSize
+//                    text:                   qsTr("The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.")
+//                    visible:                _showCruiseSpeed || _showHoverSpeed
+//                }
 
-                QGCLabel {
-                    text:               qsTr("Cruise speed")
-                    visible:            _showCruiseSpeed
-                    Layout.fillWidth:   true
-                }
-                FactTextField {
-                    fact:                   QGroundControl.settingsManager.appSettings.offlineEditingCruiseSpeed
-                    visible:                _showCruiseSpeed
-                    Layout.preferredWidth:  _fieldWidth
-                }
+//                QGCLabel {
+//                    text:               qsTr("Cruise speed")
+//                    visible:            _showCruiseSpeed
+//                    Layout.fillWidth:   true
+//                }
+//                FactTextField {
+//                    fact:                   QGroundControl.settingsManager.appSettings.offlineEditingCruiseSpeed
+//                    visible:                _showCruiseSpeed
+//                    Layout.preferredWidth:  _fieldWidth
+//                }
 
-                QGCLabel {
-                    text:               qsTr("Hover speed")
-                    visible:            _showHoverSpeed
-                    Layout.fillWidth:   true
-                }
-                FactTextField {
-                    fact:                   QGroundControl.settingsManager.appSettings.offlineEditingHoverSpeed
-                    visible:                _showHoverSpeed
-                    Layout.preferredWidth:  _fieldWidth
-                }
+//                QGCLabel {
+//                    text:               qsTr("Hover speed")
+//                    visible:            _showHoverSpeed
+//                    Layout.fillWidth:   true
+//                }
+//                FactTextField {
+//                    fact:                   QGroundControl.settingsManager.appSettings.offlineEditingHoverSpeed
+//                    visible:                _showHoverSpeed
+//                    Layout.preferredWidth:  _fieldWidth
+//                }
             } // GridLayout
 
             SectionHeader {
                 id:             plannedHomePositionSection
                 anchors.left:   parent.left
                 anchors.right:  parent.right
-                text:           qsTr("Launch Position")
+                text:           qsTr("Referensi Posisi")
                 visible:        !_vehicleHasHomePosition
                 checked:        false
             }
@@ -255,7 +255,7 @@ Rectangle {
                     columns:        2
 
                     QGCLabel {
-                        text: qsTr("Altitude")
+                        text: qsTr("Ketinggian")
                     }
                     FactTextField {
                         fact:               missionItem.plannedHomePositionAltitude
@@ -267,12 +267,12 @@ Rectangle {
                     width:                  parent.width
                     wrapMode:               Text.WordWrap
                     font.pointSize:         ScreenTools.smallFontPointSize
-                    text:                   qsTr("Actual position set by vehicle at flight time.")
+                    text:                   qsTr("Posisi referensi drone.")
                     horizontalAlignment:    Text.AlignHCenter
                 }
 
                 QGCButton {
-                    text:                       qsTr("Set To Map Center")
+                    text:                       qsTr("Center")
                     onClicked:                  missionItem.coordinate = map.center
                     anchors.horizontalCenter:   parent.horizontalCenter
                 }

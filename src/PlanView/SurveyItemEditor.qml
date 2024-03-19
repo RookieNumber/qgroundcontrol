@@ -15,7 +15,7 @@ import QGroundControl.FlightMap     1.0
 
 TransectStyleComplexItemEditor {
     transectAreaDefinitionComplete: missionItem.surveyAreaPolygon.isValid
-    transectAreaDefinitionHelp:     qsTr("Use the Polygon Tools to create the polygon which outlines your survey area.")
+    transectAreaDefinitionHelp:     qsTr("Gunakan 'Poligon' untuk membuat batas dari area spraying anda.")
     transectValuesHeaderName:       qsTr("")
     transectValuesComponent:        _transectValuesComponent
     presetsTransectValuesComponent: _transectValuesComponent

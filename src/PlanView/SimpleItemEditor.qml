@@ -73,7 +73,7 @@ Rectangle {
             visible:            missionItem.isTakeoffItem && missionItem.wizardMode // Hack special case for takeoff item
 
             QGCLabel {
-                text:               qsTr("Move '%1' %2 to the %3 location. %4")
+                text:               qsTr("Pindahkan 'T' ke lokasi yang diinginkan")
                 .arg(_controllerVehicle.vtol ? qsTr("T") : qsTr("T"))
                 .arg(_controllerVehicle.vtol ? qsTr("Transition Direction") : qsTr("Takeoff"))
                 .arg(_controllerVehicle.vtol ? qsTr("desired") : qsTr("climbout"))
@@ -84,14 +84,14 @@ Rectangle {
             }
 
             QGCLabel {
-                text:               qsTr("Ensure clear of obstacles and into the wind.")
+                text:               qsTr("Pastikan lokasi bersih dari halangan dan angin.")
                 Layout.fillWidth:   true
                 wrapMode:           Text.WordWrap
                 visible:            !initialClickLabel.visible
             }
 
             QGCButton {
-                text:               qsTr("Done")
+                text:               qsTr("Selesai")
                 Layout.fillWidth:   true
                 visible:            !initialClickLabel.visible
                 onClicked: {

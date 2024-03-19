@@ -22,12 +22,12 @@
 
 QGC_LOGGING_CATEGORY(SurveyComplexItemLog, "SurveyComplexItemLog")
 
-const QString SurveyComplexItem::name(SurveyComplexItem::tr("Survey"));
+const QString SurveyComplexItem::name(SurveyComplexItem::tr("Spraying"));
 
 const char* SurveyComplexItem::jsonComplexItemTypeValue =   "survey";
 const char* SurveyComplexItem::jsonV3ComplexItemTypeValue = "survey";
 
-const char* SurveyComplexItem::settingsGroup =              "Survey";
+const char* SurveyComplexItem::settingsGroup =              "Spraying";
 const char* SurveyComplexItem::gridAngleName =              "GridAngle";
 const char* SurveyComplexItem::gridEntryLocationName =      "GridEntryLocation";
 const char* SurveyComplexItem::flyAlternateTransectsName =  "FlyAlternateTransects";

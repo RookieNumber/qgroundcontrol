@@ -19,7 +19,7 @@
     "decimalPlaces":    2,
     "min":              0,
     "units":            "m",
-    "default":     10
+    "default":     0
 },
 {
     "name":             "CameraTriggerInTurnAround",
