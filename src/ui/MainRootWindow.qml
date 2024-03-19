@@ -164,7 +164,7 @@ ApplicationWindow {
     }
 
     function showSettingsTool() {
-        showTool(qsTr("Pengaturan Aplikasi"), "AppSettings.qml", "/res/QGCLogoWhite")
+        showTool(qsTr("Pengaturan Aplikasi"), "AppSettings.qml", "/res/QGCLogoFull")
     }
 
     //-------------------------------------------------------------------------
