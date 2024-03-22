@@ -20438,7 +20438,7 @@
       </param>
     </parameters>
     <parameters name="WPNAV_">
-      <param humanName="Waypoint Horizontal Speed Target" name="WPNAV_SPEED" documentation="Defines the speed in cm/s which the aircraft will attempt to maintain horizontally during a WP mission" user="Standard">
+      <param humanName="Waypoint Horizontal Speed Target" name="WPNAV_SPEED" documentation="Mengatur kecepatan terbang drone maksimum ketika drone terbang menjalankan misi" user="Standard">
         <field name="Range">20 2000</field>
         <field name="Increment">50</field>
         <field name="Units">cm/s</field>

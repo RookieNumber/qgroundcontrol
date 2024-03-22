@@ -12080,7 +12080,7 @@
       </param>
     </parameters>
     <parameters name="Q_WP_">
-      <param humanName="Waypoint Horizontal Speed Target" name="Q_WP_SPEED" documentation="Defines the speed in cm/s which the aircraft will attempt to maintain horizontally during a WP mission" user="Standard">
+      <param humanName="Waypoint Horizontal Speed Target" name="Q_WP_SPEED" documentation="Mengatur kecepatan terbang drone maksimum ketika drone terbang menjalankan misi" user="Standard">
         <field name="Range">20 2000</field>
         <field name="Increment">50</field>
         <field name="Units">cm/s</field>
