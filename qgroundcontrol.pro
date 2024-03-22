@@ -52,7 +52,7 @@ LinuxBuild {
 }
 
 WindowsBuild {
-    RC_ICONS = resources/icons/fdsico.ico
+    RC_ICONS = resources/icons/FDSlogo.ico
     CONFIG += resources_big
 }
 
@@ -356,7 +356,7 @@ CustomBuild {
         RESOURCES += $$PWD/resources/InstrumentValueIcons/InstrumentValueIcons.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"FullDrone\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"Full\\\"\"
     DEFINES += QGC_ORG_NAME=\"\\\"FullDroneSolutions\\\"\"
     DEFINES += QGC_ORG_DOMAIN=\"\\\"org.qgroundcontrol\\\"\"
     RESOURCES += \

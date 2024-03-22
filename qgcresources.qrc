@@ -58,6 +58,7 @@
         <file alias="Gripper.svg">resources/Gripper.svg</file>
         <file alias="GripperRelease.svg">resources/GripperRelease.svg</file>
         <file alias="GripperGrab.svg">resources/GripperGrab.svg</file>
+        <file alias="FDSLogo.ico">resources/icons/FDSLogo.ico</file>
         <file>resources/icons/qgroundcontrol.ico</file>
         <file alias="FDSLogoFull.png">resources/FDSLogoFull.png</file>
     </qresource>
