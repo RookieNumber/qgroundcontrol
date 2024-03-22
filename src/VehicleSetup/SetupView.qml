@@ -288,16 +288,16 @@ Rectangle {
                 }
             }
 
-//            SubMenuButton {
-//                setupIndicator:     false
-//                exclusiveGroup:     setupButtonGroup
-//                visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
-//                                    !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
-//                                    _corePlugin.showAdvancedUI
-//                text:               qsTr("Parameters")
-//                Layout.fillWidth:   true
-//                onClicked:          showPanel(this, "SetupParameterEditor.qml")
-//            }
+            SubMenuButton {
+                setupIndicator:     false
+                exclusiveGroup:     setupButtonGroup
+                visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
+                                    !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
+                                    _corePlugin.showAdvancedUI
+                text:               qsTr("Parameters")
+                Layout.fillWidth:   true
+                onClicked:          showPanel(this, "SetupParameterEditor.qml")
+            }
 
         }
     }

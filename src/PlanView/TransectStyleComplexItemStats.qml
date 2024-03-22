@@ -13,7 +13,7 @@ Grid {
     columns:        2
     columnSpacing:  ScreenTools.defaultFontPixelWidth
 
-    QGCLabel { text: qsTr("Survey Area") }
+    QGCLabel { text: qsTr("Luas Total") }
     QGCLabel { text: QGroundControl.unitsConversion.squareMetersToAppSettingsAreaUnits(missionItem.coveredArea).toFixed(2) + " " + QGroundControl.unitsConversion.appSettingsAreaUnitsString }
 
 //    QGCLabel { text: qsTr("Photo Count") }
