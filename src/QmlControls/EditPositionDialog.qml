@@ -48,7 +48,7 @@ QGCPopupDialog {
             columns:        2
 
             QGCLabel {
-                text: qsTr("Latitude")
+                text: qsTr("Latitud")
             }
             FactTextField {
                 fact:               controller.latitude
@@ -56,7 +56,7 @@ QGCPopupDialog {
             }
 
             QGCLabel {
-                text: qsTr("Longitude")
+                text: qsTr("Longitud")
             }
             FactTextField {
                 fact:               controller.longitude
@@ -64,7 +64,7 @@ QGCPopupDialog {
             }
 
             QGCButton {
-                text:               qsTr("Set Geographic")
+                text:               qsTr("Set Geografik")
                 Layout.alignment:   Qt.AlignRight
                 Layout.columnSpan:  2
                 onClicked: {
@@ -76,7 +76,7 @@ QGCPopupDialog {
             Item { width: 1; height: ScreenTools.defaultFontPixelHeight; Layout.columnSpan: 2}
 
             QGCLabel {
-                text: qsTr("Zone")
+                text: qsTr("Zona")
             }
             FactTextField {
                 fact:               controller.zone
@@ -84,7 +84,7 @@ QGCPopupDialog {
             }
 
             QGCLabel {
-                text: qsTr("Hemisphere")
+                text: qsTr("Belahan Bumi")
             }
             FactComboBox {
                 fact:               controller.hemisphere
@@ -93,7 +93,7 @@ QGCPopupDialog {
             }
 
             QGCLabel {
-                text: qsTr("Easting")
+                text: qsTr("Posisi Timur")
             }
             FactTextField {
                 fact:               controller.easting
@@ -101,7 +101,7 @@ QGCPopupDialog {
             }
 
             QGCLabel {
-                text: qsTr("Northing")
+                text: qsTr("Posisi Utara")
             }
             FactTextField {
                 fact:               controller.northing

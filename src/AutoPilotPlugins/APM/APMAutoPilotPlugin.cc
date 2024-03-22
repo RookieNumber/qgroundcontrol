@@ -109,6 +109,10 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
             _safetyComponent->setupTriggerSignals();
             _components.append(QVariant::fromValue((VehicleComponent*)_safetyComponent));
 
+//            _speedComponent = new APMSpeedComponent(_vehicle, this);
+//            _speedComponent->setupTriggerSignals();
+//            _components.append(QVariant::fromValue((VehicleComponents*)_speedComponent));
+
 #if 0
     // Follow me not ready for Stable
 

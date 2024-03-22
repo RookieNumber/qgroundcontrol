@@ -879,7 +879,7 @@ Item {
             }
 
             GridLayout {
-                columns:            4
+                columns:            2
                 columnSpacing:      _margin
                 rowSpacing:         _margin
                 Layout.fillWidth:   true

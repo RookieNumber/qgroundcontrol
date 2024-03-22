@@ -1975,7 +1975,7 @@
       </param>
       <param humanName="Battery capacity" name="BATT2_CAPACITY" documentation="Capacity of the battery in mAh when full" user="Standard">
         <field name="Increment">50</field>
-        <field name="Units">mAh</field>
+        <field name="Units">mL</field>
         <field name="UnitText">milliampere hour</field>
       </param>
       <param humanName="Battery serial number" name="BATT2_SERIAL_NUM" documentation="Battery serial number, automatically filled in for SMBus batteries, otherwise will be -1. With DroneCan it is the battery_id." user="Advanced">
