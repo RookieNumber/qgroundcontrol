@@ -72,7 +72,7 @@
 {
     "name":             "defaultMissionItemAltitude",
     "shortDesc": "Default value for altitude",
-    "longDesc":  "This value specifies the default altitude for new items added to a mission.",
+    "longDesc":  "Nilai menentukan ketinggian misi terbang drone.",
     "type":             "double",
     "default":     5,
     "min":              1,

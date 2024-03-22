@@ -69,7 +69,7 @@ QGC_APP_COPYRIGHT   = "Copyright (C) 2022 Full Drone Solutions."
 WindowsBuild {
     QGC_INSTALLER_SCRIPT        = "$$SOURCE_DIR\\deploy\\windows\\nullsoft_installer.nsi"
     QGC_INSTALLER_ICON          = "$$SOURCE_DIR\\deploy\\windows\\WindowsFGC.ico"
-    QGC_INSTALLER_HEADER_BITMAP = "$$SOURCE_DIR\\deploy\\windows\\FDSandroid.png"
+    QGC_INSTALLER_HEADER_BITMAP = "$$SOURCE_DIR\\deploy\\windows\\Installheader.png"
     QGC_INSTALLER_DRIVER_MSI    = "$$SOURCE_DIR\\deploy\\windows\\driver.msi"
 }
 

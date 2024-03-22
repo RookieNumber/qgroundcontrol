@@ -135,12 +135,12 @@ Item {
             Layout.alignment:       Qt.AlignVCenter | Qt.AlignHCenter
 
             QGCLabel {
-                text:               qsTr("Selected Waypoint")
+                text:               qsTr("Waypoint")
                 Layout.columnSpan:  8
                 font.pointSize:     ScreenTools.smallFontPointSize
             }
 
-            QGCLabel { text: qsTr("Alt diff:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Beda Ketinggian:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _altDifferenceText
                 font.pointSize:         _dataFontSize
@@ -149,7 +149,7 @@ Item {
 
             Item { width: 1; height: 1 }
 
-            QGCLabel { text: qsTr("Azimuth:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Azimut:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _azimuthText
                 font.pointSize:         _dataFontSize
@@ -158,14 +158,14 @@ Item {
 
             Item { width: 1; height: 1 }
 
-            QGCLabel { text: qsTr("Dist prev WP:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Jarak prev WP:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _distanceText
                 font.pointSize:         _dataFontSize
                 Layout.minimumWidth:    _largeValueWidth
             }
 
-            QGCLabel { text: qsTr("Gradient:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Gradien:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _gradientText
                 font.pointSize:         _dataFontSize
@@ -194,7 +194,7 @@ Item {
                 font.pointSize:     ScreenTools.smallFontPointSize
             }
 
-            QGCLabel { text: qsTr("Distance:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Jarak Tempuh:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _missionDistanceText
                 font.pointSize:         _dataFontSize
@@ -203,14 +203,14 @@ Item {
 
             Item { width: 1; height: 1 }
 
-            QGCLabel { text: qsTr("Max telem dist:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Jarak Max. Telemetri:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _missionMaxTelemetryText
                 font.pointSize:         _dataFontSize
                 Layout.minimumWidth:    _largeValueWidth
             }
 
-            QGCLabel { text: qsTr("Time:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Waktu Terbang:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   getMissionTime()
                 font.pointSize:         _dataFontSize
@@ -231,7 +231,7 @@ Item {
                 font.pointSize:     ScreenTools.smallFontPointSize
             }
 
-            QGCLabel { text: qsTr("Batteries required:"); font.pointSize: _dataFontSize; }
+            QGCLabel { text: qsTr("Baterai Dibutuhkan:"); font.pointSize: _dataFontSize; }
             QGCLabel {
                 text:                   _batteriesRequiredText
                 font.pointSize:         _dataFontSize
@@ -243,7 +243,7 @@ Item {
 
         QGCButton {
             id:          uploadButton
-            text:        _controllerDirty ? qsTr("Upload Required") : qsTr("Upload")
+            text:        _controllerDirty ? qsTr("Upload Sekarang") : qsTr("Upload")
             enabled:     !_controllerSyncInProgress
             visible:     !_controllerOffline && !_controllerSyncInProgress && !uploadCompleteText.visible
             primary:     _controllerDirty

@@ -211,12 +211,39 @@ Item {
                                     property var battery: object
                                 }
 
-                                QGCLabel { text: qsTr("Battery %1").arg(object.id.rawValue) }
-                                QGCLabel { text: qsTr("Charge State");                          visible: batteryValuesAvailable.chargeStateAvailable }
-                                QGCLabel { text: qsTr("Remaining");                             visible: batteryValuesAvailable.timeRemainingAvailable }
-                                QGCLabel { text: qsTr("Remaining") }
-                                QGCLabel { text: qsTr("Voltage") }
-                                QGCLabel { text: qsTr("Consumed");                              visible: batteryValuesAvailable.mahConsumedAvailable }
+                                QGCLabel { text: {
+                                                                   if (object.id.rawValue === 0) {
+                                                                        return qsTr("Baterai Utama")
+                                                                    } else if (object.id.rawValue === 1) {
+                                                                        return qsTr("Cairan")
+                                                                    } else if (object.id.rawValue === 2) {
+                                                                        return qsTr("/Nan")
+                                                                    }
+                                                                } }
+                                QGCLabel { text: qsTr("Charge State");
+                                                                           visible: {
+                                                                               if (object.id.rawValue === 0) {
+                                                                                   return true }
+                                                                               else
+                                                                                   return false
+                                                                                }}
+                                QGCLabel { text: qsTr("Tersisa");                             visible: batteryValuesAvailable.timeRemainingAvailable }
+                                QGCLabel { text: qsTr("Tersisa");
+                                                                          visible: {
+                                                                          if (object.id.rawValue === 0) {
+                                                                              return false}
+
+                                                                          else
+                                                                             return true
+                                                                          }}
+                                QGCLabel { text: qsTr("Voltase");
+                                                                           visible: {
+                                                                           if (object.id.rawValue === 0) {
+                                                                               return true }
+                                                                           else
+                                                                               return false
+                                                                            }}
+                                QGCLabel { text: qsTr("Terpakai");                              visible: batteryValuesAvailable.mahConsumedAvailable }
                                 QGCLabel { text: qsTr("Temperature");                           visible: batteryValuesAvailable.temperatureAvailable }
                                 QGCLabel { text: qsTr("Function");                              visible: batteryValuesAvailable.functionAvailable }
                             }

@@ -27,7 +27,7 @@
     "decimalPlaces":    2,
     "min":              0,
     "units":            "m",
-    "default":     25
+    "default":     0
 },
 {
     "name":             "GridSpacing",

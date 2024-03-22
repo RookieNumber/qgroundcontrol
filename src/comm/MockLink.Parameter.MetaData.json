@@ -1180,7 +1180,7 @@
     {
       "name": "TRIG_DISTANCE",
       "type": "Float",
-      "default": 25.0,
+      "default": 0,
       "group": "Camera trigger",
       "shortDesc": "Camera trigger distance",
       "longDesc": "Sets the distance at which to trigger the camera.",

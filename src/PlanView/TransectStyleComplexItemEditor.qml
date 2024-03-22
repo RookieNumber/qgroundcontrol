@@ -100,7 +100,7 @@ Rectangle {
                     cameraCalc:                     _missionItem.cameraCalc
                     vehicleFlightIsFrontal:         true
                     distanceToSurfaceLabel:         qsTr("Ketinggian")
-//                    frontalDistanceLabel:           qsTr("Trigger Dist")
+                    frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
                 }
 
