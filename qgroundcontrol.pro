@@ -430,6 +430,7 @@ contains (DEFINES, QGC_ENABLE_PAIRING) {
 #
 
 HEADERS += \
+    src/AutoPilotPlugins/APM/APMSpeedComponent.h \
     src/QmlControls/CustomAction.h \
     src/QmlControls/CustomActionManager.h \
     src/QmlControls/QmlUnitsConversion.h \
@@ -446,6 +447,7 @@ contains (DEFINES, QGC_ENABLE_PAIRING) {
 }
 
 SOURCES += \
+    src/AutoPilotPlugins/APM/APMSpeedComponent.cc \
     src/QmlControls/CustomActionManager.cc \
     src/Vehicle/VehicleEscStatusFactGroup.cc \
     src/api/QGCCorePlugin.cc \
