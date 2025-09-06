@@ -31,7 +31,7 @@
         <extracomment>.QGC.MetaData.Facts[followTarget].enumStrings, </extracomment>
         <location filename="../src/Settings/App.SettingsGroup.json"/>
         <source>Never,Always,When in Follow Me Flight Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Jangan Pernah, Selalu, Ketika dalam mode Follow Me</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[qLocaleLanguage].enumStrings, </extracomment>
@@ -88,7 +88,7 @@
         <extracomment>.QGC.MetaData.Facts[forceVideoDecoder].enumStrings, </extracomment>
         <location filename="../src/Settings/Video.SettingsGroup.json"/>
         <source>Default,Force software decoder,Force NVIDIA decoder,Force VA-API decoder,Force DirectX3D 11 decoder,Force VideoToolbox decoder</source>
-        <translation type="unfinished"></translation>
+        <translation>Default, Paksa menggunakan decoder bawaan, Paksa menggunakan decoder NVIDIA, Paksa menggunakan decoder VA-API, Paksa menggunakan decoder DirectX3D 11, Paksa menggunakan decoder VideoToolBox</translation>
     </message>
 </context>
 <context>
@@ -1761,71 +1761,71 @@
 </context>
 <context>
     <name>APM-MavCmdInfoCommon.json</name>
-    <message>
+		<message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_TAKEOFF].description, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Take off from the ground and ascend to specified altitude.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lepas landas dari tanah dan naik ke ketinggian yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].description, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Takeoff to specified altitude.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lepas landas ke ketinggian yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].category, .mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].category, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>VTOL</source>
-        <translation type="unfinished"></translation>
+        <translation>VTOL</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].description, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Land using VTOL mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat menggunakan mode VTOL.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_RELAY].param2.label, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_RELAY].param2.enumStrings, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>On,Off</source>
-        <translation type="unfinished"></translation>
+        <translation>Hidup,Mati</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param1.label, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Pitch</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param2.label, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Roll</source>
-        <translation type="unfinished"></translation>
+        <translation>Roll</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param3.label, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].param1.label, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].param1.enumStrings, </extracomment>
         <location filename="../src/FirmwarePlugin/APM/APM-MavCmdInfoCommon.json"/>
         <source>Enable,Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan,Nonaktifkan</translation>
     </message>
 </context>
 </TS>
