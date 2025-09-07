@@ -548,13 +548,13 @@ Rectangle {
 
                                 QGCLabel {
                                     text:           qsTr("Color Scheme")
-                                    visible: QGroundControl.settingsManager.appSettings.indoorPalette.visible
+                                    visible: QGroundControl.settingsManager.appSettings.customColorTheme.visible
                                 }
                                 FactComboBox {
                                     Layout.preferredWidth:  _comboFieldWidth
-                                    fact:                   QGroundControl.settingsManager.appSettings.indoorPalette
+                                    fact:                   QGroundControl.settingsManager.appSettings.customColorTheme
                                     indexModel:             false
-                                    visible:                QGroundControl.settingsManager.appSettings.indoorPalette.visible
+                                    visible:                QGroundControl.settingsManager.appSettings.customColorTheme.visible
                                 }
 
                                 QGCLabel {

@@ -59,7 +59,9 @@ QList<int> AppSettings::_rgPartialLanguages = {
 DECLARE_SETTINGGROUP(App, "")
 {
     qmlRegisterUncreatableType<AppSettings>("QGroundControl.SettingsManager", 1, 0, "AppSettings", "Reference only");
-    QGCPalette::setGlobalTheme(indoorPalette()->rawValue().toBool() ? QGCPalette::Dark : QGCPalette::Light);
+    // QGCPalette::setGlobalTheme(indoorPalette()->rawValue().toBool() ? QGCPalette::Dark : QGCPalette::Light);
+    const uint themeValue = customColorTheme()->rawValue().isValid() ? customColorTheme()->rawValue().toUInt() : (indoorPalette()->rawValue().toBool() ? QGCPalette::Dark : QGCPalette::Light);
+    QGCPalette::setGlobalTheme(static_cast<QGCPalette::Theme>(themeValue));
 
     QSettings settings;
 
@@ -183,6 +185,15 @@ DECLARE_SETTINGSFACT_NO_FUNC(AppSettings, indoorPalette)
     return _indoorPaletteFact;
 }
 
+DECLARE_SETTINGSFACT_NO_FUNC(AppSettings, customColorTheme)
+{
+    if (!_customColorThemeFact) {
+        _customColorThemeFact = _createSettingsFact(customColorThemeName);
+        connect(_customColorThemeFact, &Fact::rawValueChanged, this, &AppSettings::_customColorThemeChanged);
+    }
+    return _customColorThemeFact;
+}
+
 DECLARE_SETTINGSFACT_NO_FUNC(AppSettings, qLocaleLanguage)
 {
     if (!_qLocaleLanguageFact) {
@@ -249,6 +260,11 @@ void AppSettings::_checkSavePathDirectories(void)
 void AppSettings::_indoorPaletteChanged(void)
 {
     QGCPalette::setGlobalTheme(indoorPalette()->rawValue().toBool() ? QGCPalette::Dark : QGCPalette::Light);
+}
+
+void AppSettings::_customColorThemeChanged(void)
+{
+    QGCPalette::setGlobalTheme(static_cast<QGCPalette::Theme>(customColorTheme()->rawValue().toUInt()));
 }
 
 QString AppSettings::missionSavePath(void)

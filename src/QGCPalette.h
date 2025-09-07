@@ -14,23 +14,27 @@
 #include <QColor>
 #include <QMap>
 
-#define DECLARE_QGC_COLOR(name, lightDisabled, lightEnabled, darkDisabled, darkEnabled) \
+#define DECLARE_QGC_COLOR(name, lightDisabled, lightEnabled, darkDisabled, darkEnabled, customDisabled, customEnabled) \
     { \
         PaletteColorInfo_t colorInfo = { \
             { QColor(lightDisabled), QColor(lightEnabled) }, \
-            { QColor(darkDisabled), QColor(darkEnabled) } \
+            { QColor(darkDisabled), QColor(darkEnabled) }, \
+            { QColor(customDisabled), QColor(customEnabled) } \
         }; \
         qgcApp()->toolbox()->corePlugin()->paletteOverride(#name, colorInfo); \
         _colorInfoMap[Light][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Light][ColorGroupEnabled]; \
         _colorInfoMap[Light][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Light][ColorGroupDisabled]; \
         _colorInfoMap[Dark][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Dark][ColorGroupEnabled]; \
         _colorInfoMap[Dark][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Dark][ColorGroupDisabled]; \
+        _colorInfoMap[Custom][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Custom][ColorGroupEnabled]; \
+        _colorInfoMap[Custom][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Custom][ColorGroupDisabled]; \
         _colors << #name; \
     }
 
 #define DECLARE_QGC_NONTHEMED_COLOR(name, disabledColor, enabledColor) \
     { \
         PaletteColorInfo_t colorInfo = { \
+            { QColor(disabledColor), QColor(enabledColor) }, \
             { QColor(disabledColor), QColor(enabledColor) }, \
             { QColor(disabledColor), QColor(enabledColor) } \
         }; \
@@ -39,12 +43,15 @@
         _colorInfoMap[Light][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Light][ColorGroupDisabled]; \
         _colorInfoMap[Dark][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Dark][ColorGroupEnabled]; \
         _colorInfoMap[Dark][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Dark][ColorGroupDisabled]; \
+        _colorInfoMap[Custom][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Custom][ColorGroupEnabled]; \
+        _colorInfoMap[Custom][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Custom][ColorGroupDisabled]; \
         _colors << #name; \
     }
 
 #define DECLARE_QGC_SINGLE_COLOR(name, color) \
     { \
         PaletteColorInfo_t colorInfo = { \
+            { QColor(color), QColor(color) }, \
             { QColor(color), QColor(color) }, \
             { QColor(color), QColor(color) } \
         }; \
@@ -53,6 +60,8 @@
         _colorInfoMap[Light][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Light][ColorGroupDisabled]; \
         _colorInfoMap[Dark][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Dark][ColorGroupEnabled]; \
         _colorInfoMap[Dark][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Dark][ColorGroupDisabled]; \
+        _colorInfoMap[Custom][ColorGroupEnabled][QStringLiteral(#name)] = colorInfo[Custom][ColorGroupEnabled]; \
+        _colorInfoMap[Custom][ColorGroupDisabled][QStringLiteral(#name)] = colorInfo[Custom][ColorGroupDisabled]; \
         _colors << #name; \
     }
 
@@ -102,6 +111,7 @@ public:
     enum Theme {
         Light = 0,
         Dark,
+        Custom,
         cMaxTheme
     };
     Q_ENUM(Theme)

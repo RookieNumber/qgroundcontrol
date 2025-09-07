@@ -165,6 +165,15 @@
     "default":     0
 },
 {
+    "name":             "customColorTheme",
+    "shortDesc":        "Application color scheme for Custom Project",
+    "longDesc":         "The color scheme for the user interface.",
+    "type":             "uint32",
+    "enumStrings":      "Outdoor,Indoor,Custom",
+    "enumValues":       "0,1,2",
+    "default":          0
+},
+{
     "name":             "showLargeCompass",
     "shortDesc": "Show large compass",
     "longDesc":  "Show large compass on instrument panel",

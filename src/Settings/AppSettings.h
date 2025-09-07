@@ -42,6 +42,7 @@ public:
     DEFINE_SETTINGFACT(virtualJoystickAutoCenterThrottle)
     DEFINE_SETTINGFACT(appFontPointSize)
     DEFINE_SETTINGFACT(indoorPalette)
+    DEFINE_SETTINGFACT(customColorTheme)
     DEFINE_SETTINGFACT(showLargeCompass)
     DEFINE_SETTINGFACT(savePath)
     DEFINE_SETTINGFACT(androidSaveToSDCard)
@@ -139,6 +140,7 @@ signals:
 
 private slots:
     void _indoorPaletteChanged();
+    void _customColorThemeChanged();
     void _checkSavePathDirectories();
     void _qLocaleLanguageChanged();
 
