@@ -3941,58 +3941,59 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/QmlControls/AltModeDialog.qml" line="20"/>
         <source>Select Altitude Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih mode ketinggian</translation>
     </message>
     <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="51"/>
-        <source>Relative To Launch</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="52"/>
-        <source>Specified altitudes are relative to launch position height.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="56"/>
-        <source>AMSL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="57"/>
-        <source>Specified altitudes are Above Mean Sea Level.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="61"/>
-        <source>Calculated Above Terrain</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="62"/>
-        <source>Specified altitudes are distance above terrain. Actual altitudes sent to vehicle are calculated from terrain data and sent as AMSL values.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="66"/>
-        <source>Terrain Frame</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="67"/>
-        <source>Specified altitudes are distance above terrain. The actual altitude flown is controlled by the vehicle either from terrain height maps being sent to vehicle or a distance sensor.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="71"/>
-        <source>Mixed Modes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/AltModeDialog.qml" line="72"/>
-        <source>The altitude mode can differ for each individual item.</source>
-        <translation type="unfinished"></translation>
-    </message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="51"/>
+    <source>Relative To Launch</source>
+    <translation>Relatif terhadap Titik Luncur</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="52"/>
+    <source>Specified altitudes are relative to launch position height.</source>
+    <translation>Ketinggian yang ditentukan relatif terhadap ketinggian titik luncur.</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="56"/>
+    <source>AMSL</source>
+    <translation>AMSL</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="57"/>
+    <source>Specified altitudes are Above Mean Sea Level.</source>
+    <translation>Ketinggian yang ditentukan adalah di atas permukaan laut rata-rata (AMSL).</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="61"/>
+    <source>Calculated Above Terrain</source>
+    <translation>Dihitung di Atas Medan</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="62"/>
+    <source>Specified altitudes are distance above terrain. Actual altitudes sent to vehicle are calculated from terrain data and sent as AMSL values.</source>
+    <translation>Ketinggian yang ditentukan adalah jarak di atas medan. Ketinggian aktual yang dikirim ke kendaraan dihitung dari data medan dan dikirim sebagai nilai AMSL.</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="66"/>
+    <source>Terrain Frame</source>
+    <translation>Kerangka Medan</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="67"/>
+    <source>Specified altitudes are distance above terrain. The actual altitude flown is controlled by the vehicle either from terrain height maps being sent to vehicle or a distance sensor.</source>
+    <translation>Ketinggian yang ditentukan adalah jarak di atas medan. Ketinggian aktual yang diterbangkan dikendalikan oleh kendaraan baik dari peta ketinggian medan yang dikirim ke kendaraan atau dari sensor jarak.</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="71"/>
+    <source>Mixed Modes</source>
+    <translation>Mode Campuran</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/AltModeDialog.qml" line="72"/>
+    <source>The altitude mode can differ for each individual item.</source>
+    <translation>Mode ketinggian dapat berbeda untuk setiap item individual.</translation>
+</message>
+
 </context>
 <context>
     <name>AppLogModel</name>
@@ -9603,24 +9604,24 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="240"/>
         <source>There are still active connections to vehicles. Are you sure you want to exit?</source>
-        <translation type="unfinished"></translation>
+        <translation>Masih ada koneksi aktif ke kendaraan. Apakah Anda yakin ingin keluar?</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="216"/>
         <source>You have a mission edit in progress which has not been saved/sent. If you close you will lose changes. Are you sure you want to close?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda memiliki misi yang sedang diedit dan belum disimpan/dikirim. Jika Anda menutup, perubahan akan hilang. Apakah Anda yakin ingin menutup?</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="159"/>
         <location filename="../src/ui/MainRootWindow.qml" line="319"/>
         <source>Analyze Tools</source>
-        <translation>Analisis</translation>
+        <translation>Alat Analisis</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="163"/>
         <location filename="../src/ui/MainRootWindow.qml" line="304"/>
         <source>Vehicle Setup</source>
-        <translation>Pengaturan Drone</translation>
+        <translation>Pengaturan Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="167"/>
@@ -9631,43 +9632,43 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="211"/>
         <source>Close %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutup %1</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="228"/>
         <source>You have pending parameter updates to a vehicle. If you close you will lose changes. Are you sure you want to close?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ada pembaruan parameter ke kendaraan yang tertunda. Jika Anda menutup, perubahan akan hilang. Apakah Anda yakin ingin menutup?</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="285"/>
         <source>Select Tool</source>
-        <translation>Menu Pilihan</translation>
+        <translation>Pilih Alat</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="354"/>
         <source>%1 Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versi %1</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="394"/>
         <source>Debug Touch Areas</source>
-        <translation type="unfinished"></translation>
+        <translation>Debug Area Sentuh</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="395"/>
         <source>Touch Area display toggled</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan Area Sentuh diaktifkan/dinonaktifkan</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="401"/>
         <location filename="../src/ui/MainRootWindow.qml" line="412"/>
         <source>Advanced Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Lanjutan</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="413"/>
         <source>Turn off Advanced Mode?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktifkan Mode Lanjutan?</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="486"/>
@@ -9677,13 +9678,14 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="587"/>
         <source>Vehicle Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/ui/MainRootWindow.qml" line="611"/>
         <source>Additional errors received</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan tambahan diterima</translation>
     </message>
+
 </context>
 <context>
     <name>MainStatusIndicator</name>
@@ -10437,85 +10439,86 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="42"/>
         <source>Firmware</source>
-        <translation type="unfinished"></translation>
+        <translation>Firmware</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="43"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="119"/>
         <source>Flight speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Terbang</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="146"/>
         <source>Above camera commands will take affect immediately upon mission start.</source>
-        <translation type="unfinished"></translation>
+        <translation>Perintah kamera di atas akan langsung berlaku saat misi dimulai.</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="239"/>
         <source>Launch Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Posisi Luncur</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="275"/>
         <source>Set To Map Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur ke Pusat Peta</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="157"/>
         <source>Vehicle Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Informasi Drone</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="68"/>
         <source>All Altitudes</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="103"/>
         <source>Initial Waypoint Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Waypoint Awal</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="208"/>
         <source>The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nilai kecepatan berikut digunakan untuk menghitung total waktu misi. Nilai ini tidak memengaruhi kecepatan terbang saat misi.</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="213"/>
         <source>Cruise speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Jelajah</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="224"/>
         <source>Hover speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Melayang</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="258"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/PlanView/MissionSettingsEditor.qml" line="270"/>
         <source>Actual position set by vehicle at flight time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Posisi aktual ditentukan oleh kendaraan saat penerbangan.</translation>
     </message>
+
 </context>
 <context>
     <name>MissionSettingsItem</name>
     <message>
         <location filename="../src/MissionManager/MissionSettingsItem.cc" line="292"/>
         <source>L</source>
-        <translation type="unfinished"></translation>
+        <translation>L</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/MissionSettingsItem.cc" line="292"/>
         <source>Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Titik Luncur</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/MissionSettingsItem.h" line="74"/>
@@ -13122,7 +13125,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="60"/>
         <source>Vehicle is currently armed. Do you want to upload the mission to the vehicle?</source>
-        <translation>Kendaraan saat ini dalam kondisi aktif (armed). Apakah Anda ingin mengunggah misi ke kendaraan?</translation>
+        <translation>Drone saat ini dalam kondisi aktif (armed). Apakah Anda ingin mengunggah misi ke kendaraan?</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="97"/>
@@ -13197,7 +13200,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="107"/>
         <source>Plan View - Vehicle Disconnected</source>
-        <translation>Tampilan Rencana - Kendaraan Terputus</translation>
+        <translation>Tampilan Rencana - Drone Terputus</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="107"/>
@@ -13413,7 +13416,7 @@ Klik &apos;Ok&apos; untuk tetap mengunggah Misi.</translation>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="1013"/>
         <source>Vehicle</source>
-        <translation>drone</translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="1033"/>
@@ -14402,63 +14405,63 @@ Klik &apos;Ok&apos; untuk tetap mengunggah Misi.</translation>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="159"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="162"/>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="171"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="165"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="168"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Terapkan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="174"/>
         <source>Save All</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan semua</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="177"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Iya</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="180"/>
         <source>Yes to All</source>
-        <translation type="unfinished"></translation>
+        <translation>Iya untuk semua</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="183"/>
         <source>Retry</source>
-        <translation type="unfinished"></translation>
+        <translation>Coba lagi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="186"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur ulang</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="189"/>
         <source>Restore to Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembalikan ke Default</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="192"/>
         <source>Ignore</source>
-        <translation type="unfinished"></translation>
+        <translation>Abaikann</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="198"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="201"/>
@@ -14468,17 +14471,17 @@ Klik &apos;Ok&apos; untuk tetap mengunggah Misi.</translation>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="204"/>
         <source>No</source>
-        <translation>No</translation>
+        <translation>Tidak</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="207"/>
         <source>No to All</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak untuk semua</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="210"/>
         <source>Abort</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan</translation>
     </message>
 </context>
 <context>
@@ -14492,55 +14495,56 @@ Klik &apos;Ok&apos; untuk tetap mengunggah Misi.</translation>
 <context>
     <name>QGroundControlQmlGlobal</name>
     <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="266"/>
-        <source>32 bit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="268"/>
-        <source>64 bit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="282"/>
-        <source>(AMSL)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="284"/>
-        <source>(CalcT)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="304"/>
-        <source>AMSL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="306"/>
-        <source>Calc Above Terrain</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="310"/>
-        <source>Mixed Modes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="286"/>
-        <source>(TerrF)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="302"/>
-        <source>Relative To Launch</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="308"/>
-        <source>Terrain Frame</source>
-        <translation type="unfinished"></translation>
-    </message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="266"/>
+    <source>32 bit</source>
+    <translation>32 bit</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="268"/>
+    <source>64 bit</source>
+    <translation>64 bit</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="282"/>
+    <source>(AMSL)</source>
+    <translation>(AMSL)</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="284"/>
+    <source>(CalcT)</source>
+    <translation>(HitungT)</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="286"/>
+    <source>(TerrF)</source>
+    <translation>(KerangkaMedan)</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="302"/>
+    <source>Relative To Launch</source>
+    <translation>Relatif terhadap Titik Luncur</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="304"/>
+    <source>AMSL</source>
+    <translation>AMSL</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="306"/>
+    <source>Calc Above Terrain</source>
+    <translation>Dihitung di Atas Medan</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="308"/>
+    <source>Terrain Frame</source>
+    <translation>Kerangka Medan</translation>
+</message>
+<message>
+    <location filename="../src/QmlControls/QGroundControlQmlGlobal.cc" line="310"/>
+    <source>Mixed Modes</source>
+    <translation>Mode Campuran</translation>
+</message>
+
 </context>
 <context>
     <name>QMap3D</name>
@@ -16588,20 +16592,21 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/MissionManager/StructureScanComplexItem.cc" line="235"/>
         <source>%1 does not support loading this complex mission item type: %2:%3</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 tidak mendukung pemuatan jenis item misi kompleks ini: %2:%3</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/StructureScanComplexItem.cc" line="241"/>
         <source>%1 version %2 not supported</source>
-        <translation type="unfinished"></translation>
+        <translation>Versi %2 dari %1 tidak didukung</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/StructureScanComplexItem.cc" line="26"/>
         <location filename="../src/MissionManager/StructureScanComplexItem.h" line="79"/>
         <location filename="../src/MissionManager/StructureScanComplexItem.h" line="80"/>
         <source>Structure Scan</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemindaian Struktur</translation>
     </message>
+
 </context>
 <context>
     <name>StructureScanEditor</name>

@@ -439,13 +439,13 @@
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_RETURN_TO_LAUNCH].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Return To Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali ke titik luncur</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_RETURN_TO_LAUNCH].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Send the vehicle back to the launch position.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim drone ke posisi peluncuran</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND].friendlyName, </extracomment>
