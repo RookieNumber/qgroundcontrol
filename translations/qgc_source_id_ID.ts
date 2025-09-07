@@ -13026,99 +13026,100 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="138"/>
         <source>Selected Waypoint</source>
-        <translation type="unfinished"></translation>
+        <translation>Waypoint Terpilih</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="143"/>
         <source>Alt diff:</source>
-        <translation type="unfinished"></translation>
+        <translation>Selisih Ketinggian:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="152"/>
         <source>Azimuth:</source>
-        <translation type="unfinished"></translation>
+        <translation>Azimut:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="197"/>
         <source>Distance:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="168"/>
         <source>Gradient:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kemiringan:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="61"/>
         <source> deg</source>
-        <translation type="unfinished"></translation>
+        <translation>°</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="66"/>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="67"/>
         <source>N/A</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="118"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Selesai</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="161"/>
         <source>Dist prev WP:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak WP Sebelumnya:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="177"/>
         <source>Heading:</source>
-        <translation type="unfinished"></translation>
+        <translation>Arah:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="192"/>
         <source>Total Mission</source>
-        <translation type="unfinished"></translation>
+        <translation>Total Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="206"/>
         <source>Max telem dist:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Telemetri Maks:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="213"/>
         <source>Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="229"/>
         <source>Battery</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="234"/>
         <source>Batteries required:</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai Dibutuhkan:</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="246"/>
         <source>Upload Required</source>
-        <translation type="unfinished"></translation>
+        <translation>Unggah Diperlukan</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="246"/>
         <source>Upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Unggah</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="308"/>
         <source>Syncing Mission</source>
-        <translation type="unfinished"></translation>
+        <translation>Menyinkronkan Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanToolBarIndicators.qml" line="316"/>
         <source>Click anywhere to hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik di mana saja untuk menyembunyikan</translation>
     </message>
+
 </context>
 <context>
     <name>PlanView</name>
