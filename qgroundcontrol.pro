@@ -1170,6 +1170,7 @@ APMFirmwarePlugin {
         src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.h \
         src/FirmwarePlugin/APM/ArduRoverFirmwarePlugin.h \
         src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.h \
+        src/AutoPilotPlugins/APM/APMSprayingComponent.h \
 
     SOURCES += \
         src/AutoPilotPlugins/APM/APMAirframeComponent.cc \
@@ -1198,6 +1199,7 @@ APMFirmwarePlugin {
         src/FirmwarePlugin/APM/ArduPlaneFirmwarePlugin.cc \
         src/FirmwarePlugin/APM/ArduRoverFirmwarePlugin.cc \
         src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc \
+        src/AutoPilotPlugins/APM/APMSprayingComponent.cc \
 }
 
 APMFirmwarePluginFactory {

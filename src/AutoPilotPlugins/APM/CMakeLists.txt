@@ -13,6 +13,8 @@ SOURCES
     APMNotSupported.qml
     APMPowerComponent.qml
     APMPowerComponentSummary.qml
+    APMSprayingComponent.qml
+    APMSprayingComponentSummary.qml
     APMRadioComponentSummary.qml
     APMRemoteSupportComponent.qml
     APMSafetyComponent.qml
@@ -32,5 +34,5 @@ SOURCES
     APMSubMotorComponent.qml
     APMTuningComponentCopter.qml
     APMTuningComponentSub.qml
-
+  
 )

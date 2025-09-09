@@ -32,6 +32,7 @@
 #include "APMRemoteSupportComponent.h"
 #include "QGCApplication.h"
 #include "ParameterManager.h"
+#include "APMSprayingComponent.h"
 
 #if !defined(NO_SERIAL_LINK) && !defined(__android__)
 #include <QSerialPortInfo>
@@ -47,6 +48,7 @@ APMAutoPilotPlugin::APMAutoPilotPlugin(Vehicle* vehicle, QObject* parent)
     , _subFrameComponent        (nullptr)
     , _flightModesComponent     (nullptr)
     , _powerComponent           (nullptr)
+    , _sprayingComponent        (nullptr)
     , _motorComponent           (nullptr)
     , _radioComponent           (nullptr)
     , _safetyComponent          (nullptr)
@@ -98,6 +100,10 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
             _powerComponent = new APMPowerComponent(_vehicle, this);
             _powerComponent->setupTriggerSignals();
             _components.append(QVariant::fromValue((VehicleComponent*)_powerComponent));
+
+            _sprayingComponent = new APMSprayingComponent(_vehicle, this);
+            _sprayingComponent->setupTriggerSignals();
+            _components.append(QVariant::fromValue((VehicleComponent*)_sprayingComponent));
 
             if (!_vehicle->sub() || (_vehicle->sub() && _vehicle->versionCompare(3, 5, 3) >= 0)) {
                 _motorComponent = new APMMotorComponent(_vehicle, this);

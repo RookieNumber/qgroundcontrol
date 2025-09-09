@@ -29,6 +29,7 @@ class ESP8266Component;
 class APMHeliComponent;
 class APMRemoteSupportComponent;
 class APMFollowComponent;
+class APMSprayingComponent;
 
 /// This is the APM specific implementation of the AutoPilot class.
 class APMAutoPilotPlugin : public AutoPilotPlugin
@@ -59,6 +60,7 @@ protected:
     ESP8266Component*           _esp8266Component;
     APMHeliComponent*           _heliComponent;
     APMRemoteSupportComponent*  _apmRemoteSupportComponent;
+    APMSprayingComponent*       _sprayingComponent;
 #if 0
     // Follow me not ready for Stable
     APMFollowComponent*         _followComponent;
