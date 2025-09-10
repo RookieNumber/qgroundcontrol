@@ -111,4 +111,7 @@
     <qresource prefix="/gimbal">
         <file alias="payload.svg">resources/gimbal/payload.svg</file>
     </qresource>
+    <qresource prefix="/qmlimages">
+        <file alias="liquid.svg">src/ui/toolbar/Images/liquid.svg</file>
+    </qresource>
 </RCC>

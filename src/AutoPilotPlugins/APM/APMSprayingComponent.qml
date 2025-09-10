@@ -33,6 +33,9 @@ SetupPage {
             id:         flowLayout
             width:      availableWidth
             spacing:    _margins
+            
+            // change _tankCapacity to BATT2_CAPACITY
+            // change _flowRate BATT2_MONITOR
 
             property Fact _sprayEnable:           controller.getParameterFact(-1, "SPRAY_ENABLE")
             property Fact _tankCapacity:          controller.getParameterFact(-1, "SPRAY_TANK_CAPACITY", false)
