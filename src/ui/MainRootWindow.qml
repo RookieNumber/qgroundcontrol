@@ -285,6 +285,41 @@ ApplicationWindow {
             title:      qsTr("Select Tool")
             buttons:    StandardButton.Close
 
+            // Add smooth transitions
+            enter: Transition {
+                NumberAnimation { 
+                    property: "opacity"; 
+                    from: 0.0; 
+                    to: 1.0; 
+                    duration: 200; 
+                    easing.type: Easing.OutCubic 
+                }
+                NumberAnimation { 
+                    property: "scale"; 
+                    from: 0.8; 
+                    to: 1.0; 
+                    duration: 200; 
+                    easing.type: Easing.OutBack 
+                }
+            }
+            
+            exit: Transition {
+                NumberAnimation { 
+                    property: "opacity"; 
+                    from: 1.0; 
+                    to: 0.0; 
+                    duration: 150; 
+                    easing.type: Easing.InCubic 
+                }
+                NumberAnimation { 
+                    property: "scale"; 
+                    from: 1.0; 
+                    to: 0.8; 
+                    duration: 150; 
+                    easing.type: Easing.InBack 
+                }
+            }
+
             property real _toolButtonHeight:    ScreenTools.defaultFontPixelHeight * 3
             property real _margins:             ScreenTools.defaultFontPixelWidth
 
