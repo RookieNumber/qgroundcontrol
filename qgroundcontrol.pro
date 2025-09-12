@@ -27,7 +27,7 @@ message(Qt version $$[QT_VERSION])
 
 include(QGCCommon.pri)
 
-TARGET   = QGroundControl
+TARGET   = CustomGroundControl
 TEMPLATE = app
 QGCROOT  = $$PWD
 
@@ -52,7 +52,7 @@ LinuxBuild {
 }
 
 WindowsBuild {
-    RC_ICONS = resources/icons/qgroundcontrol.ico
+    RC_ICONS = resources/icons/customIcon.ico
     CONFIG += resources_big
 }
 
@@ -60,11 +60,11 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "QGroundControl"
-QGC_ORG_NAME        = "QGroundControl.org"
-QGC_ORG_DOMAIN      = "org.qgroundcontrol"
-QGC_APP_DESCRIPTION = "Open source ground control app provided by QGroundControl dev team"
-QGC_APP_COPYRIGHT   = "Copyright (C) 2019 QGroundControl Development Team. All rights reserved."
+QGC_APP_NAME        = "CustomGroundControl"
+QGC_ORG_NAME        = "CustomGroundControl.org"
+QGC_ORG_DOMAIN      = "org.customgroundcontrol"
+QGC_APP_DESCRIPTION = "customgroundcontrol by client name"
+QGC_APP_COPYRIGHT   = "Copyright (C) 2025 CustomGroundControl Development Team. All rights reserved."
 
 WindowsBuild {
     QGC_INSTALLER_SCRIPT        = "$$SOURCE_DIR\\deploy\\windows\\nullsoft_installer.nsi"
@@ -356,9 +356,9 @@ CustomBuild {
         RESOURCES += $$PWD/resources/InstrumentValueIcons/InstrumentValueIcons.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"QGroundControl\\\"\"
-    DEFINES += QGC_ORG_NAME=\"\\\"QGroundControl.org\\\"\"
-    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.qgroundcontrol\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"CustomGroundControl\\\"\"
+    DEFINES += QGC_ORG_NAME=\"\\\"CustomGroundControl.org\\\"\"
+    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.customgroundcontrol\\\"\"
     RESOURCES += \
         $$PWD/qgroundcontrol.qrc \
         $$PWD/qgcresources.qrc \
