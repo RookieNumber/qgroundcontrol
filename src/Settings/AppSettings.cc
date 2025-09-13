@@ -31,6 +31,7 @@ QList<QLocale::Language> AppSettings::_rgReleaseLanguages = {
     QLocale::Korean,
     QLocale::Portuguese,
     QLocale::Russian,
+    QLocale::Indonesian
 };
 
 // Partial languages are 40%+ complete
@@ -59,7 +60,8 @@ AppSettings::LanguageInfo_t AppSettings::_rgLanguageInfo[] = {
     { QLocale::Russian,         "Pусский (Russian)" },
     { QLocale::Spanish,         "Español (Spanish)" },
     { QLocale::Swedish,         "Svenska (Swedish)" },
-    { QLocale::Turkish,         "Türk (Turkish)" }
+    { QLocale::Turkish,         "Türk (Turkish)" },
+    { QLocale::Indonesian,      "Bahasa Indonesia (Indonesian)" }
 };
 
 DECLARE_SETTINGGROUP(App, "")
