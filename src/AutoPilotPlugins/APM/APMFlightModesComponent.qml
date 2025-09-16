@@ -23,6 +23,16 @@ SetupPage {
     id:             flightModePage
     pageComponent:  flightModePageComponent
 
+    // Password gate
+    property bool _authorized: false
+    PasswordAuthManager { id: _pageAuth }
+    Component.onCompleted: {
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
+
     readonly property string _modeChannelParam: controller.modeChannelParam
     readonly property string _modeParamPrefix:  controller.modeParamPrefix
     readonly property var    _pwmStrings:       [ "PWM 0 - 1230", "PWM 1231 - 1360", "PWM 1361 - 1490", "PWM 1491 - 1620", "PWM 1621 - 1749", "PWM 1750 +"]
@@ -49,6 +59,7 @@ SetupPage {
             id:         flowLayout
             width:      availableWidth
             spacing:     _margins
+            visible:    flightModePage._authorized
 
             Column {
                 spacing: _margins
@@ -227,4 +238,35 @@ SetupPage {
             } // Column - Channel options
         } // Flow
     } // Component - flightModePageComponent
+
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:       parent
+        color:              qgcPal.window
+        opacity:            0.98
+        visible:            !flightModePage._authorized
+        z:                  1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+            QGCLabel {
+                text: qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+            QGCButton {
+                text: qsTr("Unlock")
+                primary: true
+                onClicked: enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: flightModePage._authorized = true
+        }
+    }
 } // SetupPage

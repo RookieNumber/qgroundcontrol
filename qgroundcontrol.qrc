@@ -175,6 +175,8 @@
         <file alias="QGroundControl/Controls/RCChannelMonitor.qml">src/QmlControls/RCChannelMonitor.qml</file>
         <file alias="QGroundControl/Controls/RCToParamDialog.qml">src/QmlControls/RCToParamDialog.qml</file>
         <file alias="QGroundControl/Controls/RoundButton.qml">src/QmlControls/RoundButton.qml</file>
+        <file alias="QGroundControl/Controls/SetPasswordDialog.qml">src/QmlControls/SetPasswordDialog.qml</file>
+        <file alias="QGroundControl/Controls/EnterPasswordDialog.qml">src/QmlControls/EnterPasswordDialog.qml</file>
         <file alias="QGroundControl/Controls/SectionHeader.qml">src/QmlControls/SectionHeader.qml</file>
         <file alias="QGroundControl/Controls/SetupPage.qml">src/AutoPilotPlugins/Common/SetupPage.qml</file>
         <file alias="QGroundControl/Controls/SignalStrength.qml">src/ui/toolbar/SignalStrength.qml</file>

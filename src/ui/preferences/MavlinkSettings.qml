@@ -21,11 +21,25 @@ import QGroundControl.Controls              1.0
 import QGroundControl.ScreenTools           1.0
 import QGroundControl.MultiVehicleManager   1.0
 import QGroundControl.Palette               1.0
+import QGroundControl.Controllers           1.0
 
 Rectangle {
     id:             __mavlinkRoot
     color:          qgcPal.window
     anchors.fill:   parent
+
+    // Gate access behind password
+    property bool _authorized: false
+
+    PasswordAuthManager { id: _pageAuth }
+
+    Component.onCompleted: {
+        // If no password set, authenticate("") returns true and page opens directly
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
 
     property real _labelWidth:          ScreenTools.defaultFontPixelWidth * 28
     property real _valueWidth:          ScreenTools.defaultFontPixelWidth * 24
@@ -93,6 +107,7 @@ Rectangle {
         contentHeight:      settingsColumn.height
         contentWidth:       settingsColumn.width
         flickableDirection: Flickable.VerticalFlick
+        visible:            _authorized
 
         Column {
             id:                 settingsColumn
@@ -841,6 +856,39 @@ Rectangle {
                     }
                 }
             }
+        }
+    }
+
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:           parent
+        color:                  qgcPal.window
+        opacity:                0.98
+        visible:                !_authorized
+        z:                      1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+
+            QGCLabel {
+                text:           qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+
+            QGCButton {
+                text:       qsTr("Unlock")
+                primary:    true
+                onClicked:  enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: __mavlinkRoot._authorized = true
         }
     }
 }

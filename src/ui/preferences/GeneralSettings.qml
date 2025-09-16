@@ -699,6 +699,11 @@ Rectangle {
                                     property Fact _checkInternet: QGroundControl.settingsManager.appSettings.checkInternet
                                 }
 
+                                QGCButton {
+                                    text:       qsTr("Set Application Password")
+                                    onClicked:  setPasswordDialogComponent.createObject(mainWindow).open()
+                                }
+
                                 QGCCheckBox {
                                     id:         clearCheck
                                     text:       qsTr("Clear all settings on next start")
@@ -1208,6 +1213,11 @@ Rectangle {
                         Layout.alignment:   Qt.AlignHCenter
                     }
                 } // settingsColumn
+
+                Component {
+                    id: setPasswordDialogComponent
+                    SetPasswordDialog { }
+                }
             }
     }
 }
