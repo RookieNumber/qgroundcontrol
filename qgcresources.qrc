@@ -59,6 +59,8 @@
         <file alias="GripperRelease.svg">resources/GripperRelease.svg</file>
         <file alias="GripperGrab.svg">resources/GripperGrab.svg</file>
         <file>resources/icons/qgroundcontrol.ico</file>
+        <file>resources/icons/customIcon.ico</file>
+        <file alias="customIcon.svg">resources/icons/customIcon.svg</file>
     </qresource>
     <qresource prefix="/res/firmware">
         <file alias="3drradio.png">resources/firmware/3drradio.png</file>
