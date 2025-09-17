@@ -32,6 +32,7 @@ Item {
     property var actionList
     property var guidedValueSlider
     property var orbitMapCircle
+    property bool _hideGuidedValueSlider: QGroundControl.settingsManager && QGroundControl.settingsManager.appSettings ? QGroundControl.settingsManager.appSettings.hideGuidedValueSlider.rawValue : false
 
     readonly property string emergencyStopTitle:            qsTr("EMERGENCY STOP")
     readonly property string armTitle:                      qsTr("Arm")
@@ -406,7 +407,7 @@ Item {
             confirmDialog.title = takeoffTitle
             confirmDialog.message = takeoffMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showTakeoff })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_hideGuidedValueSlider
             break;
         case actionStartMission:
             showImmediate = false
@@ -451,7 +452,7 @@ Item {
             confirmDialog.title = changeAltTitle
             confirmDialog.message = changeAltMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showChangeAlt })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_hideGuidedValueSlider
             break;
         case actionGoto:
             confirmDialog.title = gotoTitle
@@ -466,7 +467,7 @@ Item {
             confirmDialog.title = orbitTitle
             confirmDialog.message = orbitMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showOrbit })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_hideGuidedValueSlider
             break;
         case actionLandAbort:
             confirmDialog.title = landAbortTitle
@@ -477,7 +478,7 @@ Item {
             confirmDialog.title = pauseTitle
             confirmDialog.message = pauseMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showPause })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_hideGuidedValueSlider
             break;
         case actionMVPause:
             confirmDialog.title = mvPauseTitle

@@ -706,6 +706,13 @@ Rectangle {
                                     property Fact _hideCriticalVehicleSettings: QGroundControl.settingsManager.appSettings.hideCriticalVehicleSettings
                                 }
 
+                                FactCheckBox {
+                                    text:        qsTr("hide guided value slider")
+                                    fact:        _hideGuidedValueSlider
+                                    visible:     _hideGuidedValueSlider.visible
+                                    property Fact _hideGuidedValueSlider: QGroundControl.settingsManager.appSettings.hideGuidedValueSlider
+                                }
+
                                 QGCButton {
                                     text:       qsTr("Set Application Password")
                                     onClicked:  setPasswordDialogComponent.createObject(mainWindow).open()

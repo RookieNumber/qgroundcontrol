@@ -115,6 +115,13 @@
     "default":     false
 },
 {
+    "name":             "hideGuidedValueSlider",
+    "shortDesc": "Hide guided value slider",
+    "longDesc":  "If enabled, hides guided value slider on the Fly view.",
+    "type":             "bool",
+    "default":     false
+},
+{
     "name":             "virtualJoystick",
     "shortDesc": "Show virtual joystick",
     "longDesc":  "If this option is enabled the virtual joystick will be shown on the Fly view.",
