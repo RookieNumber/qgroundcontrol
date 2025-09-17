@@ -38,6 +38,7 @@ public:
     DEFINE_SETTINGFACT(telemetrySaveNotArmed)
     DEFINE_SETTINGFACT(audioMuted)
     DEFINE_SETTINGFACT(checkInternet)
+    DEFINE_SETTINGFACT(hideCriticalVehicleSettings)
     DEFINE_SETTINGFACT(virtualJoystick)
     DEFINE_SETTINGFACT(virtualJoystickAutoCenterThrottle)
     DEFINE_SETTINGFACT(appFontPointSize)

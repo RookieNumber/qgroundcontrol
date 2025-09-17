@@ -699,6 +699,13 @@ Rectangle {
                                     property Fact _checkInternet: QGroundControl.settingsManager.appSettings.checkInternet
                                 }
 
+                                FactCheckBox {
+                                    text:        qsTr("hide critical vehicle settings")
+                                    fact:        _hideCriticalVehicleSettings
+                                    visible:     _hideCriticalVehicleSettings.visible
+                                    property Fact _hideCriticalVehicleSettings: QGroundControl.settingsManager.appSettings.hideCriticalVehicleSettings
+                                }
+
                                 QGCButton {
                                     text:       qsTr("Set Application Password")
                                     onClicked:  setPasswordDialogComponent.createObject(mainWindow).open()

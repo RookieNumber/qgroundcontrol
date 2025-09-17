@@ -239,7 +239,7 @@ Rectangle {
                 imageResource:      "/qmlimages/FirmwareUpgradeIcon.png"
                 setupIndicator:     false
                 exclusiveGroup:     setupButtonGroup
-                visible:            !ScreenTools.isMobile && _corePlugin.options.showFirmwareUpgrade
+                visible:            !ScreenTools.isMobile && _corePlugin.options.showFirmwareUpgrade && !QGroundControl.settingsManager.appSettings.hideCriticalVehicleSettings.rawValue
                 text:               qsTr("Firmware")
                 Layout.fillWidth:   true
 
@@ -293,7 +293,7 @@ Rectangle {
                 exclusiveGroup:     setupButtonGroup
                 visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
                                     !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
-                                    _corePlugin.showAdvancedUI
+                                    _corePlugin.showAdvancedUI && !QGroundControl.settingsManager.appSettings.hideCriticalVehicleSettings.rawValue
                 text:               qsTr("Parameters")
                 Layout.fillWidth:   true
                 onClicked:          showPanel(this, "SetupParameterEditor.qml")

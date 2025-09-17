@@ -108,6 +108,13 @@
     "default":     true
 },
 {
+    "name":             "hideCriticalVehicleSettings",
+    "shortDesc": "Hide critical vehicle settings",
+    "longDesc":  "If enabled, hides critical vehicle setup pages (Power, safety, parameter, motor, camera, lights, subframe, esp8266, remote support) for ArduPilot vehicles.",
+    "type":             "bool",
+    "default":     false
+},
+{
     "name":             "virtualJoystick",
     "shortDesc": "Show virtual joystick",
     "longDesc":  "If this option is enabled the virtual joystick will be shown on the Fly view.",
