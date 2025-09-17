@@ -20,6 +20,10 @@
 #include "StructureScanPlanCreator.h"
 #include "CorridorScanPlanCreator.h"
 #include "BlankPlanCreator.h"
+#include "SprayingPlanCreator.h"
+#include "StructureScanPlanCreator.h"
+#include "CorridorScanPlanCreator.h"
+#include "BlankPlanCreator.h"
 
 #include <QDomDocument>
 #include <QJsonDocument>
@@ -621,15 +625,19 @@ void PlanMasterController::_updatePlanCreatorsList(void)
             _planCreators->append(new BlankPlanCreator(this, this));
             _planCreators->append(new SurveyPlanCreator(this, this));
             _planCreators->append(new CorridorScanPlanCreator(this, this));
+            _planCreators->append(new SprayingPlanCreator(this, this));
             emit planCreatorsChanged(_planCreators);
         }
 
         if (_managerVehicle->fixedWing()) {
-            if (_planCreators->count() == 4) {
+            // Base list now includes: Blank, Survey, Corridor, Spraying (count == 4)
+            // If StructureScan was added previously (non-fixedWing), count will be 5 → remove last
+            if (_planCreators->count() == 5) {
                 _planCreators->removeAt(_planCreators->count() - 1);
             }
         } else {
-            if (_planCreators->count() != 4) {
+            // Ensure StructureScan is present as 5th item
+            if (_planCreators->count() != 5) {
                 _planCreators->append(new StructureScanPlanCreator(this, this));
             }
         }

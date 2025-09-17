@@ -26,6 +26,8 @@ add_custom_target(PlanViewQml
 		StructureScanMapVisual.qml
 		SurveyItemEditor.qml
 		SurveyMapVisual.qml
+		SprayingItemEditor.qml
+		SprayingMapVisual.qml
 		TakeoffItemMapVisual.qml
 		TerrainStatus.qml
 		TransectStyleComplexItemStats.qml

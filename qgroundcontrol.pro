@@ -634,6 +634,8 @@ HEADERS += \
     src/MissionManager/StructureScanPlanCreator.h \
     src/MissionManager/SurveyComplexItem.h \
     src/MissionManager/SurveyPlanCreator.h \
+    src/MissionManager/SprayingComplexItem.h \
+    src/MissionManager/SprayingPlanCreator.h \
     src/MissionManager/TakeoffMissionItem.h \
     src/MissionManager/TransectStyleComplexItem.h \
     src/MissionManager/VisualMissionItem.h \
@@ -898,6 +900,8 @@ SOURCES += \
     src/MissionManager/StructureScanPlanCreator.cc \
     src/MissionManager/SurveyComplexItem.cc \
     src/MissionManager/SurveyPlanCreator.cc \
+    src/MissionManager/SprayingComplexItem.cc \
+    src/MissionManager/SprayingPlanCreator.cc \
     src/MissionManager/TakeoffMissionItem.cc \
     src/MissionManager/TransectStyleComplexItem.cc \
     src/MissionManager/VisualMissionItem.cc \

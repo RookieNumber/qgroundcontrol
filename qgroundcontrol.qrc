@@ -183,6 +183,7 @@
         <file alias="QGroundControl/Controls/SimpleItemMapVisual.qml">src/PlanView/SimpleItemMapVisual.qml</file>
         <file alias="QGroundControl/Controls/SliderSwitch.qml">src/QmlControls/SliderSwitch.qml</file>
         <file alias="QGroundControl/Controls/StructureScanMapVisual.qml">src/PlanView/StructureScanMapVisual.qml</file>
+        <file alias="QGroundControl/Controls/SprayingMapVisual.qml">src/PlanView/SprayingMapVisual.qml</file>
         <file alias="QGroundControl/Controls/SubMenuButton.qml">src/QmlControls/SubMenuButton.qml</file>
         <file alias="QGroundControl/Controls/SurveyMapVisual.qml">src/PlanView/SurveyMapVisual.qml</file>
         <file alias="QGroundControl/Controls/TerrainStatus.qml">src/PlanView/TerrainStatus.qml</file>
@@ -281,6 +282,7 @@
         <file alias="SetupView.qml">src/VehicleSetup/SetupView.qml</file>
         <file alias="SimpleItemEditor.qml">src/PlanView/SimpleItemEditor.qml</file>
         <file alias="StructureScanEditor.qml">src/PlanView/StructureScanEditor.qml</file>
+        <file alias="SprayingItemEditor.qml">src/PlanView/SprayingItemEditor.qml</file>
         <file alias="SurveyItemEditor.qml">src/PlanView/SurveyItemEditor.qml</file>
         <file alias="SyslinkComponent.qml">src/AutoPilotPlugins/Common/SyslinkComponent.qml</file>
         <file alias="TaisyncSettings.qml">src/Taisync/TaisyncSettings.qml</file>

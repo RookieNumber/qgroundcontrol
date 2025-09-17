@@ -48,6 +48,8 @@ if(BUILD_TESTING)
 		TransectStyleComplexItemTest.h
 		VisualMissionItemTest.cc
 		VisualMissionItemTest.h
+		SprayingComplexItem.cc
+		SprayingComplexItem.h
 	)
 endif()
 
@@ -125,6 +127,10 @@ add_library(MissionManager
 	StructureScanPlanCreator.h
 	SurveyComplexItem.cc
 	SurveyComplexItem.h
+	SprayingComplexItem.cc
+	SprayingComplexItem.h
+	SprayingPlanCreator.cc
+	SprayingPlanCreator.h
 	SurveyPlanCreator.cc
 	SurveyPlanCreator.h
 	TakeoffMissionItem.cc
