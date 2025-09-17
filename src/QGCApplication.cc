@@ -649,15 +649,14 @@ void QGCApplication::saveTelemetryLogOnMainThread(QString tempLogfile)
         QString saveDirPath = _toolbox->settingsManager()->appSettings()->telemetrySavePath();
         QDir saveDir(saveDirPath);
 
-        QString nameFormat("%1%2.%3");
-        QString dtFormat("yyyy-MM-dd hh-mm-ss");
+        const QString baseName = QStringLiteral("FROGS");
+        const QString dateStr  = QDate::currentDate().toString("yyyyMMdd");
+        const QString ext      = QStringLiteral("log");
 
         int tryIndex = 1;
-        QString saveFileName = nameFormat.arg(
-            QDateTime::currentDateTime().toString(dtFormat)).arg(QStringLiteral("")).arg(toolbox()->settingsManager()->appSettings()->telemetryFileExtension);
+        QString saveFileName = QString("%1-%2.%3").arg(baseName, dateStr, ext);
         while (saveDir.exists(saveFileName)) {
-            saveFileName = nameFormat.arg(
-                QDateTime::currentDateTime().toString(dtFormat)).arg(QStringLiteral(".%1").arg(tryIndex++)).arg(toolbox()->settingsManager()->appSettings()->telemetryFileExtension);
+            saveFileName = QString("%1-%2-%3.%4").arg(baseName, dateStr).arg(tryIndex++).arg(ext);
         }
         QString saveFilePath = saveDir.absoluteFilePath(saveFileName);
 
