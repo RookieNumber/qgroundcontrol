@@ -104,11 +104,9 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
                 
             }
 
-            if (!hideCritical) {
-                _sensorsComponent = new APMSensorsComponent(_vehicle, this);
-                _sensorsComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue((VehicleComponent*)_sensorsComponent));
-            }
+            _sensorsComponent = new APMSensorsComponent(_vehicle, this);
+            _sensorsComponent->setupTriggerSignals();
+            _components.append(QVariant::fromValue((VehicleComponent*)_sensorsComponent));
 
             if (!hideCritical) {
                 _powerComponent = new APMPowerComponent(_vehicle, this);

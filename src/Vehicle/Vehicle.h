@@ -1228,7 +1228,7 @@ private:
 
     QList<SendMessageMultipleInfo_t> _sendMessageMultipleList;    ///< List of messages being sent multiple times
 
-    static const int _sendMessageMultipleRetries = 5;
+    static const int _sendMessageMultipleRetries = 10;
     static const int _sendMessageMultipleIntraMessageDelay = 500;
 
     QTimer  _sendMultipleTimer;

@@ -10,6 +10,124 @@
     </message>
 </context>
 <context>
+    <name>APMSprayingComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.cc" line="16"/>
+        <source>Spraying</source>
+        <translation>Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.cc" line="27"/>
+        <source>Spraying system configuration for flow rate control and tank level monitoring.</source>
+        <translation>Pengaturan sistem penyemprotan, kontrol laju penyemprotan dan monitoring tanki</translation>
+    </message>
+    <message>
+    <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="63"/>
+    <source>Spraying System</source>
+    <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="82"/>
+        <source>Spraying System:</source>
+        <translation>Sistem Penyemprotan:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="92"/>
+        <source>Enable or disable the spraying system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="107"/>
+        <source>Tank Configuration</source>
+        <translation>Konfigurasi Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="128"/>
+        <source>Tank Capacity:</source>
+        <translation>Kapasitas Tangki:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="135"/>
+        <source>Low Tank Warning:</source>
+        <translation>Peringatan Tangki Rendah:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="142"/>
+        <source>Critical Tank Level:</source>
+        <translation>Level Tangki Kritis:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="151"/>
+        <source>Configure tank capacity and warning levels for liquid monitoring</source>
+        <translation>Konfigurasi kapasitas tangki dan level peringatan untuk pemantauan cairan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="166"/>
+        <source>Flow Control</source>
+        <translation>Kontrol Aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="187"/>
+        <source>Flow Rate:</source>
+        <translation>Laju Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="194"/>
+        <source>Minimum Flow Rate:</source>
+        <translation>Laju Aliran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="201"/>
+        <source>Flow Monitor:</source>
+        <translation>Monitor Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="212"/>
+        <source>Configure flow rate settings and monitoring</source>
+        <translation>Konfigurasi pengaturan laju aliran dan pemantauan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="227"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="244"/>
+        <source>Hide Advanced</source>
+        <translation>Sembunyikan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="244"/>
+        <source>Show Advanced</source>
+        <translation>Tampilkan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="254"/>
+        <source>Flow Sensor Pin:</source>
+        <translation>Pin Sensor Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="263"/>
+        <source>Pump Control Pin:</source>
+        <translation>Pin Kontrol Pompa:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="272"/>
+        <source>Flow Multiplier:</source>
+        <translation>Pengali Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="279"/>
+        <source>Flow Offset:</source>
+        <translation>Offset Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="288"/>
+        <source>Advanced hardware configuration for flow sensors and pump control</source>
+        <translation>Konfigurasi perangkat keras lanjutan untuk sensor aliran dan kontrol pompa</translation>
+    </message>
+</context>
+<context>
     <name>APMAirframeComponent</name>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMAirframeComponent.qml" line="71"/>
@@ -2599,61 +2717,61 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="41"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="41"/>
         <source>If mounted in the direction of flight, select None.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika dipasang sesuai arah penerbangan, pilih Tidak Ada.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="42"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="42"/>
         <source>Before calibrating make sure rotation settings are correct. </source>
-        <translation type="unfinished"></translation>
+        <translation>Sebelum melakukan kalibrasi pastikan pengaturan rotasi sudah benar.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="43"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="43"/>
         <source>If the compass or GPS module is mounted in flight direction, leave the default value (None)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika kompas atau modul GPS dipasang sesuai arah penerbangan, biarkan nilai default (Tidak Ada).</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="45"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="45"/>
         <source>For Compass calibration you will need to rotate your vehicle through a number of positions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Kompas Anda perlu memutar kendaraan ke beberapa posisi.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="46"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="46"/>
         <source>For Gyroscope calibration you will need to place your vehicle on a surface and leave it still.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Giroskop Anda perlu menempatkan kendaraan di permukaan yang datar dan membiarkannya diam.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="47"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="47"/>
         <source>For Accelerometer calibration you will need to place your vehicle on all six sides on a perfectly level surface and hold it still in each orientation for a few seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Akselerometer Anda perlu meletakkan kendaraan pada enam sisi di permukaan yang rata sempurna dan menahannya diam pada setiap orientasi selama beberapa detik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="48"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="48"/>
         <source>To level the horizon you need to place the vehicle in its level flight position and press OK.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk meratakan horizon Anda perlu menempatkan kendaraan pada posisi terbang datar lalu tekan OK.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="50"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="50"/>
         <source>Start the individual calibration steps by clicking one of the buttons to the left.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai langkah kalibrasi satu per satu dengan mengklik salah satu tombol di sebelah kiri.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="58"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="58"/>
         <source>The calibration for Compass %1 appears to be poor. </source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi untuk Kompas %1 tampaknya kurang baik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="59"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="59"/>
         <source>Check the compass position within your vehicle and re-do the calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Periksa posisi kompas di dalam kendaraan Anda lalu lakukan kalibrasi ulang.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="100"/>
@@ -2661,13 +2779,13 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="100"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="683"/>
         <source>Calibrate Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="106"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="106"/>
         <source>Calibrate Accelerometer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Akselerometer</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="112"/>
@@ -2675,13 +2793,13 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="112"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="740"/>
         <source>Sensor Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Sensor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="189"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="189"/>
         <source>Calibration Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan Kalibrasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="273"/>
@@ -2689,85 +2807,79 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="273"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="312"/>
         <source>Calibration complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi selesai</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="190"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="190"/>
         <source>Waiting for Vehicle to response to Cancel. This may take a few seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Menunggu respons Kendaraan untuk membatalkan. Ini mungkin memakan waktu beberapa detik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="128"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="128"/>
         <source>(primary</source>
-        <translation type="unfinished"></translation>
+        <translation>(utama</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="128"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="128"/>
         <source>(secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>(sekunder</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="361"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="361"/>
         <source>Use Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan Kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="289"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="289"/>
-        <source>Shown in the indicator bars is the quality of the calibration for each compass.
-
-</source>
-        <translation type="unfinished"></translation>
+        <source>Shown in the indicator bars is the quality of the calibration for each compass.</source>
+        <translation>Kualitas kalibrasi untuk setiap kompas ditampilkan pada bilah indikator.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="124"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="124"/>
         <source>Compass %1 </source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas %1 </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="137"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="137"/>
         <source>, </source>
-        <translation type="unfinished"></translation>
+        <translation>, </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="139"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="139"/>
         <source>external</source>
-        <translation type="unfinished"></translation>
+        <translation>eksternal</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="139"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="139"/>
         <source>internal</source>
-        <translation type="unfinished"></translation>
+        <translation>internal</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="290"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="290"/>
-        <source>- Green indicates a well functioning compass.
-</source>
-        <translation type="unfinished"></translation>
+        <source>- Green indicates a well functioning compass.</source>
+        <translation>- Hijau menunjukkan kompas berfungsi dengan baik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="291"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="291"/>
-        <source>- Yellow indicates a questionable compass or calibration.
-</source>
-        <translation type="unfinished"></translation>
+        <source>- Yellow indicates a questionable compass or calibration.</source>
+        <translation>- Kuning menunjukkan kompas atau kalibrasi yang meragukan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="292"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="292"/>
-        <source>- Red indicates a compass which should not be used.
-
-</source>
-        <translation type="unfinished"></translation>
+        <source>- Red indicates a compass which should not be used.</source>
+        <translation>- Merah menunjukkan kompas yang tidak boleh digunakan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="293"/>
@@ -2775,7 +2887,7 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="293"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="322"/>
         <source>YOU MUST REBOOT YOUR VEHICLE AFTER EACH CALIBRATION.</source>
-        <translation type="unfinished"></translation>
+        <translation>ANDA HARUS ME-RESTART KENDARAAN SETELAH SETIAP KALIBRASI.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="297"/>
@@ -2783,261 +2895,262 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="297"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="326"/>
         <source>Reboot Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Restart Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <source>Priority 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioritas 1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <source>Priority 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioritas 2</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <source>Priority 3</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioritas 3</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="367"/>
         <source>Not Set</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Diset</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="400"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="400"/>
         <source>Orientation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientasi:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="460"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="460"/>
         <source>Autopilot Rotation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rotasi Autopilot:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="477"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="477"/>
         <source>Simple accelerometer calibration is less precise but allows calibrating without rotating the vehicle. Check this if you have a large/heavy vehicle.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi akselerometer sederhana kurang presisi tetapi memungkinkan kalibrasi tanpa memutar kendaraan. Pilih ini jika Anda memiliki kendaraan besar/berat.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="495"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="495"/>
         <source>Magnetic Declination</source>
-        <translation type="unfinished"></translation>
+        <translation>Deklination Magnetik</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="507"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="507"/>
         <source>Manual Magnetic Declination</source>
-        <translation type="unfinished"></translation>
+        <translation>Deklination Magnetik Manual</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="529"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="529"/>
         <source>Fast compass calibration given vehicle position and yaw. This </source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi kompas cepat berdasarkan posisi dan yaw kendaraan. Ini </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="530"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="530"/>
         <source>results in zero diagonal and off-diagonal elements, so is only </source>
-        <translation type="unfinished"></translation>
+        <translation>menghasilkan elemen diagonal dan off-diagonal nol, sehingga hanya </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="531"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="531"/>
         <source>suitable for vehicles where the field is close to spherical. It is </source>
-        <translation type="unfinished"></translation>
+        <translation>cocok untuk kendaraan dengan medan magnet yang mendekati bulat. Ini </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="532"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="532"/>
         <source>useful for large vehicles where moving the vehicle to calibrate it </source>
-        <translation type="unfinished"></translation>
+        <translation>berguna untuk kendaraan besar di mana memindahkan kendaraan untuk kalibrasi </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="533"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="533"/>
         <source>is difficult. Point the vehicle North before using it.</source>
-        <translation type="unfinished"></translation>
+        <translation>sulit dilakukan. Arahkan kendaraan ke Utara sebelum menggunakannya.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="546"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="546"/>
         <source>Fast Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Cepat</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="554"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="554"/>
         <source>Vehicle has no Valid positon, please provide it</source>
-        <translation type="unfinished"></translation>
+        <translation>Kendaraan tidak memiliki posisi valid, silakan berikan posisi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="560"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="560"/>
         <source>Use GCS position instead</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan posisi GCS sebagai gantinya</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="566"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="566"/>
         <source>Use current map position instead</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan posisi peta saat ini sebagai gantinya</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="600"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="600"/>
         <source>Compass Motor Interference Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Gangguan Motor pada Kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="613"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="613"/>
         <source>This is recommended for vehicles that have only an internal compass and on vehicles where there is significant interference on the compass from the motors, power wires, etc. </source>
-        <translation type="unfinished"></translation>
+        <translation>Ini direkomendasikan untuk kendaraan yang hanya memiliki kompas internal dan pada kendaraan yang memiliki gangguan signifikan pada kompas dari motor, kabel listrik, dll. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="614"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="614"/>
         <source>CompassMot only works well if you have a battery current monitor because the magnetic interference is linear with current drawn. </source>
-        <translation type="unfinished"></translation>
+        <translation>CompassMot hanya berfungsi dengan baik jika Anda memiliki monitor arus baterai karena gangguan magnetik bersifat linear dengan arus yang ditarik. </translation>
     </message>
+
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="615"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="615"/>
         <source>It is technically possible to set-up CompassMot using throttle but this is not recommended.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sebenarnya memungkinkan untuk mengatur CompassMot menggunakan throttle, tetapi hal ini tidak direkomendasikan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="622"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="622"/>
         <source>Disconnect your props, flip them over and rotate them one position around the frame. </source>
-        <translation type="unfinished"></translation>
+        <translation>Lepaskan baling-baling Anda, balikkan, lalu putar satu posisi di sekitar rangka.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="623"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="623"/>
         <source>In this configuration they should push the copter down into the ground when the throttle is raised.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dalam konfigurasi ini, baling-baling seharusnya mendorong copter ke bawah ke tanah saat throttle dinaikkan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="630"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="630"/>
         <source>Secure the copter (perhaps with tape) so that it does not move.</source>
-        <translation type="unfinished"></translation>
+        <translation>Amankan copter (misalnya dengan lakban) agar tidak bergerak.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="637"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="637"/>
         <source>Turn on your transmitter and keep throttle at zero.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyalakan transmitter Anda dan pastikan throttle tetap di nol.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="644"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="644"/>
         <source>Click Ok to start CompassMot calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik Ok untuk memulai kalibrasi CompassMot.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="701"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="701"/>
         <source>To level the horizon you need to place the vehicle in its level flight position and press Ok.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk meratakan horizon, letakkan kendaraan pada posisi terbang datar lalu tekan Ok.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="726"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="726"/>
         <source>depth</source>
-        <translation type="unfinished"></translation>
+        <translation>kedalaman</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="726"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="726"/>
         <source>altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>ketinggian</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="722"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="722"/>
         <source>Pressure calibration will set the %1 to zero at the current pressure reading. %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi tekanan akan mengatur %1 ke nol pada pembacaan tekanan saat ini. %2</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="727"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="727"/>
         <source>To calibrate the airspeed sensor shield it from the wind. Do not touch the sensor or obstruct any holes during the calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk mengkalibrasi sensor kecepatan udara, lindungi dari angin. Jangan menyentuh sensor atau menutupi lubang apa pun selama kalibrasi.</translation>
     </message>
+
+
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="713"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="713"/>
-        <source>For Gyroscope calibration you will need to place your vehicle on a surface and leave it still.
-
-Click Ok to start calibration.</source>
-        <translation type="unfinished"></translation>
+        <source>For Gyroscope calibration you will need to place your vehicle on a surface and leave it still. Click Ok to start calibration.</source>
+        <translation>Untuk mengkalibrasi gyroscope anda harus meletakan drone anda di permukaan yang datar. Klik ok untuk memulai kalibrasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="667"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="667"/>
         <source>Accelerometer</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerometer</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="678"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="678"/>
         <source>Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="683"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="683"/>
         <source>Accelerometer must be calibrated prior to Compass.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerometer harus dikalibrasi sebelum kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="694"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="694"/>
         <source>Level Horizon</source>
-        <translation type="unfinished"></translation>
+        <translation>Horizon level</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="698"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="698"/>
         <source>Accelerometer must be calibrated prior to Level Horizon.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerometer harus di kalibrasi sebelum horizon level</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="710"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="710"/>
         <source>Gyro</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyro</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="712"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="712"/>
         <source>Calibrate Gyro</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Gyro</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="728"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="728"/>
         <source>Baro/Airspeed</source>
-        <translation type="unfinished"></translation>
+        <translation>Baro/Airspeed</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="728"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="728"/>
         <source>Pressure</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekanan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="733"/>
@@ -3049,13 +3162,13 @@ Click Ok to start calibration.</source>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="755"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="755"/>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Selanjutnya</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="763"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="763"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="837"/>
@@ -3071,7 +3184,7 @@ Click Ok to start calibration.</source>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="873"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="882"/>
         <source>Rotate</source>
-        <translation type="unfinished"></translation>
+        <translation>Putar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="837"/>
@@ -3087,17 +3200,17 @@ Click Ok to start calibration.</source>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="873"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.qml" line="882"/>
         <source>Hold Still</source>
-        <translation type="unfinished"></translation>
+        <translation>Tahan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.cc" line="21"/>
         <source>Sensors</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponent.cc" line="33"/>
         <source>Sensors Setup is used to calibrate the sensors within your vehicle.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Sensor digunakan untuk mengkalibrasi sensor didalam drone anda</translation>
     </message>
 </context>
 <context>
@@ -3105,105 +3218,107 @@ Click Ok to start calibration.</source>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="183"/>
         <source>Calibration complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi selesai</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="200"/>
         <source>Calibration failed. Calibration log will be displayed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi gagal. Log kalibrasi akan ditampilkan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="264"/>
         <source>Rotate the vehicle randomly around all axes until the progress bar fills all the way to the right .</source>
-        <translation type="unfinished"></translation>
+        <translation>Putar kendaraan secara acak di semua sumbu hingga bilah progres terisi penuh ke kanan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="363"/>
         <source>Raise the throttle slowly to between 50% ~ 75% (the props will spin!) for 5 ~ 10 seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Naikkan throttle perlahan ke antara 50% ~ 75% (baling-baling akan berputar!) selama 5 ~ 10 detik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="364"/>
         <source>Quickly bring the throttle back down to zero</source>
-        <translation type="unfinished"></translation>
+        <translation>Segera turunkan throttle kembali ke nol</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="365"/>
         <source>Press the Next button to complete the calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekan tombol Next untuk menyelesaikan kalibrasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="374"/>
         <source>Hold the vehicle in its level flight position.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tahan kendaraan pada posisi terbang datar.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="383"/>
         <source>Requesting pressure calibration...</source>
-        <translation type="unfinished"></translation>
+        <translation>Meminta kalibrasi tekanan...</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="392"/>
         <source>Requesting gyro calibration...</source>
-        <translation type="unfinished"></translation>
+        <translation>Meminta kalibrasi giroskop...</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="279"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="521"/>
         <source>Successfully completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Berhasil diselesaikan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="282"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="525"/>
         <source>Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Gagal</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="318"/>
         <source>Hold still in the current orientation and press Next when ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Tetap diam pada orientasi saat ini dan tekan Next jika siap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="518"/>
         <source>In progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Sedang berlangsung</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="573"/>
         <source>Compass %1 calibration complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi kompas %1 selesai</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="575"/>
         <source>Compass %1 calibration below quality threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi kompas %1 berada di bawah ambang kualitas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="594"/>
         <source>All compasses calibrated successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua kompas berhasil dikalibrasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="595"/>
         <source>YOU MUST REBOOT YOUR VEHICLE NOW FOR NEW SETTINGS TO TAKE AFFECT</source>
-        <translation type="unfinished"></translation>
+        <translation>ANDA HARUS ME-REBOOT KENDARAAN SEKARANG AGAR PENGATURAN BARU BERLAKU</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="598"/>
         <source>Compass calibration failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi kompas gagal</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="599"/>
         <source>YOU MUST REBOOT YOUR VEHICLE NOW AND RETRY COMPASS CALIBRATION PRIOR TO FLIGHT</source>
-        <translation type="unfinished"></translation>
+        <translation>ANDA HARUS ME-REBOOT KENDARAAN SEKARANG DAN MENGULANGI KALIBRASI KOMPAS SEBELUM TERBANG</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSensorsComponentController.cc" line="603"/>
         <source>Continue rotating...</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjutkan memutar...</translation>
     </message>
+
+
 </context>
 <context>
     <name>APMSensorsComponentSummary</name>
@@ -18477,17 +18592,17 @@ Confirm change?</source>
     <message>
         <location filename="../src/QmlControls/VehicleRotationCal.qml" line="26"/>
         <source>Hold Still</source>
-        <translation type="unfinished"></translation>
+        <translation>Tetap Diam</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/VehicleRotationCal.qml" line="58"/>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Selesai</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/VehicleRotationCal.qml" line="58"/>
         <source>Incomplete</source>
-        <translation type="unfinished"></translation>
+        <translation>Belum Selesai</translation>
     </message>
 </context>
 <context>
@@ -18508,12 +18623,12 @@ Confirm change?</source>
     <message>
         <location filename="../src/FlightDisplay/VehicleWarnings.qml" line="37"/>
         <source>No GPS Lock for Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada Kunci GPS untuk Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/VehicleWarnings.qml" line="56"/>
         <source>The vehicle has failed a pre-arm check. In order to arm the vehicle, resolve the failure.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kendaraan gagal dalam pemeriksaan pra-arm check. Untuk mengaktifkan kendaraan, selesaikan masalah tersebut terlebih dahulu.</translation>
     </message>
 </context>
 <context>
