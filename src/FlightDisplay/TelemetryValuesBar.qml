@@ -110,5 +110,12 @@ Rectangle {
             userSettingsGroup:      telemetryBarUserSettingsGroup
             defaultSettingsGroup:   telemetryBarDefaultSettingsGroup
         }
+
+        QGCButton {
+            anchors.left:   parent.left
+            anchors.right:  parent.right
+            text:           qsTr("Reset To Defaults")
+            onClicked:      valueArea.resetToDefaults()
+        }
     }
 }

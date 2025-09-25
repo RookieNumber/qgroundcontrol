@@ -125,7 +125,7 @@ T.InstrumentValueArea {
             anchors.left:   parent.left
             anchors.right:  parent.right
             text:           qsTr("Reset To Defaults")
-            visible:        settingsUnlocked
+            visible:        true
             onClicked:      resetToDefaults()
         }
 

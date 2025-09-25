@@ -100,6 +100,7 @@ const char* Vehicle::_distanceToGCSFactName =       "distanceToGCS";
 const char* Vehicle::_hobbsFactName =               "hobbs";
 const char* Vehicle::_throttlePctFactName =         "throttlePct";
 const char* Vehicle::_imuTempFactName =             "imuTemp";
+const char* Vehicle::_sprayedVolumeFactName =       "sprayedVolume";
 
 const char* Vehicle::_gpsFactGroupName =                "gps";
 const char* Vehicle::_gps2FactGroupName =               "gps2";
@@ -168,6 +169,7 @@ Vehicle::Vehicle(LinkInterface*             link,
     , _hobbsFact                    (0, _hobbsFactName,             FactMetaData::valueTypeString)
     , _throttlePctFact              (0, _throttlePctFactName,       FactMetaData::valueTypeUint16)
     , _imuTempFact                  (0, _imuTempFactName,           FactMetaData::valueTypeInt16)
+    , _sprayedVolumeFact            (0, _sprayedVolumeFactName,     FactMetaData::valueTypeDouble)
     , _gpsFactGroup                 (this)
     , _gps2FactGroup                (this)
     , _windFactGroup                (this)
@@ -457,6 +459,7 @@ void Vehicle::_commonInit()
     _addFact(&_distanceToGCSFact,       _distanceToGCSFactName);
     _addFact(&_throttlePctFact,         _throttlePctFactName);
     _addFact(&_imuTempFact,             _imuTempFactName);
+    _addFact(&_sprayedVolumeFact,       _sprayedVolumeFactName);
 
     _hobbsFact.setRawValue(QVariant(QString("0000:00:00")));
     _addFact(&_hobbsFact,               _hobbsFactName);
@@ -623,6 +626,22 @@ void Vehicle::resetCounters()
 
 void Vehicle::_mavlinkMessageReceived(LinkInterface* link, mavlink_message_t message)
 {
+    Q_UNUSED(link);
+    switch (message.msgid) {
+    case MAVLINK_MSG_ID_NAMED_VALUE_FLOAT: {
+        mavlink_named_value_float_t nvf;
+        mavlink_msg_named_value_float_decode(&message, &nvf);
+        QByteArray nameBytes(reinterpret_cast<const char*>(nvf.name), sizeof(nvf.name));
+        QString name = QString::fromLatin1(nameBytes.constData()).trimmed();
+        if (name.compare("SPRAYED_VOLUME", Qt::CaseInsensitive) == 0) {
+            _sprayedVolumeFact.setRawValue(static_cast<double>(nvf.value));
+        }
+        break;
+    }
+    default:
+        break;
+    }
+
     // If the link is already running at Mavlink V2 set our max proto version to it.
     unsigned mavlinkVersion = _mavlink->getCurrentVersion();
     if (_maxProtoVersion != mavlinkVersion && mavlinkVersion >= 200) {
@@ -4015,7 +4034,8 @@ void Vehicle::_updateMissionItemIndex()
         offset = 1;
     }
 
-    _missionItemIndexFact.setRawValue(currentIndex + offset);
+    const int displayIndex = currentIndex < 0 ? 0 : currentIndex + static_cast<int>(offset);
+    _missionItemIndexFact.setRawValue(displayIndex);
 }
 
 void Vehicle::_updateDistanceToGCS()

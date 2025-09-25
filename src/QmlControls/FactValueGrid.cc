@@ -94,7 +94,9 @@ void FactValueGrid::componentComplete(void)
 void FactValueGrid::resetToDefaults(void)
 {
     QSettings settings;
-    settings.remove(_userSettingsGroup);
+    QString groupNameFormat("%1-%2");
+    // Remove the user-customized group for the current vehicle class so defaults regenerate
+    settings.remove(groupNameFormat.arg(_userSettingsGroup).arg(_vehicleClass));
     _loadSettings();
 }
 

@@ -163,6 +163,13 @@
     "shortDesc": "Imu temperature",
     "type":             "int16",
     "units":            "°C"
+},
+{
+    "name": "sprayedVolume",
+    "shortDesc": "Sprayed volume",
+    "type": "double",
+    "units": "L",
+    "decimalPlaces": 2
 }
 ]
 }
