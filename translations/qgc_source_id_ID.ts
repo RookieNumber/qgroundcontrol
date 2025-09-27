@@ -2404,7 +2404,7 @@
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSummary.qml" line="115"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSummary.qml" line="115"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSummary.qml" line="118"/>
@@ -2509,7 +2509,7 @@
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSummaryCopter.qml" line="79"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponentSummaryCopter.qml" line="80"/>
@@ -5597,7 +5597,7 @@ Click Ok to start the auto-tuning process.
         <location filename="../src/PlanView/FWLandingPatternEditor.qml" line="80"/>
         <location filename="../src/PlanView/FWLandingPatternEditor.qml" line="142"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/PlanView/FWLandingPatternEditor.qml" line="89"/>
@@ -7683,7 +7683,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/PlanView/GeoFenceEditor.qml" line="342"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
 </context>
 <context>
@@ -11486,7 +11486,7 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/FirmwarePlugin/PX4/PX4FirmwarePlugin.cc" line="40"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/FirmwarePlugin/PX4/PX4FirmwarePlugin.cc" line="41"/>
@@ -16993,6 +16993,14 @@ ROTATION_NONE indicates component points in direction of flight.</source>
 		</message>
 </context>
 <context>
+    <name>SprayingItemEditor</name>
+        <message>
+				<location filename="../src/PlanView/SprayingItemEditor.qml" line="35"/>
+				<source>Angle</source>
+				<translation>Sudut</translation>
+		</message>
+</context>
+<context>
     <name>SysStatusSensorInfo</name>
     <message>
         <location filename="../src/Vehicle/SysStatusSensorInfo.cc" line="103"/>
@@ -17422,7 +17430,7 @@ Confirm change?</source>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemEditor.qml" line="102"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemEditor.qml" line="103"/>
@@ -17432,12 +17440,12 @@ Confirm change?</source>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemEditor.qml" line="104"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Spacing</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemEditor.qml" line="123"/>
         <source>Rotate Entry Point</source>
-        <translation type="unfinished"></translation>
+        <translation>Rotasi Jalur</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemEditor.qml" line="131"/>
@@ -17506,8 +17514,8 @@ Confirm change?</source>
     <name>TransectStyleComplexItemStats</name>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="16"/>
-        <source>Survey Area</source>
-        <translation type="unfinished"></translation>
+        <source>Operation Area</source>
+        <translation>Area Operasi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/TransectStyleComplexItemStats.qml" line="19"/>
@@ -18042,7 +18050,7 @@ Confirm change?</source>
         <location filename="../src/PlanView/VTOLLandingPatternEditor.qml" line="80"/>
         <location filename="../src/PlanView/VTOLLandingPatternEditor.qml" line="142"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/PlanView/VTOLLandingPatternEditor.qml" line="89"/>

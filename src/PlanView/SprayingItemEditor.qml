@@ -55,18 +55,18 @@ TransectStyleComplexItemEditor {
 
             QGCLabel {
                 text:       qsTr("Turnaround dist")
-                visible:    !forPresets
+                visible:    false
             }
             FactTextField {
                 Layout.fillWidth:   true
                 fact:               missionItem.turnAroundDistance
-                visible:            !forPresets
+                visible:            false
             }
 
             QGCOptionsComboBox {
                 Layout.columnSpan:  2
                 Layout.fillWidth:   true
-                visible:            !forPresets
+                visible:            false
 
                 model: [
                     {

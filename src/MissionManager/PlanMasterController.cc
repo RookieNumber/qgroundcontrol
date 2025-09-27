@@ -619,26 +619,27 @@ bool PlanMasterController::isEmpty(void) const
 
 void PlanMasterController::_updatePlanCreatorsList(void)
 {
-    if (!_flyView) {
-        if (!_planCreators) {
-            _planCreators = new QmlObjectListModel(this);
-            _planCreators->append(new BlankPlanCreator(this, this));
-            _planCreators->append(new SurveyPlanCreator(this, this));
-            _planCreators->append(new CorridorScanPlanCreator(this, this));
-            _planCreators->append(new SprayingPlanCreator(this, this));
-            emit planCreatorsChanged(_planCreators);
-        }
-
-        if (_managerVehicle->fixedWing()) {
-            // Base list now includes: Blank, Survey, Corridor, Spraying (count == 4)
-            // If StructureScan was added previously (non-fixedWing), count will be 5 → remove last
-            if (_planCreators->count() == 5) {
+    if (!_planCreators) {
+        _planCreators = new QmlObjectListModel(this);
+        _planCreators->append(new BlankPlanCreator(this, this));
+        // Removed SurveyPlanCreator
+        // Removed CorridorScanPlanCreator
+        _planCreators->append(new SprayingPlanCreator(this, this));
+        emit planCreatorsChanged(_planCreators);
+    }
+    
+    if (_managerVehicle->fixedWing()) {
+        // Ensure StructureScan is not present for any vehicle
+        if (_planCreators->count() > 2) {
+            while (_planCreators->count() > 2) {
                 _planCreators->removeAt(_planCreators->count() - 1);
             }
-        } else {
-            // Ensure StructureScan is present as 5th item
-            if (_planCreators->count() != 5) {
-                _planCreators->append(new StructureScanPlanCreator(this, this));
+        }
+    } else {
+        // Also ensure StructureScan is not added
+        if (_planCreators->count() > 2) {
+            while (_planCreators->count() > 2) {
+                _planCreators->removeAt(_planCreators->count() - 1);
             }
         }
     }

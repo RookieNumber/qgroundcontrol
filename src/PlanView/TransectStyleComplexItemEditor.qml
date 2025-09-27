@@ -79,6 +79,10 @@ Rectangle {
             TransectStyleComplexItemTabBar {
                 id:                 tabBar
                 Layout.fillWidth:   true
+                // Hide Camera, Terrain and Presets tabs for Spraying editor
+                showCameraTab:      _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
+                showTerrainTab:     _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
+                showPresetsTab:     _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
             }
 
             // Grid tab
@@ -102,6 +106,8 @@ Rectangle {
                     distanceToSurfaceLabel:         qsTr("Altitude")
                     frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
+                    // Hide Trigger Dist for Spraying editor only
+                    showFrontalDistance:            _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
                 }
 
                 SectionHeader {
