@@ -49,6 +49,10 @@ SetupPage {
             property Fact _tankLow:               controller.getParameterFact(-1, "SPRAY_TANK_LOW", false)
             property Fact _tankCritical:          controller.getParameterFact(-1, "SPRAY_TANK_CRITICAL", false)
 
+            // Sometimes engineer uses Batt_2 capacity as the replacement for tank volume that required for liquid monitoring calculations
+            property Fact _batt2Capacity:          controller.getParameterFact(-1, "BATT2_CAPACITY", false)
+
+
             property bool _sprayEnabled:          _sprayEnable.rawValue !== 0
             property bool _flowMonitorEnabled:    _flowMonitor.rawValue !== 0
             property bool _showAdvanced:          false
@@ -126,25 +130,28 @@ SetupPage {
                             columnSpacing:  _margins
 
                             QGCLabel { text: qsTr("Tank Capacity:") }
+
+
                             FactTextField {
                                 width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _tankCapacity
-                                visible:    _tankCapacity
+                                fact:       _batt2Capacity
+                                visible:    true
+                                unitsLabel: "mL"
                             }
 
-                            QGCLabel { text: qsTr("Low Tank Warning:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _tankLow
-                                visible:    _tankLow
-                            }
+                            // QGCLabel { text: qsTr("Low Tank Warning:") }
+                            // FactTextField {
+                            //     width:      ScreenTools.defaultFontPixelWidth * 15
+                            //     fact:       _tankLow
+                            //     visible:    _tankLow
+                            // }
 
-                            QGCLabel { text: qsTr("Critical Tank Level:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _tankCritical
-                                visible:    _tankCritical
-                            }
+                            // QGCLabel { text: qsTr("Critical Tank Level:") }
+                            // FactTextField {
+                            //     width:      ScreenTools.defaultFontPixelWidth * 15
+                            //     fact:       _tankCritical
+                            //     visible:    _tankCritical
+                            // }
                         }
 
                         QGCLabel {
@@ -153,6 +160,8 @@ SetupPage {
                             wrapMode:   Text.WordWrap
                             Layout.fillWidth: true
                         }
+
+
                     }
                 }
             }
@@ -160,7 +169,8 @@ SetupPage {
             // Flow Control Configuration
             Column {
                 spacing: _margins / 2
-                visible: _sprayEnabled
+                // visible: _sprayEnabled
+                visible: false
 
                 QGCLabel {
                     text:       qsTr("Flow Control")
@@ -221,7 +231,8 @@ SetupPage {
             // Advanced Settings
             Column {
                 spacing: _margins / 2
-                visible: _sprayEnabled
+                // visible: _sprayEnabled
+                visible: false
 
                 QGCLabel {
                     text:       qsTr("Advanced Settings")
