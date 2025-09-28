@@ -30,6 +30,10 @@ Item {
 
     property var _activeVehicle: QGroundControl.multiVehicleManager.activeVehicle
 
+    // Tank capacity (mL) sourced from parameter BATT2_CAPACITY
+    property var _tankCapacityParam: _activeVehicle && _activeVehicle.parameterManager ? _activeVehicle.parameterManager.getParameter(-1, "BATT2_CAPACITY") : null
+    property real _tankCapacityML: _tankCapacityParam && !isNaN(_tankCapacityParam.rawValue) ? Number(_tankCapacityParam.rawValue) : NaN
+
     // Find sprayer battery - look for secondary battery (ID = 2) or any battery with sprayer function
     property var _sprayerBattery: {
         if (_activeVehicle && _activeVehicle.batteries) {
@@ -137,25 +141,50 @@ Item {
                 }
             }
 
+            function _formatML(value) {
+                if (isNaN(value)) return "N/A"
+                if (value >= 1000) return (value / 1000).toFixed(1) + qsTr(" L")
+                return Math.round(value) + qsTr(" mL")
+            }
+
+            function _liquidRemainingML() {
+                if (!sprayer || isNaN(_tankCapacityML)) return NaN
+                var percent = sprayer.percentRemaining && !isNaN(sprayer.percentRemaining.rawValue) ? sprayer.percentRemaining.rawValue : NaN
+                if (isNaN(percent)) return NaN
+                var remaining = _tankCapacityML * Math.max(0, Math.min(100, percent)) / 100.0
+                return remaining
+            }
+
+            function _liquidConsumedML() {
+                if (isNaN(_tankCapacityML)) return NaN
+                var remaining = _liquidRemainingML()
+                if (isNaN(remaining)) return NaN
+                var consumed = _tankCapacityML - remaining
+                if (consumed < 0) consumed = 0
+                return consumed
+            }
+
             function getSprayerConsumedText() {
-                if (!sprayer) return "DEBUG"  // Show "DEBUG" when no battery
-                
-                if (!isNaN(sprayer.mahConsumed.rawValue)) {
-                    return sprayer.mahConsumed.valueString + qsTr(" mL")
-                } else if (!isNaN(sprayer.percentRemaining.rawValue)) {
+                if (!sprayer) return "DEBUG"
+                var consumed = _liquidConsumedML()
+                if (!isNaN(consumed)) return _formatML(consumed)
+                // Fallbacks
+                if (sprayer.percentRemaining && !isNaN(sprayer.percentRemaining.rawValue)) {
                     if (sprayer.percentRemaining.rawValue > 98.9) {
                         return qsTr("100%")
-                    } else {
-                        return sprayer.percentRemaining.valueString + sprayer.percentRemaining.units
                     }
+                    return sprayer.percentRemaining.valueString + sprayer.percentRemaining.units
                 }
-                return "NO DATA"  // Show "NO DATA" when no valid data
+                return qsTr("NO DATA")
             }
 
             function getSprayerRemainingText() {
                 if (!sprayer) return ""
-                
-                if (!isNaN(sprayer.percentRemaining.rawValue)) {
+                var remaining = _liquidRemainingML()
+                if (!isNaN(remaining)) {
+                    return qsTr("Remaining: ") + _formatML(remaining)
+                }
+                if (sprayer.percentRemaining && !isNaN(sprayer.percentRemaining.rawValue)) {
                     return qsTr("Remaining: ") + sprayer.percentRemaining.valueString + sprayer.percentRemaining.units
                 }
                 return ""
@@ -265,13 +294,13 @@ Item {
                         property var sprayerValuesAvailable: sprayerValuesAvailableLoader.item
 
                         QGCLabel { text: "" }
-                        QGCLabel { 
-                            text: _sprayerBattery ? _sprayerBattery.percentRemaining.valueString + " " + _sprayerBattery.percentRemaining.units : "N/A"
-                            visible: sprayerValuesAvailable.percentRemainingAvailable 
+                        QGCLabel {
+                            text: !isNaN(_liquidRemainingML()) ? _formatML(_liquidRemainingML()) : (_sprayerBattery ? _sprayerBattery.percentRemaining.valueString + " " + _sprayerBattery.percentRemaining.units : "N/A")
+                            visible: sprayerValuesAvailable.percentRemainingAvailable || !isNaN(_liquidRemainingML())
                         }
-                        QGCLabel { 
-                            text: _sprayerBattery ? _sprayerBattery.mahConsumed.valueString + " " + qsTr("mL") : "N/A"
-                            visible: sprayerValuesAvailable.mahConsumedAvailable 
+                        QGCLabel {
+                            text: !isNaN(_liquidConsumedML()) ? _formatML(_liquidConsumedML()) : (_sprayerBattery && _sprayerBattery.mahConsumed ? _sprayerBattery.mahConsumed.valueString + " " + qsTr("mAh") : "N/A")
+                            visible: !isNaN(_liquidConsumedML()) || sprayerValuesAvailable.mahConsumedAvailable
                         }
                         QGCLabel { 
                             text: _sprayerBattery ? _sprayerBattery.temperature.valueString + " " + _sprayerBattery.temperature.units : "N/A"
