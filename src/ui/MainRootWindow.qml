@@ -148,7 +148,7 @@ ApplicationWindow {
     }
 
     function showTool(toolTitle, toolSource, toolIcon) {
-        toolDrawer.backIcon     = flightView.visible ? "/qmlimages/PaperPlane.svg" : "/qmlimages/Plan.svg"
+        toolDrawer.backIcon     = flightView.visible ? "/qmlimages/MultiRotor.svg" : "/qmlimages/Plan.svg"
         toolDrawer.toolTitle    = toolTitle
         toolDrawer.toolSource   = toolSource
         toolDrawer.toolIcon     = toolIcon
@@ -164,7 +164,7 @@ ApplicationWindow {
     }
 
     function showSettingsTool() {
-        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/QGCLogoWhite")
+        showTool(qsTr("Application Settings"), "AppSettings.qml", "/res/FDSLogoWhite.svg")
     }
 
     //-------------------------------------------------------------------------

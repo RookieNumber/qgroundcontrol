@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g><path style="opacity:1" fill="#fefffe" d="M 272.5,24.5 C 277.511,24.3341 282.511,24.5007 287.5,25C 227.058,50.9711 166.558,76.8044 106,102.5C 70.7658,80.7983 35.5992,58.965 0.5,37C 91.2733,32.5558 181.94,28.3892 272.5,24.5 Z"/></g>
-<g><path style="opacity:1" fill="#fefffe" d="M 266.5,49.5 C 267.525,49.8966 267.692,50.5632 267,51.5C 218.333,125.5 169.667,199.5 121,273.5C 118.525,220.527 116.691,167.527 115.5,114.5C 166.309,93.7911 216.642,72.1244 266.5,49.5 Z"/></g>
+<svg width="441" height="441" viewBox="0 0 441 441" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M343.5 135.5C348.511 135.334 353.511 135.5 358.5 136C298.058 161.971 237.558 187.804 177 213.5C141.766 191.798 106.599 169.965 71.5 148C162.273 143.555 252.94 139.389 343.5 135.5Z" fill="#FEFFFE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M337.5 160.5C338.525 160.897 338.692 161.563 338 162.5C289.333 236.5 240.667 310.5 192 384.5C189.525 331.527 187.691 278.527 186.5 225.5C237.309 204.791 287.642 183.124 337.5 160.5Z" fill="#FEFFFE"/>
+<circle cx="220.5" cy="220.5" r="217.5" stroke="white" stroke-width="6"/>
 </svg>

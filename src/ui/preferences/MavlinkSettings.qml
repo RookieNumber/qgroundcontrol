@@ -28,18 +28,8 @@ Rectangle {
     color:          qgcPal.window
     anchors.fill:   parent
 
-    // Gate access behind password
-    property bool _authorized: false
-
-    PasswordAuthManager { id: _pageAuth }
-
-    Component.onCompleted: {
-        // If no password set, authenticate("") returns true and page opens directly
-        _authorized = _pageAuth.authenticate("")
-        if (!_authorized) {
-            enterPasswordDialogComponent.createObject(mainWindow).open()
-        }
-    }
+    // Gate removed: always authorized
+    property bool _authorized: true
 
     property real _labelWidth:          ScreenTools.defaultFontPixelWidth * 28
     property real _valueWidth:          ScreenTools.defaultFontPixelWidth * 24
@@ -859,36 +849,5 @@ Rectangle {
         }
     }
 
-    // Unlock overlay
-    Rectangle {
-        anchors.fill:           parent
-        color:                  qgcPal.window
-        opacity:                0.98
-        visible:                !_authorized
-        z:                      1000
-
-        Column {
-            spacing:            ScreenTools.defaultFontPixelHeight
-            anchors.centerIn:   parent
-
-            QGCLabel {
-                text:           qsTr("This page is locked. Enter password to continue.")
-                horizontalAlignment: Text.AlignHCenter
-            }
-
-            QGCButton {
-                text:       qsTr("Unlock")
-                primary:    true
-                onClicked:  enterPasswordDialogComponent.createObject(mainWindow).open()
-            }
-        }
-    }
-
-    // Password dialog factory
-    Component {
-        id: enterPasswordDialogComponent
-        EnterPasswordDialog {
-            onAuthenticated: __mavlinkRoot._authorized = true
-        }
-    }
+    // Password gate removed: no overlay or dialog
 }

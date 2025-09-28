@@ -13256,22 +13256,22 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="174"/>
         <source>Plan is waiting on terrain data from server for correct altitude values.</source>
-        <translation>Rencana sedang menunggu data medan dari server untuk mendapatkan nilai ketinggian yang benar.</translation>
+        <translation>Misi sedang menunggu data medan dari server untuk mendapatkan nilai ketinggian yang benar.</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="200"/>
         <source>Plan Upload</source>
-        <translation>Unggah Rencana</translation>
+        <translation>Unggah Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="212"/>
         <source>Select Plan File</source>
-        <translation>Pilih File Rencana</translation>
+        <translation>Pilih File Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="223"/>
         <source>Save Plan</source>
-        <translation>Simpan Rencana</translation>
+        <translation>Simpan Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="238"/>
@@ -13306,7 +13306,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="504"/>
         <source>Plan</source>
-        <translation>Rencana</translation>
+        <translation>Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="96"/>
@@ -13316,7 +13316,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="107"/>
         <source>Plan View - Vehicle Disconnected</source>
-        <translation>Tampilan Rencana - Drone Terputus</translation>
+        <translation>Tampilan Misi - Drone Terputus</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="107"/>

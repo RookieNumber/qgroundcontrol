@@ -42,6 +42,7 @@
         <file alias="QGCLogoWhite">resources/QGCLogoWhite.svg</file>
         <file alias="QGCLogoArrow">resources/QGCLogoArrow.svg</file>
         <file alias="QGroundControlConnect">resources/QGroundControlConnect.svg</file>
+        <file alias="FDSLogoWhite.svg">resources/icons/FDSLogoWhite.svg</file>
         <file alias="rtl.svg">resources/rtl.svg</file>
         <file alias="SplashScreen">resources/SplashScreen.png</file>
         <file alias="Stop">resources/Stop.svg</file>

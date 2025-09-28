@@ -161,20 +161,20 @@ QVariantList &QGCCorePlugin::settingsPages()
         _p->pConsole = new QmlComponentInfo(tr("Console"),
                                             QUrl::fromUserInput("qrc:/qml/QGroundControl/Controls/AppMessages.qml"));
         _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pConsole)));
-        _p->pHelp = new QmlComponentInfo(tr("Help"),
-                                         QUrl::fromUserInput("qrc:/qml/HelpSettings.qml"));
-        _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pHelp)));
+        // _p->pHelp = new QmlComponentInfo(tr("Help"),
+        //                                  QUrl::fromUserInput("qrc:/qml/HelpSettings.qml"));
+        // _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pHelp)));
 #if defined(QT_DEBUG)
         //-- These are always present on Debug builds
-        _p->pMockLink = new QmlComponentInfo(tr("Mock Link"),
-                                             QUrl::fromUserInput("qrc:/qml/MockLink.qml"));
-        _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pMockLink)));
-        _p->pDebug = new QmlComponentInfo(tr("Debug"),
-                                          QUrl::fromUserInput("qrc:/qml/DebugWindow.qml"));
-        _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pDebug)));
-        _p->pQmlTest = new QmlComponentInfo(tr("Palette Test"),
-                                            QUrl::fromUserInput("qrc:/qml/QmlTest.qml"));
-        _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pQmlTest)));
+        // _p->pMockLink = new QmlComponentInfo(tr("Mock Link"),
+        //                                      QUrl::fromUserInput("qrc:/qml/MockLink.qml"));
+        // _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pMockLink)));
+        // _p->pDebug = new QmlComponentInfo(tr("Debug"),
+        //                                   QUrl::fromUserInput("qrc:/qml/DebugWindow.qml"));
+        // _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pDebug)));
+        // _p->pQmlTest = new QmlComponentInfo(tr("Palette Test"),
+        //                                     QUrl::fromUserInput("qrc:/qml/QmlTest.qml"));
+        // _p->settingsList.append(QVariant::fromValue(reinterpret_cast<QmlComponentInfo*>(_p->pQmlTest)));
 #endif
     }
     return _p->settingsList;

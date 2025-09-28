@@ -38,10 +38,10 @@ set(COMPANY "Mavlink")
 set(COPYRIGHT "Copyright (c) 2018 QGroundControl. All rights reserved.")
 set(IDENTIFIER "io.mavlink.qgroundcontrol")
 
-add_definitions(
-	-DQGC_APPLICATION_NAME="QGroundControl"
-	-DQGC_ORG_NAME="QGroundControl.org"
-	-DQGC_ORG_DOMAIN="org.qgroundcontrol"
+add_compile_definitions(
+	QGC_APPLICATION_NAME=\"FullDroneStation\"
+	QGC_ORG_NAME=\"FullDroneStation.org\"
+	QGC_ORG_DOMAIN=\"org.fulldronestation\"
 	)
 
 include(Git)
