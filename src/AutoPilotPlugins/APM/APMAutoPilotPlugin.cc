@@ -96,11 +96,9 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
 
             // No flight modes component for Sub versions 3.5 and up
             if (!_vehicle->sub() || (_vehicle->versionCompare(3, 5, 0) < 0)) {
-                if (!hideCritical) {
-                    _flightModesComponent = new APMFlightModesComponent(_vehicle, this);
-                    _flightModesComponent->setupTriggerSignals();
-                    _components.append(QVariant::fromValue((VehicleComponent*)_flightModesComponent));
-                }
+                _flightModesComponent = new APMFlightModesComponent(_vehicle, this);
+                _flightModesComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue((VehicleComponent*)_flightModesComponent));
                 
             }
 
@@ -151,11 +149,9 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
                 _components.append(QVariant::fromValue((VehicleComponent*)_heliComponent));
             }
 
-            if (!hideCritical) {
-                _tuningComponent = new APMTuningComponent(_vehicle, this);
-                _tuningComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue((VehicleComponent*)_tuningComponent));
-            }
+            _tuningComponent = new APMTuningComponent(_vehicle, this);
+            _tuningComponent->setupTriggerSignals();
+            _components.append(QVariant::fromValue((VehicleComponent*)_tuningComponent));
             
 
             if(_vehicle->parameterManager()->parameterExists(-1, "MNT1_TYPE")) {
