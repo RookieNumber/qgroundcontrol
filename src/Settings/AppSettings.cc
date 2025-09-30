@@ -383,6 +383,10 @@ void AppSettings::firstRunPromptIdsMarkIdAsShown(int id)
 /// prior to loading any json files.
 QLocale::Language AppSettings::_qLocaleLanguageID(void)
 {
+    // Force Indonesian language for all users
+    return QLocale::Indonesian;
+    
+    /* Original code - commented out to force Indonesian
     QSettings settings;
 
     if (settings.childKeys().contains("language")) {
@@ -410,4 +414,5 @@ QLocale::Language AppSettings::_qLocaleLanguageID(void)
     }
 
     return id;
+    */
 }
