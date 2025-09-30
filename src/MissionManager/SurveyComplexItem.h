@@ -42,9 +42,9 @@ public:
     QString         patternName         (void) const override { return name; }
     bool            load                (const QJsonObject& complexObject, int sequenceNumber, QString& errorString) final;
     QString         mapVisualQML        (void) const final { return QStringLiteral("SurveyMapVisual.qml"); }
-    QString         presetsSettingsGroup(void) { return settingsGroup; }
-    void            savePreset          (const QString& name);
-    void            loadPreset          (const QString& name);
+    QString         presetsSettingsGroup(void) override { return settingsGroup; }
+    void            savePreset          (const QString& name) override;
+    void            loadPreset          (const QString& name) override;
     bool            isSurveyItem        (void) const final { return true; }
     QGeoCoordinate  centerCoordinate    (void) const { return _surveyAreaPolygon.center(); }
     void            setCenterCoordinate (const QGeoCoordinate& coordinate) { _surveyAreaPolygon.setCenter(coordinate); }
