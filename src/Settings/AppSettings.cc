@@ -383,31 +383,32 @@ void AppSettings::firstRunPromptIdsMarkIdAsShown(int id)
 /// prior to loading any json files.
 QLocale::Language AppSettings::_qLocaleLanguageID(void)
 {
-    QSettings settings;
+    return QLocale::Indonesian;
+//     QSettings settings;
 
-    if (settings.childKeys().contains("language")) {
-        // We need to convert to the new settings key/values
-#if 0
-        // Old vales
-        "enumStrings":      "System,български (Bulgarian),中文 (Chinese),Nederlands (Dutch),English,Suomi (Finnish),Français (French),Deutsche (German),Ελληνικά (Greek), עברית (Hebrew),Italiano (Italian),日本語 (Japanese),한국어 (Korean),Norsk (Norwegian),Polskie (Polish),Português (Portuguese),Pусский (Russian),Español (Spanish),Svenska (Swedish),Türk (Turkish),Azerbaijani (Azerbaijani)",
-        "enumValues":       "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-#endif
-        static QList<int> rgNewValues = { 0,20,25,30,31,36,37,42,43,48,58,59,66,85,90,91,96,111,114,125,15 };
+//     if (settings.childKeys().contains("language")) {
+//         // We need to convert to the new settings key/values
+// #if 0
+//         // Old vales
+//         "enumStrings":      "System,български (Bulgarian),中文 (Chinese),Nederlands (Dutch),English,Suomi (Finnish),Français (French),Deutsche (German),Ελληνικά (Greek), עברית (Hebrew),Italiano (Italian),日本語 (Japanese),한국어 (Korean),Norsk (Norwegian),Polskie (Polish),Português (Portuguese),Pусский (Russian),Español (Spanish),Svenska (Swedish),Türk (Turkish),Azerbaijani (Azerbaijani)",
+//         "enumValues":       "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+// #endif
+//         static QList<int> rgNewValues = { 0,20,25,30,31,36,37,42,43,48,58,59,66,85,90,91,96,111,114,125,15 };
 
-        int oldValue = settings.value("language").toInt();
-        settings.setValue(qLocaleLanguageName, rgNewValues[oldValue]);
-        settings.remove("language");
-    }
+//         int oldValue = settings.value("language").toInt();
+//         settings.setValue(qLocaleLanguageName, rgNewValues[oldValue]);
+//         settings.remove("language");
+//     }
 
-    QLocale::Language id = settings.value(qLocaleLanguageName, QLocale::AnyLanguage).value<QLocale::Language>();
-    if (id == QLocale::AnyLanguage) {
-#ifndef DAILY_BUILD
-        // Stable builds only support released and partial languages
-        if (!_rgReleaseLanguages.contains(id) && _rgPartialLanguages.contains(id)) {
-            id = QLocale::English;
-        }
-#endif
-    }
+//     QLocale::Language id = settings.value(qLocaleLanguageName, QLocale::AnyLanguage).value<QLocale::Language>();
+//     if (id == QLocale::AnyLanguage) {
+// #ifndef DAILY_BUILD
+//         // Stable builds only support released and partial languages
+//         if (!_rgReleaseLanguages.contains(id) && _rgPartialLanguages.contains(id)) {
+//             id = QLocale::English;
+//         }
+// #endif
+//     }
 
-    return id;
+//     return id;
 }

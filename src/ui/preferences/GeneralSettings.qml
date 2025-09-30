@@ -535,16 +535,16 @@ Rectangle {
                                 anchors.horizontalCenter:   parent.horizontalCenter
                                 columns:                    2
 
-                                QGCLabel {
-                                    text:           qsTr("Language")
-                                    visible: QGroundControl.settingsManager.appSettings.qLocaleLanguage.visible
-                                }
-                                FactComboBox {
-                                    Layout.preferredWidth:  _comboFieldWidth
-                                    fact:                   QGroundControl.settingsManager.appSettings.qLocaleLanguage
-                                    indexModel:             false
-                                    visible:                QGroundControl.settingsManager.appSettings.qLocaleLanguage.visible
-                                }
+                                // QGCLabel {
+                                //     text:           qsTr("Language")
+                                //     visible: QGroundControl.settingsManager.appSettings.qLocaleLanguage.visible
+                                // }
+                                // FactComboBox {
+                                //     Layout.preferredWidth:  _comboFieldWidth
+                                //     fact:                   QGroundControl.settingsManager.appSettings.qLocaleLanguage
+                                //     indexModel:             false
+                                //     visible:                QGroundControl.settingsManager.appSettings.qLocaleLanguage.visible
+                                // }
 
                                 // QGCLabel {
                                 //     text:           qsTr("Color Scheme")
