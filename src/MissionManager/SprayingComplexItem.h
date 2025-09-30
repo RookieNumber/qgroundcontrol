@@ -20,6 +20,13 @@ public:
     /// @param kmlOrShpFile Polygon comes from this file, empty for default polygon
     SprayingComplexItem(PlanMasterController* masterController, bool flyView, const QString& kmlOrShpFile);
 
+    // Overrides for naming so UI shows Spraying instead of Survey
+    QString patternName(void) const override { return name; }
+    QString commandDescription(void) const override { return tr("Spraying"); }
+    QString commandName(void) const override { return tr("Spraying"); }
+    QString abbreviation(void) const override { return tr("Sp"); }
+    QString presetsSettingsGroup(void) override { return QStringLiteral("Spraying"); }
+
     static const QString name;
     static const char*   jsonComplexItemTypeValue;
 };
