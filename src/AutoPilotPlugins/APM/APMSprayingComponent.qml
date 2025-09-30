@@ -39,8 +39,8 @@ SetupPage {
 
             property Fact _sprayEnable:           controller.getParameterFact(-1, "SPRAY_ENABLE")
             property Fact _tankCapacity:          controller.getParameterFact(-1, "SPRAY_TANK_CAPACITY", false)
-            property Fact _flowRate:              controller.getParameterFact(-1, "SPRAY_FLOW_RATE", false)
-            property Fact _flowMin:               controller.getParameterFact(-1, "SPRAY_FLOW_MIN", false)
+            property Fact _flowRate:              controller.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
+            property Fact _flowMin:               controller.getParameterFact(-1, "SPRAY_PUMP_MIN", false)
             property Fact _flowMonitor:           controller.getParameterFact(-1, "SPRAY_FLOW_MONITOR", false)
             property Fact _flowPin:               controller.getParameterFact(-1, "SPRAY_FLOW_PIN", false)
             property Fact _pumpPin:               controller.getParameterFact(-1, "SPRAY_PUMP_PIN", false)
@@ -169,8 +169,7 @@ SetupPage {
             // Flow Control Configuration
             Column {
                 spacing: _margins / 2
-                // visible: _sprayEnabled
-                visible: false
+                visible: _sprayEnabled
 
                 QGCLabel {
                     text:       qsTr("Flow Control")
@@ -208,14 +207,14 @@ SetupPage {
                                 visible:    _flowMin
                             }
 
-                            QGCLabel { text: qsTr("Flow Monitor:") }
-                            FactComboBox {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _flowMonitor
-                                indexModel: false
-                                sizeToContents: true
-                                visible:    _flowMonitor
-                            }
+                            // QGCLabel { text: qsTr("Flow Monitor:") }
+                            // FactComboBox {
+                            //     width:      ScreenTools.defaultFontPixelWidth * 15
+                            //     fact:       _flowMonitor
+                            //     indexModel: false
+                            //     sizeToContents: true
+                            //     visible:    _flowMonitor
+                            // }
                         }
 
                         QGCLabel {

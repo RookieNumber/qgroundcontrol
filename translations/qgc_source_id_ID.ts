@@ -1499,6 +1499,99 @@
     </message>
 </context>
 <context>
+    <name>APMSprayingComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="67"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="86"/>
+        <source>Spraying System:</source>
+        <translation>Sistem Penyemprotan:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="96"/>
+        <source>Enable or disable the spraying system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="111"/>
+        <source>Tank Configuration</source>
+        <translation>Konfigurasi Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="132"/>
+        <source>Tank Capacity:</source>
+        <translation>Kapasitas Tangki:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="158"/>
+        <source>Configure tank capacity and warning levels for liquid monitoring</source>
+        <translation>Konfigurasikan kapasitas tangki dan tingkat peringatan untuk pemantauan cairan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="175"/>
+        <source>Flow Control</source>
+        <translation>Kontrol Aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="196"/>
+        <source>Flow Rate:</source>
+        <translation>Laju Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="203"/>
+        <source>Minimum Flow Rate:</source>
+        <translation>Laju Aliran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="221"/>
+        <source>Configure flow rate settings and monitoring</source>
+        <translation>Konfigurasikan pengaturan dan pemantauan laju aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="237"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="254"/>
+        <source>Hide Advanced</source>
+        <translation>Sembunyikan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="254"/>
+        <source>Show Advanced</source>
+        <translation>Tampilkan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="264"/>
+        <source>Flow Sensor Pin:</source>
+        <translation>Pin Sensor Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="273"/>
+        <source>Pump Control Pin:</source>
+        <translation>Pin Kontrol Pompa:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="282"/>
+        <source>Flow Multiplier:</source>
+        <translation>Pengali Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="289"/>
+        <source>Flow Offset:</source>
+        <translation>Offset Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="298"/>
+        <source>Advanced hardware configuration for flow sensors and pump control</source>
+        <translation>Konfigurasi perangkat keras lanjutan untuk sensor aliran dan kontrol pompa</translation>
+    </message>
+</context>
+<context>
     <name>APMRadioComponent</name>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMRadioComponent.cc" line="18"/>
