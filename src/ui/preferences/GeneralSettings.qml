@@ -546,16 +546,16 @@ Rectangle {
                                     visible:                QGroundControl.settingsManager.appSettings.qLocaleLanguage.visible
                                 }
 
-                                QGCLabel {
-                                    text:           qsTr("Color Scheme")
-                                    visible: QGroundControl.settingsManager.appSettings.customColorTheme.visible
-                                }
-                                FactComboBox {
-                                    Layout.preferredWidth:  _comboFieldWidth
-                                    fact:                   QGroundControl.settingsManager.appSettings.customColorTheme
-                                    indexModel:             false
-                                    visible:                QGroundControl.settingsManager.appSettings.customColorTheme.visible
-                                }
+                                // QGCLabel {
+                                //     text:           qsTr("Color Scheme")
+                                //     visible: QGroundControl.settingsManager.appSettings.customColorTheme.visible
+                                // }
+                                // FactComboBox {
+                                //     Layout.preferredWidth:  _comboFieldWidth
+                                //     fact:                   QGroundControl.settingsManager.appSettings.customColorTheme
+                                //     indexModel:             false
+                                //     visible:                QGroundControl.settingsManager.appSettings.customColorTheme.visible
+                                // }
 
                                 QGCLabel {
                                     text:       qsTr("Map Provider")
