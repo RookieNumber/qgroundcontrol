@@ -1240,6 +1240,7 @@ PX4FirmwarePlugin {
         src/AutoPilotPlugins/PX4/SafetyComponent.h \
         src/AutoPilotPlugins/PX4/SensorsComponent.h \
         src/AutoPilotPlugins/PX4/SensorsComponentController.h \
+        src/AutoPilotPlugins/PX4/PX4SprayingComponent.h \
         src/FirmwarePlugin/PX4/PX4FirmwarePlugin.h \
         src/FirmwarePlugin/PX4/PX4ParameterMetaData.h \
 
@@ -1261,6 +1262,7 @@ PX4FirmwarePlugin {
         src/AutoPilotPlugins/PX4/SafetyComponent.cc \
         src/AutoPilotPlugins/PX4/SensorsComponent.cc \
         src/AutoPilotPlugins/PX4/SensorsComponentController.cc \
+        src/AutoPilotPlugins/PX4/PX4SprayingComponent.cc \
         src/FirmwarePlugin/PX4/PX4FirmwarePlugin.cc \
         src/FirmwarePlugin/PX4/PX4ParameterMetaData.cc \
 }

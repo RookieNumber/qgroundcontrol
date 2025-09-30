@@ -27,6 +27,7 @@
 #include "PX4FlightBehavior.h"
 #include "SyslinkComponent.h"
 #include "Vehicle.h"
+#include "PX4SprayingComponent.h"
 
 #include <QImage>
 
@@ -63,6 +64,7 @@ protected:
     PX4TuningComponent*     _tuningComponent;
     PX4FlightBehavior*      _flightBehavior;
     SyslinkComponent*       _syslinkComponent;
+    PX4SprayingComponent*   _sprayingComponent {nullptr};
 
 private:
     QVariantList            _components;
