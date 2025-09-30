@@ -33,13 +33,13 @@ SetupPage {
             id:         flowLayout
             width:      availableWidth
             spacing:    _margins
-            
-            // change _tankCapacity to BATT2_CAPACITY
-            // change _flowRate BATT2_MONITOR
 
-            property Fact _sprayEnable:           controller.getParameterFact(-1, "SPRAY_ENABLE")
+            // PX4 does not define SPRAY_* params by default; this UI is opportunistic
+            // and only shows fields when params exist.
+
+            property Fact _sprayEnable:           controller.getParameterFact(-1, "SPRAY_ENABLE", false)
             property Fact _tankCapacity:          controller.getParameterFact(-1, "SPRAY_TANK_CAPACITY", false)
-            property Fact _flowRate:              controller.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
+            property Fact _flowRate:              controller.getParameterFact(-1, "SPRAY_FLOW_RATE", false)
             property Fact _flowMin:               controller.getParameterFact(-1, "SPRAY_PUMP_MIN", false)
             property Fact _flowMonitor:           controller.getParameterFact(-1, "SPRAY_FLOW_MONITOR", false)
             property Fact _flowPin:               controller.getParameterFact(-1, "SPRAY_FLOW_PIN", false)
@@ -49,19 +49,14 @@ SetupPage {
             property Fact _tankLow:               controller.getParameterFact(-1, "SPRAY_TANK_LOW", false)
             property Fact _tankCritical:          controller.getParameterFact(-1, "SPRAY_TANK_CRITICAL", false)
 
-            // Sometimes engineer uses Batt_2 capacity as the replacement for tank volume that required for liquid monitoring calculations
-            property Fact _batt2Capacity:          controller.getParameterFact(-1, "BATT2_CAPACITY", false)
-
-
-            property bool _sprayEnabled:          _sprayEnable.rawValue !== 0
-            property bool _flowMonitorEnabled:    _flowMonitor.rawValue !== 0
-            property bool _showAdvanced:          false
+            property bool _sprayEnabled:          _sprayEnable && _sprayEnable.rawValue !== 0
+            property bool _flowMonitorEnabled:    _flowMonitor && _flowMonitor.rawValue !== 0
 
             QGCPalette { id: qgcPal; colorGroupEnabled: true }
 
-            // Spraying System Enable/Disable
             Column {
                 spacing: _margins / 2
+                visible: _sprayEnable
 
                 QGCLabel {
                     text:       qsTr("Spraying System")
@@ -89,6 +84,7 @@ SetupPage {
                                 fact:       _sprayEnable
                                 indexModel: false
                                 sizeToContents: true
+                                visible:    _sprayEnable
                             }
                         }
 
@@ -96,13 +92,12 @@ SetupPage {
                             text:       qsTr("Enable or disable the spraying system")
                             font.pointSize: ScreenTools.smallFontPointSize
                             wrapMode:   Text.WordWrap
-                            visible:    true
+                            visible:    _sprayEnable
                         }
                     }
                 }
             }
 
-            // Tank Configuration
             Column {
                 spacing: _margins / 2
                 visible: _sprayEnabled
@@ -130,28 +125,12 @@ SetupPage {
                             columnSpacing:  _margins
 
                             QGCLabel { text: qsTr("Tank Capacity:") }
-
-
                             FactTextField {
                                 width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _batt2Capacity
-                                visible:    true
+                                fact:       _tankCapacity
+                                visible:    _tankCapacity
                                 unitsLabel: "mL"
                             }
-
-                            // QGCLabel { text: qsTr("Low Tank Warning:") }
-                            // FactTextField {
-                            //     width:      ScreenTools.defaultFontPixelWidth * 15
-                            //     fact:       _tankLow
-                            //     visible:    _tankLow
-                            // }
-
-                            // QGCLabel { text: qsTr("Critical Tank Level:") }
-                            // FactTextField {
-                            //     width:      ScreenTools.defaultFontPixelWidth * 15
-                            //     fact:       _tankCritical
-                            //     visible:    _tankCritical
-                            // }
                         }
 
                         QGCLabel {
@@ -160,13 +139,10 @@ SetupPage {
                             wrapMode:   Text.WordWrap
                             Layout.fillWidth: true
                         }
-
-
                     }
                 }
             }
 
-            // Flow Control Configuration
             Column {
                 spacing: _margins / 2
                 visible: _sprayEnabled
@@ -206,15 +182,6 @@ SetupPage {
                                 fact:       _flowMin
                                 visible:    _flowMin
                             }
-
-                            // QGCLabel { text: qsTr("Flow Monitor:") }
-                            // FactComboBox {
-                            //     width:      ScreenTools.defaultFontPixelWidth * 15
-                            //     fact:       _flowMonitor
-                            //     indexModel: false
-                            //     sizeToContents: true
-                            //     visible:    _flowMonitor
-                            // }
                         }
 
                         QGCLabel {
@@ -227,11 +194,9 @@ SetupPage {
                 }
             }
 
-            // Advanced Settings
             Column {
                 spacing: _margins / 2
-                // visible: _sprayEnabled
-                visible: false
+                visible: _sprayEnabled
 
                 QGCLabel {
                     text:       qsTr("Advanced Settings")
@@ -250,16 +215,10 @@ SetupPage {
                         anchors.left:       parent.left
                         spacing:            ScreenTools.defaultFontPixelWidth
 
-                        QGCButton {
-                            text: _showAdvanced ? qsTr("Hide Advanced") : qsTr("Show Advanced")
-                            onClicked: _showAdvanced = !_showAdvanced
-                        }
-
                         GridLayout {
                             columns:        2
                             rowSpacing:     _margins
                             columnSpacing:  _margins
-                            visible:        _showAdvanced
 
                             QGCLabel { text: qsTr("Flow Sensor Pin:") }
                             FactComboBox {
@@ -299,11 +258,12 @@ SetupPage {
                             font.pointSize: ScreenTools.smallFontPointSize
                             wrapMode:   Text.WordWrap
                             Layout.fillWidth: true
-                            visible:    _showAdvanced
                         }
                     }
                 }
             }
-        } // Flow
-    } // Component - sprayingPageComponent
-} // SetupPage
+        }
+    }
+}
+
+

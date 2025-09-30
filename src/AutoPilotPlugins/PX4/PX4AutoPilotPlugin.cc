@@ -21,6 +21,7 @@
 #include "PowerComponent.h"
 #include "SafetyComponent.h"
 #include "SensorsComponent.h"
+#include "PX4SprayingComponent.h"
 
 /// @file
 ///     @brief This is the AutoPilotPlugin implementatin for the MAV_AUTOPILOT_PX4 type.
@@ -107,6 +108,13 @@ const QVariantList& PX4AutoPilotPlugin::vehicleComponents(void)
                 _tuningComponent = new PX4TuningComponent(_vehicle, this, this);
                 _tuningComponent->setupTriggerSignals();
                 _components.append(QVariant::fromValue(static_cast<VehicleComponent*>(_tuningComponent)));
+
+                // Spraying component is optional; only add if SPRAY_ENABLE param exists
+                if (_vehicle->parameterManager()->parameterExists(FactSystem::defaultComponentId, "SPRAY_ENABLE")) {
+                    _sprayingComponent = new PX4SprayingComponent(_vehicle, this, this);
+                    _sprayingComponent->setupTriggerSignals();
+                    _components.append(QVariant::fromValue(static_cast<VehicleComponent*>(_sprayingComponent)));
+                }
 
                 if(_vehicle->parameterManager()->parameterExists(_vehicle->id(), "SYS_VEHICLE_RESP")) {
                     _flightBehavior = new PX4FlightBehavior(_vehicle, this, this);
