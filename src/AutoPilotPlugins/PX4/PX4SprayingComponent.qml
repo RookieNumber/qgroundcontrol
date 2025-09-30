@@ -49,14 +49,55 @@ SetupPage {
             property Fact _tankLow:               controller.getParameterFact(-1, "SPRAY_TANK_LOW", false)
             property Fact _tankCritical:          controller.getParameterFact(-1, "SPRAY_TANK_CRITICAL", false)
 
-            property bool _sprayEnabled:          _sprayEnable && _sprayEnable.rawValue !== 0
+            // Local fallback values when PX4 parameters are not present
+            property int    _localSprayEnable:    0
+            property string _localTankCapacity:   ""
+            property string _localFlowRate:       ""
+            property string _localFlowMin:        ""
+            property int    _localFlowPin:        0
+            property int    _localPumpPin:        0
+            property string _localFlowMult:       ""
+            property string _localFlowOffset:     ""
+
+            property bool _sprayEnabled:          (_sprayEnable && _sprayEnable.rawValue !== 0) || (!_sprayEnable && _localSprayEnable !== 0)
             property bool _flowMonitorEnabled:    _flowMonitor && _flowMonitor.rawValue !== 0
+            property bool _hasAnySprayParams:     _sprayEnable || _tankCapacity || _flowRate || _flowMin || _flowMonitor || _flowPin || _pumpPin || _flowMult || _flowOffset || _tankLow || _tankCritical
 
             QGCPalette { id: qgcPal; colorGroupEnabled: true }
 
+            // Message if PX4 firmware does not expose any SPRAY_* parameters
             Column {
                 spacing: _margins / 2
-                visible: _sprayEnable
+                visible: !_hasAnySprayParams
+
+                Rectangle {
+                    width:  flowLayout.width
+                    color:  qgcPal.windowShade
+
+                    ColumnLayout {
+                        id:             noParamColumn
+                        anchors.margins:    _margins
+                        anchors.top:        parent.top
+                        anchors.left:       parent.left
+                        spacing:            ScreenTools.defaultFontPixelWidth
+
+                        QGCLabel {
+                            text:       qsTr("No spraying parameters detected on this PX4 firmware.")
+                            wrapMode:   Text.WordWrap
+                        }
+                        QGCLabel {
+                            text:       qsTr("This panel requires custom PX4 parameters (SPRAY_*). The UI will show controls automatically when those parameters are present.")
+                            font.pointSize: ScreenTools.smallFontPointSize
+                            wrapMode:   Text.WordWrap
+                        }
+                    }
+                    implicitHeight: noParamColumn.implicitHeight + _margins * 2
+                }
+            }
+
+            Column {
+                spacing: _margins / 2
+                visible: true
 
                 QGCLabel {
                     text:       qsTr("Spraying System")
@@ -86,6 +127,14 @@ SetupPage {
                                 sizeToContents: true
                                 visible:    _sprayEnable
                             }
+                            QGCComboBox {
+                                id:                 sprayEnableFallback
+                                visible:            !_sprayEnable
+                                model:              [ qsTr("Disabled"), qsTr("Enabled") ]
+                                currentIndex:       _localSprayEnable
+                                onActivated:        _localSprayEnable = index
+                                sizeToContents:     true
+                            }
                         }
 
                         QGCLabel {
@@ -100,7 +149,7 @@ SetupPage {
 
             Column {
                 spacing: _margins / 2
-                visible: _sprayEnabled
+                visible: true
 
                 QGCLabel {
                     text:       qsTr("Tank Configuration")
@@ -125,11 +174,25 @@ SetupPage {
                             columnSpacing:  _margins
 
                             QGCLabel { text: qsTr("Tank Capacity:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _tankCapacity
-                                visible:    _tankCapacity
-                                unitsLabel: "mL"
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _tankCapacity
+                                    visible:    _tankCapacity
+                                    unitsLabel: "mL"
+                                }
+                                Row {
+                                    spacing: ScreenTools.defaultFontPixelWidth
+                                    visible:    !_tankCapacity
+                                    QGCTextField {
+                                        width:      ScreenTools.defaultFontPixelWidth * 15
+                                        text:       _localTankCapacity
+                                        onEditingFinished: _localTankCapacity = text
+                                    }
+                                    QGCLabel { text: "mL" }
+                                }
                             }
                         }
 
@@ -145,7 +208,7 @@ SetupPage {
 
             Column {
                 spacing: _margins / 2
-                visible: _sprayEnabled
+                visible: true
 
                 QGCLabel {
                     text:       qsTr("Flow Control")
@@ -170,17 +233,37 @@ SetupPage {
                             columnSpacing:  _margins
 
                             QGCLabel { text: qsTr("Flow Rate:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _flowRate
-                                visible:    _flowRate
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _flowRate
+                                    visible:    _flowRate
+                                }
+                                QGCTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    visible:    !_flowRate
+                                    text:       _localFlowRate
+                                    onEditingFinished: _localFlowRate = text
+                                }
                             }
 
                             QGCLabel { text: qsTr("Minimum Flow Rate:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _flowMin
-                                visible:    _flowMin
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _flowMin
+                                    visible:    _flowMin
+                                }
+                                QGCTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    visible:    !_flowMin
+                                    text:       _localFlowMin
+                                    onEditingFinished: _localFlowMin = text
+                                }
                             }
                         }
 
@@ -196,7 +279,7 @@ SetupPage {
 
             Column {
                 spacing: _margins / 2
-                visible: _sprayEnabled
+                visible: false
 
                 QGCLabel {
                     text:       qsTr("Advanced Settings")
@@ -221,35 +304,75 @@ SetupPage {
                             columnSpacing:  _margins
 
                             QGCLabel { text: qsTr("Flow Sensor Pin:") }
-                            FactComboBox {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _flowPin
-                                indexModel: false
-                                sizeToContents: true
-                                visible:    _flowPin
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactComboBox {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _flowPin
+                                    indexModel: false
+                                    sizeToContents: true
+                                    visible:    _flowPin
+                                }
+                                QGCComboBox {
+                                    visible:    !_flowPin
+                                    model:      ["0","1","2","3","4","5","6","7","8","9"]
+                                    currentIndex: _localFlowPin
+                                    onActivated: _localFlowPin = index
+                                }
                             }
 
                             QGCLabel { text: qsTr("Pump Control Pin:") }
-                            FactComboBox {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _pumpPin
-                                indexModel: false
-                                sizeToContents: true
-                                visible:    _pumpPin
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactComboBox {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _pumpPin
+                                    indexModel: false
+                                    sizeToContents: true
+                                    visible:    _pumpPin
+                                }
+                                QGCComboBox {
+                                    visible:    !_pumpPin
+                                    model:      ["0","1","2","3","4","5","6","7","8","9"]
+                                    currentIndex: _localPumpPin
+                                    onActivated: _localPumpPin = index
+                                }
                             }
 
                             QGCLabel { text: qsTr("Flow Multiplier:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _flowMult
-                                visible:    _flowMult
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _flowMult
+                                    visible:    _flowMult
+                                }
+                                QGCTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    visible:    !_flowMult
+                                    text:       _localFlowMult
+                                    onEditingFinished: _localFlowMult = text
+                                }
                             }
 
                             QGCLabel { text: qsTr("Flow Offset:") }
-                            FactTextField {
-                                width:      ScreenTools.defaultFontPixelWidth * 15
-                                fact:       _flowOffset
-                                visible:    _flowOffset
+                            Item {
+                                Layout.preferredWidth: ScreenTools.defaultFontPixelWidth * 15
+                                implicitHeight: childrenRect.height
+                                FactTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    fact:       _flowOffset
+                                    visible:    _flowOffset
+                                }
+                                QGCTextField {
+                                    width:      ScreenTools.defaultFontPixelWidth * 15
+                                    visible:    !_flowOffset
+                                    text:       _localFlowOffset
+                                    onEditingFinished: _localFlowOffset = text
+                                }
                             }
                         }
 

@@ -39,7 +39,7 @@ public:
     Q_INVOKABLE void rotateEntryPoint(void);
 
     // Overrides from ComplexMissionItem
-    QString         patternName         (void) const final { return name; }
+    QString         patternName         (void) const override { return name; }
     bool            load                (const QJsonObject& complexObject, int sequenceNumber, QString& errorString) final;
     QString         mapVisualQML        (void) const final { return QStringLiteral("SurveyMapVisual.qml"); }
     QString         presetsSettingsGroup(void) override { return settingsGroup; }
@@ -55,9 +55,9 @@ public:
     double  timeBetweenShots    (void) final;
 
     // Overrides from VisualMissionionItem
-    QString             commandDescription  (void) const final { return tr("Survey"); }
-    QString             commandName         (void) const final { return tr("Survey"); }
-    QString             abbreviation        (void) const final { return tr("S"); }
+    QString             commandDescription  (void) const override { return tr("Survey"); }
+    QString             commandName         (void) const override { return tr("Survey"); }
+    QString             abbreviation        (void) const override { return tr("S"); }
     ReadyForSaveState   readyForSaveState    (void) const final;
     double              additionalTimeDelay (void) const final;
 
