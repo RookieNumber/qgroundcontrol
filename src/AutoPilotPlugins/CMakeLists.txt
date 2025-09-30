@@ -70,6 +70,8 @@ add_library(AutoPilotPlugins
 	PX4/SensorsComponentController.cc
 	PX4/SensorsComponentController.h
 	PX4/SensorsComponent.h
+	PX4/PX4SprayingComponent.cc
+	PX4/PX4SprayingComponent.h
 
 	AutoPilotPlugin.cc
 )

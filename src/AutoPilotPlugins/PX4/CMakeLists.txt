@@ -3,6 +3,8 @@ add_custom_target(PX4AutoPilotPluginQml
 		AirframeComponent.qml
 		AirframeComponentSummary.qml
 		BatteryParams.qml
+		PX4SprayingComponent.qml
+		PX4SprayingComponentSummary.qml
 		CameraComponent.qml
 		CameraComponentSummary.qml
 		FlightModesComponentSummary.qml

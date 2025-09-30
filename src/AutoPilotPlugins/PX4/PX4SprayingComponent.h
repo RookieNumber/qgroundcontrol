@@ -1,0 +1,40 @@
+/****************************************************************************
+ *
+ * (c) 2009-2020 QGROUNDCONTROL PROJECT <http://www.qgroundcontrol.org>
+ *
+ * QGroundControl is licensed according to the terms in the file
+ * COPYING.md in the root of the source code directory.
+ *
+ ****************************************************************************/
+
+
+#pragma once
+
+#include "VehicleComponent.h"
+#include <QUrl>
+
+/// @file
+///     @brief PX4-specific spraying system configuration component
+///
+class PX4SprayingComponent : public VehicleComponent
+{
+    Q_OBJECT
+
+public:
+    PX4SprayingComponent(Vehicle* vehicle, AutoPilotPlugin* autopilot, QObject* parent = nullptr);
+
+    // Overrides from VehicleComponent
+    QString name(void) const final;
+    QString description(void) const final;
+    QString iconResource(void) const final;
+    bool requiresSetup(void) const final;
+    QUrl setupSource(void) const final;
+    QUrl summaryQmlSource(void) const final;
+    QStringList setupCompleteChangedTriggerList(void) const final;
+    bool setupComplete(void) const final;
+
+private:
+    const QString _name;
+};
+
+

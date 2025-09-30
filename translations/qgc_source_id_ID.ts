@@ -3896,6 +3896,127 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     </message>
 </context>
 <context>
+    <name>PX4SprayingComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="62"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="81"/>
+        <source>Spraying System:</source>
+        <translation>Sistem Penyemprotan:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="92"/>
+        <source>Enable or disable the spraying system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="106"/>
+        <source>Tank Configuration</source>
+        <translation>Konfigurasi Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="127"/>
+        <source>Tank Capacity:</source>
+        <translation>Kapasitas Tangki:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="137"/>
+        <source>Configure tank capacity and warning levels for liquid monitoring</source>
+        <translation>Konfigurasikan kapasitas tangki dan tingkat peringatan untuk pemantauan cairan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="151"/>
+        <source>Flow Control</source>
+        <translation>Kontrol Aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="172"/>
+        <source>Flow Rate:</source>
+        <translation>Laju Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="179"/>
+        <source>Minimum Flow Rate:</source>
+        <translation>Laju Aliran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="188"/>
+        <source>Configure flow rate settings and monitoring</source>
+        <translation>Konfigurasikan pengaturan dan pemantauan laju aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="202"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="223"/>
+        <source>Flow Sensor Pin:</source>
+        <translation>Pin Sensor Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="232"/>
+        <source>Pump Control Pin:</source>
+        <translation>Pin Kontrol Pompa:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="241"/>
+        <source>Flow Multiplier:</source>
+        <translation>Pengali Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="248"/>
+        <source>Flow Offset:</source>
+        <translation>Offset Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="257"/>
+        <source>Advanced hardware configuration for flow sensors and pump control</source>
+        <translation>Konfigurasi perangkat keras lanjutan untuk sensor aliran dan kontrol pompa</translation>
+    </message>
+</context>
+<context>
+    <name>PX4SprayingComponentSummary</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="37"/>
+        <source>Spraying System:</source>
+        <translation>Sistem Penyemprotan:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="38"/>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="42"/>
+        <source>Tank Capacity:</source>
+        <translation>Kapasitas Tangki:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="48"/>
+        <source>Flow Rate:</source>
+        <translation>Laju Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="54"/>
+        <source>Flow Monitor:</source>
+        <translation>Pemantauan Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="60"/>
+        <source>Low Tank Warning:</source>
+        <translation>Peringatan Tangki Rendah:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="66"/>
+        <source>Critical Tank Level:</source>
+        <translation>Tingkat Tangki Kritis:</translation>
+    </message>
+</context>
+<context>
     <name>AirframeComponent</name>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="45"/>
