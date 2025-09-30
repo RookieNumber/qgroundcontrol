@@ -53,7 +53,8 @@ Rectangle {
 
     Rectangle {
         anchors.fill:   viewButtonRow
-        visible:        currentToolbar === flyViewToolbar
+        // visible:        currentToolbar === flyViewToolbar
+        visible:        false
 
         gradient: Gradient {
             orientation: Gradient.Horizontal

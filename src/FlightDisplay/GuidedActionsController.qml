@@ -32,7 +32,7 @@ Item {
     property var actionList
     property var guidedValueSlider
     property var orbitMapCircle
-    property bool _hideGuidedValueSlider: QGroundControl.settingsManager && QGroundControl.settingsManager.appSettings ? QGroundControl.settingsManager.appSettings.hideGuidedValueSlider.rawValue : false
+    property bool _hideGuidedValueSlider: false
 
     readonly property string emergencyStopTitle:            qsTr("EMERGENCY STOP")
     readonly property string armTitle:                      qsTr("Arm")

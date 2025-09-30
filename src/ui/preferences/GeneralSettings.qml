@@ -702,14 +702,16 @@ Rectangle {
                                 FactCheckBox {
                                     text:        qsTr("hide critical vehicle settings")
                                     fact:        _hideCriticalVehicleSettings
-                                    visible:     _hideCriticalVehicleSettings.visible
+                                    // visible:     _hideCriticalVehicleSettings.visible
+                                    visible:     false
                                     property Fact _hideCriticalVehicleSettings: QGroundControl.settingsManager.appSettings.hideCriticalVehicleSettings
                                 }
 
                                 FactCheckBox {
                                     text:        qsTr("hide guided value slider")
                                     fact:        _hideGuidedValueSlider
-                                    visible:     _hideGuidedValueSlider.visible
+                                    // visible:     _hideGuidedValueSlider.visible
+                                    visible:     false
                                     property Fact _hideGuidedValueSlider: QGroundControl.settingsManager.appSettings.hideGuidedValueSlider
                                 }
 
