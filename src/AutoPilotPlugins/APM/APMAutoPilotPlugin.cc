@@ -33,6 +33,7 @@
 #include "QGCApplication.h"
 #include "ParameterManager.h"
 #include "APMSprayingComponent.h"
+#include "APMSpreaderComponent.h"
 #include "SettingsManager.h"
 #include "AppSettings.h"
 
@@ -59,6 +60,7 @@ APMAutoPilotPlugin::APMAutoPilotPlugin(Vehicle* vehicle, QObject* parent)
     , _heliComponent            (nullptr)
     , _apmRemoteSupportComponent(nullptr)
     , _sprayingComponent        (nullptr)
+    , _spreaderComponent        (nullptr)
 #if 0
     // Follow me not ready for Stable
     , _followComponent          (nullptr)
@@ -117,6 +119,10 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
             _sprayingComponent = new APMSprayingComponent(_vehicle, this);
             _sprayingComponent->setupTriggerSignals();
             _components.append(QVariant::fromValue((VehicleComponent*)_sprayingComponent));
+
+            _spreaderComponent = new APMSpreaderComponent(_vehicle, this);
+            _spreaderComponent->setupTriggerSignals();
+            _components.append(QVariant::fromValue((VehicleComponent*)_spreaderComponent));
 
             if (!_vehicle->sub() || (_vehicle->sub() && _vehicle->versionCompare(3, 5, 3) >= 0)) {
                 if (!hideCritical) {

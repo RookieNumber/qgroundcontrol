@@ -22,6 +22,8 @@
         <file alias="APMPowerComponentSummary.qml">../../AutoPilotPlugins/APM/APMPowerComponentSummary.qml</file>
         <file alias="APMSprayingComponent.qml">../../AutoPilotPlugins/APM/APMSprayingComponent.qml</file>
         <file alias="APMSprayingComponentSummary.qml">../../AutoPilotPlugins/APM/APMSprayingComponentSummary.qml</file>
+        <file alias="APMSpreaderComponent.qml">../../AutoPilotPlugins/APM/APMSpreaderComponent.qml</file>
+        <file alias="APMSpreaderComponentSummary.qml">../../AutoPilotPlugins/APM/APMSpreaderComponentSummary.qml</file>
         <file alias="APMRadioComponentSummary.qml">../../AutoPilotPlugins/APM/APMRadioComponentSummary.qml</file>
         <file alias="APMSafetyComponent.qml">../../AutoPilotPlugins/APM/APMSafetyComponent.qml</file>
         <file alias="APMSafetyComponentSub.qml">../../AutoPilotPlugins/APM/APMSafetyComponentSub.qml</file>

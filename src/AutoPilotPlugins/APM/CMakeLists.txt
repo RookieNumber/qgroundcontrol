@@ -15,6 +15,8 @@ SOURCES
     APMPowerComponentSummary.qml
     APMSprayingComponent.qml
     APMSprayingComponentSummary.qml
+    APMSpreaderComponent.qml
+    APMSpreaderComponentSummary.qml
     APMRadioComponentSummary.qml
     APMRemoteSupportComponent.qml
     APMSafetyComponent.qml

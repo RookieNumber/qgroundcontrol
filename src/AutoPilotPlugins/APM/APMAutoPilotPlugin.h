@@ -30,6 +30,7 @@ class APMHeliComponent;
 class APMRemoteSupportComponent;
 class APMFollowComponent;
 class APMSprayingComponent;
+class APMSpreaderComponent;
 
 /// This is the APM specific implementation of the AutoPilot class.
 class APMAutoPilotPlugin : public AutoPilotPlugin
@@ -61,6 +62,7 @@ protected:
     APMHeliComponent*           _heliComponent;
     APMRemoteSupportComponent*  _apmRemoteSupportComponent;
     APMSprayingComponent*       _sprayingComponent;
+    APMSpreaderComponent*       _spreaderComponent;
 #if 0
     // Follow me not ready for Stable
     APMFollowComponent*         _followComponent;

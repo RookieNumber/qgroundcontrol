@@ -116,7 +116,8 @@ Rectangle {
                     columnSpacing:      _margin
                     rowSpacing:         _margin
                     columns:            2
-                    visible:            tabBar.isSpraying
+                    // visible:            tabBar.isSpraying
+                    visible:            false
 
                     // Bind to autopilot parameter if available (APM: SPRAY_PUMP_RATE)
                     property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "SPRAY_PUMP_RATE", false)

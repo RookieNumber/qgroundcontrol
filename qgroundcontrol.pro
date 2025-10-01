@@ -1177,6 +1177,7 @@ APMFirmwarePlugin {
         src/FirmwarePlugin/APM/ArduRoverFirmwarePlugin.h \
         src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.h \
         src/AutoPilotPlugins/APM/APMSprayingComponent.h \
+        src/AutoPilotPlugins/APM/APMSpreaderComponent.h \
 
     SOURCES += \
         src/AutoPilotPlugins/APM/APMAirframeComponent.cc \
@@ -1206,6 +1207,7 @@ APMFirmwarePlugin {
         src/FirmwarePlugin/APM/ArduRoverFirmwarePlugin.cc \
         src/FirmwarePlugin/APM/ArduSubFirmwarePlugin.cc \
         src/AutoPilotPlugins/APM/APMSprayingComponent.cc \
+        src/AutoPilotPlugins/APM/APMSpreaderComponent.cc \
 }
 
 APMFirmwarePluginFactory {
