@@ -58,7 +58,7 @@ void QGCPalette::_buildMap()
     DECLARE_QGC_COLOR(warningText,          "#cc0808", "#cc0808", "#f85761", "#f85761", "#f85761", "#f85761")
     DECLARE_QGC_COLOR(button,               "#ffffff", "#ffffff", "#707070", "#8c8c8c", "#707070", "#8c8c8c")
     DECLARE_QGC_COLOR(buttonText,           "#9d9d9d", "#000000", "#A6A6A6", "#ffffff", "#A6A6A6", "#ffffff")
-    DECLARE_QGC_COLOR(buttonHighlight,      "#e4e4e4", "#946120", "#3a3a3a", "#61b3ff", "#3a3a3a", "#61b3ff")
+    DECLARE_QGC_COLOR(buttonHighlight,      "#e4e4e4", "#009e74", "#3a3a3a", "#61b3ff", "#3a3a3a", "#61b3ff")
     DECLARE_QGC_COLOR(buttonHighlightText,  "#2c2c2c", "#ffffff", "#2c2c2c", "#ffffff", "#2c2c2c", "#ffffff")
     DECLARE_QGC_COLOR(primaryButton,        "#585858", "#009e74", "#585858", "#8cb3be", "#585858", "#8cb3be")
     DECLARE_QGC_COLOR(primaryButtonText,    "#2c2c2c", "#000000", "#2c2c2c", "#000000", "#2c2c2c", "#000000")
@@ -81,11 +81,11 @@ void QGCPalette::_buildMap()
     DECLARE_QGC_COLOR(statusFailedText,     "#9d9d9d", "#000000", "#707070", "#ffffff", "#707070", "#ffffff")
     DECLARE_QGC_COLOR(statusPassedText,     "#9d9d9d", "#000000", "#707070", "#ffffff", "#707070", "#ffffff")
     DECLARE_QGC_COLOR(statusPendingText,    "#9d9d9d", "#000000", "#707070", "#ffffff", "#707070", "#ffffff")
-    DECLARE_QGC_COLOR(toolbarBackground,    "#ffffff", "#ffffff", "#222222", "#148EFF", "#222222", "#148EFF")
+    DECLARE_QGC_COLOR(toolbarBackground,    "#ffffff", "#ebebeb", "#222222", "#148EFF", "#222222", "#148EFF")
 
     // Colors not affecting by theming
     //                                              Disabled    Enabled
-    DECLARE_QGC_NONTHEMED_COLOR(brandingPurple,     "#4A2C6D", "#4A2C6D")
+    DECLARE_QGC_NONTHEMED_COLOR(brandingPurple,     "#004A2C6D", "#00148EFF")
     DECLARE_QGC_NONTHEMED_COLOR(brandingBlue,       "#48D6FF", "#6045c5")
     DECLARE_QGC_NONTHEMED_COLOR(toolStripFGColor,   "#707070", "#ffffff")
 

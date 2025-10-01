@@ -20,7 +20,7 @@ Item {
 
     FactPanelController { id: controller; }
 
-    property Fact _spreadEnable:           controller.getParameterFact(-1, "SPREAD_ENABLE")
+    property Fact _spreadEnable:           controller.getParameterFact(-1, "SPRAY_ENABLE")
     property Fact _hopperCapacity:        controller.getParameterFact(-1, "SPREAD_HOPPER_CAPACITY", false)
     property Fact _spreadRate:            controller.getParameterFact(-1, "SPREAD_RATE", false)
     property Fact _spreadMonitor:         controller.getParameterFact(-1, "SPREAD_MONITOR", false)

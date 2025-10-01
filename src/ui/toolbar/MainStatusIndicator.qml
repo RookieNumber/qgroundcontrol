@@ -87,7 +87,7 @@ RowLayout {
                             _mainStatusBGColor = "green"
                             return mainStatusLabel._readyToFlyText
                         } else {
-                            _mainStatusBGColor = "yellow"
+                            _mainStatusBGColor = "#FFA600"
                             return mainStatusLabel._notReadyToFlyText
                         }
                     } else {
@@ -96,7 +96,7 @@ RowLayout {
                             _mainStatusBGColor = "green"
                             return mainStatusLabel._readyToFlyText
                         } else {
-                            _mainStatusBGColor = "yellow"
+                            _mainStatusBGColor = "#FFA600"
                             return mainStatusLabel._notReadyToFlyText
                         }
                     }

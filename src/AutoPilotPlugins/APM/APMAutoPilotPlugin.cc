@@ -171,22 +171,28 @@ const QVariantList& APMAutoPilotPlugin::vehicleComponents(void)
             }
 
             if (_vehicle->sub()) {
-                _lightsComponent = new APMLightsComponent(_vehicle, this);
-                _lightsComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue((VehicleComponent*)_lightsComponent));
+                if (!hideCritical) {
+                    _lightsComponent = new APMLightsComponent(_vehicle, this);
+                    _lightsComponent->setupTriggerSignals();
+                    _components.append(QVariant::fromValue((VehicleComponent*)_lightsComponent));
+                }
 
                 if(_vehicle->versionCompare(3, 5, 0) >= 0) {
-                    _subFrameComponent = new APMSubFrameComponent(_vehicle, this);
-                    _subFrameComponent->setupTriggerSignals();
-                    _components.append(QVariant::fromValue((VehicleComponent*)_subFrameComponent));
+                    if (!hideCritical) {
+                        _subFrameComponent = new APMSubFrameComponent(_vehicle, this);
+                        _subFrameComponent->setupTriggerSignals();
+                        _components.append(QVariant::fromValue((VehicleComponent*)_subFrameComponent));
+                    }
                 }
             }
 
             //-- Is there an ESP8266 Connected?
             if(_vehicle->parameterManager()->parameterExists(MAV_COMP_ID_UDP_BRIDGE, "SW_VER")) {
-                _esp8266Component = new ESP8266Component(_vehicle, this);
-                _esp8266Component->setupTriggerSignals();
-                _components.append(QVariant::fromValue((VehicleComponent*)_esp8266Component));
+                if (!hideCritical) {
+                    _esp8266Component = new ESP8266Component(_vehicle, this);
+                    _esp8266Component->setupTriggerSignals();
+                    _components.append(QVariant::fromValue((VehicleComponent*)_esp8266Component));
+                }
             }
 
             if (!hideCritical) {

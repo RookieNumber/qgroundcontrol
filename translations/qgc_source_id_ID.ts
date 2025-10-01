@@ -18982,4 +18982,97 @@ Confirm change?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
+<context>
+    <name>APMSpreaderComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="64"/>
+        <source>Spreader System</source>
+        <translation>Sistem Penyebar</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="83"/>
+        <source>Spreader System:</source>
+        <translation>Sistem Penyebar:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="93"/>
+        <source>Enable or disable the spreader system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyebar</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="109"/>
+        <source>Hopper Configuration</source>
+        <translation>Konfigurasi Hopper</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="130"/>
+        <source>Hopper Capacity:</source>
+        <translation>Kapasitas Hopper:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="155"/>
+        <source>Configure hopper capacity and warning levels for material monitoring</source>
+        <translation>Konfigurasikan kapasitas hopper dan level peringatan untuk pemantauan material</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="170"/>
+        <source>Spread Control</source>
+        <translation>Kontrol Penyebaran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="191"/>
+        <source>Spread Rate:</source>
+        <translation>Laju Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="198"/>
+        <source>Minimum Spread Rate:</source>
+        <translation>Laju Penyebaran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="216"/>
+        <source>Configure spread rate settings and monitoring</source>
+        <translation>Konfigurasikan pengaturan laju penyebaran dan pemantauan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="232"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="249"/>
+        <source>Hide Advanced</source>
+        <translation>Sembunyikan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="249"/>
+        <source>Show Advanced</source>
+        <translation>Tampilkan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="259"/>
+        <source>Spread Sensor Pin:</source>
+        <translation>Pin Sensor Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="268"/>
+        <source>Motor Control Pin:</source>
+        <translation>Pin Kontrol Motor:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="277"/>
+        <source>Spread Multiplier:</source>
+        <translation>Pengali Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="284"/>
+        <source>Spread Offset:</source>
+        <translation>Offset Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="293"/>
+        <source>Advanced hardware configuration for spread sensors and motor control</source>
+        <translation>Konfigurasi perangkat keras lanjutan untuk sensor penyebaran dan kontrol motor</translation>
+    </message>
+</context>
 </TS>

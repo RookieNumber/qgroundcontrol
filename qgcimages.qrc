@@ -210,5 +210,7 @@
         <file alias="ZoomPlus.svg">src/FlightMap/Images/ZoomPlus.svg</file>
         <file alias="SprayingIcon.svg">src/AutoPilotPlugins/APM/Images/SprayingIcon.svg</file>
         <file alias="SpreaderIcon.svg">src/AutoPilotPlugins/APM/Images/SpreaderIcon.svg</file>
+        <file alias="APM/BrandImageFerto">src/FirmwarePlugin/APM/Ferto3BrandImage.png</file>
+        <file alias="APM/BrandImageFertoGreen">src/FirmwarePlugin/APM/FertoBrandImage.png</file>
     </qresource>
 </RCC>

@@ -35,22 +35,22 @@ SetupPage {
             spacing:    _margins
             
             // Spreader system parameters
-            property Fact _spreadEnable:           controller.getParameterFact(-1, "SPREAD_ENABLE")
-            property Fact _hopperCapacity:        controller.getParameterFact(-1, "SPREAD_HOPPER_CAPACITY", false)
-            property Fact _spreadRate:            controller.getParameterFact(-1, "SPREAD_RATE", false)
-            property Fact _spreadMin:              controller.getParameterFact(-1, "SPREAD_MIN", false)
+            property Fact _sprayEnable:            controller.getParameterFact(-1, "SPRAY_ENABLE")
+            property Fact _hopperCapacity:        controller.getParameterFact(-1, "SPRAY_TANK_CAPACITY", false)
+            property Fact _spreadRate:            controller.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
+            property Fact _spreadMin:              controller.getParameterFact(-1, "SPRAY_PUMP_MIN", false)
             property Fact _spreadMonitor:         controller.getParameterFact(-1, "SPREAD_MONITOR", false)
-            property Fact _spreadPin:              controller.getParameterFact(-1, "SPREAD_PIN", false)
-            property Fact _motorPin:              controller.getParameterFact(-1, "SPREAD_MOTOR_PIN", false)
-            property Fact _spreadMult:            controller.getParameterFact(-1, "SPREAD_MULT", false)
-            property Fact _spreadOffset:           controller.getParameterFact(-1, "SPREAD_OFFSET", false)
-            property Fact _hopperLow:              controller.getParameterFact(-1, "SPREAD_HOPPER_LOW", false)
-            property Fact _hopperCritical:        controller.getParameterFact(-1, "SPREAD_HOPPER_CRITICAL", false)
+            property Fact _spreadPin:              controller.getParameterFact(-1, "SPRAY_FLOW_PIN", false)
+            property Fact _motorPin:              controller.getParameterFact(-1, "SPRAY_PUMP_PIN", false)
+            property Fact _spreadMult:            controller.getParameterFact(-1, "SPRAY_FLOW_MULT", false)
+            property Fact _spreadOffset:           controller.getParameterFact(-1, "SPRAY_FLOW_OFFSET", false)
+            property Fact _hopperLow:              controller.getParameterFact(-1, "SPRAY_TANK_LOW", false)
+            property Fact _hopperCritical:        controller.getParameterFact(-1, "SPRAY_TANK_CRITICAL", false)
 
             // Sometimes engineer uses Batt_2 capacity as the replacement for hopper volume that required for material monitoring calculations
             property Fact _batt2Capacity:         controller.getParameterFact(-1, "BATT2_CAPACITY", false)
 
-            property bool _spreadEnabled:         _spreadEnable.rawValue !== 0
+            property bool _spreadEnabled:         _sprayEnable.rawValue !== 0
             property bool _spreadMonitorEnabled:  _spreadMonitor.rawValue !== 0
             property bool _showAdvanced:          false
 
@@ -83,7 +83,7 @@ SetupPage {
                             QGCLabel { text: qsTr("Spreader System:") }
                             FactComboBox {
                                 id:         spreadEnableCombo
-                                fact:       _spreadEnable
+                                fact:       _sprayEnable
                                 indexModel: false
                                 sizeToContents: true
                             }
@@ -102,7 +102,8 @@ SetupPage {
             // Hopper Configuration
             Column {
                 spacing: _margins / 2
-                visible: _spreadEnabled
+                // visible: _spreadEnabled
+                visible: false
 
                 QGCLabel {
                     text:       qsTr("Hopper Configuration")
