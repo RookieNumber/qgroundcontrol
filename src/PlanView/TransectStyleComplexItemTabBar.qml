@@ -7,17 +7,18 @@ import QGroundControl.Controls      1.0
 QGCTabBar {
     id: tabBar
 
-    // Allow callers to override which tab is selected at startup
-    property int initialIndexOverride: -1
-    // Allow callers to control visibility of specific tabs
-    property bool showCameraTab:  true
-    property bool showTerrainTab: true
-    property bool showPresetsTab: true
+    // Mission item used to tailor which tabs are shown
+    property var missionItem
+    readonly property bool isSpraying: missionItem && missionItem.patternName === qsTr("Spraying")
 
-    Component.onCompleted: currentIndex = initialIndexOverride >= 0 ? initialIndexOverride : (QGroundControl.settingsManager.planViewSettings.displayPresetsTabFirst.rawValue ? 2 : 0)
+    // Hide the entire tab bar when spraying (no tabs visible)
+    visible: !isSpraying
 
-    QGCTabButton { icon.source: "/qmlimages/PatternGrid.png"; icon.height: ScreenTools.defaultFontPixelHeight }
-    QGCTabButton { icon.source: "/qmlimages/PatternCamera.png";  icon.height: ScreenTools.defaultFontPixelHeight; visible: showCameraTab }
-    QGCTabButton { icon.source: "/qmlimages/PatternTerrain.png"; icon.height: ScreenTools.defaultFontPixelHeight; visible: showTerrainTab }
-    QGCTabButton { icon.source: "/qmlimages/PatternPresets.png"; icon.height: ScreenTools.defaultFontPixelHeight; visible: showPresetsTab }
+    Component.onCompleted: currentIndex = isSpraying ? 0 : (QGroundControl.settingsManager.planViewSettings.displayPresetsTabFirst.rawValue ? 2 : 0)
+    onIsSprayingChanged: if (isSpraying) currentIndex = 0
+
+    QGCTabButton { icon.source: "/qmlimages/PatternGrid.png"; icon.height: ScreenTools.defaultFontPixelHeight; visible: !isSpraying }
+    QGCTabButton { icon.source: "/qmlimages/PatternCamera.png"; icon.height: ScreenTools.defaultFontPixelHeight; visible: !isSpraying }
+    QGCTabButton { icon.source: "/qmlimages/PatternTerrain.png"; icon.height: ScreenTools.defaultFontPixelHeight; visible: !isSpraying }
+    QGCTabButton { icon.source: "/qmlimages/PatternPresets.png"; icon.height: ScreenTools.defaultFontPixelHeight; visible: !isSpraying }
 }

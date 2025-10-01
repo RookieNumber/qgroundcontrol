@@ -24,7 +24,6 @@ Grid {
         text:       missionItem.cameraShots
         visible:    missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
     }
-
     QGCLabel {
         text:       qsTr("Photo Interval")
         visible:    missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
@@ -33,7 +32,6 @@ Grid {
         text:       missionItem.timeBetweenShots.toFixed(1) + " " + qsTr("secs")
         visible:    missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
     }
-
     QGCLabel {
         text:       qsTr("Trigger Distance")
         visible:    missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1

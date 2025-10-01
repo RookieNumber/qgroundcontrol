@@ -12,6 +12,7 @@ import QGroundControl.FactSystem    1.0
 import QGroundControl.FactControls  1.0
 import QGroundControl.Palette       1.0
 import QGroundControl.FlightMap     1.0
+import QGroundControl.Controllers   1.0
 
 Rectangle {
     id:         _root
@@ -54,6 +55,8 @@ Rectangle {
     function polygonAdjustFinished() { }
 
     QGCPalette { id: qgcPal; colorGroupEnabled: true }
+    // Controller to access parameter Facts when needed (e.g., spraying flow rate)
+    FactPanelController { id: _paramController }
 
     ColumnLayout {
         id:                 editorColumn
@@ -79,17 +82,14 @@ Rectangle {
             TransectStyleComplexItemTabBar {
                 id:                 tabBar
                 Layout.fillWidth:   true
-                // Hide Camera, Terrain and Presets tabs for Spraying editor
-                showCameraTab:      _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
-                showTerrainTab:     _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
-                showPresetsTab:     _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
+                missionItem:        _missionItem
             }
 
             // Grid tab
             ColumnLayout {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 0
+                visible:            tabBar.isSpraying || tabBar.currentIndex === 0
 
                 QGCLabel {
                     Layout.fillWidth:   true
@@ -108,6 +108,37 @@ Rectangle {
                     sideDistanceLabel:              qsTr("Spacing")
                     // Hide Trigger Dist for Spraying editor only
                     showFrontalDistance:            _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
+                }
+
+                // Additional Spraying-specific field: Cruise speed (placed under Altitude)
+                GridLayout {
+                    Layout.fillWidth:   true
+                    columnSpacing:      _margin
+                    rowSpacing:         _margin
+                    columns:            2
+                    visible:            tabBar.isSpraying
+
+                    // Bind to autopilot parameter if available (APM: SPRAY_PUMP_RATE)
+                    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
+
+                    QGCLabel { text: qsTr("Cruise speed") }
+                    FactTextField {
+                        Layout.fillWidth:   true
+                        showUnits:          true
+                        fact:               QGroundControl.settingsManager.appSettings.offlineEditingCruiseSpeed
+                    }
+
+                    QGCLabel { text: qsTr("Flow rate") }
+                    FactTextField {
+                        Layout.fillWidth:   true
+                        showUnits:          true
+                        fact:               _sprayPumpRate
+                        visible:            _sprayPumpRate
+                    }
+                    // QGCLabel {
+                    //     text:               qsTr("Not available")
+                    //     visible:            !_sprayPumpRate
+                    // }
                 }
 
                 SectionHeader {
@@ -146,7 +177,7 @@ Rectangle {
             // Camera Tab
             CameraCalcCamera {
                 Layout.fillWidth:   true
-                visible:            tabBar.currentIndex === 1
+                visible:            !tabBar.isSpraying && tabBar.currentIndex === 1
                 cameraCalc:         _missionItem.cameraCalc
             }
 
@@ -154,7 +185,7 @@ Rectangle {
             TransectStyleComplexItemTerrainFollow {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 2
+                visible:            !tabBar.isSpraying && tabBar.currentIndex === 2
                 missionItem:        _missionItem
             }
 
@@ -162,7 +193,7 @@ Rectangle {
             ColumnLayout {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 3
+                visible:            !tabBar.isSpraying && tabBar.currentIndex === 3
 
                 QGCLabel {
                     Layout.fillWidth:   true

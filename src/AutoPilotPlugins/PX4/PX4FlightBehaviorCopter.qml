@@ -16,11 +16,22 @@ import QGroundControl.FactSystem    1.0
 import QGroundControl.Controls      1.0
 import QGroundControl.Palette       1.0
 import QGroundControl.ScreenTools   1.0
+import QGroundControl.Controllers   1.0
 
 SetupPage {
     id:             flightBehavior
     pageComponent:  pageComponent
     property real _margins: ScreenTools.defaultFontPixelHeight
+
+    // Password gate
+    property bool _authorized: false
+    PasswordAuthManager { id: _pageAuth }
+    Component.onCompleted: {
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
 
     FactPanelController {
         id:         controller
@@ -40,6 +51,7 @@ SetupPage {
         Column {
 
             spacing:            _margins
+            visible:            flightBehavior._authorized
 
             Column {
                 visible:                _sys_vehicle_resp
@@ -168,4 +180,35 @@ SetupPage {
 
         } // Column
     } // Component - pageComponent
+
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:       parent
+        color:              qgcPal.window
+        opacity:            0.98
+        visible:            !flightBehavior._authorized
+        z:                  1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+            QGCLabel {
+                text: qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+            QGCButton {
+                text: qsTr("Unlock")
+                primary: true
+                onClicked: enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: flightBehavior._authorized = true
+        }
+    }
 } // SetupPage

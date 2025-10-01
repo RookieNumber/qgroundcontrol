@@ -15659,7 +15659,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
         <location filename="../src/ui/preferences/RemoteIDSettings.qml" line="555"/>
         <location filename="../src/ui/preferences/RemoteIDSettings.qml" line="556"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/ui/preferences/RemoteIDSettings.qml" line="555"/>
