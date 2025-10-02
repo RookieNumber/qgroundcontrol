@@ -78,6 +78,94 @@ Item {
         return true
     }
 
+    // Tank empty monitoring properties
+    property real _tankEmptyThreshold: 50  // mL - threshold for considering tank empty
+    property bool _tankEmpty: false
+    property bool _rtlTriggered: false  // Prevent multiple RTL triggers
+    property bool _autoRTLEnabled: true  // Enable/disable auto-RTL feature
+    
+    // Tank empty detection
+    function _checkTankEmpty() {
+        if (!_sprayingEnabled || !_sprayerBattery || _rtlTriggered) return false
+        
+        var remaining = _liquidRemainingML()
+        if (isNaN(remaining)) return false
+        
+        return remaining <= _tankEmptyThreshold
+    }
+    
+    // RTL trigger function
+    function _triggerRTL() {
+        if (!_activeVehicle || _rtlTriggered || !_autoRTLEnabled) return
+        
+        _rtlTriggered = true
+        
+        // Show confirmation dialog
+        var dialog = Qt.createComponent("qrc:/toolbar/SprayerRTLDialog.qml")
+        if (dialog.status === Component.Ready) {
+            var rtlDialog = dialog.createObject(mainWindow, {
+                "vehicle": _activeVehicle
+            })
+            
+            rtlDialog.confirmed.connect(function() {
+                if (_activeVehicle && _activeVehicle.guidedModeSupported()) {
+                    _activeVehicle.guidedModeRTL(false) // false = don't land immediately
+                    console.log("RTL triggered due to empty sprayer tank")
+                }
+            })
+            
+            rtlDialog.cancelled.connect(function() {
+                _rtlTriggered = false  // Reset flag if user cancels
+            })
+            
+            rtlDialog.show()
+        } else {
+            console.warn("Failed to create RTL dialog:", dialog.errorString())
+            _rtlTriggered = false
+        }
+    }
+    
+    // Monitor tank level changes
+    on_TankEmptyChanged: {
+        if (_tankEmpty && _sprayingEnabled && !_rtlTriggered) {
+            _triggerRTL()
+        }
+    }
+    
+    // Reset RTL trigger when vehicle is disarmed or tank is refilled
+    on_ActiveVehicleChanged: {
+        if (!_activeVehicle) {
+            _rtlTriggered = false
+        }
+    }
+    
+    // Reset RTL trigger when vehicle is disarmed
+    Connections {
+        target: _activeVehicle
+        function onArmedChanged() {
+            if (!_activeVehicle.armed) {
+                _rtlTriggered = false
+            }
+        }
+    }
+    
+    // Timer to continuously monitor tank level
+    Timer {
+        id: tankMonitorTimer
+        interval: 2000  // Check every 2 seconds
+        running: _sprayingEnabled && _activeVehicle && _activeVehicle.armed
+        repeat: true
+        onTriggered: {
+            var wasEmpty = _tankEmpty
+            _tankEmpty = _checkTankEmpty()
+            
+            // Only trigger RTL if tank just became empty
+            if (_tankEmpty && !wasEmpty && _sprayingEnabled && !_rtlTriggered && _autoRTLEnabled) {
+                _triggerRTL()
+            }
+        }
+    }
+
     // Debug information
     property string _debugInfo: {
         if (!_activeVehicle) return "No vehicle"
@@ -264,6 +352,24 @@ Item {
                     text: "Spraying Enabled: " + (_sprayingEnabled ? "Yes" : "No")
                     font.pointSize: ScreenTools.smallFontPointSize
                     color: _sprayingEnabled ? qgcPal.colorGreen : qgcPal.colorRed
+                }
+
+                QGCLabel {
+                    text: "Auto-RTL Enabled: " + (_autoRTLEnabled ? "Yes" : "No")
+                    font.pointSize: ScreenTools.smallFontPointSize
+                    color: _autoRTLEnabled ? qgcPal.colorGreen : qgcPal.colorOrange
+                }
+
+                QGCLabel {
+                    text: "Tank Status: " + (_tankEmpty ? "EMPTY" : "OK")
+                    font.pointSize: ScreenTools.smallFontPointSize
+                    color: _tankEmpty ? qgcPal.colorRed : qgcPal.colorGreen
+                }
+
+                QGCLabel {
+                    text: "RTL Triggered: " + (_rtlTriggered ? "Yes" : "No")
+                    font.pointSize: ScreenTools.smallFontPointSize
+                    color: _rtlTriggered ? qgcPal.colorOrange : qgcPal.colorGreen
                 }
 
                 RowLayout {

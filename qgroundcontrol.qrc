@@ -20,6 +20,7 @@
         <file alias="APMSupportForwardingIndicator.qml">src/ui/toolbar/APMSupportForwardingIndicator.qml</file>
         <file alias="GimbalIndicator.qml">src/ui/toolbar/GimbalIndicator.qml</file>
         <file alias="SprayerIndicator.qml">src/ui/toolbar/SprayerIndicator.qml</file>
+        <file alias="SprayerRTLDialog.qml">src/ui/toolbar/SprayerRTLDialog.qml</file>
     </qresource>
     <qresource prefix="/checklists">
         <file alias="DefaultChecklist.qml">src/FlightDisplay/DefaultChecklist.qml</file>

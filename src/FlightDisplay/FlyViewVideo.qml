@@ -16,7 +16,8 @@ import QGroundControl.ScreenTools   1.0
 
 Item {
     id:         _root
-    visible:    QGroundControl.videoManager.hasVideo
+    // visible:    QGroundControl.videoManager.hasVideo
+    visible:    true
 
     property int    _track_rec_x:       0
     property int    _track_rec_y:       0
