@@ -41,6 +41,7 @@ const char* AppSettings::photoDirectory =           QT_TRANSLATE_NOOP("AppSettin
 const char* AppSettings::crashDirectory =           QT_TRANSLATE_NOOP("AppSettings", "CrashLogs");
 const char* AppSettings::customActionsDirectory =   QT_TRANSLATE_NOOP("AppSettings", "CustomActions");
 
+
 // Release languages are 90%+ complete
 QList<int> AppSettings::_rgReleaseLanguages = {
     QLocale::AnyLanguage,  // System

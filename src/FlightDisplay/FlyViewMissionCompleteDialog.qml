@@ -41,6 +41,8 @@ Item {
             _vehicleWasInMissionFlightMode = _vehicleInMissionFlightMode
         } else {
             if (_showMissionCompleteDialog) {
+                // Always trigger auto-download when mission completes
+                _downloadFlightLogs()
                 missionCompleteDialogComponent.createObject(mainWindow).open()
             }
             _vehicleWasArmed = false
@@ -51,6 +53,17 @@ Item {
     on_VehicleInMissionFlightModeChanged: {
         if (_vehicleInMissionFlightMode && _vehicleArmed) {
             _vehicleWasInMissionFlightMode = true
+        }
+    }
+
+    // Function to download flight logs
+    function _downloadFlightLogs() {
+        if (_activeVehicle && _activeVehicle.logDownloadController && !_activeVehicle.logDownloadController.downloadingLogs) {
+            // Get the default log save path
+            var savePath = QGroundControl.settingsManager.appSettings.logSavePath
+            
+            // Start automatic download
+            _activeVehicle.logDownloadController.download(savePath)
         }
     }
 
@@ -98,6 +111,16 @@ Item {
 
                 }
 
+                QGCButton {
+                    Layout.fillWidth:   true
+                    text:               qsTr("Download Flight Logs")
+                    visible:            !_activeVehicle.communicationLost
+                    onClicked: {
+                        _downloadFlightLogs()
+                        missionCompleteDialog.close()
+                    }
+                }
+
                 Rectangle {
                     Layout.fillWidth:   true
                     color:              qgcPal.text
@@ -134,6 +157,7 @@ Item {
                     text:               qsTr("If you are changing batteries for Resume Mission do not disconnect from the vehicle.")
                     visible:            globals.guidedControllerFlyView.showResumeMission
                 }
+
             }
         }
     }

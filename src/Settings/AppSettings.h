@@ -94,6 +94,7 @@ public:
     Q_PROPERTY(QString logFileExtension         MEMBER logFileExtension         CONSTANT)
     Q_PROPERTY(QString tilesetFileExtension     MEMBER tilesetFileExtension     CONSTANT)
 
+
     QString missionSavePath       ();
     QString parameterSavePath     ();
     QString telemetrySavePath     ();
