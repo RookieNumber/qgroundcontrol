@@ -59,7 +59,7 @@ ScreenToolsController::normalFontFamily() const
     if(langID == QLocale::Korean) {
         return QString("NanumGothic");
     } else {
-        return QString("Open Sans");
+        return QString("Proxima Nova");
     }
 }
 
@@ -71,7 +71,7 @@ ScreenToolsController::boldFontFamily() const
     if(langID == QLocale::Korean) {
         return QString("NanumGothic");
     } else {
-        return QString("Open Sans Semibold");
+        return QString("Proxima Nova");
     }
 }
 
