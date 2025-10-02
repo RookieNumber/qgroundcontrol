@@ -7056,37 +7056,42 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="62"/>
         <source>Flight Plan complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Misi Penerbangan Selesai</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="78"/>
         <source>%1 Images Taken</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Gambar Diambil</translation>
+    </message>
+    <message>
+        <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="178"/>
+        <source>Liquid Used: %1</source>
+        <translation>Cairan Digunakan: %1</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="85"/>
         <source>Remove plan from vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus Misi dari kendaraan</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="96"/>
         <source>Leave plan on vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Biarkan Misi di kendaraan</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="115"/>
         <source>Resume Mission From Waypoint %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjutkan Misi Dari Waypoint %1</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="126"/>
         <source>Resume Mission will rebuild the current mission from the last flown waypoint and upload it to the vehicle for the next flight.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjutkan Misi akan membangun kembali misi saat ini dari waypoint terakhir yang diterbangi dan mengunggahnya ke kendaraan untuk penerbangan berikutnya.</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/FlyViewMissionCompleteDialog.qml" line="134"/>
         <source>If you are changing batteries for Resume Mission do not disconnect from the vehicle.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika Anda mengganti baterai untuk Lanjutkan Misi, jangan putuskan sambungan dari kendaraan.</translation>
     </message>
 </context>
 <context>
@@ -13355,22 +13360,22 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="174"/>
         <source>Plan is waiting on terrain data from server for correct altitude values.</source>
-        <translation>Rencana sedang menunggu data medan dari server untuk mendapatkan nilai ketinggian yang benar.</translation>
+        <translation>Misi sedang menunggu data medan dari server untuk mendapatkan nilai ketinggian yang benar.</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="200"/>
         <source>Plan Upload</source>
-        <translation>Unggah Rencana</translation>
+        <translation>Unggah Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="212"/>
         <source>Select Plan File</source>
-        <translation>Pilih File Rencana</translation>
+        <translation>Pilih File Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="223"/>
         <source>Save Plan</source>
-        <translation>Simpan Rencana</translation>
+        <translation>Simpan Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="238"/>
@@ -13405,7 +13410,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="504"/>
         <source>Plan</source>
-        <translation>Rencana</translation>
+        <translation>Misi</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="96"/>
@@ -13415,7 +13420,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="107"/>
         <source>Plan View - Vehicle Disconnected</source>
-        <translation>Tampilan Rencana - Drone Terputus</translation>
+        <translation>Tampilan Misi - Drone Terputus</translation>
     </message>
     <message>
         <location filename="../src/PlanView/PlanView.qml" line="107"/>

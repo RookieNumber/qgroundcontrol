@@ -16,6 +16,7 @@ import QGroundControl               1.0
 import QGroundControl.Controls      1.0
 import QGroundControl.Palette       1.0
 import QGroundControl.ScreenTools   1.0
+import MAVLink                      1.0
 
 /// Dialog which shows up when a flight completes. Prompts the user for things like whether they should remove the plan from the vehicle.
 Item {
@@ -34,6 +35,49 @@ Item {
     property bool _showMissionCompleteDialog:       _vehicleWasArmed && _vehicleWasInMissionFlightMode &&
                                                     (missionController.containsItems || geoFenceController.containsItems || rallyPointController.containsItems ||
                                                      (_activeVehicle ? _activeVehicle.cameraTriggerPoints.count !== 0 : false))
+
+    // Spraying system properties
+    property var _sprayerBattery: {
+        if (_activeVehicle && _activeVehicle.batteries) {
+            // First try to find battery with sprayer function
+            for (var i = 0; i < _activeVehicle.batteries.count; i++) {
+                var battery = _activeVehicle.batteries.get(i)
+                if (battery.function && battery.function.rawValue === MAVLink.MAV_BATTERY_FUNCTION_PROPULSION) {
+                    return battery
+                }
+            }
+            // If no sprayer function battery found, look for secondary battery (ID = 2)
+            for (var j = 0; j < _activeVehicle.batteries.count; j++) {
+                var battery2 = _activeVehicle.batteries.get(j)
+                if (battery2.id.rawValue === 2) {
+                    return battery2
+                }
+            }
+            // Fallback: look for any battery that's not the main battery (ID = 1)
+            for (var k = 0; k < _activeVehicle.batteries.count; k++) {
+                var battery3 = _activeVehicle.batteries.get(k)
+                if (battery3.id.rawValue !== 1) {
+                    return battery3
+                }
+            }
+        }
+        return null
+    }
+
+    // Tank capacity (mL) sourced from parameter BATT2_CAPACITY
+    property var _tankCapacityParam: _activeVehicle && _activeVehicle.parameterManager ? _activeVehicle.parameterManager.getParameter(-1, "BATT2_CAPACITY") : null
+    property real _tankCapacityML: _tankCapacityParam && !isNaN(_tankCapacityParam.rawValue) ? Number(_tankCapacityParam.rawValue) : NaN
+
+    // Check if spraying system is enabled
+    property bool _sprayingEnabled: {
+        if (_activeVehicle && _activeVehicle.parameterManager) {
+            var sprayEnable = _activeVehicle.parameterManager.getParameter(-1, "SPRAY_ENABLE")
+            if (sprayEnable) {
+                return sprayEnable.rawValue !== 0
+            }
+        }
+        return false
+    }
 
     on_VehicleArmedChanged: {
         if (_vehicleArmed) {
@@ -67,6 +111,42 @@ Item {
         }
     }
 
+    // Liquid consumption calculation functions
+    function _liquidRemainingML() {
+        if (!_sprayerBattery || isNaN(_tankCapacityML)) return NaN
+        var percent = _sprayerBattery.percentRemaining && !isNaN(_sprayerBattery.percentRemaining.rawValue) ? _sprayerBattery.percentRemaining.rawValue : NaN
+        if (isNaN(percent)) return NaN
+        var remaining = _tankCapacityML * Math.max(0, Math.min(100, percent)) / 100.0
+        return remaining
+    }
+
+    function _liquidConsumedML() {
+        if (isNaN(_tankCapacityML)) return NaN
+        var remaining = _liquidRemainingML()
+        if (isNaN(remaining)) return NaN
+        var consumed = _tankCapacityML - remaining
+        if (consumed < 0) consumed = 0
+        return consumed
+    }
+
+    function _formatML(value) {
+        if (isNaN(value)) return "N/A"
+        if (value >= 1000) return (value / 1000).toFixed(1) + qsTr(" L")
+        return Math.round(value) + qsTr(" mL")
+    }
+
+    function getLiquidUsedText() {
+        if (!_sprayingEnabled || !_sprayerBattery) return ""
+        var consumed = _liquidConsumedML()
+        if (!isNaN(consumed)) return _formatML(consumed)
+        // Fallback to percentage if available
+        if (_sprayerBattery.percentRemaining && !isNaN(_sprayerBattery.percentRemaining.rawValue)) {
+            var percentUsed = 100 - _sprayerBattery.percentRemaining.rawValue
+            return percentUsed.toFixed(1) + "%"
+        }
+        return ""
+    }
+
     Component {
         id: missionCompleteDialogComponent
 
@@ -91,6 +171,13 @@ Item {
                     text:                   qsTr("%1 Images Taken").arg(_activeVehicle.cameraTriggerPoints.count)
                     horizontalAlignment:    Text.AlignHCenter
                     visible:                _activeVehicle.cameraTriggerPoints.count !== 0
+                }
+
+                QGCLabel {
+                    Layout.fillWidth:       true
+                    text:                   qsTr("Liquid Used: %1").arg(getLiquidUsedText())
+                    horizontalAlignment:    Text.AlignHCenter
+                    visible:                _sprayingEnabled && getLiquidUsedText() !== ""
                 }
 
                 QGCButton {
