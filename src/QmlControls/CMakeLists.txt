@@ -198,6 +198,8 @@ qt_add_qml_module(QGroundControlControlsModule
         StructureScanMapVisual.qml
         SurveyItemEditor.qml
         SurveyMapVisual.qml
+        SprayingItemEditor.qml
+        SprayingMapVisual.qml
         TakeoffItemMapVisual.qml
         TerrainStatus.qml
         TransectStyleComplexItemEditor.qml
@@ -213,6 +215,7 @@ qt_add_qml_module(QGroundControlControlsModule
 
         # src/UI/toolbar/
         BatteryIndicator.qml
+        SprayerIndicator.qml
         FlightModeIndicator.qml
         FlightModeMenuIndicator.qml
         FlyViewToolBar.qml

@@ -78,13 +78,14 @@ Rectangle {
             TransectStyleComplexItemTabBar {
                 id:                 tabBar
                 Layout.fillWidth:   true
+                missionItem:        _missionItem
             }
 
             // Grid tab
             ColumnLayout {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 0
+                visible:            tabBar.isSpraying || tabBar.currentIndex === 0
 
                 QGCLabel {
                     Layout.fillWidth:   true
@@ -139,7 +140,7 @@ Rectangle {
             // Camera Tab
             CameraCalcCamera {
                 Layout.fillWidth:   true
-                visible:            tabBar.currentIndex === 1
+                visible:            !tabBar.isSpraying && tabBar.currentIndex === 1
                 cameraCalc:         _missionItem.cameraCalc
             }
 
@@ -147,7 +148,7 @@ Rectangle {
             TransectStyleComplexItemTerrainFollow {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 2
+                visible:            !tabBar.isSpraying && tabBar.currentIndex === 2
                 missionItem:        _missionItem
             }
 
@@ -155,7 +156,7 @@ Rectangle {
             ColumnLayout {
                 Layout.fillWidth:   true
                 spacing:            _margin
-                visible:            tabBar.currentIndex === 3
+                visible:            !tabBar.isSpraying && tabBar.currentIndex === 3
 
                 QGCLabel {
                     Layout.fillWidth:   true

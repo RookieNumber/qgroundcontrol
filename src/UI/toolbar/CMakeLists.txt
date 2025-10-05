@@ -6,6 +6,7 @@ qt_add_qml_module(ToolbarModule
     RESOURCE_PREFIX /qml
     QML_FILES
         APMBatteryIndicator.qml
+        APMSprayerIndicator.qml
         APMFlightModeIndicator.qml
         APMMainStatusIndicatorContentItem.qml
         APMSupportForwardingIndicator.qml

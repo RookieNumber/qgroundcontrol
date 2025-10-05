@@ -83,6 +83,7 @@
         <file alias="SpeedSection.FactMetaData.json">src/MissionManager/SpeedSection.FactMetaData.json</file>
         <file alias="StructureScan.SettingsGroup.json">src/MissionManager/StructureScan.SettingsGroup.json</file>
         <file alias="Survey.SettingsGroup.json">src/MissionManager/Survey.SettingsGroup.json</file>
+        <file alias="Spraying.SettingsGroup.json">src/MissionManager/Spraying.SettingsGroup.json</file>
         <file alias="TransectStyle.SettingsGroup.json">src/MissionManager/TransectStyle.SettingsGroup.json</file>
         <file alias="Units.SettingsGroup.json">src/Settings/Units.SettingsGroup.json</file>
         <file alias="USBBoardInfo.json">src/Comms/USBBoardInfo.json</file>

@@ -40,12 +40,12 @@ public:
     Q_INVOKABLE void rotateEntryPoint(void);
 
     // Overrides from ComplexMissionItem
-    QString         patternName         (void) const final { return name; }
+    QString         patternName         (void) const override { return name; }
     bool            load                (const QJsonObject& complexObject, int sequenceNumber, QString& errorString) final;
     QString         mapVisualQML        (void) const final { return QStringLiteral("SurveyMapVisual.qml"); }
-    QString         presetsSettingsGroup(void) { return settingsGroup; }
-    void            savePreset          (const QString& name);
-    void            loadPreset          (const QString& name);
+    QString         presetsSettingsGroup(void) override { return settingsGroup; }
+    void            savePreset          (const QString& name) override;
+    void            loadPreset          (const QString& name) override;
     bool            isSurveyItem        (void) const final { return true; }
     QGeoCoordinate  centerCoordinate    (void) const { return _surveyAreaPolygon.center(); }
     void            setCenterCoordinate (const QGeoCoordinate& coordinate) { _surveyAreaPolygon.setCenter(coordinate); }
@@ -56,9 +56,9 @@ public:
     double  timeBetweenShots    (void) final;
 
     // Overrides from VisualMissionionItem
-    QString             commandDescription  (void) const final { return tr("Survey"); }
-    QString             commandName         (void) const final { return tr("Survey"); }
-    QString             abbreviation        (void) const final { return tr("S"); }
+    QString             commandDescription  (void) const override { return tr("Survey"); }
+    QString             commandName         (void) const override { return tr("Survey"); }
+    QString             abbreviation        (void) const override { return tr("S"); }
     ReadyForSaveState   readyForSaveState    (void) const final;
     double              additionalTimeDelay (void) const final;
 

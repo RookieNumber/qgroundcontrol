@@ -21,6 +21,7 @@
 #include "SafetyComponent.h"
 #include "PowerComponent.h"
 #include "MotorComponent.h"
+#include "PX4SprayingComponent.h"
 #include "PX4TuningComponent.h"
 #include "PX4FlightBehavior.h"
 #include "SyslinkComponent.h"
@@ -55,6 +56,7 @@ protected:
     SafetyComponent*        _safetyComponent;
     PowerComponent*         _powerComponent;
     MotorComponent*         _motorComponent;
+    PX4SprayingComponent*   _sprayingComponent;
     ActuatorComponent*      _actuatorComponent;
     PX4TuningComponent*     _tuningComponent;
     PX4FlightBehavior*      _flightBehavior;

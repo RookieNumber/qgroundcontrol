@@ -34,6 +34,10 @@ target_sources(${CMAKE_PROJECT_NAME}
         APMSensorsComponent.h
         APMSensorsComponentController.cc
         APMSensorsComponentController.h
+        APMSprayingComponent.cc
+        APMSprayingComponent.h
+        APMSpreaderComponent.cc
+        APMSpreaderComponent.h
         APMSubFrameComponent.cc
         APMSubFrameComponent.h
         APMSubMotorComponentController.cc
@@ -83,6 +87,9 @@ qt_add_qml_module(AutoPilotPluginsAPMModule
         APMSensorsComponentSummary.qml
         APMSensorIdDecoder.qml
         APMSensorParams.qml
+        APMSprayingComponent.qml
+        APMSpreaderComponent.qml
+        APMSprayingComponentSummary.qml
         APMSubFrameComponent.qml
         APMSubFrameComponentSummary.qml
         APMSubMotorComponent.qml

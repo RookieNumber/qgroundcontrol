@@ -37,6 +37,7 @@ PX4AutoPilotPlugin::PX4AutoPilotPlugin(Vehicle* vehicle, QObject* parent)
     , _safetyComponent(nullptr)
     , _powerComponent(nullptr)
     , _motorComponent(nullptr)
+    , _sprayingComponent(nullptr)
     , _actuatorComponent(nullptr)
     , _tuningComponent(nullptr)
     , _flightBehavior(nullptr)
@@ -84,6 +85,10 @@ const QVariantList& PX4AutoPilotPlugin::vehicleComponents(void)
                 _powerComponent = new PowerComponent(_vehicle, this, this);
                 _powerComponent->setupTriggerSignals();
                 _components.append(QVariant::fromValue(static_cast<VehicleComponent*>(_powerComponent)));
+
+                _sprayingComponent = new PX4SprayingComponent(_vehicle, this, this);
+                _sprayingComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue(static_cast<VehicleComponent*>(_sprayingComponent)));
 
                 if (_vehicle->actuators()) {
                     _vehicle->actuators()->init(); // At this point params are loaded, so we can init the actuators

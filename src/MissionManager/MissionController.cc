@@ -15,6 +15,7 @@
 #include "QGCApplication.h"
 #include "SimpleMissionItem.h"
 #include "SurveyComplexItem.h"
+#include "SprayingComplexItem.h"
 #include "FixedWingLandingComplexItem.h"
 #include "VTOLLandingComplexItem.h"
 #include "StructureScanComplexItem.h"
@@ -453,7 +454,10 @@ VisualMissionItem* MissionController::insertComplexMissionItem(QString itemName,
         newItem = new StructureScanComplexItem(_masterController, _flyView, QString() /* kmlOrShpFile */);
     } else if (itemName == CorridorScanComplexItem::name) {
         newItem = new CorridorScanComplexItem(_masterController, _flyView, QString() /* kmlOrShpFile */);
-    } else {
+    } else if (itemName == SprayingComplexItem::name) {
+        newItem = new SprayingComplexItem(_masterController, _flyView, QString() /* kmlOrShpFile */);
+    }
+    else {
         qWarning() << "Internal error: Unknown complex item:" << itemName;
         return nullptr;
     }
@@ -487,6 +491,7 @@ void MissionController::_insertComplexMissionItemWorker(const QGeoCoordinate& ma
 {
     int sequenceNumber = _nextSequenceNumber();
     bool surveyStyleItem = qobject_cast<SurveyComplexItem*>(complexItem) ||
+            qobject_cast<SprayingComplexItem*>(complexItem) ||
             qobject_cast<CorridorScanComplexItem*>(complexItem) ||
             qobject_cast<StructureScanComplexItem*>(complexItem);
 

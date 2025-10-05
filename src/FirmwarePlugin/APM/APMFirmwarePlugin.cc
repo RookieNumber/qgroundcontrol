@@ -652,6 +652,9 @@ const QVariantList &APMFirmwarePlugin::toolIndicators(const Vehicle *vehicle)
 
         // Then add the forwarding support indicator
         _toolIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/qml/QGroundControl/Toolbar/APMSupportForwardingIndicator.qml")));
+        
+        // Add the sprayer indicator
+        _toolIndicatorList.append(QVariant::fromValue(QUrl::fromUserInput("qrc:/qml/QGroundControl/Toolbar/APMSprayerIndicator.qml")));
     }
 
     return _toolIndicatorList;

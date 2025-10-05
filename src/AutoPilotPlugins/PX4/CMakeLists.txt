@@ -24,6 +24,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         PX4RadioComponent.h
         PX4SimpleFlightModesController.cc
         PX4SimpleFlightModesController.h
+        PX4SprayingComponent.cc
+        PX4SprayingComponent.h
         PX4TuningComponent.cc
         PX4TuningComponent.h
         SafetyComponent.cc
@@ -56,6 +58,8 @@ qt_add_qml_module(AutoPilotPluginsPX4Module
         PX4FlightModes.qml
         PX4RadioComponentSummary.qml
         PX4SimpleFlightModes.qml
+        PX4SprayingComponent.qml
+        PX4SprayingComponentSummary.qml
         PX4TuningComponent.qml
         PX4TuningComponentCopter.qml
         PX4TuningComponentCopterAll.qml
