@@ -107,7 +107,7 @@ QGCMAVLink::VehicleClass_t FactValueGrid::vehicleClass(void) const
 void FactValueGrid::resetToDefaults(void)
 {
     QSettings settings;
-    settings.remove(_settingsGroup);
+    settings.remove(_settingsKey());
     _resetFromSettings();
 }
 

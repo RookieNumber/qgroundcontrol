@@ -64,6 +64,13 @@ Item {
         HorizontalFactValueGrid {
             id: factValueGrid
         }
+
+        QGCButton {
+            Layout.fillWidth:   true
+            text:               qsTr("Reset To Defaults")
+            visible:            factValueGrid.settingsUnlocked
+            onClicked:          factValueGrid.resetToDefaults()
+        }
     }
 
     QGCMouseArea {

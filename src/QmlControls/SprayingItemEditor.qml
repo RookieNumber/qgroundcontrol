@@ -69,7 +69,8 @@ TransectStyleComplexItemEditor {
             QGCOptionsComboBox {
                 Layout.columnSpan:  2
                 Layout.fillWidth:   true
-                visible:            !forPresets
+                // visible:            !forPresets
+                visible:            false
 
                 model: [
                     {

@@ -250,16 +250,23 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
         column = factValueGrid->columns()->value<QmlObjectListModel*>(includeFWValues ? 3 : 2);
 
         value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("FlightTime"));
-        value->setIcon(QStringLiteral("timer.svg"));
+        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("SprayedVolume"));
+        value->setIcon(QStringLiteral("liquid.svg"));
         value->setText(value->fact()->shortDescription());
         value->setShowUnits(false);
 
+        // value = column->value<InstrumentValueData*>(rowIndex++);
+        // value->setFact(QStringLiteral("Vehicle"), QStringLiteral("FlightDistance"));
+        // value->setIcon(QStringLiteral("travel-walk.svg"));
+        // value->setText(value->fact()->shortDescription());
+        // value->setShowUnits(true);
+
+
         value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("FlightDistance"));
-        value->setIcon(QStringLiteral("travel-walk.svg"));
-        value->setText(value->fact()->shortDescription());
-        value->setShowUnits(true);
+        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("MissionItemIndex"));
+        value->setText(QStringLiteral("WP"));
+        value->setShowUnits(false);
+    
     }
 }
 

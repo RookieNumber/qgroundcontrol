@@ -46,6 +46,7 @@ VehicleFactGroup::VehicleFactGroup(QObject *parent)
     _addFact(&_hobbsFact);
     _addFact(&_throttlePctFact);
     _addFact(&_imuTempFact);
+    _addFact(&_sprayedVolumeFact);
 
     _hobbsFact.setRawValue(QStringLiteral("0000:00:00"));
 }

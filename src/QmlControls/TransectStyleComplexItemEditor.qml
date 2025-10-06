@@ -53,6 +53,8 @@ Rectangle {
     function polygonAdjustFinished() { }
 
     QGCPalette { id: qgcPal; colorGroupEnabled: true }
+    // Controller to access parameter Facts when needed (e.g., spraying flow rate)
+    FactPanelController { id: _paramController }
 
     ColumnLayout {
         id:                 editorColumn
@@ -102,6 +104,33 @@ Rectangle {
                     distanceToSurfaceLabel:         qsTr("Altitude")
                     frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
+                }
+
+                // Additional Spraying-specific fields: Cruise speed and Flow rate
+                GridLayout {
+                    Layout.fillWidth:   true
+                    columnSpacing:      _margin
+                    rowSpacing:         _margin
+                    columns:            2
+                    visible:            tabBar.isSpraying
+
+                    // Bind to autopilot parameter if available (APM: SPRAY_PUMP_RATE)
+                    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
+
+                    QGCLabel { text: qsTr("Cruise speed") }
+                    FactTextField {
+                        Layout.fillWidth:   true
+                        showUnits:          true
+                        fact:               QGroundControl.settingsManager.appSettings.offlineEditingCruiseSpeed
+                    }
+
+                    QGCLabel { text: qsTr("Flow rate") }
+                    FactTextField {
+                        Layout.fillWidth:   true
+                        showUnits:          true
+                        fact:               _sprayPumpRate
+                        visible:            _sprayPumpRate
+                    }
                 }
 
                 SectionHeader {
