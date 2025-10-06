@@ -62,6 +62,45 @@ Item {
         return false
     }
 
+    // Battery RTL monitoring
+    property real _rtlBatteryThreshold: {
+        // Try to get threshold from parameter, default to 20%
+        if (_activeVehicle && _activeVehicle.parameterManager) {
+            var rtlThreshold = _activeVehicle.parameterManager.getParameter(-1, "SPRAY_RTL_THRESHOLD")
+            if (rtlThreshold && !isNaN(rtlThreshold.rawValue)) {
+                return Number(rtlThreshold.rawValue)
+            }
+        }
+        return 20.0  // Default 20% threshold
+    }
+    property bool _rtlTriggered: false
+    property bool _vehicleArmed: _activeVehicle ? _activeVehicle.armed : false
+
+    // Monitor battery capacity and trigger RTL when threshold is reached
+    on_LiquidRemainingMLChanged: {
+        if (_activeVehicle && _vehicleArmed && !_rtlTriggered && !isNaN(_tankCapacityML) && !isNaN(_liquidRemainingML)) {
+            var batteryPercent = (_liquidRemainingML / _tankCapacityML) * 100
+            if (batteryPercent <= _rtlBatteryThreshold) {
+                _triggerRTL()
+            }
+        }
+    }
+
+    // Reset RTL trigger when vehicle is disarmed
+    on_VehicleArmedChanged: {
+        if (!_vehicleArmed) {
+            _rtlTriggered = false
+        }
+    }
+
+    function _triggerRTL() {
+        if (_activeVehicle && _vehicleArmed && !_rtlTriggered) {
+            _rtlTriggered = true
+            _activeVehicle.guidedModeRTL(false)  // Use regular RTL, not smart RTL
+            console.log("Battery RTL triggered at", _liquidRemainingML, "mL remaining")
+        }
+    }
+
     visible: showIndicator
 
     Row {
@@ -192,6 +231,29 @@ Item {
                 font.family:        ScreenTools.demiboldFontFamily
             }
 
+            // RTL Status Indicator
+            RowLayout {
+                Layout.fillWidth:   true
+                Layout.alignment:   Qt.AlignHCenter
+                spacing:            ScreenTools.defaultFontPixelWidth
+                visible:            _rtlTriggered
+
+                QGCColoredImage {
+                    width:              ScreenTools.defaultFontPixelHeight
+                    height:             width
+                    sourceSize.width:   width
+                    source:             '/qmlimages/ArrowUp.svg'
+                    fillMode:           Image.PreserveAspectFit
+                    color:              qgcPal.colorOrange
+                }
+
+                QGCLabel {
+                    text:               qsTr("RTL Triggered - Low Battery")
+                    color:              qgcPal.colorOrange
+                    font.family:        ScreenTools.demiboldFontFamily
+                }
+            }
+
             RowLayout {
                     spacing: ScreenTools.defaultFontPixelWidth
 
@@ -231,6 +293,26 @@ Item {
                         QGCLabel { 
                             text: _formatFlowRate(_fuelFlowMLPerMin)
                             visible: sprayerValuesAvailable.fuelFlowAvailable 
+                        }
+                        QGCLabel { 
+                            text: qsTr("Battery %")
+                            visible: !isNaN(_tankCapacityML) && !isNaN(_liquidRemainingML)
+                        }
+                        QGCLabel { 
+                            text: !isNaN(_tankCapacityML) && !isNaN(_liquidRemainingML) ? 
+                                  Math.round((_liquidRemainingML / _tankCapacityML) * 100) + "%" : "N/A"
+                            visible: !isNaN(_tankCapacityML) && !isNaN(_liquidRemainingML)
+                            color: !isNaN(_tankCapacityML) && !isNaN(_liquidRemainingML) && 
+                                   ((_liquidRemainingML / _tankCapacityML) * 100) <= _rtlBatteryThreshold ? 
+                                   qgcPal.colorOrange : qgcPal.text
+                        }
+                        QGCLabel { 
+                            text: qsTr("RTL Threshold")
+                            visible: true
+                        }
+                        QGCLabel { 
+                            text: _rtlBatteryThreshold + "%"
+                            visible: true
                         }
                     }
                 }
