@@ -110,9 +110,23 @@ Item {
     }
 
     FlyViewMissionCompleteDialog {
+        id: missionCompleteDialog
         missionController:      _missionController
         geoFenceController:     _geoFenceController
         rallyPointController:   _rallyPointController
+    }
+
+    // Debug button to show mission complete dialog
+    QGCButton {
+        id: debugButton
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.margins: 10
+        text: "Debug: Show Mission Complete"
+        visible: true // Set to false in production
+        onClicked: {
+            missionCompleteDialog.showDebugMissionCompleteDialog()
+        }
     }
 
     GuidedActionConfirm {

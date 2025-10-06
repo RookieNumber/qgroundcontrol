@@ -137,4 +137,9 @@ Item {
             }
         }
     }
+
+    // Debug function to show mission complete dialog
+    function showDebugMissionCompleteDialog() {
+        missionCompleteDialogComponent.createObject(mainWindow).open()
+    }
 }
