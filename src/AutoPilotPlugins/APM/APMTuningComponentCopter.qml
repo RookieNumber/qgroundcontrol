@@ -18,15 +18,28 @@ import QGroundControl.Palette
 import QGroundControl.Controls
 import QGroundControl.ScreenTools
 import QGroundControl.Vehicle
+import QGroundControl.Controllers
 
 SetupPage {
     id:             tuningPage
     pageComponent:  tuningPageComponent
 
+    // Password gate
+    property bool _authorized: false
+    PasswordAuthManager { id: _pageAuth }
+
+    Component.onCompleted: {
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
+
     Component {
         id: tuningPageComponent
 
         Column {
+            visible: tuningPage._authorized
             width: availableWidth
             height: availableHeight
 
@@ -587,4 +600,35 @@ SetupPage {
             } // Component - Advanced Page
         } // Column
     } // Component
+
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:       parent
+        color:              qgcPal.window
+        opacity:            0.98
+        visible:            !tuningPage._authorized
+        z:                  1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+            QGCLabel {
+                text: qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+            QGCButton {
+                text: qsTr("Unlock")
+                primary: true
+                onClicked: enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: tuningPage._authorized = true
+        }
+    }
 } // SetupView

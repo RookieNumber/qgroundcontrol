@@ -18,9 +18,26 @@ import QGroundControl.FactSystem
 import QGroundControl.FactControls
 import QGroundControl.ScreenTools
 import QGroundControl.Vehicle
+import QGroundControl.Controllers
 
-RowLayout {
-    spacing: _margins
+Item {
+    id: root
+
+    QGCPalette { id: qgcPal; colorGroupEnabled: true }
+
+    // Password gate
+    property bool _authorized: false
+    PasswordAuthManager { id: _pageAuth }
+
+    Component.onCompleted: {
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+        axisIndexChanged()
+        globals.activeVehicle.setPIDTuningTelemetryMode(tuningMode)
+        saveTuningParamValues()
+    }
 
     property real   availableHeight
     property real   availableWidth
@@ -105,91 +122,91 @@ RowLayout {
         resetGraphs()
     }
 
-    Component.onCompleted: {
-        axisIndexChanged()
-        globals.activeVehicle.setPIDTuningTelemetryMode(tuningMode)
-        saveTuningParamValues()
-    }
 
     Component.onDestruction: globals.activeVehicle.setPIDTuningTelemetryMode(Vehicle.ModeDisabled)
     on_CurrentAxisChanged: axisIndexChanged()
 
-    ValueAxis {
-        id:                     xAxis
-        min:                    0
-        max:                    0
-        labelFormat:            "%.1f"
-        titleText:              ScreenTools.isShortScreen ? "" : qsTr("sec") // Save space on small screens
-        tickCount:              Math.min(Math.max(Math.floor(chart.width / (ScreenTools.defaultFontPixelWidth * 7)), 4), 11)
-        labelsFont.pointSize:   ScreenTools.defaultFontPointSize
-        labelsFont.family:      ScreenTools.normalFontFamily
-        titleFont.pointSize:    ScreenTools.defaultFontPointSize
-        titleFont.family:       ScreenTools.normalFontFamily
-    }
+    RowLayout {
+        anchors.fill: parent
+        visible: root._authorized
+        spacing: _margins
 
-    ValueAxis {
-        id:                     yAxis
-        min:                    0
-        max:                    10
-        titleText:              unit
-        tickCount:              Math.min(((max - min) / _tickSeparation), _maxTickSections) + 1
-        labelsFont.pointSize:   ScreenTools.defaultFontPointSize
-        labelsFont.family:      ScreenTools.normalFontFamily
-        titleFont.pointSize:    ScreenTools.defaultFontPointSize
-        titleFont.family:       ScreenTools.normalFontFamily
-    }
+        ValueAxis {
+            id:                     xAxis
+            min:                    0
+            max:                    0
+            labelFormat:            "%.1f"
+            titleText:              ScreenTools.isShortScreen ? "" : qsTr("sec") // Save space on small screens
+            tickCount:              Math.min(Math.max(Math.floor(chart.width / (ScreenTools.defaultFontPixelWidth * 7)), 4), 11)
+            labelsFont.pointSize:   ScreenTools.defaultFontPointSize
+            labelsFont.family:      ScreenTools.normalFontFamily
+            titleFont.pointSize:    ScreenTools.defaultFontPointSize
+            titleFont.family:       ScreenTools.normalFontFamily
+        }
 
-    Timer {
-        id:         dataTimer
-        interval:   10
-        running:    true
-        repeat:     true
+        ValueAxis {
+            id:                     yAxis
+            min:                    0
+            max:                    10
+            titleText:              unit
+            tickCount:              Math.min(((max - min) / _tickSeparation), _maxTickSections) + 1
+            labelsFont.pointSize:   ScreenTools.defaultFontPointSize
+            labelsFont.family:      ScreenTools.normalFontFamily
+            titleFont.pointSize:    ScreenTools.defaultFontPointSize
+            titleFont.family:       ScreenTools.normalFontFamily
+        }
 
-        onTriggered: {
-            _xAxis.max = _msecs / 1000
-            _xAxis.min = _msecs / 1000 - chartDisplaySec
+        Timer {
+            id:         dataTimer
+            interval:   10
+            running:    true
+            repeat:     true
 
-            var firstPoint = _msecs == 0
+            onTriggered: {
+                _xAxis.max = _msecs / 1000
+                _xAxis.min = _msecs / 1000 - chartDisplaySec
 
-            var len = axis[_currentAxis].plot.length
-            for (var i = 0; i < len; ++i) {
-                var value = axis[_currentAxis].plot[i].value
-                if (!isNaN(value)) {
-                    chart.series(i).append(_msecs/1000, value)
-                    if (firstPoint) {
-                        _yAxis.min = value
-                        _yAxis.max = value
-                    } else {
-                        adjustYAxisMin(_yAxis, value)
-                        adjustYAxisMax(_yAxis, value)
-                    }
-                    // limit history
-                    var minSec = _msecs/1000 - 3*60
-                    while (chart.series(i).count > 0 && chart.series(i).at(0).x < minSec) {
-                        chart.series(i).remove(0)
+                var firstPoint = _msecs == 0
+
+                var len = axis[_currentAxis].plot.length
+                for (var i = 0; i < len; ++i) {
+                    var value = axis[_currentAxis].plot[i].value
+                    if (!isNaN(value)) {
+                        chart.series(i).append(_msecs/1000, value)
+                        if (firstPoint) {
+                            _yAxis.min = value
+                            _yAxis.max = value
+                        } else {
+                            adjustYAxisMin(_yAxis, value)
+                            adjustYAxisMax(_yAxis, value)
+                        }
+                        // limit history
+                        var minSec = _msecs/1000 - 3*60
+                        while (chart.series(i).count > 0 && chart.series(i).at(0).x < minSec) {
+                            chart.series(i).remove(0)
+                        }
                     }
                 }
-            }
 
-            var t = new Date().getTime() // in ms
-            if (_last_t > 0)
-                _msecs += t-_last_t
-            _last_t = t
-        }
+                var t = new Date().getTime() // in ms
+                if (_last_t > 0)
+                    _msecs += t-_last_t
+                _last_t = t
+            }
 
         property int _maxPointCount:    10000 / interval
     }
 
-    Column {
-        id:                 leftPanel
-        Layout.alignment:   Qt.AlignTop
-        spacing:            ScreenTools.defaultFontPixelHeight / 4
-        clip:               true // chart has redraw problems
+        Column {
+            id:                 leftPanel
+            Layout.alignment:   Qt.AlignTop
+            spacing:            ScreenTools.defaultFontPixelHeight / 4
+            clip:               true // chart has redraw problems
 
-        ChartView {
-            id:                     chart
-            width:                  Math.max(_minChartWidth, availableWidth - rightPanel.width - parent.spacing)
-            height:                 Math.max(_minChartHeight, availableHeight - leftPanelBottomColumn.height - parent.spacing)
+            ChartView {
+                id:                     chart
+                width:                  Math.max(_minChartWidth, availableWidth - rightPanel.width - parent.spacing)
+                height:                 Math.max(_minChartHeight, availableHeight - leftPanelBottomColumn.height - parent.spacing)
             antialiasing:           true
             legend.alignment:       Qt.AlignBottom
             legend.font.pointSize:  ScreenTools.defaultFontPointSize
@@ -395,4 +412,38 @@ RowLayout {
         }
     }
 
-} // RowLayout
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:       parent
+        color:              qgcPal.window
+        opacity:            0.98
+        visible:            !root._authorized
+        z:                  1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+
+            QGCLabel {
+                text: qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+
+            QGCButton {
+                text: qsTr("Unlock")
+                primary: true
+                onClicked: enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: root._authorized = true
+        }
+    }
+
+} // Item
+}

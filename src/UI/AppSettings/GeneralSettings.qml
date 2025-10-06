@@ -260,5 +260,16 @@ SettingsPage {
                 _userBrandImageOutdoor.rawValue = ""
             }
         }
+
+        LabelledButton {
+            label:      qsTr("Application Password")
+            buttonText: qsTr("Set Password")
+            onClicked:  setPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
+
+    Component {
+        id: setPasswordDialogComponent
+        SetPasswordDialog { }
     }
 }

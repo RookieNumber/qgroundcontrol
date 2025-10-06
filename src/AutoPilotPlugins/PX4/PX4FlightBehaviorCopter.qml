@@ -16,11 +16,23 @@ import QGroundControl.FactSystem
 import QGroundControl.Controls
 import QGroundControl.Palette
 import QGroundControl.ScreenTools
+import QGroundControl.Controllers
 
 SetupPage {
     id:             flightBehavior
     pageComponent:  pageComponent
     property real _margins: ScreenTools.defaultFontPixelHeight
+
+    // Password gate
+    property bool _authorized: false
+    PasswordAuthManager { id: _pageAuth }
+
+    Component.onCompleted: {
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
 
     FactPanelController {
         id:         controller
@@ -38,7 +50,7 @@ SetupPage {
         id: pageComponent
 
         Column {
-
+            visible: flightBehavior._authorized
             spacing:            _margins
 
             Column {
@@ -168,4 +180,35 @@ SetupPage {
 
         } // Column
     } // Component - pageComponent
+
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:       parent
+        color:              qgcPal.window
+        opacity:            0.98
+        visible:            !flightBehavior._authorized
+        z:                  1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+            QGCLabel {
+                text: qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+            QGCButton {
+                text: qsTr("Unlock")
+                primary: true
+                onClicked: enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: flightBehavior._authorized = true
+        }
+    }
 } // SetupPage

@@ -27,6 +27,16 @@ SetupPage {
     pageName:       qsTr("Firmware")
     showAdvanced:   globals.activeVehicle && globals.activeVehicle.apmFirmware
 
+    // Password gate
+    property bool _authorized: false
+    PasswordAuthManager { id: _pageAuth }
+    Component.onCompleted: {
+        _authorized = _pageAuth.authenticate("")
+        if (!_authorized) {
+            enterPasswordDialogComponent.createObject(mainWindow).open()
+        }
+    }
+
     Component {
         id: firmwarePageComponent
 
@@ -34,6 +44,7 @@ SetupPage {
             width:   availableWidth
             height:  availableHeight
             spacing: ScreenTools.defaultFontPixelHeight
+            visible: firmwarePage._authorized
 
             // Those user visible strings are hard to translate because we can't send the
             // HTML strings to translation as this can create a security risk. we need to find
@@ -443,4 +454,35 @@ SetupPage {
             }
         } // ColumnLayout
     } // Component
+
+    // Unlock overlay
+    Rectangle {
+        anchors.fill:       parent
+        color:              qgcPal.window
+        opacity:            0.98
+        visible:            !firmwarePage._authorized
+        z:                  1000
+
+        Column {
+            spacing:            ScreenTools.defaultFontPixelHeight
+            anchors.centerIn:   parent
+            QGCLabel {
+                text: qsTr("This page is locked. Enter password to continue.")
+                horizontalAlignment: Text.AlignHCenter
+            }
+            QGCButton {
+                text: qsTr("Unlock")
+                primary: true
+                onClicked: enterPasswordDialogComponent.createObject(mainWindow).open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: enterPasswordDialogComponent
+        EnterPasswordDialog {
+            onAuthenticated: firmwarePage._authorized = true
+        }
+    }
 } // SetupPage

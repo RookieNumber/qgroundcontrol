@@ -51,6 +51,7 @@
 #include "MAVLinkChartController.h"
 #include "MAVLinkConsoleController.h"
 #include "MAVLinkProtocol.h"
+#include "PasswordAuthManager.h"
 #include "MissionManager.h"
 #include "MultiVehicleManager.h"
 #include "ParameterManager.h"
@@ -292,6 +293,7 @@ void QGCApplication::init()
     qmlRegisterType<GeoTagController>("QGroundControl.Controllers", 1, 0, "GeoTagController");
     qmlRegisterType<LogDownloadController>("QGroundControl.Controllers", 1, 0, "LogDownloadController");
     qmlRegisterType<MAVLinkConsoleController>("QGroundControl.Controllers", 1, 0, "MAVLinkConsoleController");
+    qmlRegisterType<PasswordAuthManager>("QGroundControl.Controllers", 1, 0, "PasswordAuthManager");
 
 
     qmlRegisterUncreatableType<AutoPilotPlugin>("QGroundControl.AutoPilotPlugin", 1, 0, "AutoPilotPlugin", "Reference only");
