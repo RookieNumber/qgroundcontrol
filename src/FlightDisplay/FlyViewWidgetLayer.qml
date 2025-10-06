@@ -123,7 +123,7 @@ Item {
         anchors.right: parent.right
         anchors.margins: 10
         text: "Debug: Show Mission Complete"
-        visible: true // Set to false in production
+        visible: false // Set to false in production
         onClicked: {
             missionCompleteDialog.showDebugMissionCompleteDialog()
         }

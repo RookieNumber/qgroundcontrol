@@ -83,7 +83,7 @@ QString ScreenToolsController::normalFontFamily()
         return QStringLiteral("NanumGothic");
     }
 
-    return QStringLiteral("Open Sans");
+    return QStringLiteral("Proxima Nova");
 }
 
 double ScreenToolsController::defaultFontDescent(int pointSize)

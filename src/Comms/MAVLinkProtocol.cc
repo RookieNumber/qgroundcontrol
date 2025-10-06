@@ -400,13 +400,13 @@ void MAVLinkProtocol::_saveTelemetryLog(const QString &tempLogfile)
         const QString saveDirPath = SettingsManager::instance()->appSettings()->telemetrySavePath();
         const QDir saveDir(saveDirPath);
 
-        const QString nameFormat("%1%2.%3");
-        const QString dtFormat("yyyy-MM-dd hh-mm-ss");
+        const QString nameFormat("frogs-%1%2.%3");
+        const QString dtFormat("yyyy-MM-dd_hh-mm-ss");
 
         int tryIndex = 1;
         QString saveFileName = nameFormat.arg(QDateTime::currentDateTime().toString(dtFormat), QStringLiteral(""), AppSettings::telemetryFileExtension);
         while (saveDir.exists(saveFileName)) {
-            saveFileName = nameFormat.arg(QDateTime::currentDateTime().toString(dtFormat), QStringLiteral(".%1").arg(tryIndex++), AppSettings::telemetryFileExtension);
+            saveFileName = nameFormat.arg(QDateTime::currentDateTime().toString(dtFormat), QStringLiteral("_%1").arg(tryIndex++), AppSettings::telemetryFileExtension);
         }
 
         const QString saveFilePath = saveDir.absoluteFilePath(saveFileName);

@@ -39,6 +39,7 @@ class ScreenToolsController : public QObject
     Q_PROPERTY(QString  fixedFontFamily     READ fixedFontFamily    CONSTANT)
     Q_PROPERTY(QString  normalFontFamily    READ normalFontFamily   CONSTANT)
 
+
 public:
     explicit ScreenToolsController(QObject *parent = nullptr);
     ~ScreenToolsController();
@@ -112,4 +113,5 @@ public:
     static QString iOSDevice();
     static QString fixedFontFamily();
     static QString normalFontFamily();
+    static QString demiboldFontFamily();
 };
