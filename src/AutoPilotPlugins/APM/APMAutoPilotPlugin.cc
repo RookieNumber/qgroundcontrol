@@ -60,30 +60,40 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
 {
     if (_components.isEmpty() && !_incorrectParameterVersion) {
         if (_vehicle->parameterManager()->parametersReady()) {
-            _airframeComponent = new APMAirframeComponent(_vehicle, this);
-            _airframeComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_airframeComponent)));
+            const bool hideCritical = false;
+            
+            if (!hideCritical) {
+                _airframeComponent = new APMAirframeComponent(_vehicle, this);
+                _airframeComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_airframeComponent)));
+            }
 
             if (_vehicle->supportsRadio()) {
-                _radioComponent = new APMRadioComponent(_vehicle, this);
-                _radioComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_radioComponent)));
+                if (!hideCritical) {
+                    _radioComponent = new APMRadioComponent(_vehicle, this);
+                    _radioComponent->setupTriggerSignals();
+                    _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_radioComponent)));
+                }
             }
 
             // No flight modes component for Sub versions 3.5 and up
             if (!_vehicle->sub() || (_vehicle->versionCompare(3, 5, 0) < 0)) {
+               if (!hideCritical) {
                 _flightModesComponent = new APMFlightModesComponent(_vehicle, this);
                 _flightModesComponent->setupTriggerSignals();
                 _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_flightModesComponent)));
+               }
             }
 
             _sensorsComponent = new APMSensorsComponent(_vehicle, this);
             _sensorsComponent->setupTriggerSignals();
             _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_sensorsComponent)));
 
-            _powerComponent = new APMPowerComponent(_vehicle, this);
-            _powerComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_powerComponent)));
+            if (!hideCritical) {
+                _powerComponent = new APMPowerComponent(_vehicle, this);
+                _powerComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_powerComponent)));
+            }
 
             _sprayingComponent = new APMSprayingComponent(_vehicle, this);
             _sprayingComponent->setupTriggerSignals();
@@ -94,14 +104,18 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
             _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_spreaderComponent)));
 
             if (!_vehicle->sub() || (_vehicle->sub() && (_vehicle->versionCompare(3, 5, 3) >= 0))) {
-                _motorComponent = new APMMotorComponent(_vehicle, this);
-                _motorComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_motorComponent)));
+                if (!hideCritical) {
+                    _motorComponent = new APMMotorComponent(_vehicle, this);
+                    _motorComponent->setupTriggerSignals();
+                    _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_motorComponent)));
+                }
             }
 
-            _safetyComponent = new APMSafetyComponent(_vehicle, this);
-            _safetyComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_safetyComponent)));
+            if (!hideCritical) {
+                _safetyComponent = new APMSafetyComponent(_vehicle, this);
+                _safetyComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_safetyComponent)));
+            }
 
 #ifdef QT_DEBUG
             if ((qobject_cast<ArduCopterFirmwarePlugin*>(_vehicle->firmwarePlugin()) || qobject_cast<ArduRoverFirmwarePlugin*>(_vehicle->firmwarePlugin())) &&
@@ -118,14 +132,18 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
                 _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_heliComponent)));
             }
 
-            _tuningComponent = new APMTuningComponent(_vehicle, this);
-            _tuningComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_tuningComponent)));
+            if (!hideCritical) {
+                _tuningComponent = new APMTuningComponent(_vehicle, this);
+                _tuningComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_tuningComponent)));
+            }
 
             if (_vehicle->parameterManager()->parameterExists(-1, "MNT1_TYPE")) {
+               if (!hideCritical) {
                 _cameraComponent = new APMCameraComponent(_vehicle, this);
                 _cameraComponent->setupTriggerSignals();
                 _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_cameraComponent)));
+               }
             }
 
             if (_vehicle->sub()) {

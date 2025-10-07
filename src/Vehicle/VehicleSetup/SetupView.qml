@@ -257,9 +257,10 @@ Rectangle {
 
             ConfigButton {
                 id:                 parametersButton
-                visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
-                                    !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
-                                    _corePlugin.showAdvancedUI
+                // visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
+                //                     !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
+                //                     _corePlugin.showAdvancedUI
+                visible:            false
                 text:               qsTr("Parameters")
                 Layout.fillWidth:   true
                 icon.source:        "/qmlimages/subMenuButtonImage.png"
@@ -269,7 +270,8 @@ Rectangle {
             ConfigButton {
                 id:                 firmwareButton
                 icon.source:      "/qmlimages/FirmwareUpgradeIcon.png"
-                visible:            !ScreenTools.isMobile && _corePlugin.options.showFirmwareUpgrade
+                // visible:            !ScreenTools.isMobile && _corePlugin.options.showFirmwareUpgrade
+                visible:            false
                 text:               qsTr("Firmware")
                 Layout.fillWidth:   true
 
