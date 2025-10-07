@@ -205,6 +205,10 @@ Item {
     property bool __roiSupported:           _activeVehicle ? !_hideROI && _activeVehicle.roiModeSupported : false
     property bool __orbitSupported:         _activeVehicle ? !_hideOrbit && _activeVehicle.orbitModeSupported : false
     property bool __flightMode:             _flightMode
+    
+
+    // Hide Guided Actions
+    property bool _showGuidedActions:       true
 
     // Allow custom builds to add custom actions by overriding CustomGuidedActionsController.qml
     CustomGuidedActionsController {
@@ -458,7 +462,8 @@ Item {
             confirmDialog.title = takeoffTitle
             confirmDialog.message = takeoffMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showTakeoff })
-            guidedValueSlider.visible = _activeVehicle.guidedTakeoffSupported
+            // guidedValueSlider.visible = _activeVehicle.guidedTakeoffSupported 
+            guidedValueSlider.visible = !_showGuidedActions
             break;
         case actionStartMission:
             showImmediate = false
@@ -503,7 +508,7 @@ Item {
             confirmDialog.title = changeAltTitle
             confirmDialog.message = changeAltMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showChangeAlt })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_showGuidedActions
             break;
         case actionChangeLoiterRadius:
             confirmDialog.title = changeLoiterRadiusTitle
@@ -525,7 +530,7 @@ Item {
             confirmDialog.title = orbitTitle
             confirmDialog.message = orbitMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showOrbit })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_showGuidedActions
             break;
         case actionLandAbort:
             confirmDialog.title = landAbortTitle
@@ -536,7 +541,7 @@ Item {
             confirmDialog.title = pauseTitle
             confirmDialog.message = pauseMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showPause })
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_showGuidedActions
             break;
         case actionMVPause:
             confirmDialog.title = mvPauseTitle
@@ -562,7 +567,7 @@ Item {
             confirmDialog.hideTrigger = true
             confirmDialog.title = changeSpeedTitle
             confirmDialog.message = changeSpeedMessage
-            guidedValueSlider.visible = true
+            guidedValueSlider.visible = !_showGuidedActions
             break
         case actionGripper:
             confirmDialog.hideTrigger = true
