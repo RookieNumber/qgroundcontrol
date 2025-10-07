@@ -102,6 +102,8 @@ Rectangle {
                     distanceToSurfaceLabel:         qsTr("Altitude")
                     frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
+                    showFrontalDistance:            _missionItem.editorQml.indexOf("SprayingItemEditor.qml") === -1
+
                 }
 
                 SectionHeader {

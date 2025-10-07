@@ -66,38 +66,7 @@ TransectStyleComplexItemEditor {
                 visible:            !forPresets
             }
 
-            QGCOptionsComboBox {
-                Layout.columnSpan:  2
-                Layout.fillWidth:   true
-                visible:            !forPresets
-
-                model: [
-                    {
-                        text:       qsTr("Hover and capture image"),
-                        fact:       missionItem.hoverAndCapture,
-                        enabled:    missionItem.cameraCalc.distanceMode === QGroundControl.AltitudeModeRelative || missionItem.cameraCalc.distanceMode === QGroundControl.AltitudeModeAbsolute,
-                        visible:    missionItem.hoverAndCaptureAllowed
-                    },
-                    {
-                        text:       qsTr("Refly at 90 deg offset"),
-                        fact:       missionItem.refly90Degrees,
-                        enabled:    missionItem.cameraCalc.distanceMode !== QGroundControl.AltitudeModeCalcAboveTerrain,
-                        visible:    true
-                    },
-                    {
-                        text:       qsTr("Images in turnarounds"),
-                        fact:       missionItem.cameraTriggerInTurnAround,
-                        enabled:    missionItem.hoverAndCaptureAllowed ? !missionItem.hoverAndCapture.rawValue : true,
-                        visible:    true
-                    },
-                    {
-                        text:       qsTr("Fly alternate transects"),
-                        fact:       missionItem.flyAlternateTransects,
-                        enabled:    true,
-                        visible:    _vehicle ? (_vehicle.fixedWing || _vehicle.vtol) : false
-                    }
-                ]
-            }
+            
         }
     }
 
