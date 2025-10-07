@@ -1,54 +1,27 @@
 <p align="center">
-  <img src="resources/customIcon.svg" alt="QGroundControl Logo" width="500">
+  <img src="markdown/frogslogo.svg" alt="Frogs Logo" width="200">
 </p>
 
 <p align="center">
-  <a href="https://github.com/mavlink/QGroundControl/releases">
-    <img src="https://img.shields.io/github/release/mavlink/QGroundControl.svg" alt="Latest Release">
-  </a>
+  <img src="markdown/release.svg" alt="release" width="100">
 </p>
 
-_QGroundControl_ (QGC) is a highly intuitive and powerful Ground Control Station (GCS) designed for UAVs. Whether you're a first-time pilot or an experienced professional, QGC provides a seamless user experience for flight control and mission planning, making it the go-to solution for any _MAVLink-enabled drone_.
+Frogs ground control built on top of QgroundControl version 5.0.6!
 
 ---
 
-### 🌟 _Why Choose QGroundControl?_
+### _What you do need before building Frogs ground control_
 
--   _🚀 Ease of Use_: A beginner-friendly interface designed for smooth operation without sacrificing advanced features for pros.
--   _✈️ Comprehensive Flight Control_: Full flight control and mission management for _PX4_ and _ArduPilot_ powered UAVs.
--   _🛠️ Mission Planning_: Easily plan complex missions with a simple drag-and-drop interface.
+-   _QT Version_: QT Version 6 (6.8.3).
+-   _Build Tools_: Cmake 3.30.5, Ninja 1.12.1.
+-   _Window Setup_: MSVC 2022 64-bit.
+-   _Android Setup_: JDK17 is required for the latest updated versions. NDK Version: 25.1.8937393 You can confirm it is being used by reviewing the project setting: Projects > Manage Kits > Devices > Android (tab) > Android Settings > JDK location.
+-   _GStreamer_: Download the gstreamer framework from here: http://gstreamer.freedesktop.org/data/pkg/windows. Supported version is 1.22.12. QGC may work with newer version, but it is untested.
 
-🔍 For a deeper dive into using QGC, check out the [User Manual](https://docs.qgroundcontrol.com/en/) – although, thanks to QGC's intuitive UI, you may not even need it!
+    You need two packages:
 
----
+    gstreamer-1.0-devel-msvc-x86_64-1.22.12.msi
+    gstreamer-1.0-msvc-x86_64-1.22.12.msi
+    Make sure you select "Complete" installation instead of "Typical" installation during the install process.
 
-### 🚁 _Key Features_
-
--   🕹️ _Full Flight Control_: Supports all _MAVLink drones_.
--   ⚙️ _Vehicle Setup_: Tailored configuration for _PX4_ and _ArduPilot_ platforms.
--   🔧 _Fully Open Source_: Customize and extend the software to suit your needs.
-
-🎯 Check out the latest updates in our [New Features and Release Notes](https://github.com/mavlink/qgroundcontrol/blob/master/ChangeLog.md).
-
----
-
-### 💻 _Get Involved!_
-
-QGroundControl is _open-source_, meaning you have the power to shape it! Whether you're fixing bugs, adding features, or customizing for your specific needs, QGC welcomes contributions from the community.
-
-🛠️ Start building today with our [Developer Guide](https://dev.qgroundcontrol.com/en/) and [build instructions](https://dev.qgroundcontrol.com/en/getting_started/).
-
----
-
-### 🔗 _Useful Links_
-
--   🌐 [Official Website](http://qgroundcontrol.com)
--   📘 [User Manual](https://docs.qgroundcontrol.com/en/)
--   🛠️ [Developer Guide](https://dev.qgroundcontrol.com/en/)
--   💬 [Discussion & Support](https://docs.qgroundcontrol.com/en/Support/Support.html)
--   🤝 [Contributing](https://dev.qgroundcontrol.com/en/contribute/)
--   📜 [License Information](https://github.com/mavlink/qgroundcontrol/blob/master/.github/COPYING.md)
-
----
-
-With QGroundControl, you're in full command of your UAV, ready to take your missions to the next level.
+    The following environment variables can be used to configure the GStreamer installation path: GSTREAMER_1_0_ROOT_X86_64 GSTREAMER_1_0_ROOT_MSVC_X86_64 GSTREAMER_1_0_ROOT_MINGW_X86_64.
