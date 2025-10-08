@@ -1264,286 +1264,286 @@
         <extracomment>.QGC.MetaData.Facts[operatorID].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Operator ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Operator</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[operatorID].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Operator ID. Maximum 20 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Operator. Maksimal 20 karakter.</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[operatorIDValid].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Operator ID is valid</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Operator valid</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[operatorIDValid].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Operator ID has been checked using checksum.</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Operator telah diperiksa menggunakan checksum.</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[operatorIDType].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Operator ID type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe ID Operator</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[operatorIDType].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>CAA</source>
-        <translation type="unfinished"></translation>
+        <translation>CAA</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[sendOperatorID].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Send Operator ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim ID Operator</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[sendOperatorID].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>When enabled, sends operator ID message</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketika diaktifkan, mengirim pesan ID operator</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDFree].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Flight Purpose</source>
-        <translation type="unfinished"></translation>
+        <translation>Tujuan Penerbangan</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDFree].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Optional plain text for operator to specify operations data (Free Text). Maximum 23 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teks biasa opsional untuk operator untuk menentukan data operasi (Teks Bebas). Maksimal 23 karakter.</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDEmergency].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Emergency Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Teks Darurat</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDEmergency].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Optional plain text for operator to specify operations data (Emergency Text). Maximum 23 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teks biasa opsional untuk operator untuk menentukan data operasi (Teks Darurat). Maksimal 23 karakter.</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDExtended].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Extended Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status Diperluas</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDExtended].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Optional plain text for operator to specify operations data (Extended Text). Maximum 23 characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teks biasa opsional untuk operator untuk menentukan data operasi (Teks Diperluas). Maksimal 23 karakter.</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDType].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Self ID type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe ID Diri</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[selfIDType].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Flight Purpose,Emergency,Extended Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Tujuan Penerbangan,Darurat,Status Diperluas</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[sendSelfID].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Send Self ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim ID Diri</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[sendSelfID].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>When enabled, sends self ID message</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketika diaktifkan, mengirim pesan ID diri</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[basicID].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Basic ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Dasar</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[basicIDType].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Basic ID Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe ID Dasar</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[basicIDType].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>None,SerialNumber (ANSI/CTA-2063),CAA,UTM (RFC4122),Specific</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada,Nomor Seri (ANSI/CTA-2063),CAA,UTM (RFC4122),Spesifik</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[basicIDUaType].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>UA type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe UA</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[basicIDUaType].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Undefined,Airplane/FixedWing,Helicopter/Multirrotor,Gyroplane,VTOL,Ornithopter,Glider,Kite,Free Ballon,Captive Ballon,Airship,Parachute,Rocket,Tethered powered aircraft,Ground Obstacle,Other</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Didefinisikan,Pesawat Terbang/Sayap Tetap,Helikopter/Multirotor,Gyroplane,VTOL,Ornithopter,Glider,Layang-layang,Balon Bebas,Balon Terikat,Kapal Udara,Parasut,Roket,Pesawat Bertenaga Terikat,Hambatan Darat,Lainnya</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[sendBasicID].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Send Basic ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim ID Dasar</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[sendBasicID].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>When enabled, sends basic ID message</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketika diaktifkan, mengirim pesan ID dasar</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[region].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Region of operation</source>
-        <translation type="unfinished"></translation>
+        <translation>Wilayah operasi</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[region].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>The region of operation the mission will take place in</source>
-        <translation type="unfinished"></translation>
+        <translation>Wilayah operasi tempat misi akan berlangsung</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[region].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>FAA,EU</source>
-        <translation type="unfinished"></translation>
+        <translation>FAA,EU</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[locationType].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Location Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe Lokasi</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[locationType].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Operator location Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe lokasi operator</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[locationType].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Takeoff(Not Supported),Live GNNS, Fixed (not for FAA)</source>
-        <translation type="unfinished"></translation>
+        <translation>Takeoff (Tidak Didukung),GNNS Langsung, Tetap (tidak untuk FAA)</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[latitudeFixed].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Latitude Fixed</source>
-        <translation type="unfinished"></translation>
+        <translation>Lintang Tetap</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[latitudeFixed].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Fixed latitude to send on SYSTEM message</source>
-        <translation type="unfinished"></translation>
+        <translation>Lintang tetap untuk dikirim pada pesan SYSTEM</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[longitudeFixed].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Longitude Fixed</source>
-        <translation type="unfinished"></translation>
+        <translation>Bujur Tetap</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[longitudeFixed].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Fixed Longitude to send on SYSTEM message</source>
-        <translation type="unfinished"></translation>
+        <translation>Bujur tetap untuk dikirim pada pesan SYSTEM</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[altitudeFixed].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Altitude Fixed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Tetap</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[altitudeFixed].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Fixed Altitude to send on SYSTEM message</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian tetap untuk dikirim pada pesan SYSTEM</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[classificationType].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Classification Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe Klasifikasi</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[classificationType].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Classification Type of UAS</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe Klasifikasi UAS</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[classificationType].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Undeclared,EU</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Dideklarasikan,EU</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[categoryEU].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Category</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategori</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[categoryEU].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Category of the UAS in the EU region</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategori UAS di wilayah EU</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[categoryEU].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Undeclared,Open,Specific,Certified</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Dideklarasikan,Terbuka,Spesifik,Bersertifikat</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[classEU].shortDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Class</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelas</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[classEU].longDesc, </extracomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Class of the UAS in the EU region</source>
-        <translation type="unfinished"></translation>
+        <translation>Kelas UAS di wilayah EU</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[classEU].enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/Settings/RemoteID.SettingsGroup.json"/>
         <source>Undeclared,Class 0,Class 1,Class 2,Class 3,Class 4,Class 5,Class 6</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Dideklarasikan,Kelas 0,Kelas 1,Kelas 2,Kelas 3,Kelas 4,Kelas 5,Kelas 6</translation>
     </message>
 </context>
 <context>
@@ -3297,1583 +3297,1583 @@
         <extracomment>.mavCmdInfo[HomeRaw].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Home Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Posisi Home</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[HomeRaw].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Planned home position for mission.</source>
-        <translation type="unfinished"></translation>
+        <translation>Posisi home yang direncanakan untuk misi.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[HomeRaw].category, .mavCmdInfo[MAV_CMD_NAV_WAYPOINT].category, .mavCmdInfo[MAV_CMD_NAV_RETURN_TO_LAUNCH].category, .mavCmdInfo[MAV_CMD_NAV_LAND].category, .mavCmdInfo[MAV_CMD_NAV_TAKEOFF].category, .mavCmdInfo[MAV_CMD_NAV_SPLINE_WAYPOINT].category, .mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].category, .mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].category, .mavCmdInfo[MAV_CMD_CONDITION_DELAY].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Basic</source>
-        <translation type="unfinished"></translation>
+        <translation>Dasar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[HomeRaw].param5.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Latitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Lintang</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[HomeRaw].param6.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Longitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Bujur</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_WAYPOINT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Waypoint</source>
-        <translation type="unfinished"></translation>
+        <translation>Waypoint</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_WAYPOINT].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Travel to a position in 3D space.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bergerak ke posisi dalam ruang 3D.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_WAYPOINT].param1.label, .mavCmdInfo[MAV_CMD_NAV_SPLINE_WAYPOINT].param1.label, .mavCmdInfo[MAV_CMD_NAV_DELAY].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Hold</source>
-        <translation type="unfinished"></translation>
+        <translation>Tahan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_WAYPOINT].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Acceptance</source>
-        <translation type="unfinished"></translation>
+        <translation>Penerimaan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_WAYPOINT].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Pass Radius</source>
-        <translation type="unfinished"></translation>
+        <translation>Jari-jari Lintasan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_WAYPOINT].param4.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_UNLIM].param4.label, .mavCmdInfo[MAV_CMD_NAV_LAND].param4.label, .mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].param4.label, .mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].param4.label, .mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_UNLIM].friendlyName, .mavCmdInfo[MAV_CMD_NAV_LOITER_UNLIM].category, .mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].category, .mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].category, .mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Loiter</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_UNLIM].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Travel to a position and Loiter around the specified position indefinitely.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bergerak ke posisi dan berputar di sekitar posisi yang ditentukan tanpa batas waktu.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_UNLIM].param3.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].param3.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].param3.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Radius</source>
-        <translation type="unfinished"></translation>
+        <translation>Jari-jari</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Loiter (turns)</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar (putaran)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Travel to a position and Loiter around the specified position for a number of turns.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bergerak ke posisi dan berputar di sekitar posisi yang ditentukan untuk sejumlah putaran.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Turns</source>
-        <translation type="unfinished"></translation>
+        <translation>Putaran</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].param2.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].param2.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Leave Loiter</source>
-        <translation type="unfinished"></translation>
+        <translation>Keluar dari Berputar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].param2.enumStrings, .mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Direction of next waypoint,Any direction</source>
-        <translation type="unfinished"></translation>
+        <translation>Arah waypoint berikutnya,Arah mana saja</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].param4.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].param4.label, .mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Exit loiter from</source>
-        <translation type="unfinished"></translation>
+        <translation>Keluar dari berputar dari</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TURNS].param4.enumStrings, .mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].param4.enumStrings, .mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].param4.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Center,Tangent</source>
-        <translation type="unfinished"></translation>
+        <translation>Tengah,Tangen</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Loiter (time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar (waktu)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Travel to a position and Loiter around the specified position for an amount of time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bergerak ke posisi dan berputar di sekitar posisi yang ditentukan untuk jangka waktu tertentu.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Loiter Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu Berputar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TIME].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Direction of next waypoint,Current direction</source>
-        <translation type="unfinished"></translation>
+        <translation>Arah waypoint berikutnya,Arah saat ini</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_RETURN_TO_LAUNCH].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Return To Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali ke Peluncuran</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_RETURN_TO_LAUNCH].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Send the vehicle back to the launch position.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim kendaraan kembali ke posisi peluncuran.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Land</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Land vehicle at the specified location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendaratkan kendaraan di lokasi yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Abort Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Batal</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Precision Land</source>
-        <translation type="unfinished"></translation>
+        <translation>Pendaratan Presisi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Disabled,Opportunistic,Required</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif,Opsional,Wajib</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_TAKEOFF].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Takeoff</source>
-        <translation type="unfinished"></translation>
+        <translation>Takeoff</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_TAKEOFF].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Launch from the ground and travel towards the specified takeoff position.</source>
-        <translation type="unfinished"></translation>
+        <translation>Meluncur dari tanah dan bergerak menuju posisi takeoff yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LAND_LOCAL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Land local</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat lokal</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_TAKEOFF_LOCAL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Takeoff local</source>
-        <translation type="unfinished"></translation>
+        <translation>Takeoff lokal</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_FOLLOW].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Nav follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Navigasi ikuti</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_CONTINUE_AND_CHANGE_ALT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Change Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah Ketinggian</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_CONTINUE_AND_CHANGE_ALT].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Continue on the current course and climb/descend to specified altitude. When the altitude is reached continue to the next command.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjutkan pada jalur saat ini dan naik/turun ke ketinggian yang ditentukan. Ketika ketinggian tercapai, lanjutkan ke perintah berikutnya.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_CONTINUE_AND_CHANGE_ALT].category, .mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].category, .mavCmdInfo[MAV_CMD_DO_LAND_START].category, .mavCmdInfo[MAV_CMD_DO_INVERTED_FLIGHT].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Flight control</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol penerbangan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_CONTINUE_AND_CHANGE_ALT].param1.label, .mavCmdInfo[MAV_CMD_DO_SET_MODE].param1.label, .mavCmdInfo[MAV_CMD_DO_SET_HOME].param1.label, .mavCmdInfo[MAV_CMD_DO_SET_ROI].param1.label, .mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param1.label, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param1.label, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param7.label, .mavCmdInfo[MAV_CMD_SET_CAMERA_MODE].param2.label, .mavCmdInfo[MAV_CMD_DO_VTOL_TRANSITION].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_CONTINUE_AND_CHANGE_ALT].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Climb,Neutral,Descend</source>
-        <translation type="unfinished"></translation>
+        <translation>Naik,Netral,Turun</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Loiter (altitude)</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar (ketinggian)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_LOITER_TO_ALT].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Loiter at specified position until altitude reached.</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar di posisi yang ditentukan sampai ketinggian tercapai.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FOLLOW].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Follow Me</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikuti Saya</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FOLLOW_REPOSITION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Vehicle reposition</source>
-        <translation type="unfinished"></translation>
+        <translation>Reposisi kendaraan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Path planning</source>
-        <translation type="unfinished"></translation>
+        <translation>Perencanaan jalur</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control autonomous path planning.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol perencanaan jalur otonom.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].category, .mavCmdInfo[MAV_CMD_DO_SET_MODE].category, .mavCmdInfo[MAV_CMD_DO_JUMP].category, .mavCmdInfo[MAV_CMD_DO_SET_HOME].category, .mavCmdInfo[MAV_CMD_DO_SET_REVERSE].category, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].category, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].category, .mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].category, .mavCmdInfo[MAV_CMD_DO_GRIPPER].category, .mavCmdInfo[MAV_CMD_DO_AUTOTUNE_ENABLE].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjutan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Local planning</source>
-        <translation type="unfinished"></translation>
+        <translation>Perencanaan lokal</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Disable,Enable,Enable+reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif,Aktif,Aktif+reset</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Full planning</source>
-        <translation type="unfinished"></translation>
+        <translation>Perencanaan penuh</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Disable,Enable,Enable+reset,Enable+reset route only</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif,Aktif,Aktif+reset,Aktif+reset rute saja</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_PATHPLANNING].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Heading goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Tujuan heading</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_SPLINE_WAYPOINT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Spline waypoint</source>
-        <translation type="unfinished"></translation>
+        <translation>Waypoint spline</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_SPLINE_WAYPOINT].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Travel to a position in 3D space using spline path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bergerak ke posisi dalam ruang 3D menggunakan jalur spline.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_ALTITUDE_WAIT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Altitude wait</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunggu ketinggian</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>VTOL takeoff</source>
-        <translation type="unfinished"></translation>
+        <translation>Takeoff VTOL</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Hover straight up to specified altitude, transition to fixed-wing and fly to the specified takeoff location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Melayang lurus ke atas ke ketinggian yang ditentukan, transisi ke fixed-wing dan terbang ke lokasi takeoff yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Transition Heading</source>
-        <translation type="unfinished"></translation>
+        <translation>Heading Transisi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_TAKEOFF].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Default,Next waypoint,Takeoff,Specified,Any</source>
-        <translation type="unfinished"></translation>
+        <translation>Default,Waypoint berikutnya,Takeoff,Ditentukan,Sembarang</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>VTOL land</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat VTOL</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Fly to specified location at current altitude, transition to multi-rotor and land.</source>
-        <translation type="unfinished"></translation>
+        <translation>Terbang ke lokasi yang ditentukan pada ketinggian saat ini, transisi ke multi-rotor dan mendarat.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_VTOL_LAND].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Approach Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Pendekatan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_GUIDED_ENABLE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Guided enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan terpandu</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_GUIDED_ENABLE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Enable/Disabled guided mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan/Nonaktifkan mode terpandu.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_GUIDED_ENABLE].param1.label, .mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].param1.label, .mavCmdInfo[MAV_CMD_DO_AUTOTUNE_ENABLE].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_GUIDED_ENABLE].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>On,Off</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyala,Mati</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_DELAY].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay until</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda sampai</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_DELAY].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay until the specified time is reached.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda sampai waktu yang ditentukan tercapai.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_DELAY].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Hour (utc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jam (utc)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_DELAY].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Min (utc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Menit (utc)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_NAV_DELAY].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Sec (utc)</source>
-        <translation type="unfinished"></translation>
+        <translation>Detik (utc)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_DELAY].friendlyName, .mavCmdInfo[MAV_CMD_CONDITION_DELAY].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_DELAY].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay the mission for the number of seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda misi untuk jumlah detik yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_CHANGE_ALT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Wait for altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunggu ketinggian</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_CHANGE_ALT].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay the mission until the specified altitide is reached.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda misi sampai ketinggian yang ditentukan tercapai.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_CHANGE_ALT].category, .mavCmdInfo[MAV_CMD_CONDITION_DISTANCE].category, .mavCmdInfo[MAV_CMD_CONDITION_YAW].category, .mavCmdInfo[MAV_CMD_CONDITION_GATE].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Conditionals</source>
-        <translation type="unfinished"></translation>
+        <translation>Kondisional</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_CHANGE_ALT].param1.label, .mavCmdInfo[MAV_CMD_CONDITION_YAW].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Rate</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_DISTANCE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Wait for distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunggu jarak</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_DISTANCE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay the mission until within the specified distance of the next waypoint.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda misi sampai dalam jarak yang ditentukan dari waypoint berikutnya.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_DISTANCE].param1.label, .mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Wait for Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunggu Yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay the mission until the specified heading is reached.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda misi sampai heading yang ditentukan tercapai.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Heading</source>
-        <translation type="unfinished"></translation>
+        <translation>Heading</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].param3.label, .mavCmdInfo[MAV_CMD_DO_SET_REVERSE].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Direction</source>
-        <translation type="unfinished"></translation>
+        <translation>Arah</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].param3.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Clockwise,Shortest,Counter-Clockwise</source>
-        <translation type="unfinished"></translation>
+        <translation>Searah Jarum Jam,Terpendek,Berlawanan Arah Jarum Jam</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].param4.label, .mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_YAW].param4.enumStrings, .mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].param4.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Relative,Absolute</source>
-        <translation type="unfinished"></translation>
+        <translation>Relatif,Absolut</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_MODE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur mode</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_MODE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set flight mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur mode penerbangan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_MODE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set flight mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur mode penerbangan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_MODE].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Custom Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Kustom</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_MODE].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Sub Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Sub Mode</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_JUMP].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Jump to item</source>
-        <translation type="unfinished"></translation>
+        <translation>Lompat ke item</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_JUMP].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Mission will continue at the specified item.</source>
-        <translation type="unfinished"></translation>
+        <translation>Misi akan dilanjutkan pada item yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_JUMP].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Item #</source>
-        <translation type="unfinished"></translation>
+        <translation>Item #</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_JUMP].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Repeat</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulangi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Change speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah kecepatan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Change speed and/or throttle set points.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah kecepatan dan/atau titik setel throttle.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Airspeed,Ground Speed,Ascend Speed,Descend Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Udara,Kecepatan Darat,Kecepatan Naik,Kecepatan Turun</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CHANGE_SPEED].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Throttle</source>
-        <translation type="unfinished"></translation>
+        <translation>Throttle</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_HOME].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set launch location</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur lokasi peluncuran</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_HOME].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Changes the launch location either to the current location or a specified location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengubah lokasi peluncuran ke lokasi saat ini atau lokasi yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_HOME].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Vehicle position,Specified position</source>
-        <translation type="unfinished"></translation>
+        <translation>Posisi kendaraan,Posisi yang ditentukan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_PARAMETER].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set Parameter</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur Parameter</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_RELAY].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set relay</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur relay</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_RELAY].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set relay to a condition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur relay ke kondisi tertentu.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_RELAY].param1.label, .mavCmdInfo[MAV_CMD_DO_REPEAT_RELAY].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Relay #</source>
-        <translation type="unfinished"></translation>
+        <translation>Relay #</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_RELAY].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Nilai</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_REPEAT_RELAY].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cycle relay</source>
-        <translation type="unfinished"></translation>
+        <translation>Siklus relay</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_REPEAT_RELAY].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cycle relay on/off for desired cycles/time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Siklus relay on/off untuk siklus/waktu yang diinginkan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_REPEAT_RELAY].param2.label, .mavCmdInfo[MAV_CMD_DO_REPEAT_SERVO].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cycles</source>
-        <translation type="unfinished"></translation>
+        <translation>Siklus</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_REPEAT_RELAY].param3.label, .mavCmdInfo[MAV_CMD_DO_REPEAT_SERVO].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_SERVO].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set servo</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur servo</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_SERVO].description, .mavCmdInfo[MAV_CMD_DO_REPEAT_SERVO].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set servo to specified PWM value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur servo ke nilai PWM yang ditentukan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_SERVO].param1.label, .mavCmdInfo[MAV_CMD_DO_REPEAT_SERVO].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Servo</source>
-        <translation type="unfinished"></translation>
+        <translation>Servo</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_SERVO].param2.label, .mavCmdInfo[MAV_CMD_DO_REPEAT_SERVO].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>PWM</source>
-        <translation type="unfinished"></translation>
+        <translation>PWM</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_REPEAT_SERVO].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cycle servo</source>
-        <translation type="unfinished"></translation>
+        <translation>Siklus servo</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set actuator</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur aktuator</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set actuator to specified output value (range [-1, 1]).</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur aktuator ke nilai output yang ditentukan (rentang [-1, 1]).</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Actuator 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuator 1</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Actuator 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuator 2</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Actuator 3</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuator 3</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ACTUATOR].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Actuator 4</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuator 4</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FLIGHTTERMINATION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Flight termination</source>
-        <translation type="unfinished"></translation>
+        <translation>Penghentian penerbangan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_LAND_START].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Land start</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai mendarat</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_LAND_START].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Marker to indicate start of landing sequence.</source>
-        <translation type="unfinished"></translation>
+        <translation>Penanda untuk menunjukkan awal urutan pendaratan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_RALLY_LAND].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Rally land</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat rally</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GO_AROUND].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Go around</source>
-        <translation type="unfinished"></translation>
+        <translation>Putar balik</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_REPOSITION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Reposition</source>
-        <translation type="unfinished"></translation>
+        <translation>Reposisi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_PAUSE_CONTINUE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Pause/Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeda/Lanjutkan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_REVERSE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set moving direction</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur arah gerak</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_REVERSE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set moving direction to forward or reverse.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur arah gerak ke maju atau mundur.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_REVERSE].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Forward,Reverse</source>
-        <translation type="unfinished"></translation>
+        <translation>Maju,Mundur</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_LOCATION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Region of interest (ROI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Wilayah minat (ROI)</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_LOCATION].description, .mavCmdInfo[MAV_CMD_DO_SET_ROI].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Sets the region of interest for cameras.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengatur wilayah minat untuk kamera.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_LOCATION].category, .mavCmdInfo[MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET].category, .mavCmdInfo[MAV_CMD_DO_SET_ROI_NONE].category, .mavCmdInfo[MAV_CMD_DO_SET_ROI].category, .mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].category, .mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].category, .mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].category, .mavCmdInfo[MAV_CMD_SET_CAMERA_MODE].category, .mavCmdInfo[MAV_CMD_IMAGE_START_CAPTURE].category, .mavCmdInfo[MAV_CMD_IMAGE_STOP_CAPTURE].category, .mavCmdInfo[MAV_CMD_VIDEO_START_CAPTURE].category, .mavCmdInfo[MAV_CMD_VIDEO_STOP_CAPTURE].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Camera</source>
-        <translation type="unfinished"></translation>
+        <translation>Kamera</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>ROI to next waypoint</source>
-        <translation type="unfinished"></translation>
+        <translation>ROI ke waypoint berikutnya</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Sets the region of interest to point towards the next waypoint with optional offsets.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengatur wilayah minat untuk menunjuk ke waypoint berikutnya dengan offset opsional.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET].param5.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Pitch offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Offset pitch</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET].param6.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Roll offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Offset roll</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_WPNEXT_OFFSET].param7.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Yaw offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Offset yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_NONE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cancel ROI</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan ROI</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI_NONE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cancels the region of interest.</source>
-        <translation type="unfinished"></translation>
+        <translation>Membatalkan wilayah minat.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_CONTROL_VIDEO].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control video</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol video</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Region of interest</source>
-        <translation type="unfinished"></translation>
+        <translation>Wilayah minat</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>None,Next waypoint,Mission item,Location,ROI item</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak ada,Waypoint berikutnya,Item misi,Lokasi,Item ROI</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Mission Index</source>
-        <translation type="unfinished"></translation>
+        <translation>Indeks Misi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_ROI].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>ROI Index</source>
-        <translation type="unfinished"></translation>
+        <translation>Indeks ROI</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Camera config</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi kamera</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Configure onboard camera controller.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi pengontrol kamera onboard.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Shutter spd</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan rana</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Aperture</source>
-        <translation type="unfinished"></translation>
+        <translation>Aperture</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>ISO</source>
-        <translation type="unfinished"></translation>
+        <translation>ISO</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param5.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Exposure</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksposur</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param6.label, .mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].param5.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Perintah</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONFIGURE].param7.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Cut off</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemotongan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Camera control</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol kamera</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control onboard camera.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol kamera onboard.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Step</source>
-        <translation type="unfinished"></translation>
+        <translation>Langkah</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Focus lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunci fokus</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_DIGICAM_CONTROL].param6.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Id</source>
-        <translation type="unfinished"></translation>
+        <translation>Id</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Configure Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi Mount</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Configure the vehicle mount (e.g. gimbal).</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi mount kendaraan (misalnya gimbal).</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param1.enumStrings, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param7.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Retract,Neutral,Mavlink Targeting,RC Targeting,GPS Point</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarik,Netral,Targeting Mavlink,Targeting RC,Titik GPS</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stabilize Roll</source>
-        <translation type="unfinished"></translation>
+        <translation>Stabilisasi Roll</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param2.enumStrings, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param3.enumStrings, .mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param4.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>No,Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak,Ya</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stabilize Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Stabilisasi Pitch</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONFIGURE].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stabilize Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Stabilisasi Yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol Mount</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control the vehicle mount (e.g. gimbal).</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol mount kendaraan (misalnya gimbal).</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Lat/Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Lintang/Pitch</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Lon/Roll</source>
-        <translation type="unfinished"></translation>
+        <translation>Bujur/Roll</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOUNT_CONTROL].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Alt/Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian/Yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Gimbal Manager PitchYaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Manajer Gimbal PitchYaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control the gimbal during the mission</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol gimbal selama misi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Pitch</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Pitch rate</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju pitch</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Yaw rate</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param5.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Follow yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikuti yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param5.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Follow yaw, Lock yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikuti yaw, Kunci yaw</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param7.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Gimbal</source>
-        <translation type="unfinished"></translation>
+        <translation>Gimbal</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW].param7.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Primary,first gimbal,second gimbal</source>
-        <translation type="unfinished"></translation>
+        <translation>Utama,gimbal pertama,gimbal kedua</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Camera trigger distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak pemicu kamera</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set camera trigger distance.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur jarak pemicu kamera.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Shutter</source>
-        <translation type="unfinished"></translation>
+        <translation>Rana</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].param3.label, .mavCmdInfo[MAV_CMD_DO_PARACHUTE].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Trigger</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_SET_CAM_TRIGG_DIST].param3.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>No Trigger,Once Immediately</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada Pemicu,Sekali Segera</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Enable geofence</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan geofence</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Enable/Disable geofence.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan/Nonaktifkan geofence.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].category, .mavCmdInfo[MAV_CMD_DO_PARACHUTE].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Safety</source>
-        <translation type="unfinished"></translation>
+        <translation>Keamanan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_FENCE_ENABLE].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Disable,Disable floor only,Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif,Nonaktif lantai saja,Aktif</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_PARACHUTE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Trigger parachute</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu parasut</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_PARACHUTE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Enable/Disable auto-release or Release a parachute</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan/Nonaktifkan pelepasan otomatis atau Lepas parasut</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_PARACHUTE].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Disable,Enable,Release</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif,Aktif,Lepas</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_MOTOR_TEST].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Motor test</source>
-        <translation type="unfinished"></translation>
+        <translation>Uji motor</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_INVERTED_FLIGHT].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Inverted flight</source>
-        <translation type="unfinished"></translation>
+        <translation>Penerbangan terbalik</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_INVERTED_FLIGHT].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Change to/from inverted flight.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah ke/dari penerbangan terbalik.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_INVERTED_FLIGHT].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Inverted</source>
-        <translation type="unfinished"></translation>
+        <translation>Terbalik</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_INVERTED_FLIGHT].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Normal,Inverted</source>
-        <translation type="unfinished"></translation>
+        <translation>Normal,Terbalik</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GRIPPER].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Gripper Mechanism</source>
-        <translation type="unfinished"></translation>
+        <translation>Mekanisme Gripper</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GRIPPER].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control a gripper mechanism.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol mekanisme gripper.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GRIPPER].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Gripper id</source>
-        <translation type="unfinished"></translation>
+        <translation>Id gripper</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GRIPPER].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GRIPPER].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Release,Grab</source>
-        <translation type="unfinished"></translation>
+        <translation>Lepas,Cengkeram</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_AUTOTUNE_ENABLE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>AutoTune Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan AutoTune</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_AUTOTUNE_ENABLE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>AutoTune Enable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan AutoTune.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_AUTOTUNE_ENABLE].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Enable,Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktif,Nonaktif</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GUIDED_LIMITS].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Guided limits</source>
-        <translation type="unfinished"></translation>
+        <translation>Batas terpandu</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GUIDED_LIMITS].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set limits for external control</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur batas untuk kontrol eksternal</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GUIDED_LIMITS].param1.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Timeout</source>
-        <translation type="unfinished"></translation>
+        <translation>Timeout</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GUIDED_LIMITS].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Min Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt Min</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GUIDED_LIMITS].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Max Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt Maks</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_GUIDED_LIMITS].param4.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>H Limit</source>
-        <translation type="unfinished"></translation>
+        <translation>Batas H</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PREFLIGHT_CALIBRATION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PREFLIGHT_SET_SENSOR_OFFSETS].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set sensor offsets</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur offset sensor</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PREFLIGHT_UAVCAN].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>UAVCAN configure</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi UAVCAN</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PREFLIGHT_STORAGE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Store parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan parameter</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PREFLIGHT_REBOOT_SHUTDOWN].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Reboot/Shutdown vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Restart/Matikan kendaraan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_OVERRIDE_GOTO].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Override goto</source>
-        <translation type="unfinished"></translation>
+        <translation>Override goto</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_MISSION_START].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Mission start</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai misi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_COMPONENT_ARM_DISARM].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Arm/Disarm</source>
-        <translation type="unfinished"></translation>
+        <translation>Arm/Disarm</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_GET_HOME_POSITION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Get launch position</source>
-        <translation type="unfinished"></translation>
+        <translation>Dapatkan posisi peluncuran</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_START_RX_PAIR].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Bind Spektrum receiver</source>
-        <translation type="unfinished"></translation>
+        <translation>Bind penerima Spektrum</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_GET_MESSAGE_INTERVAL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Get message interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Dapatkan interval pesan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_SET_MESSAGE_INTERVAL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set message interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur interval pesan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_REQUEST_AUTOPILOT_CAPABILITIES].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Get capabilities</source>
-        <translation type="unfinished"></translation>
+        <translation>Dapatkan kemampuan</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_SET_CAMERA_MODE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set camera modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur mode kamera</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_SET_CAMERA_MODE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Set camera photo, video modes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur mode foto, video kamera.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_SET_CAMERA_MODE].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Take photos,Record video,Survey photo mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambil foto,Rekam video,Mode foto survei</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_IMAGE_START_CAPTURE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Start image capture</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai pengambilan gambar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_IMAGE_START_CAPTURE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Start taking one or more photos.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai mengambil satu atau lebih foto.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_IMAGE_START_CAPTURE].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Interval</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_IMAGE_START_CAPTURE].param3.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Photo count</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah foto</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_IMAGE_STOP_CAPTURE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stop image capture</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan pengambilan gambar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_IMAGE_STOP_CAPTURE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stop taking photos.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan pengambilan foto.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_TRIGGER_CONTROL].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Trigger control</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol pemicu</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_VIDEO_START_CAPTURE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Start video capture</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai perekaman video</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_VIDEO_START_CAPTURE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Start video capture.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai perekaman video.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_VIDEO_START_CAPTURE].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Status Frequency</source>
-        <translation type="unfinished"></translation>
+        <translation>Frekuensi Status</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_VIDEO_STOP_CAPTURE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stop video capture</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan perekaman video</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_VIDEO_STOP_CAPTURE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Stop video capture.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan perekaman video.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONTROL_HIGH_LATENCY].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Control high latency link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol link latensi tinggi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PANORAMA_CREATE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Create panorama</source>
-        <translation type="unfinished"></translation>
+        <translation>Buat panorama</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_VTOL_TRANSITION].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>VTOL Transition</source>
-        <translation type="unfinished"></translation>
+        <translation>Transisi VTOL</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_VTOL_TRANSITION].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Perform flight mode transition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lakukan transisi mode penerbangan.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_VTOL_TRANSITION].category, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>VTOL</source>
-        <translation type="unfinished"></translation>
+        <translation>VTOL</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_DO_VTOL_TRANSITION].param1.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Multi Rotor,Fixed Wing</source>
-        <translation type="unfinished"></translation>
+        <translation>Multi Rotor,Sayap Tetap</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_GATE].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Condition Gate</source>
-        <translation type="unfinished"></translation>
+        <translation>Gerbang Kondisi</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_GATE].description, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Delay mission state machine until gate has been reached.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda mesin keadaan misi sampai gerbang telah tercapai.</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_GATE].param2.label, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Ignore Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Abaikan Alt</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_CONDITION_GATE].param2.enumStrings, </extracomment>
         <translatorcomment>Only use english comma &apos;,&apos; to separate strings</translatorcomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>False,True</source>
-        <translation type="unfinished"></translation>
+        <translation>Salah,Benar</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PAYLOAD_PREPARE_DEPLOY].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Payload prepare deploy</source>
-        <translation type="unfinished"></translation>
+        <translation>Siapkan deploy payload</translation>
     </message>
     <message>
         <extracomment>.mavCmdInfo[MAV_CMD_PAYLOAD_CONTROL_DEPLOY].friendlyName, </extracomment>
         <location filename="../src/MissionManager/MavCmdInfoCommon.json"/>
         <source>Payload control deploy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol deploy payload</translation>
     </message>
 </context>
 <context>

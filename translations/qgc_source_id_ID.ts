@@ -648,22 +648,22 @@
     <message>
         <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="33"/>
         <source>Return to Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali ke Peluncuran</translation>
     </message>
     <message>
         <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="46"/>
         <source>Return At</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali Pada</translation>
     </message>
     <message>
         <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="52"/>
         <source>Current alttiude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian saat ini</translation>
     </message>
     <message>
         <location filename="../src/UI/toolbar/APMFlightModeIndicator.qml" line="52"/>
         <source>Specified altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian yang ditentukan</translation>
     </message>
 </context>
 <context>
@@ -671,102 +671,102 @@
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="58"/>
         <source>Flight Mode Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Mode Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="58"/>
         <source> (Channel 5)</source>
-        <translation type="unfinished"></translation>
+        <translation> (Saluran 5)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="82"/>
         <source>Flight mode channel:</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran mode penerbangan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="88"/>
         <source>Not assigned</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak ditetapkan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="88"/>
         <source>Channel 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="88"/>
         <source>Channel 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 2</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="89"/>
         <source>Channel 3</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 3</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="89"/>
         <source>Channel 4</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 4</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="89"/>
         <source>Channel 5</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 5</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="90"/>
         <source>Channel 6</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 6</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="90"/>
         <source>Channel 7</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 7</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="90"/>
         <source>Channel 8</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 8</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="106"/>
         <source>Flight Mode </source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="127"/>
         <source>Simple</source>
-        <translation type="unfinished"></translation>
+        <translation>Sederhana</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="142"/>
         <source>Super-Simple</source>
-        <translation type="unfinished"></translation>
+        <translation>Super-Sederhana</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="168"/>
         <source>Simple Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Sederhana</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="185"/>
         <source>Switch Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsi Switch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.qml" line="213"/>
         <source>Channel option %1 :</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsi saluran %1 :</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.h" line="32"/>
         <source>Flight Modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponent.h" line="24"/>
         <source>Flight Modes Setup is used to configure the transmitter switches associated with Flight Modes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Mode Penerbangan digunakan untuk mengkonfigurasi switch transmitter yang terkait dengan Mode Penerbangan.</translation>
     </message>
 </context>
 <context>
@@ -774,22 +774,22 @@
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentController.h" line="72"/>
         <source>Off</source>
-        <translation type="unfinished"></translation>
+        <translation>Mati</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentController.h" line="72"/>
         <source>Simple</source>
-        <translation type="unfinished"></translation>
+        <translation>Sederhana</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentController.h" line="72"/>
         <source>Super-Simple</source>
-        <translation type="unfinished"></translation>
+        <translation>Super-Sederhana</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentController.h" line="72"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustom</translation>
     </message>
 </context>
 <context>
@@ -797,32 +797,32 @@
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml" line="28"/>
         <source>Flight Mode 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan 1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml" line="33"/>
         <source>Flight Mode 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan 2</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml" line="38"/>
         <source>Flight Mode 3</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan 3</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml" line="43"/>
         <source>Flight Mode 4</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan 4</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml" line="48"/>
         <source>Flight Mode 5</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan 5</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml" line="53"/>
         <source>Flight Mode 6</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan 6</translation>
     </message>
 </context>
 <context>
@@ -3455,12 +3455,12 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponent.h" line="33"/>
         <source>Tuning</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuning</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponent.h" line="24"/>
         <source>Tuning Setup is used to tune the flight characteristics of the Vehicle.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Tuning digunakan untuk menyesuaikan karakteristik penerbangan Kendaraan.</translation>
     </message>
 </context>
 <context>
@@ -3468,202 +3468,202 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="127"/>
         <source>Basic Tuning</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuning Dasar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="151"/>
         <source>Roll/Pitch Sensitivity</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensitivitas Roll/Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="156"/>
         <source>Slide to the right if the copter is sluggish or slide to the left if the copter is twitchy</source>
-        <translation type="unfinished"></translation>
+        <translation>Geser ke kanan jika kopter lamban atau geser ke kiri jika kopter bergetar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="184"/>
         <source>Climb Sensitivity</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensitivitas Naik</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="189"/>
         <source>Slide to the right to climb more aggressively or slide to the left to climb more gently</source>
-        <translation type="unfinished"></translation>
+        <translation>Geser ke kanan untuk naik lebih agresif atau geser ke kiri untuk naik lebih lembut</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="217"/>
         <source>RC Roll/Pitch Feel</source>
-        <translation type="unfinished"></translation>
+        <translation>Rasa RC Roll/Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="222"/>
         <source>Slide to the left for soft control, slide to the right for crisp control</source>
-        <translation type="unfinished"></translation>
+        <translation>Geser ke kiri untuk kontrol lembut, geser ke kanan untuk kontrol tajam</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="247"/>
         <source>Spin While Armed</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar Saat Armed</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="252"/>
         <source>Adjust the amount the motors spin to indicate armed</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesuaikan jumlah motor berputar untuk menunjukkan armed</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="277"/>
         <source>Minimum Thrust</source>
-        <translation type="unfinished"></translation>
+        <translation>Daya Dorong Minimum</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="282"/>
         <source>Adjust the minimum amount of thrust require for the vehicle to move</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesuaikan jumlah minimum daya dorong yang diperlukan untuk kendaraan bergerak</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="286"/>
         <source>Warning: This setting should be higher than &apos;Spin While Armed&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Peringatan: Pengaturan ini harus lebih tinggi dari &apos;Berputar Saat Armed&apos;</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="322"/>
         <source>AutoTune</source>
-        <translation type="unfinished"></translation>
+        <translation>AutoTune</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="343"/>
         <source>Axes to AutoTune:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sumbu untuk AutoTune:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="352"/>
         <source>Channel for AutoTune switch:</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran untuk switch AutoTune:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>Channel 7</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 7</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>Channel 8</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 8</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>Channel 9</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 9</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>Channel 10</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 10</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>Channel 11</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 11</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="358"/>
         <source>Channel 12</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran 12</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="382"/>
         <source>In Flight Tuning</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuning Saat Terbang</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="406"/>
         <source>RC Channel 6 Option (Tuning):</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsi RC Saluran 6 (Tuning):</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="424"/>
         <source>Min:</source>
-        <translation type="unfinished"></translation>
+        <translation>Min:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="436"/>
         <source>Max:</source>
-        <translation type="unfinished"></translation>
+        <translation>Maks:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="467"/>
         <source>Roll</source>
-        <translation type="unfinished"></translation>
+        <translation>Roll</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="474"/>
         <source>Roll axis angle controller P gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain P kontroler sudut sumbu Roll</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="482"/>
         <source>Roll axis rate controller P gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain P kontroler laju sumbu Roll</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="490"/>
         <source>Roll axis rate controller I gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain I kontroler laju sumbu Roll</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="498"/>
         <source>Roll axis rate controller D gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain D kontroler laju sumbu Roll</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="508"/>
         <source>Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="515"/>
         <source>Pitch axis angle controller P gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain P kontroler sudut sumbu Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="523"/>
         <source>Pitch axis rate controller P gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain P kontroler laju sumbu Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="531"/>
         <source>Pitch axis rate controller I gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain I kontroler laju sumbu Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="539"/>
         <source>Pitch axis rate controller D gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain D kontroler laju sumbu Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="549"/>
         <source>Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Yaw</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="556"/>
         <source>Yaw axis angle controller P gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain P kontroler sudut sumbu Yaw</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="564"/>
         <source>Yaw axis rate controller P gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain P kontroler laju sumbu Yaw</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMTuningComponentCopter.qml" line="572"/>
         <source>Yaw axis rate controller I gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Gain I kontroler laju sumbu Yaw</translation>
     </message>
 </context>
 <context>
@@ -3875,60 +3875,62 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="44"/>
         <source>Your vehicle is using a custom airframe configuration. </source>
-        <translation type="unfinished"></translation>
+        <translation>Kendaraan Anda menggunakan konfigurasi airframe kustom. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="45"/>
         <source>This configuration can only be modified through the Parameter Editor.
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi ini hanya dapat dimodifikasi melalui Editor Parameter.
+
+</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="46"/>
         <source>If you want to reset your airframe configuration and select a standard configuration, click &apos;Reset&apos; below.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika Anda ingin mereset konfigurasi airframe dan memilih konfigurasi standar, klik &apos;Reset&apos; di bawah.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="49"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Reset</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="121"/>
         <source>Clicking &apos;Apply&apos; will save the changes you have made to your airframe configuration.&lt;br&gt;&lt;br&gt;                                                                        All vehicle parameters other than Radio Calibration will be reset.&lt;br&gt;&lt;br&gt;                                                                        Your vehicle will also be restarted in order to complete the process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengklik &apos;Terapkan&apos; akan menyimpan perubahan yang telah Anda buat pada konfigurasi airframe.&lt;br&gt;&lt;br&gt;                                                                        Semua parameter kendaraan selain Kalibrasi Radio akan direset.&lt;br&gt;&lt;br&gt;                                                                        Kendaraan Anda juga akan di-restart untuk menyelesaikan proses.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="111"/>
         <source>To change this configuration, select the desired airframe below then click &apos;Apply and Restart&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk mengubah konfigurasi ini, pilih airframe yang diinginkan di bawah kemudian klik &apos;Terapkan dan Restart&apos;.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="109"/>
         <source>You&apos;ve connected a %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda telah terhubung ke %1.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="110"/>
         <source>Airframe is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Airframe belum diatur.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="119"/>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.qml" line="120"/>
         <source>Apply and Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Terapkan dan Restart</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.cc" line="20"/>
         <source>Airframe</source>
-        <translation type="unfinished"></translation>
+        <translation>Airframe</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponent.cc" line="32"/>
         <source>Airframe Setup is used to select the airframe that matches your vehicle. This will in turn set up the various tuning values for flight parameters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Airframe digunakan untuk memilih airframe yang sesuai dengan kendaraan Anda. Ini akan mengatur berbagai nilai tuning untuk parameter penerbangan.</translation>
     </message>
 </context>
 <context>
@@ -3936,7 +3938,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentController.cc" line="89"/>
         <source>You cannot change airframe configuration while connected to multiple vehicles.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda tidak dapat mengubah konfigurasi airframe saat terhubung ke beberapa kendaraan.</translation>
     </message>
 </context>
 <context>
@@ -3944,38 +3946,38 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="23"/>
         <source>System ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Sistem</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="27"/>
         <source>Airframe type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe airframe</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="28"/>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="32"/>
         <source>Setup required</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan diperlukan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="31"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="36"/>
         <source>Firmware Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versi Firmware</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="37"/>
         <source>Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Diketahui</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="41"/>
         <source>Custom Fw. Ver.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ver. Fw. Kustom</translation>
     </message>
 </context>
 <context>
@@ -6404,12 +6406,12 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/FlightModesComponent.cc" line="25"/>
         <source>Flight Modes</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/FlightModesComponent.cc" line="36"/>
         <source>Flight Modes Setup is used to configure the transmitter switches associated with Flight Modes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Mode Penerbangan digunakan untuk mengkonfigurasi switch transmitter yang terkait dengan Mode Penerbangan.</translation>
     </message>
 </context>
 <context>
@@ -6417,17 +6419,17 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/FlightModesComponentSummary.qml" line="21"/>
         <source>Mode switch</source>
-        <translation type="unfinished"></translation>
+        <translation>Switch mode</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/FlightModesComponentSummary.qml" line="22"/>
         <source>Setup required</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan diperlukan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/FlightModesComponentSummary.qml" line="27"/>
         <source>Flight Mode %1 </source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Penerbangan %1 </translation>
     </message>
 </context>
 <context>
@@ -9848,167 +9850,167 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="62"/>
         <source>Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyedia</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="78"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="91"/>
         <source>Elevation Provider</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyedia Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="106"/>
         <source>Offline Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>Peta Offline</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="107"/>
         <source>Download map tiles for use when offline</source>
-        <translation type="unfinished"></translation>
+        <translation>Unduh ubin peta untuk digunakan saat offline</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="120"/>
         <source>Add New Set</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambah Set Baru</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="121"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="127"/>
         <source>Import Map Tiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Impor Ubin Peta</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="128"/>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Impor</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="138"/>
         <source>Export Map Tiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekspor Ubin Peta</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="139"/>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekspor</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="151"/>
         <source>Exporting</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengekspor</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="151"/>
         <source>Importing</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengimpor</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="165"/>
         <source>Tokens</source>
-        <translation type="unfinished"></translation>
+        <translation>Token</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="166"/>
         <source>Allows access to additional providers</source>
-        <translation type="unfinished"></translation>
+        <translation>Memungkinkan akses ke penyedia tambahan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="170"/>
         <source>Mapbox</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapbox</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="176"/>
         <source>Esri</source>
-        <translation type="unfinished"></translation>
+        <translation>Esri</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="182"/>
         <source>VWorld</source>
-        <translation type="unfinished"></translation>
+        <translation>VWorld</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="189"/>
         <source>Mapbox Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Login Mapbox</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="193"/>
         <source>Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Akun</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="199"/>
         <source>Map Style</source>
-        <translation type="unfinished"></translation>
+        <translation>Gaya Peta</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="206"/>
         <source>Custom Map URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL Peta Kustom</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="207"/>
         <source>URL with {x} {y} {z} or {zoom} substitutions</source>
-        <translation type="unfinished"></translation>
+        <translation>URL dengan substitusi {x} {y} {z} atau {zoom}</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="211"/>
         <source>Server URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL Server</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="218"/>
         <source>Tile Cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Cache Ubin</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="232"/>
         <source>Tile Sets (*.%1)</source>
-        <translation type="unfinished"></translation>
+        <translation>Set Ubin (*.%1)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="250"/>
         <source>Export Selected Tile Sets</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekspor Set Ubin yang Dipilih</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="255"/>
         <source>Export Tiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekspor Ubin</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="279"/>
         <source>Import TileSets</source>
-        <translation type="unfinished"></translation>
+        <translation>Impor Set Ubin</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="284"/>
         <source>Import Tiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Impor Ubin</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="292"/>
         <source>Append to existing sets</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambahkan ke set yang ada</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="297"/>
         <source>Replace existing sets</source>
-        <translation type="unfinished"></translation>
+        <translation>Ganti set yang ada</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/MapSettings.qml" line="309"/>
         <source>Error Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Pesan Kesalahan</translation>
     </message>
 </context>
 <context>
@@ -10465,52 +10467,52 @@ Do you wish to proceed?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="50"/>
         <source>Warning: Unable to determine motor count</source>
-        <translation type="unfinished"></translation>
+        <translation>Peringatan: Tidak dapat menentukan jumlah motor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="63"/>
         <source>Throttle</source>
-        <translation type="unfinished"></translation>
+        <translation>Throttle</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="68"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="76"/>
         <source>Make sure you remove all props.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pastikan Anda melepas semua propeler.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="100"/>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="110"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Berhenti</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="134"/>
         <source>Careful : Motors are enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Hati-hati: Motor aktif</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.qml" line="134"/>
         <source>Propellers are removed - Enable slider and motors</source>
-        <translation type="unfinished"></translation>
+        <translation>Propeler telah dilepas - Aktifkan slider dan motor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.cc" line="14"/>
         <source>Motors</source>
-        <translation type="unfinished"></translation>
+        <translation>Motor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/Common/MotorComponent.h" line="23"/>
         <source>Motors Setup is used to manually test motor control and direction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Motor digunakan untuk menguji kontrol dan arah motor secara manual.</translation>
     </message>
 </context>
 <context>
@@ -10518,77 +10520,77 @@ Do you wish to proceed?</source>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="25"/>
         <source>Multirotor Initial Checks</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemeriksaan Awal Multirotor</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="28"/>
         <source>Hardware</source>
-        <translation type="unfinished"></translation>
+        <translation>Hardware</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="29"/>
         <source>Props mounted and secured?</source>
-        <translation type="unfinished"></translation>
+        <translation>Propeler terpasang dan aman?</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="50"/>
         <source>Please arm the vehicle here</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan arm kendaraan di sini</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="53"/>
         <source>Motors</source>
-        <translation type="unfinished"></translation>
+        <translation>Motor</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="54"/>
         <source>Propellers free? Then throttle up gently. Working properly?</source>
-        <translation type="unfinished"></translation>
+        <translation>Propeler bebas? Kemudian throttle naik perlahan. Berfungsi dengan baik?</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="58"/>
         <source>Mission</source>
-        <translation type="unfinished"></translation>
+        <translation>Misi</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="59"/>
         <source>Please confirm mission is valid (waypoints valid, no terrain collision).</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan konfirmasi misi valid (waypoint valid, tidak ada tabrakan medan).</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="67"/>
         <source>Last preparations before launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Persiapan terakhir sebelum peluncuran</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="71"/>
         <source>Payload</source>
-        <translation type="unfinished"></translation>
+        <translation>Payload</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="72"/>
         <source>Configured and started? Payload lid closed?</source>
-        <translation type="unfinished"></translation>
+        <translation>Dikonfigurasi dan dimulai? Tutup payload tertutup?</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="76"/>
         <source>Wind &amp; weather</source>
-        <translation type="unfinished"></translation>
+        <translation>Angin &amp; cuaca</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="77"/>
         <source>OK for your platform?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK untuk platform Anda?</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="81"/>
         <source>Flight area</source>
-        <translation type="unfinished"></translation>
+        <translation>Area penerbangan</translation>
     </message>
     <message>
         <location filename="../src/FlightDisplay/MultiRotorChecklist.qml" line="82"/>
         <source>Launch area and path free of obstacles/people?</source>
-        <translation type="unfinished"></translation>
+        <translation>Area peluncuran dan jalur bebas dari hambatan/orang?</translation>
     </message>
 </context>
 <context>
@@ -11124,12 +11126,12 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehavior.cc" line="17"/>
         <source>Flight Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>Perilaku Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehavior.cc" line="28"/>
         <source>Flight Behavior is used to configure flight characteristics.</source>
-        <translation type="unfinished"></translation>
+        <translation>Perilaku Penerbangan digunakan untuk mengkonfigurasi karakteristik penerbangan.</translation>
     </message>
 </context>
 <context>
@@ -11137,62 +11139,62 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="49"/>
         <source>Enable responsiveness slider (if enabled, acceleration limit parameters and others are automatically set)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan slider responsivitas (jika diaktifkan, parameter batas akselerasi dan lainnya akan diatur secara otomatis)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="68"/>
         <source>Responsiveness</source>
-        <translation type="unfinished"></translation>
+        <translation>Responsivitas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="69"/>
         <source>A higher value makes the vehicle react faster. Be aware that this affects braking as well, and a combination of slow responsiveness with high maximum velocity will lead to long braking distances.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nilai yang lebih tinggi membuat kendaraan bereaksi lebih cepat. Perhatikan bahwa ini juga mempengaruhi pengereman, dan kombinasi responsivitas lambat dengan kecepatan maksimum tinggi akan menyebabkan jarak pengereman yang panjang.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="80"/>
         <source>Warning: a high responsiveness requires a vehicle with large thrust-to-weight ratio. The vehicle might lose altitude otherwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>Peringatan: responsivitas tinggi memerlukan kendaraan dengan rasio thrust-to-weight yang besar. Kendaraan mungkin kehilangan ketinggian jika tidak.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="89"/>
         <source>Enable horizontal velocity slider (if enabled, individual velocity limit parameters are automatically set)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan slider kecepatan horizontal (jika diaktifkan, parameter batas kecepatan individual akan diatur secara otomatis)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="108"/>
         <source>Horizontal velocity (m/s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan horizontal (m/s)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="109"/>
         <source>Limit the horizonal velocity (applies to all modes).</source>
-        <translation type="unfinished"></translation>
+        <translation>Batasi kecepatan horizontal (berlaku untuk semua mode).</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="124"/>
         <source>Enable vertical velocity slider (if enabled, individual velocity limit parameters are automatically set)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan slider kecepatan vertikal (jika diaktifkan, parameter batas kecepatan individual akan diatur secara otomatis)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="143"/>
         <source>Vertical velocity (m/s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan vertikal (m/s)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="144"/>
         <source>Limit the vertical velocity (applies to all modes).</source>
-        <translation type="unfinished"></translation>
+        <translation>Batasi kecepatan vertikal (berlaku untuk semua mode).</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="159"/>
         <source>Mission Turning Radius</source>
-        <translation type="unfinished"></translation>
+        <translation>Radius Belok Misi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml" line="160"/>
         <source>Increasing this leads to rounder turns in missions (corner cutting). Use the minimum value for accurate corner tracking.</source>
-        <translation type="unfinished"></translation>
+        <translation>Meningkatkan ini menyebabkan belokan yang lebih melengkung dalam misi (pemotongan sudut). Gunakan nilai minimum untuk pelacakan sudut yang akurat.</translation>
     </message>
 </context>
 <context>
@@ -11228,208 +11230,208 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="83"/>
         <source>MAVLink Logging</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencatatan MAVLink</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="84"/>
         <source>Please enter an email address before uploading MAVLink log files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan masukkan alamat email sebelum mengunggah file log MAVLink.</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="111"/>
         <source>MAVLink 2.0 Logging (PX4 Pro Only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencatatan MAVLink 2.0 (Hanya PX4 Pro)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="133"/>
         <source>Manual Start/Stop:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai/Hentikan Manual:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="137"/>
         <source>Start Logging</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai Pencatatan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="144"/>
         <source>Stop Logging</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan Pencatatan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="154"/>
         <source>Enable automatic logging</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan pencatatan otomatis</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="173"/>
         <source>MAVLink 2.0 Log Uploads (PX4 Pro Only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Unggahan Log MAVLink 2.0 (Hanya PX4 Pro)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="195"/>
         <source>Email address for Log Upload:</source>
-        <translation type="unfinished"></translation>
+        <translation>Alamat email untuk Unggahan Log:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="216"/>
         <source>Default Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskripsi Default:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="236"/>
         <source>Default Upload URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL Unggahan Default</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="257"/>
         <source>Video URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL Video:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="275"/>
         <source>Wind Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Angin:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="284"/>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="322"/>
         <source>Please Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Silakan Pilih</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="285"/>
         <source>Calm</source>
-        <translation type="unfinished"></translation>
+        <translation>Tenang</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="286"/>
         <source>Breeze</source>
-        <translation type="unfinished"></translation>
+        <translation>Angin Sejuk</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="287"/>
         <source>Gale</source>
-        <translation type="unfinished"></translation>
+        <translation>Angin Kencang</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="288"/>
         <source>Storm</source>
-        <translation type="unfinished"></translation>
+        <translation>Badai</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="313"/>
         <source>Flight Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rating Penerbangan:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="323"/>
         <source>Crashed (Pilot Error)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jatuh (Kesalahan Pilot)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="324"/>
         <source>Crashed (Software or Hardware issue)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jatuh (Masalah Software atau Hardware)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="325"/>
         <source>Unsatisfactory</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Memuaskan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="326"/>
         <source>Good</source>
-        <translation type="unfinished"></translation>
+        <translation>Baik</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="327"/>
         <source>Great</source>
-        <translation type="unfinished"></translation>
+        <translation>Sangat Baik</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="351"/>
         <source>Additional Feedback:</source>
-        <translation type="unfinished"></translation>
+        <translation>Umpan Balik Tambahan:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="367"/>
         <source>Make this log publicly available</source>
-        <translation type="unfinished"></translation>
+        <translation>Buat log ini tersedia untuk publik</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="378"/>
         <source>Enable automatic log uploads</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan unggahan log otomatis</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="390"/>
         <source>Delete log file after uploading</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus file log setelah mengunggah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="409"/>
         <source>Saved Log Files</source>
-        <translation type="unfinished"></translation>
+        <translation>File Log Tersimpan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="472"/>
         <source>Uploaded</source>
-        <translation type="unfinished"></translation>
+        <translation>Telah Diunggah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="495"/>
         <source>Check All</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih Semua</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="505"/>
         <source>Check None</source>
-        <translation type="unfinished"></translation>
+        <translation>Batal Pilih Semua</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="515"/>
         <source>Delete Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus yang Dipilih</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="523"/>
         <source>Delete Selected Log Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus File Log yang Dipilih</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="524"/>
         <source>Confirm deleting selected log files?</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfirmasi menghapus file log yang dipilih?</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="535"/>
         <source>Upload Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Unggah yang Dipilih</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="550"/>
         <source>Upload Selected Log Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Unggah File Log yang Dipilih</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="551"/>
         <source>Confirm uploading selected log files?</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfirmasi mengunggah file log yang dipilih?</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="562"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="571"/>
         <source>Cancel Upload</source>
-        <translation type="unfinished"></translation>
+        <translation>Batalkan Unggahan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PX4LogTransferSettings.qml" line="572"/>
         <source>Confirm canceling the upload process?</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfirmasi membatalkan proses unggahan?</translation>
     </message>
 </context>
 <context>
@@ -11468,12 +11470,12 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponent.cc" line="17"/>
         <source>Radio</source>
-        <translation type="unfinished"></translation>
+        <translation>Radio</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponent.cc" line="28"/>
         <source>Radio Setup is used to calibrate your transmitter. It also assign channels for Roll, Pitch, Yaw and Throttle vehicle control as well as determining whether they are reversed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Radio digunakan untuk mengkalibrasi transmitter Anda. Ini juga menetapkan saluran untuk kontrol kendaraan Roll, Pitch, Yaw dan Throttle serta menentukan apakah mereka dibalik.</translation>
     </message>
 </context>
 <context>
@@ -11481,7 +11483,7 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="26"/>
         <source>Roll</source>
-        <translation type="unfinished"></translation>
+        <translation>Roll</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="27"/>
@@ -11489,44 +11491,44 @@ Is this really what you want?</source>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="37"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="42"/>
         <source>Setup required</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan diperlukan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="31"/>
         <source>Pitch</source>
-        <translation type="unfinished"></translation>
+        <translation>Pitch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="36"/>
         <source>Yaw</source>
-        <translation type="unfinished"></translation>
+        <translation>Yaw</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="41"/>
         <source>Throttle</source>
-        <translation type="unfinished"></translation>
+        <translation>Throttle</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="46"/>
         <source>Flaps</source>
-        <translation type="unfinished"></translation>
+        <translation>Flaps</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="47"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="53"/>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="58"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="52"/>
         <source>Aux1</source>
-        <translation type="unfinished"></translation>
+        <translation>Aux1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml" line="57"/>
         <source>Aux2</source>
-        <translation type="unfinished"></translation>
+        <translation>Aux2</translation>
     </message>
 </context>
 <context>
@@ -11557,12 +11559,12 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponent.cc" line="17"/>
         <source>PID Tuning</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuning PID</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponent.cc" line="28"/>
         <source>Tuning Setup is used to tune the flight controllers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Tuning digunakan untuk menyesuaikan flight controller.</translation>
     </message>
 </context>
 <context>
@@ -11570,22 +11572,22 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentCopterAll.qml" line="22"/>
         <source>Rate Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontroler Laju</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentCopterAll.qml" line="26"/>
         <source>Attitude Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontroler Sikap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentCopterAll.qml" line="30"/>
         <source>Velocity Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontroler Kecepatan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PX4TuningComponentCopterAll.qml" line="34"/>
         <source>Position Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontroler Posisi</translation>
     </message>
 </context>
 <context>
@@ -13104,103 +13106,103 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="59"/>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="534"/>
         <source>ESC Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi ESC</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="58"/>
         <source>%1 cannot perform ESC Calibration with this version of firmware. You will need to upgrade to a newer firmware.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 tidak dapat melakukan Kalibrasi ESC dengan versi firmware ini. Anda perlu mengupgrade ke firmware yang lebih baru.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="59"/>
         <source>%1 cannot perform ESC Calibration with this version of firmware. You will need to upgrade %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 tidak dapat melakukan Kalibrasi ESC dengan versi firmware ini. Anda perlu mengupgrade %1.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="541"/>
         <source>Performing calibration. This will take a few seconds..</source>
-        <translation type="unfinished"></translation>
+        <translation>Melakukan kalibrasi. Ini akan memakan waktu beberapa detik..</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="60"/>
         <source>ESC Calibration failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi ESC gagal</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="542"/>
         <source>ESC Calibration failed. </source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi ESC gagal. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="543"/>
         <source>Calibration complete. You can disconnect your battery now if you like.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi selesai. Anda dapat memutuskan baterai sekarang jika Anda mau.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="550"/>
         <source>WARNING: Props must be removed from vehicle prior to performing ESC calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>PERINGATAN: Propeler harus dilepas dari kendaraan sebelum melakukan kalibrasi ESC.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="550"/>
         <source> Connect the battery now and calibration will begin.</source>
-        <translation type="unfinished"></translation>
+        <translation> Hubungkan baterai sekarang dan kalibrasi akan dimulai.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="60"/>
         <source>You must disconnect the battery prior to performing ESC Calibration. Disconnect your battery and try again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda harus memutuskan baterai sebelum melakukan Kalibrasi ESC. Putuskan baterai Anda dan coba lagi.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="215"/>
         <source>Battery </source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="256"/>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="271"/>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Sumber</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="436"/>
         <source>Measure battery voltage using an external voltmeter and enter the value below. Click Calculate to set the new voltage multiplier.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukur tegangan baterai menggunakan voltmeter eksternal dan masukkan nilai di bawah. Klik Hitung untuk mengatur pengali tegangan baru.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="443"/>
         <source>Measured voltage:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegangan terukur:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="446"/>
         <source>Vehicle voltage:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegangan kendaraan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="449"/>
         <source>Voltage divider:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pembagi tegangan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="494"/>
         <source>Measure current draw using an external current meter and enter the value below. Click Calculate to set the new amps per volt value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukur arus yang ditarik menggunakan amperemeter eksternal dan masukkan nilai di bawah. Klik Hitung untuk mengatur nilai ampere per volt baru.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="501"/>
         <source>Measured current:</source>
-        <translation type="unfinished"></translation>
+        <translation>Arus terukur:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="504"/>
         <source>Vehicle current:</source>
-        <translation type="unfinished"></translation>
+        <translation>Arus kendaraan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="507"/>
         <source>Amps per volt:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ampere per volt:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="329"/>
@@ -13208,178 +13210,178 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="454"/>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="512"/>
         <source>Calculate</source>
-        <translation type="unfinished"></translation>
+        <translation>Hitung</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="293"/>
         <source>Number of Cells (in Series)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah Sel (Seri)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="312"/>
         <source>Full Voltage (per cell)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegangan Penuh (per sel)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="299"/>
         <source>Battery Max:</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai Maks:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="302"/>
         <source>Empty Voltage (per cell)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegangan Kosong (per sel)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="308"/>
         <source>Battery Min:</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai Min:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="321"/>
         <source>Voltage divider</source>
-        <translation type="unfinished"></translation>
+        <translation>Pembagi tegangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="417"/>
         <source>Calculate Voltage Divider</source>
-        <translation type="unfinished"></translation>
+        <translation>Hitung Pembagi Tegangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="340"/>
         <source>If the battery voltage reported by the vehicle is largely different than the voltage read externally using a voltmeter you can adjust the voltage multiplier value to correct this. </source>
-        <translation type="unfinished"></translation>
+        <translation>Jika tegangan baterai yang dilaporkan oleh kendaraan sangat berbeda dari tegangan yang dibaca secara eksternal menggunakan voltmeter, Anda dapat menyesuaikan nilai pengali tegangan untuk memperbaikinya. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="341"/>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="365"/>
         <source>Click the Calculate button for help with calculating a new value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik tombol Hitung untuk bantuan dalam menghitung nilai baru.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="345"/>
         <source>Amps per volt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ampere per volt</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="475"/>
         <source>Calculate Amps per Volt</source>
-        <translation type="unfinished"></translation>
+        <translation>Hitung Ampere per Volt</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="364"/>
         <source>If the current draw reported by the vehicle is largely different than the current read externally using a current meter you can adjust the amps per volt value to correct this. </source>
-        <translation type="unfinished"></translation>
+        <translation>Jika arus yang dilaporkan oleh kendaraan sangat berbeda dari arus yang dibaca secara eksternal menggunakan amperemeter, Anda dapat menyesuaikan nilai ampere per volt untuk memperbaikinya. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="110"/>
         <source>ESC PWM Minimum and Maximum Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi PWM Minimum dan Maksimum ESC</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="120"/>
         <source>WARNING: Propellers must be removed from vehicle prior to performing ESC calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>PERINGATAN: Propeler harus dilepas dari kendaraan sebelum melakukan kalibrasi ESC.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="125"/>
         <source>You must use USB connection for this operation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda harus menggunakan koneksi USB untuk operasi ini.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="129"/>
         <source>Calibrate</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="138"/>
         <source>Show UAVCAN Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan Pengaturan UAVCAN</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="144"/>
         <source>UAVCAN Bus Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi Bus UAVCAN</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="160"/>
         <source>Change required restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Perubahan memerlukan restart</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="167"/>
         <source>UAVCAN Motor Index and Direction Assignment</source>
-        <translation type="unfinished"></translation>
+        <translation>Penetapan Indeks dan Arah Motor UAVCAN</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="178"/>
         <source>WARNING: Propellers must be removed from vehicle prior to performing UAVCAN ESC configuration.</source>
-        <translation type="unfinished"></translation>
+        <translation>PERINGATAN: Propeler harus dilepas dari kendaraan sebelum melakukan konfigurasi ESC UAVCAN.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="184"/>
         <source>ESC parameters will only be accessible in the editor after assignment.</source>
-        <translation type="unfinished"></translation>
+        <translation>Parameter ESC hanya akan dapat diakses di editor setelah penetapan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="190"/>
         <source>Start the process, then turn each motor into its turn direction, in the order of their motor indices.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai proses, kemudian putar setiap motor ke arah putarannya, sesuai urutan indeks motornya.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="195"/>
         <source>Start Assignment</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai Penetapan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="201"/>
         <source>Stop Assignment</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan Penetapan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="372"/>
         <source>Show Advanced Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan Pengaturan Lanjutan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="377"/>
         <source>Voltage Drop on Full Load (per cell)</source>
-        <translation type="unfinished"></translation>
+        <translation>Penurunan Tegangan pada Beban Penuh (per sel)</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="393"/>
         <source>Batteries show less voltage at high throttle. Enter the difference in Volts between idle throttle and full </source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai menunjukkan tegangan lebih rendah pada throttle tinggi. Masukkan perbedaan dalam Volt antara throttle idle dan penuh </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="394"/>
         <source>throttle, divided by the number of battery cells. Leave at the default if unsure. </source>
-        <translation type="unfinished"></translation>
+        <translation>throttle, dibagi dengan jumlah sel baterai. Biarkan pada default jika tidak yakin. </translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="395"/>
         <source>If this value is set too high, the battery might be deep discharged and damaged.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika nilai ini diatur terlalu tinggi, baterai mungkin terlepas dalam dan rusak.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="400"/>
         <source>Compensated Minimum Voltage:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegangan Minimum Terkompensasi:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.qml" line="404"/>
         <source> V</source>
-        <translation type="unfinished"></translation>
+        <translation> V</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.cc" line="20"/>
         <source>Power</source>
-        <translation type="unfinished"></translation>
+        <translation>Daya</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponent.cc" line="31"/>
         <source>Power Setup is used to setup battery parameters as well as advanced settings for propellers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Daya digunakan untuk mengatur parameter baterai serta pengaturan lanjutan untuk propeler.</translation>
     </message>
 </context>
 <context>
@@ -13387,17 +13389,17 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponentSummary.qml" line="37"/>
         <source>Battery Full</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai Penuh</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponentSummary.qml" line="42"/>
         <source>Battery Empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterai Kosong</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/PowerComponentSummary.qml" line="47"/>
         <source>Number of Cells</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah Sel</translation>
     </message>
 </context>
 <context>
@@ -15234,188 +15236,188 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="65"/>
         <source>Low Battery Failsafe Trigger</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Baterai Rendah</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="93"/>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="275"/>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="327"/>
         <source>Failsafe Action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi Failsafe:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="105"/>
         <source>Battery Warn Level:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tingkat Peringatan Baterai:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="114"/>
         <source>Battery Failsafe Level:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tingkat Failsafe Baterai:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="123"/>
         <source>Battery Emergency Level:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tingkat Darurat Baterai:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="135"/>
         <source>Object Detection</source>
-        <translation type="unfinished"></translation>
+        <translation>Deteksi Objek</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="163"/>
         <source>Collision Prevention:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencegahan Tabrakan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="168"/>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="187"/>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="608"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktif</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="168"/>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="187"/>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="608"/>
         <source>Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktif</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="183"/>
         <source>Obstacle Avoidance:</source>
-        <translation type="unfinished"></translation>
+        <translation>Penghindaran Rintangan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="200"/>
         <source>Minimum Distance: (</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Minimum: (</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="236"/>
         <source>Show obstacle distance overlay</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan overlay jarak rintangan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="247"/>
         <source>RC Loss Failsafe Trigger</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Kehilangan RC</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="287"/>
         <source>RC Loss Timeout:</source>
-        <translation type="unfinished"></translation>
+        <translation>Timeout Kehilangan RC:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="299"/>
         <source>Data Link Loss Failsafe Trigger</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Kehilangan Data Link</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="339"/>
         <source>Data Link Loss Timeout:</source>
-        <translation type="unfinished"></translation>
+        <translation>Timeout Kehilangan Data Link:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="351"/>
         <source>Geofence Failsafe Trigger</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Geofence</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="380"/>
         <source>Action on breach:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi saat pelanggaran:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="393"/>
         <source>Max Radius:</source>
-        <translation type="unfinished"></translation>
+        <translation>Radius Maksimum:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="406"/>
         <source>Max Altitude:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Maksimum:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="421"/>
         <source>Return To Launch Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Kembali ke Peluncuran</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="460"/>
         <source>Return to launch, then:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali ke peluncuran, kemudian:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="603"/>
         <source>Telemetry logging to vehicle storage:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencatatan telemetri ke penyimpanan kendaraan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="449"/>
         <source>Climb to altitude of:</source>
-        <translation type="unfinished"></translation>
+        <translation>Naik ke ketinggian:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="469"/>
         <source>Land immediately</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat segera</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="479"/>
         <source>Loiter and do not land</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar dan tidak mendarat</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="489"/>
         <source>Loiter and land after specified time</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar dan mendarat setelah waktu tertentu</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="495"/>
         <source>Loiter Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu Berputar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="505"/>
         <source>Loiter Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Berputar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="518"/>
         <source>Land Mode Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Mode Mendarat</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="547"/>
         <source>Landing Descent Rate:</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju Turun Pendaratan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="561"/>
         <source>Disarm After:</source>
-        <translation type="unfinished"></translation>
+        <translation>Disarm Setelah:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="576"/>
         <source>Vehicle Telemetry Logging</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencatatan Telemetri Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="626"/>
         <source>Hardware in the Loop Simulation</source>
-        <translation type="unfinished"></translation>
+        <translation>Simulasi Hardware in the Loop</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.qml" line="655"/>
         <source>HITL Enabled:</source>
-        <translation type="unfinished"></translation>
+        <translation>HITL Aktif:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponent.cc" line="18"/>
         <source>Safety</source>
-        <translation type="unfinished"></translation>
+        <translation>Keamanan</translation>
     </message>
 </context>
 <context>
@@ -15423,57 +15425,57 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="28"/>
         <source>Low Battery Failsafe</source>
-        <translation type="unfinished"></translation>
+        <translation>Failsafe Baterai Rendah</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="33"/>
         <source>RC Loss Failsafe</source>
-        <translation type="unfinished"></translation>
+        <translation>Failsafe Kehilangan RC</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="38"/>
         <source>RC Loss Timeout</source>
-        <translation type="unfinished"></translation>
+        <translation>Timeout Kehilangan RC</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="43"/>
         <source>Data Link Loss Failsafe</source>
-        <translation type="unfinished"></translation>
+        <translation>Failsafe Kehilangan Data Link</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="48"/>
         <source>RTL Climb To</source>
-        <translation type="unfinished"></translation>
+        <translation>RTL Naik Ke</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="53"/>
         <source>RTL, Then</source>
-        <translation type="unfinished"></translation>
+        <translation>RTL, Kemudian</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="55"/>
         <source>Land immediately</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat segera</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="57"/>
         <source>Loiter and do not land</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar dan tidak mendarat</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="58"/>
         <source>Loiter and land after specified time</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar dan mendarat setelah waktu tertentu</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="63"/>
         <source>Loiter Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt Berputar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml" line="69"/>
         <source>Land Delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda Mendarat</translation>
     </message>
 </context>
 <context>
@@ -15481,12 +15483,12 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponent.cc" line="16"/>
         <source>Sensors</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponent.cc" line="37"/>
         <source>Sensors Setup is used to calibrate the sensors within your vehicle.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Sensor digunakan untuk mengkalibrasi sensor dalam kendaraan Anda.</translation>
     </message>
 </context>
 <context>
@@ -15494,52 +15496,52 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="167"/>
         <source>Calibration complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi selesai</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="184"/>
         <source>Calibration failed. Calibration log will be displayed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi gagal. Log kalibrasi akan ditampilkan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="274"/>
         <source>Unsupported calibration firmware version, using log</source>
-        <translation type="unfinished"></translation>
+        <translation>Versi firmware kalibrasi tidak didukung, menggunakan log</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="306"/>
         <source>Place your vehicle into one of the Incomplete orientations shown below and hold it still</source>
-        <translation type="unfinished"></translation>
+        <translation>Letakkan kendaraan Anda ke salah satu orientasi Belum Selesai yang ditampilkan di bawah dan tahan tetap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="391"/>
         <source>Rotate the vehicle continuously as shown in the diagram until marked as Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Putar kendaraan secara terus menerus seperti yang ditunjukkan dalam diagram sampai ditandai sebagai Selesai</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="393"/>
         <source>Hold still in the current orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>Tahan tetap dalam orientasi saat ini</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="431"/>
         <source>Place you vehicle into one of the orientations shown below and hold it still</source>
-        <translation type="unfinished"></translation>
+        <translation>Letakkan kendaraan Anda ke salah satu orientasi yang ditampilkan di bawah dan tahan tetap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="440"/>
         <source>Orientation already completed, place you vehicle into one of the incomplete orientations shown below and hold it still</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientasi sudah selesai, letakkan kendaraan Anda ke salah satu orientasi yang belum selesai yang ditampilkan di bawah dan tahan tetap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="500"/>
         <source>Reset successful</source>
-        <translation type="unfinished"></translation>
+        <translation>Reset berhasil</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentController.cc" line="507"/>
         <source>Reset failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Reset gagal</translation>
     </message>
 </context>
 <context>
@@ -15547,14 +15549,14 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="28"/>
         <source>Compass 0</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas 0</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="29"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="46"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="51"/>
         <source>Setup required</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan diperlukan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="29"/>
@@ -15563,27 +15565,27 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="46"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="51"/>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Siap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="33"/>
         <source>Compass 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas 1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="39"/>
         <source>Compass 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas 2</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="45"/>
         <source>Gyro</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyro</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml" line="50"/>
         <source>Accelerometer</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerometer</translation>
     </message>
 </context>
 <context>
@@ -15591,7 +15593,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="26"/>
         <source>Compass:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="27"/>
@@ -15599,7 +15601,7 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="37"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="43"/>
         <source>Setup required</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan diperlukan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="27"/>
@@ -15607,22 +15609,22 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="37"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="43"/>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Siap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="31"/>
         <source>Gyro:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyro:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="36"/>
         <source>Accelerometer:</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerometer:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml" line="41"/>
         <source>Airspeed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Udara:</translation>
     </message>
 </context>
 <context>
@@ -15631,171 +15633,173 @@ Click the Next button to upload calibration to board. Click Cancel if you don&ap
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="41"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="42"/>
         <source>If the orientation is in the direction of flight, select ROTATION_NONE.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika orientasi mengarah ke arah penerbangan, pilih ROTATION_NONE.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="48"/>
         <source>For Airspeed calibration you will need to keep your airspeed sensor out of any wind and then blow across the sensor. Do not touch the sensor or obstruct any holes during the calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Kecepatan Udara, Anda perlu menjaga sensor kecepatan udara dari angin dan kemudian meniup melintasi sensor. Jangan menyentuh sensor atau menghalangi lubang selama kalibrasi.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="50"/>
         <source>Start the individual calibration steps by clicking one of the buttons to the left.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mulai langkah kalibrasi individual dengan mengklik salah satu tombol di sebelah kiri.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="210"/>
         <source>Compass Calibration Complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Kompas Selesai</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="231"/>
         <source>Calibration Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Batal Kalibrasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="223"/>
         <source>Sensor Calibration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Sensor</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="223"/>
         <source>Performing sensor calibration over a WiFi connection is known to be unreliable. You should disconnect and perform calibration using a direct USB connection instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Melakukan kalibrasi sensor melalui koneksi WiFi diketahui tidak dapat diandalkan. Anda harus memutuskan dan melakukan kalibrasi menggunakan koneksi USB langsung.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="232"/>
         <source>Waiting for Vehicle to response to Cancel. This may take a few seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Menunggu respons Kendaraan untuk Batal. Ini mungkin memakan waktu beberapa detik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="285"/>
         <source>Set autopilot orientation before calibrating.</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur orientasi autopilot sebelum mengkalibrasi.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="332"/>
         <source>Reboot Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Restart Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="44"/>
         <source>For Compass calibration you will need to rotate your vehicle through a number of positions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Kompas, Anda perlu memutar kendaraan melalui sejumlah posisi.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="45"/>
         <source>For Gyroscope calibration you will need to place your vehicle on a surface and leave it still.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Gyroscope, Anda perlu meletakkan kendaraan di permukaan dan membiarkannya tetap.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="46"/>
         <source>For Accelerometer calibration you will need to place your vehicle on all six sides on a perfectly level surface and hold it still in each orientation for a few seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk kalibrasi Akselerometer, Anda perlu meletakkan kendaraan di semua enam sisi pada permukaan yang benar-benar rata dan menahannya tetap di setiap orientasi selama beberapa detik.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="47"/>
         <source>To level the horizon you need to place the vehicle in its level flight position and leave still.</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk meratakan horizon, Anda perlu meletakkan kendaraan dalam posisi penerbangan yang rata dan membiarkannya tetap.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="290"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="346"/>
         <source>Autopilot Orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientasi Autopilot</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="300"/>
         <source>ROTATION_NONE indicates component points in direction of flight.</source>
-        <translation type="unfinished"></translation>
+        <translation>ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="306"/>
         <source>Click Ok to start calibration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik Ok untuk memulai kalibrasi.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="327"/>
         <source>Reboot the vehicle prior to flight.</source>
-        <translation type="unfinished"></translation>
+        <translation>Restart kendaraan sebelum penerbangan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="338"/>
         <source>Adjust orientations as needed.
 
 ROTATION_NONE indicates component points in direction of flight.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesuaikan orientasi sesuai kebutuhan.
+
+ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="367"/>
         <source>Mag %1 Orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientasi Mag %1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="395"/>
         <source>Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="402"/>
         <source>Calibrate Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Kompas</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="409"/>
         <source>Gyroscope</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyroscope</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="416"/>
         <source>Calibrate Gyro</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Gyro</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="423"/>
         <source>Accelerometer</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselerometer</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="430"/>
         <source>Calibrate Accelerometer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Akselerometer</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="437"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="445"/>
         <source>Level Horizon</source>
-        <translation type="unfinished"></translation>
+        <translation>Ratakan Horizon</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="452"/>
         <source>Airspeed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Udara</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="461"/>
         <source>Calibrate Airspeed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalibrasi Kecepatan Udara</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="468"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="477"/>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Berikutnya</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="485"/>
         <source>Orientations</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="490"/>
         <source>Set Orientations</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur Orientasi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="561"/>
@@ -15805,7 +15809,7 @@ ROTATION_NONE indicates component points in direction of flight.</source>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="597"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="606"/>
         <source>Rotate</source>
-        <translation type="unfinished"></translation>
+        <translation>Putar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="561"/>
@@ -15815,12 +15819,12 @@ ROTATION_NONE indicates component points in direction of flight.</source>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="597"/>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="606"/>
         <source>Hold Still</source>
-        <translation type="unfinished"></translation>
+        <translation>Tahan Tetap</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/SensorsSetup.qml" line="613"/>
         <source>Factory reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Reset pabrik</translation>
     </message>
 </context>
 <context>
@@ -16147,87 +16151,87 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="75"/>
         <source>Move &apos;%1&apos; %2 to the %3 location. %4</source>
-        <translation type="unfinished"></translation>
+        <translation>Pindahkan &apos;%1&apos; %2 ke lokasi %3. %4</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="156"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="37"/>
         <source>Internal Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan Internal</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="64"/>
         <source>Provides advanced access to all commands/parameters. Be very careful!</source>
-        <translation type="unfinished"></translation>
+        <translation>Memberikan akses lanjutan ke semua perintah/parameter. Berhati-hatilah!</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="76"/>
         <source>T</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="77"/>
         <source>Transition Direction</source>
-        <translation type="unfinished"></translation>
+        <translation>Arah Transisi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="77"/>
         <source>Takeoff</source>
-        <translation type="unfinished"></translation>
+        <translation>Takeoff</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="78"/>
         <source>desired</source>
-        <translation type="unfinished"></translation>
+        <translation>yang diinginkan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="78"/>
         <source>climbout</source>
-        <translation type="unfinished"></translation>
+        <translation>terbang</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="79"/>
         <source>Ensure distance from launch to transition direction is far enough to complete transition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pastikan jarak dari peluncuran ke arah transisi cukup jauh untuk menyelesaikan transisi.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="86"/>
         <source>Ensure clear of obstacles and into the wind.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pastikan bebas dari hambatan dan melawan angin.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="93"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Selesai</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="104"/>
         <source>Click in map to set planned Takeoff location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik di peta untuk mengatur lokasi Takeoff yang direncanakan.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="105"/>
         <source>Click in map to set planned Launch location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik di peta untuk mengatur lokasi Peluncuran yang direncanakan.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="128"/>
         <source>Altitude below specifies the approximate altitude of the ground. Normally 0 for landing back at original launch location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian di bawah menentukan ketinggian tanah yang diperkirakan. Biasanya 0 untuk mendarat kembali di lokasi peluncuran asli.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="182"/>
         <source>Actual AMSL alt sent: %1 %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt AMSL aktual yang dikirim: %1 %2</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="242"/>
         <source>Flight Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan Penerbangan</translation>
     </message>
 </context>
 <context>
@@ -16235,42 +16239,42 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="375"/>
         <source>Unknown: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Diketahui: %1</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="382"/>
         <source>L</source>
-        <translation type="unfinished"></translation>
+        <translation>L</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="386"/>
         <source>Takeoff</source>
-        <translation type="unfinished"></translation>
+        <translation>Takeoff</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="388"/>
         <source>Land</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="390"/>
         <source>Transition Direction</source>
-        <translation type="unfinished"></translation>
+        <translation>Arah Transisi</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="392"/>
         <source>VTOL Land</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat VTOL</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="395"/>
         <source>ROI</source>
-        <translation type="unfinished"></translation>
+        <translation>ROI</translation>
     </message>
     <message>
         <location filename="../src/MissionManager/SimpleMissionItem.cc" line="400"/>
         <source>Loiter</source>
-        <translation type="unfinished"></translation>
+        <translation>Berputar</translation>
     </message>
 </context>
 <context>
@@ -16574,47 +16578,47 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="17"/>
         <source>Use the Polygon Tools to create the polygon which outlines your survey area.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan Alat Polygon untuk membuat poligon yang menggarisbawahi area operasi Anda.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="18"/>
         <source>Transects</source>
-        <translation type="unfinished"></translation>
+        <translation>Transect</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="38"/>
         <source>Angle</source>
-        <translation type="unfinished"></translation>
+        <translation>Sudut</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="60"/>
         <source>Turnaround dist</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak putar balik</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="76"/>
         <source>Hover and capture image</source>
-        <translation type="unfinished"></translation>
+        <translation>Melayang dan ambil gambar</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="82"/>
         <source>Refly at 90 deg offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Terbang ulang dengan offset 90 derajat</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="88"/>
         <source>Images in turnarounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Gambar saat putar balik</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="94"/>
         <source>Fly alternate transects</source>
-        <translation type="unfinished"></translation>
+        <translation>Terbang dengan transect alternatif</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="106"/>
         <source>Select Polygon File</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih File Polygon</translation>
     </message>
 </context>
 <context>
@@ -17016,122 +17020,122 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="35"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Selesai</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="91"/>
         <source>WARNING: Photo interval is below minimum interval (%1 secs) supported by camera.</source>
-        <translation type="unfinished"></translation>
+        <translation>PERINGATAN: Interval foto di bawah interval minimum (%1 detik) yang didukung kamera.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="101"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="102"/>
         <source>Trigger Dist</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Pemicu</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="103"/>
         <source>Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="122"/>
         <source>Rotate Entry Point</source>
-        <translation type="unfinished"></translation>
+        <translation>Putar Titik Masuk</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="130"/>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="231"/>
         <source>Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Statistik</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="162"/>
         <source>Presets</source>
-        <translation type="unfinished"></translation>
+        <translation>Preset</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="177"/>
         <source>Apply Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Terapkan Preset</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="184"/>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="192"/>
         <source>Delete Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus Preset</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="193"/>
         <source>Are you sure you want to delete &apos;%1&apos; preset?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda yakin ingin menghapus preset &apos;%1&apos;?</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="209"/>
         <source>Save Settings As New Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan Pengaturan Sebagai Preset Baru</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="246"/>
         <source>Save Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan Preset</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="263"/>
         <source>Save the current settings as a named preset.</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan pengaturan saat ini sebagai preset bernama.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="268"/>
         <source>Preset Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama Preset</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="274"/>
         <source>Enter preset name</source>
-        <translation type="unfinished"></translation>
+        <translation>Masukkan nama preset</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="281"/>
         <source>Preset name cannot be blank.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama preset tidak boleh kosong.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="284"/>
         <source>Preset name cannot include the &quot;/&quot; character.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama preset tidak boleh menyertakan karakter &quot;/&quot;.</translation>
     </message>
 </context>
 <context>
     <name>TransectStyleComplexItemStats</name>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemStats.qml" line="16"/>
-        <source>Survey Area</source>
-        <translation type="unfinished"></translation>
+        <source>Operations Area</source>
+        <translation>Area Operasi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemStats.qml" line="19"/>
         <source>Photo Count</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah Foto</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemStats.qml" line="22"/>
         <source>Photo Interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Interval Fotografi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemStats.qml" line="23"/>
         <source>secs</source>
-        <translation type="unfinished"></translation>
+        <translation>detik</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemStats.qml" line="25"/>
         <source>Trigger Distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak antara Trigger</translation>
     </message>
 </context>
 <context>
@@ -18074,12 +18078,12 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/Vehicle/VehicleSetup/VehicleSummary.qml" line="88"/>
         <source>Below you will find a summary of the settings for your vehicle. To the left are the setup menus for each component.</source>
-        <translation type="unfinished"></translation>
+        <translation>Di bawah ini Anda akan menemukan ringkasan pengaturan untuk kendaraan Anda. Di sebelah kiri adalah menu pengaturan untuk setiap komponen.</translation>
     </message>
     <message>
         <location filename="../src/Vehicle/VehicleSetup/VehicleSummary.qml" line="89"/>
         <source>WARNING: Your vehicle requires setup prior to flight. Please resolve the items marked in red using the menu on the left.</source>
-        <translation type="unfinished"></translation>
+        <translation>PERINGATAN: Kendaraan Anda memerlukan pengaturan sebelum penerbangan. Silakan selesaikan item yang ditandai dengan warna merah menggunakan menu di sebelah kiri.</translation>
     </message>
 </context>
 <context>
@@ -18343,6 +18347,238 @@ ROTATION_NONE indicates component points in direction of flight.</source>
         <location filename="../src/Viewer3D/Viewer3DQml/Models3D/Viewer3DVehicleItems.qml" line="72"/>
         <source>null</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>APMSprayingComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="75"/>
+        <source>Spraying system is not available on this vehicle. The vehicle firmware may not support spraying or the SPRAY_ENABLE parameter is missing.</source>
+        <translation>Sistem penyemprotan tidak tersedia pada kendaraan ini. Firmware kendaraan mungkin tidak mendukung penyemprotan atau parameter SPRAY_ENABLE hilang.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="86"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="105"/>
+        <source>Spraying System:</source>
+        <translation>Sistem Penyemprotan:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="115"/>
+        <source>Enable or disable the spraying system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="130"/>
+        <source>Tank Configuration</source>
+        <translation>Konfigurasi Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="151"/>
+        <source>Tank Capacity:</source>
+        <translation>Kapasitas Tangki:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="177"/>
+        <source>Configure tank capacity and warning levels for liquid monitoring</source>
+        <translation>Konfigurasi kapasitas tangki dan tingkat peringatan untuk pemantauan cairan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="194"/>
+        <source>Flow Control</source>
+        <translation>Kontrol Aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="216"/>
+        <source>Flow Rate:</source>
+        <translation>Laju Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="226"/>
+        <source>Minimum Flow Rate:</source>
+        <translation>Laju Aliran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="246"/>
+        <source>Configure flow rate settings and monitoring</source>
+        <translation>Konfigurasi pengaturan laju aliran dan pemantauan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="262"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="279"/>
+        <source>Hide Advanced</source>
+        <translation>Sembunyikan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="279"/>
+        <source>Show Advanced</source>
+        <translation>Tampilkan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="289"/>
+        <source>Flow Sensor Pin:</source>
+        <translation>Pin Sensor Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="298"/>
+        <source>Pump Control Pin:</source>
+        <translation>Pin Kontrol Pompa:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="307"/>
+        <source>Flow Multiplier:</source>
+        <translation>Pengali Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="314"/>
+        <source>Flow Offset:</source>
+        <translation>Offset Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="323"/>
+        <source>Advanced hardware configuration for flow sensors and pump control</source>
+        <translation>Konfigurasi hardware lanjutan untuk sensor aliran dan kontrol pompa</translation>
+    </message>
+</context>
+<context>
+    <name>APMSprayingComponentSummary</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponentSummary.qml" line="33"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponentSummary.qml" line="34"/>
+        <source>Enabled</source>
+        <translation>Aktif</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponentSummary.qml" line="34"/>
+        <source>Disabled</source>
+        <translation>Nonaktif</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponentSummary.qml" line="34"/>
+        <source>Not Available</source>
+        <translation>Tidak Tersedia</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponentSummary.qml" line="38"/>
+        <source>Tank Capacity</source>
+        <translation>Kapasitas Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponentSummary.qml" line="44"/>
+        <source>Flow Rate</source>
+        <translation>Laju Aliran</translation>
+    </message>
+</context>
+<context>
+    <name>PX4SprayingComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="66"/>
+        <source>DEBUG MODE: Spraying system parameters are not available on this vehicle. The vehicle firmware may not support spraying or the required parameters are missing. This component is shown for debugging purposes.</source>
+        <translation>MODE DEBUG: Parameter sistem penyemprotan tidak tersedia pada kendaraan ini. Firmware kendaraan mungkin tidak mendukung penyemprotan atau parameter yang diperlukan hilang. Komponen ini ditampilkan untuk tujuan debugging.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="75"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="75"/>
+        <source> (DEBUG - Parameter Not Available)</source>
+        <translation> (DEBUG - Parameter Tidak Tersedia)</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="79"/>
+        <source>Enable Spraying System</source>
+        <translation>Aktifkan Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="86"/>
+        <source>SPRAY_ENABLE parameter not found in vehicle</source>
+        <translation>Parameter SPRAY_ENABLE tidak ditemukan di kendaraan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="95"/>
+        <source>Tank Configuration</source>
+        <translation>Konfigurasi Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="95"/>
+        <source> (DEBUG)</source>
+        <translation> (DEBUG)</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="106"/>
+        <source>SPRAY_TANK_CAP parameter not found</source>
+        <translation>Parameter SPRAY_TANK_CAP tidak ditemukan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="119"/>
+        <source>SPRAY_TANK_LOW parameter not found</source>
+        <translation>Parameter SPRAY_TANK_LOW tidak ditemukan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="128"/>
+        <source>Flow Control</source>
+        <translation>Kontrol Aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="128"/>
+        <source> (DEBUG)</source>
+        <translation> (DEBUG)</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="139"/>
+        <source>SPRAY_FLOW_RATE parameter not found</source>
+        <translation>Parameter SPRAY_FLOW_RATE tidak ditemukan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponent.qml" line="152"/>
+        <source>SPRAY_PUMP_PWM parameter not found</source>
+        <translation>Parameter SPRAY_PUMP_PWM tidak ditemukan</translation>
+    </message>
+</context>
+<context>
+    <name>PX4SprayingComponentSummary</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="33"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="34"/>
+        <source>Enabled</source>
+        <translation>Aktif</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="34"/>
+        <source>Disabled</source>
+        <translation>Nonaktif</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="34"/>
+        <source>Not Available</source>
+        <translation>Tidak Tersedia</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="38"/>
+        <source>Tank Capacity</source>
+        <translation>Kapasitas Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/PX4/PX4SprayingComponentSummary.qml" line="44"/>
+        <source>Flow Rate</source>
+        <translation>Laju Aliran</translation>
     </message>
 </context>
 </TS>
