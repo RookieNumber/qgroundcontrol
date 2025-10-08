@@ -82,12 +82,15 @@ target_link_libraries(gstqml6gl
 
 target_include_directories(gstqml6gl PUBLIC ${QGC_GST_QT6_PLUGIN_PATH})
 
-target_precompile_headers(gstqml6gl
-    PRIVATE
-        <gst/gst.h>
-        <gst/gl/gl.h>
-        <gst/video/video.h>
-)
+# Disable PCH for Android builds due to compilation issues with GStreamer headers
+if(NOT ANDROID)
+    target_precompile_headers(gstqml6gl
+        PRIVATE
+            <gst/gst.h>
+            <gst/gl/gl.h>
+            <gst/video/video.h>
+    )
+endif()
 
 ################################################################################
 

@@ -9545,108 +9545,108 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="46"/>
         <source>Ready To Fly</source>
-        <translation type="unfinished"></translation>
+        <translation>Siap Terbang</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="47"/>
         <source>Not Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Belum Siap</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="49"/>
         <source>Armed</source>
-        <translation type="unfinished"></translation>
+        <translation>Bersenjata</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="50"/>
         <source>Flying</source>
-        <translation type="unfinished"></translation>
+        <translation>Terbang</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="51"/>
         <source>Landing</source>
-        <translation type="unfinished"></translation>
+        <translation>Mendarat</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="153"/>
         <source>FW(vtol)</source>
-        <translation type="unfinished"></translation>
+        <translation>FW(vtol)</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="153"/>
         <source>MR(vtol)</source>
-        <translation type="unfinished"></translation>
+        <translation>MR(vtol)</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="228"/>
         <source>Sensor Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status Sensor</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
         <source>Disarm</source>
-        <translation type="unfinished"></translation>
+        <translation>Lepas Senjata</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="45"/>
         <source>Comms Lost</source>
-        <translation type="unfinished"></translation>
+        <translation>Komunikasi Hilang</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="48"/>
-        <source>Tidak Terhubung - Klik untuk menghubungkann secara manual</source>
-        <translation type="unfinished"></translation>
+        <source>Disconnected - Click to manually connect</source>
+        <translation>Terputus - Klik untuk menyambung secara manual</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
         <source>Force Arm</source>
-        <translation type="unfinished"></translation>
+        <translation>Paksa Senjata</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
         <source>Arm</source>
-        <translation type="unfinished"></translation>
+        <translation>Senjata</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="218"/>
         <source>Vehicle Messages</source>
-        <translation type="unfinished"></translation>
+        <translation>Pesan Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="251"/>
         <source>Overall Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status Keseluruhan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="326"/>
         <source>Edit Parameter</source>
-        <translation type="unfinished"></translation>
+        <translation>Edit Parameter</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="360"/>
         <source>Vehicle Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>Parameter Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="362"/>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="371"/>
         <source>Configure</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="369"/>
         <source>Vehicle Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="388"/>
         <source>Transition to Multi-Rotor</source>
-        <translation type="unfinished"></translation>
+        <translation>Transisi ke Multi-Rotor</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="388"/>
         <source>Transition to Fixed Wing</source>
-        <translation type="unfinished"></translation>
+        <translation>Transisi ke Fixed Wing</translation>
     </message>
 </context>
 <context>
@@ -9654,67 +9654,67 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="43"/>
         <source>Select Link to Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih Link untuk Menyambung</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="46"/>
         <source>No Links Configured</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada Link yang Dikonfigurasi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="55"/>
         <source>Connected</source>
-        <translation type="unfinished"></translation>
+        <translation>Terhubung</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="75"/>
         <source>Communication Links</source>
-        <translation type="unfinished"></translation>
+        <translation>Link Komunikasi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="76"/>
         <source>Configure</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="79"/>
         <source>Comm Links</source>
-        <translation type="unfinished"></translation>
+        <translation>Link Kom</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="86"/>
         <source>AutoConnect</source>
-        <translation type="unfinished"></translation>
+        <translation>Sambung Otomatis</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
         <source>Pixhawk</source>
-        <translation type="unfinished"></translation>
+        <translation>Pixhawk</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
         <source>SiK Radio</source>
-        <translation type="unfinished"></translation>
+        <translation>SiK Radio</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
         <source>LibrePilot</source>
-        <translation type="unfinished"></translation>
+        <translation>LibrePilot</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
         <source>UDP</source>
-        <translation type="unfinished"></translation>
+        <translation>UDP</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
         <source>Zero-Conf</source>
-        <translation type="unfinished"></translation>
+        <translation>Zero-Conf</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicatorOfflinePage.qml" line="101"/>
         <source>RTK</source>
-        <translation type="unfinished"></translation>
+        <translation>RTK</translation>
     </message>
 </context>
 <context>
@@ -9723,86 +9723,86 @@ Click Ok to start the auto-tuning process.
         <location filename="../src/UI/MainWindow.qml" line="143"/>
         <location filename="../src/UI/MainWindow.qml" line="367"/>
         <source>Analyze Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Alat Analisis</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="147"/>
         <location filename="../src/UI/MainWindow.qml" line="382"/>
         <source>Vehicle Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurasi Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="164"/>
         <location filename="../src/UI/MainWindow.qml" line="396"/>
         <source>Application Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Aplikasi</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="226"/>
         <location filename="../src/UI/MainWindow.qml" line="412"/>
         <source>Close %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutup %1</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="231"/>
         <source>You have a mission edit in progress which has not been saved/sent. If you close you will lose changes. Are you sure you want to close?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda memiliki pengeditan misi yang sedang berlangsung yang belum disimpan/dikirim. Jika Anda menutup, perubahan akan hilang. Apakah Anda yakin ingin menutup?</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="244"/>
         <source>You have pending parameter updates to a vehicle. If you close you will lose changes. Are you sure you want to close?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda memiliki pembaruan parameter yang tertunda untuk kendaraan. Jika Anda menutup, perubahan akan hilang. Apakah Anda yakin ingin menutup?</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="256"/>
         <source>There are still active connections to vehicles. Are you sure you want to exit?</source>
-        <translation type="unfinished"></translation>
+        <translation>Masih ada koneksi aktif ke kendaraan. Apakah Anda yakin ingin keluar?</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="295"/>
         <source>Debug Touch Areas</source>
-        <translation type="unfinished"></translation>
+        <translation>Debug Area Sentuh</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="296"/>
         <source>Touch Area display toggled</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan area sentuh diaktifkan/nonaktifkan</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="302"/>
         <location filename="../src/UI/MainWindow.qml" line="314"/>
         <source>Advanced Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Lanjutan</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="315"/>
         <source>Turn off Advanced Mode?</source>
-        <translation type="unfinished"></translation>
+        <translation>Matikan Mode Lanjutan?</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="353"/>
         <source>Plan Flight</source>
-        <translation type="unfinished"></translation>
+        <translation>Rencanakan Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="429"/>
         <source>%1 Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versi %1</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="519"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Keluar</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="600"/>
         <source>Vehicle Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="624"/>
         <source>Additional errors received</source>
-        <translation type="unfinished"></translation>
+        <translation>Kesalahan tambahan diterima</translation>
     </message>
 </context>
 <context>
@@ -12747,305 +12747,303 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="70"/>
         <source>Vehicle is currently armed. Do you want to upload the mission to the vehicle?</source>
-        <translation>Kendaraan saat ini dalam keadaan bersenjata. Apakah Anda ingin mengunggah misi ke kendaraan?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="108"/>
         <source>You have changed the default altitude for mission items. Would you like to apply that altitude to all the items in the current mission?</source>
-        <translation>Anda telah mengubah ketinggian default untuk item misi. Apakah Anda ingin menerapkan ketinggian tersebut ke semua item dalam misi saat ini?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1108"/>
         <source>You need at least one item to create a KML.</source>
-        <translation>Anda memerlukan setidaknya satu item untuk membuat KML.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="184"/>
         <source>Plan is waiting on terrain data from server for correct altitude values.</source>
-        <translation>Misi sedang menunggu data medan dari server untuk nilai ketinggian yang benar.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="210"/>
         <source>Plan Upload</source>
-        <translation>Unggah Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="222"/>
         <source>Select Plan File</source>
-        <translation>Pilih File Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="232"/>
         <source>Save Plan</source>
-        <translation>Simpan Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="246"/>
         <source>Save KML</source>
-        <translation>Simpan KML</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="577"/>
         <source>File</source>
-        <translation>File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="598"/>
         <source>Waypoint</source>
-        <translation>Waypoint</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="605"/>
         <source>ROI</source>
-        <translation>ROI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="621"/>
         <source>Pattern</source>
-        <translation>Pola</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="648"/>
         <source>Center</source>
-        <translation>Tengah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="107"/>
         <source>Apply new altitude</source>
-        <translation>Terapkan ketinggian baru</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="118"/>
         <source>Plan View - Vehicle Disconnected</source>
-        <translation>Tampilan Misi - Kendaraan Terputus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="118"/>
         <source>Plan View - Vehicle Changed</source>
-        <translation>Tampilan Misi - Kendaraan Berubah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="126"/>
         <source>The vehicle associated with the plan in the Plan View is no longer available. What would you like to do with that plan?</source>
-        <translation>Kendaraan yang terkait dengan rencana di Tampilan Misi tidak lagi tersedia. Apa yang ingin Anda lakukan dengan rencana tersebut?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="127"/>
         <source>The plan being worked on in the Plan View is not from the current vehicle. What would you like to do with that plan?</source>
-        <translation>Misi yang sedang dikerjakan di Tampilan Misi bukan dari kendaraan saat ini. Apa yang ingin Anda lakukan dengan rencana tersebut?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="134"/>
         <source>Discard Unsaved Changes</source>
-        <translation>Buang Perubahan yang Belum Disimpan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="135"/>
         <source>Discard Unsaved Changes, Load New Plan From Vehicle</source>
-        <translation>Buang Perubahan yang Belum Disimpan, Muat Misi Baru dari Kendaraan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="136"/>
         <source>Load New Plan From Vehicle</source>
-        <translation>Muat Misi Baru dari Kendaraan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="147"/>
         <source>Keep Current Plan</source>
-        <translation>Pertahankan Misi Saat Ini</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="148"/>
         <source>Keep Current Plan, Don&apos;t Update From Vehicle</source>
-        <translation>Pertahankan Misi Saat Ini, Jangan Perbarui dari Kendaraan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="211"/>
         <source>This Plan was created for a different firmware or vehicle type than the firmware/vehicle type of vehicle you are uploading to. This can lead to errors or incorrect behavior. It is recommended to recreate the Plan for the correct firmware/vehicle type.
 
 Click &apos;Ok&apos; to upload the Plan anyway.</source>
-        <translation>Misi ini dibuat untuk firmware atau tipe kendaraan yang berbeda dari firmware/tipe kendaraan yang Anda unggah. Ini dapat menyebabkan kesalahan atau perilaku yang tidak benar. Disarankan untuk membuat ulang Misi untuk firmware/tipe kendaraan yang benar.
-
-Klik &apos;Ok&apos; untuk tetap mengunggah Misi.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="207"/>
         <source>Send To Vehicle</source>
-        <translation>Kirim ke Kendaraan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="207"/>
         <source>Current mission must be paused prior to uploading a new Plan</source>
-        <translation>Misi saat ini harus dijeda sebelum mengunggah Misi baru</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="586"/>
         <source>Takeoff</source>
-        <translation>Takeoff</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="598"/>
         <source>Rally Point</source>
-        <translation>Titik Rally</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="605"/>
         <source>Cancel ROI</source>
-        <translation>Batalkan ROI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="635"/>
         <source>Return</source>
-        <translation>Kembali</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="637"/>
         <source>Alt Land</source>
-        <translation>Alt Land</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="638"/>
         <source>Land</source>
-        <translation>Mendarat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="708"/>
         <location filename="../src/QmlControls/PlanView.qml" line="725"/>
         <source>Mission</source>
-        <translation>Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="711"/>
         <source>Fence</source>
-        <translation>Pagar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="715"/>
         <location filename="../src/QmlControls/PlanView.qml" line="728"/>
         <source>Rally</source>
-        <translation>Rally</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="733"/>
         <source>UTM-Adapter</source>
-        <translation>UTM-Adapter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="838"/>
         <source>Powered by %1</source>
-        <translation>Didukung oleh %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="954"/>
         <source>You have unsaved/unsent changes. Loading from the Vehicle will lose these changes. Are you sure you want to load from the Vehicle?</source>
-        <translation>Anda memiliki perubahan yang belum disimpan/dikirim. Memuat dari Kendaraan akan menghilangkan perubahan ini. Apakah Anda yakin ingin memuat dari Kendaraan?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="877"/>
         <source>You have unsaved/unsent changes. Loading from a file will lose these changes. Are you sure you want to load from a file?</source>
-        <translation>Anda memiliki perubahan yang belum disimpan/dikirim. Memuat dari file akan menghilangkan perubahan ini. Apakah Anda yakin ingin memuat dari file?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="898"/>
         <location filename="../src/QmlControls/PlanView.qml" line="1152"/>
         <source>Clear</source>
-        <translation>Hapus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="899"/>
         <source>Are you sure you want to remove all mission items and clear the mission from the vehicle?</source>
-        <translation>Apakah Anda yakin ingin menghapus semua item misi dan menghapus misi dari kendaraan?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="933"/>
         <source>Create complex pattern:</source>
-        <translation>Buat pola kompleks:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="977"/>
         <source>You have unsaved changes.</source>
-        <translation>Anda memiliki perubahan yang belum disimpan.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1063"/>
         <source>Open...</source>
-        <translation>Buka...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="178"/>
         <location filename="../src/QmlControls/PlanView.qml" line="183"/>
         <location filename="../src/QmlControls/PlanView.qml" line="1077"/>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="179"/>
         <location filename="../src/QmlControls/PlanView.qml" line="184"/>
         <source>Unable to %1</source>
-        <translation>Tidak dapat %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="179"/>
         <source>Plan has incomplete items. Complete all items and %1 again.</source>
-        <translation>Misi memiliki item yang tidak lengkap. Lengkapi semua item dan %1 lagi.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="887"/>
         <source>Are you sure you want to remove current plan and create a new plan? </source>
-        <translation>Apakah Anda yakin ingin menghapus rencana saat ini dan membuat rencana baru?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="969"/>
         <source>Plan overwrite</source>
-        <translation>Timpa Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="976"/>
         <source>You have unsaved changes. You should upload to your vehicle, or save to a file.</source>
-        <translation>Anda memiliki perubahan yang belum disimpan. Anda harus mengunggah ke kendaraan Anda, atau menyimpan ke file.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="886"/>
         <location filename="../src/QmlControls/PlanView.qml" line="984"/>
         <source>Create Plan</source>
-        <translation>Buat Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1053"/>
         <source>Storage</source>
-        <translation>Penyimpanan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1091"/>
         <source>Save As...</source>
-        <translation>Simpan Sebagai...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1103"/>
         <source>Save Mission Waypoints As KML...</source>
-        <translation>Simpan Waypoint Misi Sebagai KML...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1108"/>
         <source>KML</source>
-        <translation>KML</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="178"/>
         <location filename="../src/QmlControls/PlanView.qml" line="183"/>
         <location filename="../src/QmlControls/PlanView.qml" line="1129"/>
         <source>Upload</source>
-        <translation>Unggah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1120"/>
         <source>Vehicle</source>
-        <translation>Kendaraan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1140"/>
         <source>Download</source>
-        <translation>Unduh</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -13081,7 +13079,7 @@ Klik &apos;Ok&apos; untuk tetap mengunggah Misi.</translation>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="58"/>
         <source>Exit Plan</source>
-        <translation>Keluar dari Jendela Misi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="131"/>
@@ -15962,7 +15960,7 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="31"/>
         <source>Plan View</source>
-        <translation>Tampilan Misi</translation>
+        <translation>Tampilan Rencana</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="38"/>
@@ -15982,7 +15980,7 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="59"/>
         <source>Comm Links</source>
-        <translation>Link Komunikasi</translation>
+        <translation>Link Kom</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="66"/>
@@ -16012,7 +16010,7 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="106"/>
         <source>Mock Link</source>
-        <translation>Link Tiruan</translation>
+        <translation>Link Palsu</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/SettingsPagesModel.qml" line="113"/>
@@ -17464,108 +17462,108 @@ ROTATION_NONE indicates component points in direction of flight.</source>
         <location filename="../src/Settings/UnitsSettings.cc" line="25"/>
         <location filename="../src/Settings/UnitsSettings.cc" line="56"/>
         <source>Feet</source>
-        <translation>Kaki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="25"/>
         <location filename="../src/Settings/UnitsSettings.cc" line="56"/>
         <source>Meters</source>
-        <translation>Meter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="30"/>
         <source>Horizontal Distance</source>
-        <translation>Jarak Horizontal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="61"/>
         <source>Vertical Distance</source>
-        <translation>Jarak Vertikal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareFeet</source>
-        <translation>Kaki Persegi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareMeters</source>
-        <translation>Meter Persegi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareKilometers</source>
-        <translation>Kilometer Persegi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>Hectares</source>
-        <translation>Hektar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>Acres</source>
-        <translation>Acre</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareMiles</source>
-        <translation>Mil Persegi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="96"/>
         <source>Area</source>
-        <translation>Luas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="122"/>
         <source>Knots</source>
-        <translation>Knot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="131"/>
         <source>Speed</source>
-        <translation>Kecepatan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="157"/>
         <source>Celsius</source>
-        <translation>Celsius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="157"/>
         <source>Fahrenheit</source>
-        <translation>Fahrenheit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="161"/>
         <source>Temperature</source>
-        <translation>Suhu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Grams</source>
-        <translation>Gram</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Kilograms</source>
-        <translation>Kilogram</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Ounces</source>
-        <translation>Ons</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Pounds</source>
-        <translation>Pound</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="195"/>
         <source>Weight</source>
-        <translation>Berat</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
