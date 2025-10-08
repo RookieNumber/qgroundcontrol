@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="id" sourcelanguage="en">
 <context>
     <name>GimbalFact.json</name>
     <message>
@@ -1552,25 +1552,25 @@
         <extracomment>.QGC.MetaData.Facts[adsbServerConnectEnabled].shortDesc, </extracomment>
         <location filename="../src/Settings/ADSBVehicleManager.SettingsGroup.json"/>
         <source>Connect to ADSB SBS server</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubungkan ke server ADSB SBS</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[adsbServerConnectEnabled].longDesc, </extracomment>
         <location filename="../src/Settings/ADSBVehicleManager.SettingsGroup.json"/>
         <source>Connect to ADSB SBS-1 server using specified address/port</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubungkan ke server ADSB SBS-1 menggunakan alamat/port yang ditentukan</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[adsbServerHostAddress].shortDesc, </extracomment>
         <location filename="../src/Settings/ADSBVehicleManager.SettingsGroup.json"/>
         <source>Host address</source>
-        <translation type="unfinished"></translation>
+        <translation>Alamat host</translation>
     </message>
     <message>
         <extracomment>.QGC.MetaData.Facts[adsbServerPort].shortDesc, </extracomment>
         <location filename="../src/Settings/ADSBVehicleManager.SettingsGroup.json"/>
         <source>Server port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port server</translation>
     </message>
 </context>
 <context>

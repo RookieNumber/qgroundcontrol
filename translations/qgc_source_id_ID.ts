@@ -6571,173 +6571,173 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="50"/>
         <source>&lt;None&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Tidak Ada&gt;</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="56"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Umum</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="61"/>
         <source>Use Preflight Checklist</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan Daftar Periksa Pra-Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="69"/>
         <source>Enforce Preflight Checklist</source>
-        <translation type="unfinished"></translation>
+        <translation>Paksa Daftar Periksa Pra-Penerbangan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="78"/>
         <source>Enable Multi-Vehicle Panel</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan Panel Multi-Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="85"/>
         <source>Keep Map Centered On Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaga Peta Terpusat pada Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="93"/>
         <source>Show Telemetry Log Replay Status Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan Bilah Status Replay Log Telemetri</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="101"/>
         <source>Show simple camera controls (DIGICAM_CONTROL)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan kontrol kamera sederhana (DIGICAM_CONTROL)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="110"/>
         <source>Update return to home position based on device location.</source>
-        <translation type="unfinished"></translation>
+        <translation>Perbarui posisi kembali ke rumah berdasarkan lokasi perangkat.</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="119"/>
         <source>Guided Commands</source>
-        <translation type="unfinished"></translation>
+        <translation>Perintah Terpandu</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="126"/>
         <source>Minimum Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Minimum</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="133"/>
         <source>Maximum Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Maksimum</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="140"/>
         <source>Go To Location Max Distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Maksimum Pergi ke Lokasi</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="147"/>
         <source>Loiter Radius in Forward Flight Guided Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Radius Mengitari dalam Mode Terpandu Penerbangan Maju</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="154"/>
         <source>Require Confirmation for Go To Location in Guided Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Perlukan Konfirmasi untuk Pergi ke Lokasi dalam Mode Terpandu</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="163"/>
         <source>MAVLink Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi MAVLink</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="164"/>
         <source>Action JSON files should be created in the &apos;%1&apos; folder.</source>
-        <translation type="unfinished"></translation>
+        <translation>File JSON Aksi harus dibuat di folder &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="168"/>
         <source>Fly View Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi Tampilan Terbang</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="181"/>
         <source>Joystick Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi Joystick</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="195"/>
         <source>Virtual Joystick</source>
-        <translation type="unfinished"></translation>
+        <translation>Joystick Virtual</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="200"/>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="249"/>
         <source>Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Diaktifkan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="207"/>
         <source>Auto-Center Throttle</source>
-        <translation type="unfinished"></translation>
+        <translation>Throttle Otomatis-Tengah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="215"/>
         <source>Left-Handed Mode (swap sticks)</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Kidal (tukar tongkat)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="224"/>
         <source>Instrument Panel</source>
-        <translation type="unfinished"></translation>
+        <translation>Panel Instrumen</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="229"/>
         <source>Show additional heading indicators on Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan indikator arah tambahan pada Kompas</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="236"/>
         <source>Lock Compass Nose-Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunci Kompas Hidung Ke Atas</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="244"/>
         <source>3D View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan 3D</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="267"/>
         <source>3D Map File:</source>
-        <translation type="unfinished"></translation>
+        <translation>File Peta 3D:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="287"/>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="296"/>
         <source>Select File</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih File</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="310"/>
         <source>OpenStreetMap files (*.osm)</source>
-        <translation type="unfinished"></translation>
+        <translation>File OpenStreetMap (*.osm)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="311"/>
         <source>Select map file</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih file peta</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="324"/>
         <source>Average Building Level Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Tinggi Rata-rata Lantai Bangunan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/FlyViewSettings.qml" line="332"/>
         <source>Vehicles Altitude Bias</source>
-        <translation type="unfinished"></translation>
+        <translation>Bias Ketinggian Kendaraan</translation>
     </message>
 </context>
 <context>
@@ -6745,17 +6745,17 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/FlyViewToolBar.qml" line="81"/>
         <source>Disconnect</source>
-        <translation type="unfinished"></translation>
+        <translation>Putuskan Koneksi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/FlyViewToolBar.qml" line="193"/>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengunduh</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/FlyViewToolBar.qml" line="201"/>
         <source>Click anywhere to hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik di mana saja untuk menyembunyikan</translation>
     </message>
 </context>
 <context>
@@ -8725,138 +8725,138 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="192"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="178"/>
         <source>Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubungkan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="26"/>
         <source>AutoConnect</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubung Otomatis</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="41"/>
         <source>Pixhawk</source>
-        <translation type="unfinished"></translation>
+        <translation>Pixhawk</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="41"/>
         <source>SiK Radio</source>
-        <translation type="unfinished"></translation>
+        <translation>SiK Radio</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="41"/>
         <source>LibrePilot</source>
-        <translation type="unfinished"></translation>
+        <translation>LibrePilot</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="41"/>
         <source>UDP</source>
-        <translation type="unfinished"></translation>
+        <translation>UDP</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="41"/>
         <source>Zero-Conf</source>
-        <translation type="unfinished"></translation>
+        <translation>Zero-Conf</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="41"/>
         <source>RTK</source>
-        <translation type="unfinished"></translation>
+        <translation>RTK</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="53"/>
         <source>NMEA GPS</source>
-        <translation type="unfinished"></translation>
+        <translation>NMEA GPS</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="58"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Perangkat</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="71"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Dinonaktifkan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="72"/>
         <source>UDP Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port UDP</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="75"/>
         <source>Serial &lt;none available&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Serial &lt;tidak tersedia&gt;</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="91"/>
         <source>Baudrate</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju Baud</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="108"/>
         <source>NMEA stream UDP port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port UDP stream NMEA</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="114"/>
         <source>Links</source>
-        <translation type="unfinished"></translation>
+        <translation>Tautan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="169"/>
         <source>Delete Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus Tautan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="170"/>
         <source>Are you sure you want to delete &apos;%1&apos;?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda yakin ingin menghapus &apos;%1&apos;?</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="178"/>
         <source>Disconnect</source>
-        <translation type="unfinished"></translation>
+        <translation>Putuskan Koneksi</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="191"/>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="205"/>
         <source>Add New Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambah Tautan Baru</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="205"/>
         <source>Edit Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Edit Tautan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="233"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="238"/>
         <source>Enter name</source>
-        <translation type="unfinished"></translation>
+        <translation>Masukkan nama</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="244"/>
         <source>Automatically Connect on Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Hubungkan Otomatis saat Mulai</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="251"/>
         <source>High Latency</source>
-        <translation type="unfinished"></translation>
+        <translation>Latensi Tinggi</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/LinkSettings.qml" line="257"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipe</translation>
     </message>
 </context>
 <context>
@@ -13051,27 +13051,27 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/UI/AppSettings/PlanViewSettings.qml" line="29"/>
         <source>Default Mission Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Misi Default</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PlanViewSettings.qml" line="36"/>
         <source>VTOL TransitionDistance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Transisi VTOL</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PlanViewSettings.qml" line="43"/>
         <source>Use MAV_CMD_CONDITION_GATE for pattern generation</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan MAV_CMD_CONDITION_GATE untuk pembuatan pola</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PlanViewSettings.qml" line="50"/>
         <source>Missions do not require takeoff item</source>
-        <translation type="unfinished"></translation>
+        <translation>Misi tidak memerlukan item lepas landas</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/PlanViewSettings.qml" line="57"/>
         <source>Allow configuring multiple landing sequences</source>
-        <translation type="unfinished"></translation>
+        <translation>Izinkan konfigurasi beberapa urutan pendaratan</translation>
     </message>
 </context>
 <context>
@@ -13079,22 +13079,22 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="58"/>
         <source>Exit Plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Keluar dari Rencana</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="131"/>
         <source>Syncing Mission</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinkronisasi Misi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="138"/>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Selesai</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="147"/>
         <source>Click anywhere to hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik di mana saja untuk menyembunyikan</translation>
     </message>
 </context>
 <context>
@@ -16810,157 +16810,157 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="30"/>
         <source>Not Connected</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Terhubung</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="37"/>
         <source>Ground Station</source>
-        <translation type="unfinished"></translation>
+        <translation>Stasiun Darat</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="47"/>
         <source>Emit heartbeat</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim heartbeat</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="41"/>
         <source>MAVLink System ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Sistem MAVLink</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="55"/>
         <source>MAVLink 2 Signing</source>
-        <translation type="unfinished"></translation>
+        <translation>Penandatanganan MAVLink 2</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="56"/>
         <source>Signing keys should only be sent to the vehicle over secure links.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunci penandatanganan hanya boleh dikirim ke kendaraan melalui tautan aman.</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="72"/>
         <source>Key</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunci</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="77"/>
         <source>Send to Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirim ke Kendaraan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="90"/>
         <source>Signing key has changed. Don&apos;t forget to send to Vehicle(s) if needed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunci penandatanganan telah berubah. Jangan lupa kirim ke Kendaraan jika diperlukan.</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="97"/>
         <source>MAVLink Forwarding</source>
-        <translation type="unfinished"></translation>
+        <translation>Penerusan MAVLink</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="101"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktifkan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="109"/>
         <source>Host name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama host</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="118"/>
         <source>Logging</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencatatan Log</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="123"/>
         <source>Save log after each flight</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan log setelah setiap penerbangan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="131"/>
         <source>Save logs even if vehicle was not armed</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan log meskipun kendaraan tidak bersenjata</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="140"/>
         <source>Save CSV log of telemetry data</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan log CSV data telemetri</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="149"/>
         <source>Stream Rates (ArduPilot Only)</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju Stream (Hanya ArduPilot)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="155"/>
         <source>Controlled By vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Dikontrol oleh kendaraan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="162"/>
         <source>Raw Sensors</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensor Mentah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="170"/>
         <source>Extended Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status Diperluas</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="178"/>
         <source>RC Channels</source>
-        <translation type="unfinished"></translation>
+        <translation>Saluran RC</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="186"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Posisi</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="194"/>
         <source>Extra 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambahan 1</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="202"/>
         <source>Extra 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambahan 2</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="210"/>
         <source>Extra 3</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambahan 3</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="219"/>
         <source>Link Status (Current Vehicle))</source>
-        <translation type="unfinished"></translation>
+        <translation>Status Tautan (Kendaraan Saat Ini)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="223"/>
         <source>Total messages sent (computed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Total pesan terkirim (dihitung)</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="229"/>
         <source>Total messages received</source>
-        <translation type="unfinished"></translation>
+        <translation>Total pesan diterima</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="235"/>
         <source>Total message loss</source>
-        <translation type="unfinished"></translation>
+        <translation>Total kehilangan pesan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="241"/>
         <source>Loss rate:</source>
-        <translation type="unfinished"></translation>
+        <translation>Laju kehilangan:</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="247"/>
         <source>Signing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Penandatanganan:</translation>
     </message>
 </context>
 <context>
@@ -18161,142 +18161,142 @@ ROTATION_NONE indicates component points in direction of flight.</source>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="55"/>
         <source>No Video Available</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak Ada Video Tersedia</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="56"/>
         <source>Video Stream Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream Video Dinonaktifkan</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="57"/>
         <source>RTSP Video Stream</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream Video RTSP</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="58"/>
         <source>UDP h.264 Video Stream</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream Video UDP h.264</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="59"/>
         <source>UDP h.265 Video Stream</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream Video UDP h.265</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="60"/>
         <source>TCP-MPEG2 Video Stream</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream Video TCP-MPEG2</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="61"/>
         <source>MPEG-TS Video Stream</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream Video MPEG-TS</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="62"/>
         <source>3DR Solo (requires restart)</source>
-        <translation type="unfinished"></translation>
+        <translation>3DR Solo (memerlukan restart)</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="63"/>
         <source>Parrot Discovery</source>
-        <translation type="unfinished"></translation>
+        <translation>Parrot Discovery</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="64"/>
         <source>Yuneec Mantis G</source>
-        <translation type="unfinished"></translation>
+        <translation>Yuneec Mantis G</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="65"/>
         <source>Herelink AirUnit</source>
-        <translation type="unfinished"></translation>
+        <translation>Herelink AirUnit</translation>
     </message>
     <message>
         <location filename="../src/Settings/VideoSettings.h" line="66"/>
         <source>Herelink Hotspot</source>
-        <translation type="unfinished"></translation>
+        <translation>Herelink Hotspot</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="40"/>
         <source>Video Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Sumber Video</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="41"/>
         <source>Mavlink camera stream is automatically configured</source>
-        <translation type="unfinished"></translation>
+        <translation>Stream kamera Mavlink dikonfigurasi secara otomatis</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="46"/>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Sumber</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="55"/>
         <source>Connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Koneksi</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="61"/>
         <source>RTSP URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL RTSP</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="68"/>
         <source>TCP URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL TCP</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="77"/>
         <source>UDP URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL UDP</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="85"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="90"/>
         <source>Aspect Ratio</source>
-        <translation type="unfinished"></translation>
+        <translation>Rasio Aspek</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="97"/>
         <source>Stop recording when disarmed</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan perekaman saat tidak bersenjata</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="104"/>
         <source>Low Latency Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode Latensi Rendah</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="111"/>
         <source>Video decode priority</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioritas dekode video</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="120"/>
         <source>Local Video Storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyimpanan Video Lokal</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="124"/>
         <source>Record File Format</source>
-        <translation type="unfinished"></translation>
+        <translation>Format File Rekaman</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="131"/>
         <source>Auto-Delete Saved Recordings</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus Otomatis Rekaman Tersimpan</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="138"/>
         <source>Max Storage Usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Penggunaan Penyimpanan Maksimum</translation>
     </message>
 </context>
 <context>
