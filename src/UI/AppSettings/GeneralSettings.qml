@@ -278,9 +278,12 @@ SettingsPage {
     Loader {
         id: setPasswordDialogLoader
         onLoaded: {
-            console.log("GeneralSettings: Set password dialog loaded")
             if (item) {
                 item.open()
+                
+                item.closed.connect(function() {
+                    setPasswordDialogLoader.sourceComponent = null
+                })
             }
         }
     }
