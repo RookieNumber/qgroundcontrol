@@ -19,6 +19,7 @@ import QGroundControl.FactControls
 import QGroundControl.ScreenTools
 import QGroundControl.Vehicle
 import QGroundControl.Controllers
+import QGroundControl.Palette
 
 Item {
     id: root

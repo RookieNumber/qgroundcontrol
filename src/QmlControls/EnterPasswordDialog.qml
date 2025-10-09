@@ -22,8 +22,13 @@ QGCPopupDialog {
     buttons:    StandardButton.Cancel
 
     signal authenticated()
+    signal dialogClosed()
 
     PasswordAuthManager { id: manager }
+
+    onClosed: {
+        dialogClosed()
+    }
 
     function submitPassword() {
         if (passwordField.text.length === 0) {
@@ -81,6 +86,11 @@ QGCPopupDialog {
         RowLayout {
             Layout.alignment:   Qt.AlignRight
             spacing:            ScreenTools.defaultFontPixelWidth
+
+            QGCButton {
+                text:       qsTr("Close")
+                onClicked:  root.close()
+            }
 
             QGCButton {
                 text:       qsTr("Unlock")
