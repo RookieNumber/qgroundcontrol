@@ -257,10 +257,9 @@ Rectangle {
 
             ConfigButton {
                 id:                 parametersButton
-                // visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
-                //                     !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
-                //                     _corePlugin.showAdvancedUI
-                visible:            false
+                visible:            QGroundControl.multiVehicleManager.parameterReadyVehicleAvailable &&
+                                    !QGroundControl.multiVehicleManager.activeVehicle.usingHighLatencyLink &&
+                                    _corePlugin.showAdvancedUI
                 text:               qsTr("Parameters")
                 Layout.fillWidth:   true
                 icon.source:        "/qmlimages/subMenuButtonImage.png"

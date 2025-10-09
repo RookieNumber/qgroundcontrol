@@ -36,6 +36,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         QGCMapPolyline.h
         QGCPalette.cc
         QGCPalette.h
+        PasswordAuthManager.cc
+        PasswordAuthManager.h
         QGCQGeoCoordinate.cc
         QGCQGeoCoordinate.h
         QGroundControlQmlGlobal.cc
@@ -136,6 +138,8 @@ qt_add_qml_module(QGroundControlControlsModule
         QGCPopupDialog.qml
         QGCRadioButton.qml
         QGCRoundButton.qml
+        EnterPasswordDialog.qml
+        SetPasswordDialog.qml
         QGCSimpleMessageDialog.qml
         QGCSlider.qml
         QGCSwipeView.qml

@@ -20,6 +20,7 @@ import QGroundControl.Controls
 import QGroundControl.ScreenTools
 import QGroundControl.MultiVehicleManager
 import QGroundControl.Palette
+import QGroundControl.Controllers
 
 SettingsPage {
     property var    _settingsManager:           QGroundControl.settingsManager
@@ -260,5 +261,33 @@ SettingsPage {
                 _userBrandImageOutdoor.rawValue = ""
             }
         }
+    }
+
+    SettingsGroupLayout {
+        Layout.fillWidth:   true
+        heading:            qsTr("Security")
+
+        LabelledButton {
+            label:      qsTr("Password Protection")
+            buttonText: qsTr("Set Password")
+            onClicked:  setPasswordDialogLoader.sourceComponent = setPasswordDialogComponent
+        }
+    }
+
+    // Password dialog loader
+    Loader {
+        id: setPasswordDialogLoader
+        onLoaded: {
+            console.log("GeneralSettings: Set password dialog loaded")
+            if (item) {
+                item.open()
+            }
+        }
+    }
+
+    // Password dialog factory
+    Component {
+        id: setPasswordDialogComponent
+        SetPasswordDialog { }
     }
 }

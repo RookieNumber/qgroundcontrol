@@ -60,7 +60,7 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
 {
     if (_components.isEmpty() && !_incorrectParameterVersion) {
         if (_vehicle->parameterManager()->parametersReady()) {
-            const bool hideCritical = false;
+            const bool hideCritical = true;
             
             if (!hideCritical) {
                 _airframeComponent = new APMAirframeComponent(_vehicle, this);
@@ -111,11 +111,9 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
                 }
             }
 
-            if (!hideCritical) {
-                _safetyComponent = new APMSafetyComponent(_vehicle, this);
-                _safetyComponent->setupTriggerSignals();
-                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_safetyComponent)));
-            }
+            _safetyComponent = new APMSafetyComponent(_vehicle, this);
+            _safetyComponent->setupTriggerSignals();
+            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_safetyComponent)));
 
 #ifdef QT_DEBUG
             if ((qobject_cast<ArduCopterFirmwarePlugin*>(_vehicle->firmwarePlugin()) || qobject_cast<ArduRoverFirmwarePlugin*>(_vehicle->firmwarePlugin())) &&
@@ -165,9 +163,11 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
                 _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_esp8266Component)));
             }
 
-            _apmRemoteSupportComponent = new APMRemoteSupportComponent(_vehicle, this);
-            _apmRemoteSupportComponent->setupTriggerSignals();
-            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_apmRemoteSupportComponent)));
+            if (!hideCritical) {
+                _apmRemoteSupportComponent = new APMRemoteSupportComponent(_vehicle, this);
+                _apmRemoteSupportComponent->setupTriggerSignals();
+                _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_apmRemoteSupportComponent)));
+            }
         } else {
             qCWarning(APMAutoPilotPluginLog) << "Call to vehicleComponents prior to parametersReady";
         }
