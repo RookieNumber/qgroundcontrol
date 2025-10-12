@@ -56,6 +56,21 @@ Item {
                 anchors.bottom:     parent.bottom
                 sourceComponent:    batteryVisual
 
+                 visible:            {
+                // Hide second battery indicator if sprayer system is enabled
+                if (object && object.id && object.id.rawValue === 2) {
+                    // Check if sprayer is enabled
+                    var sprayEnable = _activeVehicle && _activeVehicle.parameterManager ? 
+                        _activeVehicle.parameterManager.getParameter(-1, "SPRAY_ENABLE") : null
+                    if (sprayEnable && sprayEnable.rawValue !== 0) {
+                        return false  // Hide second battery when sprayer is active
+                    }
+                }
+                return true  // Show all other batteries
+            }
+
+
+
                 property var battery: object
             }
         }
