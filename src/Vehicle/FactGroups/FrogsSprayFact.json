@@ -1,0 +1,33 @@
+{
+    "version":      1,
+    "fileType":  "FactMetaData",
+    "QGC.MetaData.Facts":
+[
+{
+    "name":             "sprayRate",
+    "shortDesc": "Spray Rate",
+    "type":             "double",
+    "decimalPlaces":    2,
+    "units":            "ml/s"
+},
+{
+    "name":             "tankLevel",
+    "shortDesc": "Tank Level",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "ml"
+},
+{
+    "name":             "sprayStatus",
+    "shortDesc": "Spray Status",
+    "type":             "uint8"
+},
+{
+    "name":             "totalSprayed",
+    "shortDesc": "Total Sprayed",
+    "type":             "double",
+    "decimalPlaces":    1,
+    "units":            "ml"
+}
+]
+}

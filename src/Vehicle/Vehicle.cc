@@ -287,6 +287,9 @@ void Vehicle::_commonInit()
     _ftpManager                     = new FTPManager                    (this);
 
     _vehicleLinkManager             = new VehicleLinkManager            (this);
+    _frogsSprayFactGroup            = new VehicleFrogsSprayFactGroup    (this);
+
+    _factGroups.append(_frogsSprayFactGroup);
 
     connect(_standardModes, &StandardModes::modesUpdated, this, &Vehicle::flightModesChanged);
 

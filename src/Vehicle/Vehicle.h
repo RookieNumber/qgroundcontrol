@@ -44,6 +44,7 @@
 #include "VehicleTemperatureFactGroup.h"
 #include "VehicleVibrationFactGroup.h"
 #include "VehicleWindFactGroup.h"
+#include "VehicleFrogsSprayFactGroup.h"
 #include "GimbalController.h"
 
 class Actuators;
@@ -287,6 +288,8 @@ public:
 
     Q_PROPERTY(bool     mavlinkSigning              READ mavlinkSigning             NOTIFY mavlinkSigningChanged)
 
+    Q_PROPERTY(VehicleFrogsSprayFactGroup* frogsSpray READ frogsSpray CONSTANT)
+
     /// Resets link status counters
     Q_INVOKABLE void resetCounters  ();
 
@@ -432,6 +435,7 @@ public:
 
     QGeoCoordinate coordinate() { return _coordinate; }
     QGeoCoordinate armedPosition    () { return _armedPosition; }
+    VehicleFrogsSprayFactGroup* frogsSpray() { return _frogsSprayFactGroup; }
 
     qreal getInitialGCSPressure() const { return _initialGCSPressure; }
     qreal getInitialGCSTemperature() const { return _initialGCSTemperature; }
@@ -1058,6 +1062,7 @@ private:
     bool            _mavlinkSigning                         = false;
 
     SysStatusSensorInfo _sysStatusSensorInfo;
+    
 
     QGCCameraManager* _cameraManager = nullptr;
 
@@ -1072,6 +1077,8 @@ private:
     VehicleObjectAvoidance*         _objectAvoidance                = nullptr;
     Autotune*                       _autotune                       = nullptr;
     GimbalController*               _gimbalController               = nullptr;
+
+    VehicleFrogsSprayFactGroup* _frogsSprayFactGroup;
 
 #ifdef QGC_UTM_ADAPTER
     UTMSPVehicle*                    _utmspVehicle                    = nullptr;
