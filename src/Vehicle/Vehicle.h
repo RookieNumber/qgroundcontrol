@@ -435,7 +435,7 @@ public:
 
     QGeoCoordinate coordinate() { return _coordinate; }
     QGeoCoordinate armedPosition    () { return _armedPosition; }
-    VehicleFrogsSprayFactGroup* frogsSpray() { return _frogsSprayFactGroup; }
+    VehicleFrogsSprayFactGroup* frogsSpray() { return &_frogsSprayFactGroup; }
 
     qreal getInitialGCSPressure() const { return _initialGCSPressure; }
     qreal getInitialGCSTemperature() const { return _initialGCSTemperature; }
@@ -1078,8 +1078,6 @@ private:
     Autotune*                       _autotune                       = nullptr;
     GimbalController*               _gimbalController               = nullptr;
 
-    VehicleFrogsSprayFactGroup* _frogsSprayFactGroup;
-
 #ifdef QGC_UTM_ADAPTER
     UTMSPVehicle*                    _utmspVehicle                    = nullptr;
 #endif
@@ -1254,6 +1252,7 @@ private:
     const QString _escStatusFactGroupName =          QStringLiteral("escStatus");
     const QString _estimatorStatusFactGroupName =    QStringLiteral("estimatorStatus");
     const QString _terrainFactGroupName =            QStringLiteral("terrain");
+    const QString _frogsSprayFactGroupName =         QStringLiteral("frogsSpray");
     const QString _hygrometerFactGroupName =         QStringLiteral("hygrometer");
     const QString _generatorFactGroupName =          QStringLiteral("generator");
     const QString _efiFactGroupName =                QStringLiteral("efi");
@@ -1277,6 +1276,7 @@ private:
     VehicleEFIFactGroup             _efiFactGroup;
     VehicleRPMFactGroup             _rpmFactGroup;
     TerrainFactGroup                _terrainFactGroup;
+    VehicleFrogsSprayFactGroup      _frogsSprayFactGroup;
     QmlObjectListModel              _batteryFactGroupListModel;
 
     TerrainProtocolHandler* _terrainProtocolHandler = nullptr;

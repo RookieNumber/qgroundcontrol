@@ -20,7 +20,7 @@ void VehicleFrogsSprayFactGroup::handleMessage(Vehicle *vehicle, const mavlink_m
     Q_UNUSED(vehicle);
 
     switch (message.msgid) {
-    case MAVLINK_MSG_ID_FROGS_SPRAY:  // Message ID 500
+    case 500:  // FROGS_SPRAY message ID
         _handleFrogsSpray(message);
         break;
     default:
@@ -30,23 +30,41 @@ void VehicleFrogsSprayFactGroup::handleMessage(Vehicle *vehicle, const mavlink_m
 
 void VehicleFrogsSprayFactGroup::_handleFrogsSpray(const mavlink_message_t &message)
 {
-    mavlink_frogs_spray_t frogsSpray{};
-    mavlink_msg_frogs_spray_decode(&message, &frogsSpray);
-
-    // Basic validation and set values
-    if (!qIsNaN(frogsSpray.spray_rate)) {
-        sprayRate()->setRawValue(frogsSpray.spray_rate);
+    // Manual decoding of FROGS_SPRAY message (ID 500)
+    // Message structure: uint64_t time_usec, float spray_rate, float tank_level, uint8_t spray_status, float total_sprayed
+    
+    if (message.len < 21) {  // Expected message length: 8+4+4+1+4 = 21 bytes
+        qWarning() << "FROGS_SPRAY message too short:" << message.len;
+        return;
     }
     
-    if (!qIsNaN(frogsSpray.tank_level)) {
-        tankLevel()->setRawValue(frogsSpray.tank_level);
+    // Decode message payload manually
+    uint64_t time_usec;
+    float spray_rate;
+    float tank_level;
+    uint8_t spray_status;
+    float total_sprayed;
+    
+    memcpy(&time_usec, &message.payload64[0], 8);
+    memcpy(&spray_rate, &message.payload64[1], 4);
+    memcpy(&tank_level, &message.payload64[1] + 4, 4);
+    memcpy(&spray_status, &message.payload64[2], 1);
+    memcpy(&total_sprayed, &message.payload64[2] + 1, 4);
+    
+    // Basic validation and set values
+    if (!qIsNaN(spray_rate)) {
+        sprayRate()->setRawValue(spray_rate);
+    }
+    
+    if (!qIsNaN(tank_level)) {
+        tankLevel()->setRawValue(tank_level);
     }
     
     // Status is always valid (uint8_t)
-    sprayStatus()->setRawValue(frogsSpray.spray_status);
+    sprayStatus()->setRawValue(spray_status);
     
-    if (!qIsNaN(frogsSpray.total_sprayed)) {
-        totalSprayed()->setRawValue(frogsSpray.total_sprayed);
+    if (!qIsNaN(total_sprayed)) {
+        totalSprayed()->setRawValue(total_sprayed);
     }
 
     _setTelemetryAvailable(true);

@@ -104,6 +104,7 @@ Rectangle {
                     distanceToSurfaceLabel:         qsTr("Altitude")
                     frontalDistanceLabel:           qsTr("Trigger Dist")
                     sideDistanceLabel:              qsTr("Spacing")
+                    showFrontalDistance:            !tabBar.isSpraying
                 }
 
                 // Additional Spraying-specific fields: Cruise speed and Flow rate
