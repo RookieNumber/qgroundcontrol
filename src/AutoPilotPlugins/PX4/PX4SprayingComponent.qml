@@ -33,31 +33,32 @@ SetupPage {
             id:         flowLayout
             width:      availableWidth
             spacing:    _margins
-            
-            // PX4 spraying parameters (these would need to be defined in PX4 firmware)
-            // For now, we'll use generic parameter names that can be customized
-            property Fact _sprayEnable:             controller.getParameterFact(-1, "SPRAY_ENABLE", false /* reportMissing */)
-            property Fact _tankCapacity:            controller.getParameterFact(-1, "SPRAY_TANK_CAP", false /* reportMissing */)
-            property Fact _flowRate:                controller.getParameterFact(-1, "SPRAY_FLOW_RATE", false /* reportMissing */)
-            property Fact _pumpPWM:                 controller.getParameterFact(-1, "SPRAY_PUMP_PWM", false /* reportMissing */)
-            property Fact _tankLow:                 controller.getParameterFact(-1, "SPRAY_TANK_LOW", false /* reportMissing */)
 
-            // Parameter availability checks
-            property bool _sprayEnableAvailable:    controller.parameterExists(-1, "SPRAY_ENABLE")
-            property bool _tankCapacityAvailable:   controller.parameterExists(-1, "SPRAY_TANK_CAP")
-            property bool _flowRateAvailable:       controller.parameterExists(-1, "SPRAY_FLOW_RATE")
-            property bool _pumpPWMAvailable:        controller.parameterExists(-1, "SPRAY_PUMP_PWM")
-            property bool _tankLowAvailable:        controller.parameterExists(-1, "SPRAY_TANK_LOW")
+            // Contain property for frogs custom parameters
+            property Fact _tankcFull:              controller.getParameterFact(-1, "TANK_C_FULL", false /* reportMissing */)
+            property Fact _tankFull:               controller.getParameterFact(-1, "TANK_FULL", false /* reportMissing */)
+            property Fact _tankIFlow:              controller.getParameterFact(-1, "TANK_I_FLOW", false /* reportMissing */)
+            property Fact _tankPFlow:              controller.getParameterFact(-1, "TANK_P_FLOW", false /* reportMissing */)
+            property Fact _tankMaxFlow:            controller.getParameterFact(-1, "TANK_MAX_FLOW", false /* reportMissing */)
+            property Fact _tankSetFlow:            controller.getParameterFact(-1, "TANK_SET_FLOW", false /* reportMissing */)
+            property Fact _tankTRt:                controller.getParameterFact(-1, "TANK_T_RTL", false /* reportMissing */)
 
-            // State properties
-            property bool _sprayEnabled:            _sprayEnableAvailable && _sprayEnable.rawValue !== 0
+
+            // Contain paramter availability checks
+            property bool _tankcFullAvailable:       controller.parameterExists(-1, "TANK_C_FULL")
+            property bool _tankFullAvailable:        controller.parameterExists(-1, "TANK_FULL")
+            property bool _tankIFlowAvailable:       controller.parameterExists(-1, "TANK_I_FLOW")
+            property bool _tankPFlowAvailable:       controller.parameterExists(-1, "TANK_P_FLOW")
+            property bool _tankMaxFlowAvailable:     controller.parameterExists(-1, "TANK_MAX_FLOW")
+            property bool _tankSetFlowAvailable:     controller.parameterExists(-1, "TANK_SET_FLOW")
+            property bool _tankTRtAvailable:         controller.parameterExists(-1, "TANK_T_RTL")
 
             QGCPalette { id: qgcPal; colorGroupEnabled: true }
 
             // Debug message when spraying parameters are not available
             Column {
                 spacing: _margins
-                visible: !_sprayEnableAvailable
+                visible: !_tankSetFlowAvailable
                 width: parent.width
 
                 QGCLabel {
@@ -69,89 +70,258 @@ SetupPage {
                 }
             }
 
-            // Spraying System Enable/Disable
-            SettingsGroupLayout {
-                Layout.fillWidth:   true
-                heading:            qsTr("Spraying System") + (_sprayEnableAvailable ? "" : " (DEBUG - Parameter Not Available)")
-                visible:            true  // Always visible for debug
-
-                FactCheckBox {
-                    text:       qsTr("Enable Spraying System")
-                    fact:       _sprayEnable
-                    visible:    _sprayEnableAvailable
-                    enabled:    _sprayEnableAvailable
-                }
-                
-                QGCLabel {
-                    text:       qsTr("SPRAY_ENABLE parameter not found in vehicle")
-                    visible:    !_sprayEnableAvailable
-                    color:      qgcPal.colorOrange
-                }
-            }
-
             // Tank Configuration
             SettingsGroupLayout {
                 Layout.fillWidth:   true
-                heading:            qsTr("Tank Configuration") + (!_sprayEnableAvailable ? " (DEBUG)" : "")
-                visible:            !_sprayEnableAvailable || (_sprayEnableAvailable && _sprayEnabled)
+                heading:            qsTr("Tank Configuration") + (!_tankFullAvailable ? " (DEBUG)" : "")
+                visible:            true
 
-                FactTextField {
-                    Layout.fillWidth:   true
-                    fact:               _tankCapacity
-                    visible:            _tankCapacityAvailable
-                    enabled:            _tankCapacityAvailable
-                }
-                
-                QGCLabel {
-                    text:       qsTr("SPRAY_TANK_CAP parameter not found")
-                    visible:    !_tankCapacityAvailable && !_sprayEnableAvailable
-                    color:      qgcPal.colorOrange
+                RowLayout {
+                    spacing: _margins
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+
+                    QGCLabel {
+                        text:       qsTr("TANK_C_FULL")
+                        visible:    true
+                    }
+
+                    
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               QGroundControl.settingsManager.px4SprayingComponent.TANK_C_FULL
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_C_FULL parameter not found")
+                            visible:    !_tankcFullAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
                 }
 
-                FactTextField {
-                    Layout.fillWidth:   true
-                    fact:               _tankLow
-                    visible:            _tankLowAvailable
-                    enabled:            _tankLowAvailable
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+                    spacing: _margins
+
+                    QGCLabel {
+                        text:       qsTr("TANK_FULL")
+                        visible:    true
+                    }
+
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+    
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               _tankFull
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_FULL parameter not found")
+                            visible:    !_tankFullAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
                 }
-                
-                QGCLabel {
-                    text:       qsTr("SPRAY_TANK_LOW parameter not found")
-                    visible:    !_tankLowAvailable && !_sprayEnableAvailable
-                    color:      qgcPal.colorOrange
+
+                RowLayout {
+                    spacing: _margins
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+
+                    QGCLabel {
+                        text:       qsTr("TANK_I_FLOW")
+                        visible:    true
+                    }
+
+                    
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               _tankIFlow
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_I_FLOW parameter not found")
+                            visible:    !_tankIFlowAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
+                }
+
+                RowLayout {
+                    spacing: _margins
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+
+                    QGCLabel {
+                        text:       qsTr("TANK_P_FLOW")
+                        visible:    true
+                    }
+
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               _tankPFlow
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_P_FLOW parameter not found")
+                            visible:    !_tankPFlowAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
                 }
             }
 
             // Flow Control Configuration
             SettingsGroupLayout {
                 Layout.fillWidth:   true
-                heading:            qsTr("Flow Control") + (!_sprayEnableAvailable ? " (DEBUG)" : "")
-                visible:            !_sprayEnableAvailable || (_sprayEnableAvailable && _sprayEnabled)
+                heading:            qsTr("Flow Control") + (!_tankSetFlowAvailable ? " (DEBUG)" : "")
+                visible:            true
 
-                FactTextField {
-                    Layout.fillWidth:   true
-                    fact:               _flowRate
-                    visible:            _flowRateAvailable
-                    enabled:            _flowRateAvailable
-                }
-                
-                QGCLabel {
-                    text:       qsTr("SPRAY_FLOW_RATE parameter not found")
-                    visible:    !_flowRateAvailable && !_sprayEnableAvailable
-                    color:      qgcPal.colorOrange
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+                    spacing: _margins
+
+                    QGCLabel {
+                        text:       qsTr("TANK_SET_FLOW")
+                        visible:    true
+                    }
+
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+                     
+
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               _tankSetFlow
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_SET_FLOW parameter not found")
+                            visible:    !_tankSetFlowAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
                 }
 
-                FactTextField {
-                    Layout.fillWidth:   true
-                    fact:               _pumpPWM
-                    visible:            _pumpPWMAvailable
-                    enabled:            _pumpPWMAvailable
+                RowLayout {
+                    spacing: _margins
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+
+                    QGCLabel {
+                        text:       qsTr("TANK_MAX_FLOW")
+                        visible:    true
+                    }
+
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               _tankMaxFlow
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_MAX_FLOW parameter not found")
+                            visible:    !_tankMaxFlowAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
                 }
-                
-                QGCLabel {
-                    text:       qsTr("SPRAY_PUMP_PWM parameter not found")
-                    visible:    !_pumpPWMAvailable && !_sprayEnableAvailable
-                    color:      qgcPal.colorOrange
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+                    spacing: _margins
+
+                    QGCLabel {
+                        text:       qsTr("TANK_T_RTL")
+                        visible:    true
+                    }
+
+                    ColumnLayout {
+                        Layout.fillWidth: true
+                        Layout.alignment: Qt.AlignVCenter
+                        spacing: _margins
+
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            fact:               _tankTRt
+                            visible:            true
+                            enabled:            true
+                            showUnits:          true
+                            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                            validator:          DoubleValidator { bottom: 0; decimals: 1 }
+                        }
+
+                        QGCLabel {
+                            text:       qsTr("TANK_T_RTL parameter not found")
+                            visible:    !_tankTRtAvailable
+                            color:      qgcPal.colorOrange
+                            font.pointSize: ScreenTools.smallFontPointSize
+                        }
+                    }
                 }
             }
         }

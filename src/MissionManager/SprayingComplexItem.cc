@@ -1365,3 +1365,29 @@ void SprayingComplexItem::_updateWizardMode(void)
         setWizardMode(false);
     }
 }
+
+bool SprayingComplexItem::triggerCamera(void) const
+{
+    // For spraying missions, we use actuator commands instead of camera trigger distance
+    // So we always return false to disable camera trigger distance commands
+    return false;
+}
+
+void SprayingComplexItem::_appendLoadedMissionItems(QList<MissionItem*>& items, QObject* missionItemParent)
+{
+    qCDebug(SprayingComplexItemLog) << "_appendLoadedMissionItems: filtering camera trigger distance commands from loaded mission items";
+    
+    int seqNum = _sequenceNumber;
+    
+    for (const MissionItem* loadedMissionItem: _loadedMissionItems) {
+        // Skip camera trigger distance commands for spraying missions
+        if (loadedMissionItem->command() == MAV_CMD_DO_SET_CAM_TRIGG_DIST) {
+            qCDebug(SprayingComplexItemLog) << "Skipping camera trigger distance command at sequence" << seqNum;
+            continue;
+        }
+        
+        MissionItem* item = new MissionItem(*loadedMissionItem, missionItemParent);
+        item->setSequenceNumber(seqNum++);
+        items.append(item);
+    }
+}

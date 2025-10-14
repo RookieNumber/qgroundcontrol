@@ -31,6 +31,7 @@ public:
     DEFINE_SETTINGFACT(offlineEditingAscentSpeed)
     DEFINE_SETTINGFACT(offlineEditingDescentSpeed)
     DEFINE_SETTINGFACT(batteryPercentRemainingAnnounce) // Important: This is only used to calculate battery swaps
+    DEFINE_SETTINGFACT(offlineEditingSprayPumpRate)
     DEFINE_SETTINGFACT(defaultMissionItemAltitude)
     DEFINE_SETTINGFACT(audioMuted)
     DEFINE_SETTINGFACT(virtualJoystick)
