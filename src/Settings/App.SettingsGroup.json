@@ -60,6 +60,16 @@
     "decimalPlaces":    2
 },
 {
+    "name":             "offlineEditingSprayPumpRate",
+    "shortDesc": "Offline editing spray pump rate",
+    "longDesc":  "This value defines the default flow rate for the spray pump.",
+    "type":             "double",
+    "default":     1.0,
+    "min":              0.1,
+    "units":            "L/min",
+    "decimalPlaces":    2
+},
+{
     "name":             "batteryPercentRemainingAnnounce",
     "shortDesc": "Announce battery remaining percent",
     "longDesc":  "Announce the remaining battery percent when it falls below the specified percentage.",

@@ -54,6 +54,8 @@ class SprayingComplexItem : public TransectStyleComplexItem
      void    save                (QJsonArray&  planItems) final;
      bool    specifiesCoordinate (void) const final { return true; }
      double  timeBetweenShots    (void) final;
+     bool    triggerCamera       (void) const;
+     void    _appendLoadedMissionItems (QList<MissionItem*>& items, QObject* missionItemParent);
  
     // Overrides from VisualMissionionItem
     QString             commandDescription  (void) const final { return tr("Spraying"); }

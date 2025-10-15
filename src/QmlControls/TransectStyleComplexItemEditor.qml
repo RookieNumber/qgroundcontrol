@@ -116,7 +116,8 @@ Rectangle {
                     visible:            tabBar.isSpraying
 
                     // Bind to autopilot parameter if available (APM: SPRAY_PUMP_RATE)
-                    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
+                    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "TANK_SET_FLOW", false)
+                  
 
                     QGCLabel { text: qsTr("Cruise speed") }
                     FactTextField {
@@ -129,8 +130,7 @@ Rectangle {
                     FactTextField {
                         Layout.fillWidth:   true
                         showUnits:          true
-                        fact:               _sprayPumpRate
-                        visible:            _sprayPumpRate
+                        fact:               QGroundControl.settingsManager.appSettings.offlineEditingSprayPumpRate
                     }
                 }
 
