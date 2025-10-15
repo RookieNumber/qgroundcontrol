@@ -5,18 +5,18 @@
 class VehicleFrogsSprayFactGroup : public FactGroup
 {
     Q_OBJECT
-    Q_PROPERTY(Fact *sprayRate      READ sprayRate      CONSTANT)
-    Q_PROPERTY(Fact *tankLevel      READ tankLevel      CONSTANT)
-    Q_PROPERTY(Fact *sprayStatus    READ sprayStatus    CONSTANT)
-    Q_PROPERTY(Fact *totalSprayed   READ totalSprayed   CONSTANT)
+    Q_PROPERTY(Fact *timestamp      READ timestamp      CONSTANT)
+    Q_PROPERTY(Fact *volWater       READ volWater       CONSTANT)
+    Q_PROPERTY(Fact *flowRate       READ flowRate       CONSTANT)
+    Q_PROPERTY(Fact *cActuator      READ cActuator      CONSTANT)
 
 public:
     explicit VehicleFrogsSprayFactGroup(QObject *parent = nullptr);
 
-    Fact *sprayRate() { return &_sprayRateFact; }
-    Fact *tankLevel() { return &_tankLevelFact; }
-    Fact *sprayStatus() { return &_sprayStatusFact; }
-    Fact *totalSprayed() { return &_totalSprayedFact; }
+    Fact *timestamp() { return &_timestampFact; }
+    Fact *volWater() { return &_volWaterFact; }
+    Fact *flowRate() { return &_flowRateFact; }
+    Fact *cActuator() { return &_cActuatorFact; }
 
     // Overrides from FactGroup
     void handleMessage(Vehicle *vehicle, const mavlink_message_t &message) final;
@@ -24,8 +24,8 @@ public:
 private:
     void _handleFrogsSpray(const mavlink_message_t &message);
 
-    Fact _sprayRateFact = Fact(0, QStringLiteral("sprayRate"), FactMetaData::valueTypeDouble);
-    Fact _tankLevelFact = Fact(0, QStringLiteral("tankLevel"), FactMetaData::valueTypeDouble);
-    Fact _sprayStatusFact = Fact(0, QStringLiteral("sprayStatus"), FactMetaData::valueTypeUint8);
-    Fact _totalSprayedFact = Fact(0, QStringLiteral("totalSprayed"), FactMetaData::valueTypeDouble);
+    Fact _timestampFact = Fact(0, QStringLiteral("timestamp"), FactMetaData::valueTypeUint64);
+    Fact _volWaterFact = Fact(0, QStringLiteral("volWater"), FactMetaData::valueTypeFloat);
+    Fact _flowRateFact = Fact(0, QStringLiteral("flowRate"), FactMetaData::valueTypeDouble);
+    Fact _cActuatorFact = Fact(0, QStringLiteral("cActuator"), FactMetaData::valueTypeDouble);
 };

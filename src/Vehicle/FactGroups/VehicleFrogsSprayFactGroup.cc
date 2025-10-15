@@ -4,15 +4,15 @@
 VehicleFrogsSprayFactGroup::VehicleFrogsSprayFactGroup(QObject *parent)
     : FactGroup(1000, QStringLiteral(":/json/Vehicle/FrogsSprayFact.json"), parent)
 {
-    _addFact(&_sprayRateFact);
-    _addFact(&_tankLevelFact);
-    _addFact(&_sprayStatusFact);
-    _addFact(&_totalSprayedFact);
+    _addFact(&_timestampFact);
+    _addFact(&_volWaterFact);
+    _addFact(&_flowRateFact);
+    _addFact(&_cActuatorFact);
 
-    _sprayRateFact.setRawValue(qQNaN());
-    _tankLevelFact.setRawValue(qQNaN());
-    _sprayStatusFact.setRawValue(0);
-    _totalSprayedFact.setRawValue(qQNaN());
+    _timestampFact.setRawValue(0);
+    _volWaterFact.setRawValue(qQNaN());
+    _flowRateFact.setRawValue(qQNaN());
+    _cActuatorFact.setRawValue(qQNaN());
 }
 
 void VehicleFrogsSprayFactGroup::handleMessage(Vehicle *vehicle, const mavlink_message_t &message)
@@ -31,40 +31,38 @@ void VehicleFrogsSprayFactGroup::handleMessage(Vehicle *vehicle, const mavlink_m
 void VehicleFrogsSprayFactGroup::_handleFrogsSpray(const mavlink_message_t &message)
 {
     // Manual decoding of FROGS_SPRAY message (ID 500)
-    // Message structure: uint64_t time_usec, float spray_rate, float tank_level, uint8_t spray_status, float total_sprayed
+    // Message structure: uint64_t timestamp, float vol_water, double flow_rate, double c_actuator
     
-    if (message.len < 21) {  // Expected message length: 8+4+4+1+4 = 21 bytes
+    if (message.len < 28) {  // Expected message length: 8+4+8+8 = 28 bytes
         qWarning() << "FROGS_SPRAY message too short:" << message.len;
         return;
     }
     
     // Decode message payload manually
-    uint64_t time_usec;
-    float spray_rate;
-    float tank_level;
-    uint8_t spray_status;
-    float total_sprayed;
+    uint64_t timestamp_val;
+    float vol_water;
+    double flow_rate;
+    double c_actuator;
     
-    memcpy(&time_usec, &message.payload64[0], 8);
-    memcpy(&spray_rate, &message.payload64[1], 4);
-    memcpy(&tank_level, &message.payload64[1] + 4, 4);
-    memcpy(&spray_status, &message.payload64[2], 1);
-    memcpy(&total_sprayed, &message.payload64[2] + 1, 4);
+    // MAVLink payload is 64-bit aligned, so we can access it directly
+    memcpy(&timestamp_val, &message.payload64[0], 8);
+    memcpy(&vol_water, &message.payload64[1], 4);
+    memcpy(&flow_rate, &message.payload64[1] + 4, 8);
+    memcpy(&c_actuator, &message.payload64[3], 8);
     
-    // Basic validation and set values
-    if (!qIsNaN(spray_rate)) {
-        sprayRate()->setRawValue(spray_rate);
+    // Set values
+    timestamp()->setRawValue(timestamp_val);
+    
+    if (!qIsNaN(vol_water)) {
+        volWater()->setRawValue(vol_water);
     }
     
-    if (!qIsNaN(tank_level)) {
-        tankLevel()->setRawValue(tank_level);
+    if (!qIsNaN(flow_rate)) {
+        flowRate()->setRawValue(flow_rate);
     }
     
-    // Status is always valid (uint8_t)
-    sprayStatus()->setRawValue(spray_status);
-    
-    if (!qIsNaN(total_sprayed)) {
-        totalSprayed()->setRawValue(total_sprayed);
+    if (!qIsNaN(c_actuator)) {
+        cActuator()->setRawValue(c_actuator);
     }
 
     _setTelemetryAvailable(true);
