@@ -194,10 +194,10 @@ Item {
                         platformFontPointSize = 14;
                     }
                 } else if((Screen.width / realPixelDensity) < 120) {
-                    platformFontPointSize = 11;
+                    platformFontPointSize = 9;
                 // Other Android
                 } else {
-                    platformFontPointSize = 14;
+                    platformFontPointSize = 11;
                 }
             } else {
                 platformFontPointSize = _defaultFont.font.pointSize;
