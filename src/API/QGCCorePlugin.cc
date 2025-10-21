@@ -250,7 +250,7 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
         column = factValueGrid->columns()->value<QmlObjectListModel*>(includeFWValues ? 3 : 2);
 
         value = column->value<InstrumentValueData*>(rowIndex++);
-        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("SprayedVolume"));
+        value->setFact(QStringLiteral("frogsSpray"), QStringLiteral("volWater"));
         value->setIcon(QStringLiteral("liquid.svg"));
         value->setText(value->fact()->shortDescription());
         value->setShowUnits(false);
