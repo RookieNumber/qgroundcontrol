@@ -51,7 +51,7 @@ void VehicleFrogsSprayFactGroup::_handleFrogsSpray(const mavlink_message_t &mess
     memcpy(&c_actuator, &message.payload64[3], 8);
     
     // Set values
-    timestamp()->setRawValue(timestamp_val);
+    timestamp()->setRawValue(QVariant(static_cast<qulonglong>(timestamp_val)));
     
     if (!qIsNaN(vol_water)) {
         volWater()->setRawValue(vol_water);
