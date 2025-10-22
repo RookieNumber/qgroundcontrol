@@ -55,22 +55,6 @@ Item {
                 anchors.top:        parent.top
                 anchors.bottom:     parent.bottom
                 sourceComponent:    batteryVisual
-
-                 visible:            {
-                // Hide second battery indicator if sprayer system is enabled
-                if (object && object.id && object.id.rawValue === 2) {
-                    // Check if sprayer is enabled
-                    var sprayEnable = _activeVehicle && _activeVehicle.parameterManager ? 
-                        _activeVehicle.parameterManager.getParameter(-1, "SPRAY_ENABLE") : null
-                    if (sprayEnable && sprayEnable.rawValue !== 0) {
-                        return false  // Hide second battery when sprayer is active
-                    }
-                }
-                return true  // Show all other batteries
-            }
-
-
-
                 property var battery: object
             }
         }
@@ -78,8 +62,14 @@ Item {
     MouseArea {
         anchors.fill:   parent
         onClicked: {
+        // Only open expanded window if battery index == 0
+        // if (_activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0) {
+        //     mainWindow.showIndicatorDrawer(batteryPopup, control)
+        // }
+        onClicked: {
             mainWindow.showIndicatorDrawer(batteryPopup, control)
         }
+    }
     }
 
     Component {
@@ -127,43 +117,52 @@ Item {
             }    
 
             function getBatterySvgSource() {
-                switch (battery.chargeState.rawValue) {
-                    case MAVLink.MAV_BATTERY_CHARGE_STATE_OK:
-                        if (!isNaN(battery.percentRemaining.rawValue)) {
-                            if (battery.percentRemaining.rawValue > threshold1) {
-                                return "/qmlimages/BatteryGreen.svg"
-                            } else if (battery.percentRemaining.rawValue > threshold2) {
-                                return "/qmlimages/BatteryYellowGreen.svg"
-                            } else {
-                                return "/qmlimages/BatteryYellow.svg"    
-                            } 
-                        }
-                    case MAVLink.MAV_BATTERY_CHARGE_STATE_LOW:
-                        return "/qmlimages/BatteryOrange.svg" // Low with orange svg
-                    case MAVLink.MAV_BATTERY_CHARGE_STATE_CRITICAL:
-                        return "/qmlimages/BatteryCritical.svg" // Critical with red svg
-                    case MAVLink.MAV_BATTERY_CHARGE_STATE_EMERGENCY:
-                    case MAVLink.MAV_BATTERY_CHARGE_STATE_FAILED:
-                    case MAVLink.MAV_BATTERY_CHARGE_STATE_UNHEALTHY:
-                        return "/qmlimages/BatteryEMERGENCY.svg" // Exclamation mark
-                    default:
-                        return "/qmlimages/Battery.svg" // Fallback if percentage is unavailable
+
+                if (battery.id.rawValue === 0) {
+                        switch (battery.chargeState.rawValue) {
+                        case MAVLink.MAV_BATTERY_CHARGE_STATE_OK:
+                            if (!isNaN(battery.percentRemaining.rawValue)) {
+                                if (battery.percentRemaining.rawValue > threshold1) {
+                                    return "/qmlimages/BatteryGreen.svg"
+                                } else if (battery.percentRemaining.rawValue > threshold2) {
+                                    return "/qmlimages/BatteryYellowGreen.svg"
+                                } else {
+                                    return "/qmlimages/BatteryYellow.svg"    
+                                } 
+                            }
+                        case MAVLink.MAV_BATTERY_CHARGE_STATE_LOW:
+                            return "/qmlimages/BatteryOrange.svg" // Low with orange svg
+                        case MAVLink.MAV_BATTERY_CHARGE_STATE_CRITICAL:
+                            return "/qmlimages/BatteryCritical.svg" // Critical with red svg
+                        case MAVLink.MAV_BATTERY_CHARGE_STATE_EMERGENCY:
+                        case MAVLink.MAV_BATTERY_CHARGE_STATE_FAILED:
+                        case MAVLink.MAV_BATTERY_CHARGE_STATE_UNHEALTHY:
+                            return "/qmlimages/BatteryEMERGENCY.svg" // Exclamation mark
+                        default:
+                            return "/qmlimages/Battery.svg" // Fallback if percentage is unavailable
+                    }
+                } else if (battery.id.rawValue === 1) {
+                    return '/qmlimages/liquid.svg';
                 }
+
+                return ""
+                
             }
 
             function getBatteryPercentageText() {
-                if (!isNaN(battery.percentRemaining.rawValue)) {
+                if (!isNaN(battery.voltage.rawValue)) {
+                    return battery.voltage.valueString + battery.voltage.units + qsTr("  ")
+                }  else if (!isNaN(battery.percentRemaining.rawValue)) {
                     if (battery.percentRemaining.rawValue > 98.9) {
                         return qsTr("100%")
                     } else {
                         return battery.percentRemaining.valueString + battery.percentRemaining.units
                     }
-                } else if (!isNaN(battery.voltage.rawValue)) {
-                    return battery.voltage.valueString + battery.voltage.units
-                } else if (battery.chargeState.rawValue !== MAVLink.MAV_BATTERY_CHARGE_STATE_UNDEFINED) {
+                }
+                else if (battery.chargeState.rawValue !== MAVLink.MAV_BATTERY_CHARGE_STATE_UNDEFINED) {
                     return battery.chargeState.enumStringValue
                 }
-                return qsTr("n/a")
+                return ""
             }
 
             function getBatteryVoltageText() {
@@ -174,6 +173,33 @@ Item {
                 }
                 return qsTr("n/a")
             }
+
+            function getSprayerConsumedText() {
+                if (!isNaN(battery.mahConsumed.rawValue)) {
+                    return battery.mahConsumed.valueString + qsTr(" mL") + qsTr("   ")
+                }  else if (!isNaN(battery.percentRemaining.rawValue)) {
+                    if (battery.percentRemaining.rawValue > 98.9) {
+                        return qsTr("100%")
+                    } else {
+                        return battery.percentRemaining.valueString + battery.percentRemaining.units
+                    }
+                }
+                else if (battery.chargeState.rawValue !== MAVLink.MAV_BATTERY_CHARGE_STATE_UNDEFINED) {
+                    return battery.chargeState.enumStringValue
+                }
+                return ""
+            }
+
+             function getBatteryValueText() {
+                if (battery.id.rawValue === 0) {
+                    return getBatteryPercentageText()
+                } else if (battery.id.rawValue === 1){
+                    return getSprayerConsumedText()
+                }
+
+                return ""
+            }
+
 
             QGCColoredImage {
                 anchors.top:        parent.top
@@ -195,7 +221,7 @@ Item {
                     Layout.alignment:       Qt.AlignHCenter
                     verticalAlignment:      Text.AlignVCenter
                     color:                  qgcPal.text
-                    text:                   getBatteryPercentageText()
+                    text:                   getBatteryValueText()
                     font.pointSize:         _showBoth ? ScreenTools.defaultFontPointSize : ScreenTools.mediumFontPointSize
                     visible:                _showBoth || _showPercentage
                 }
@@ -236,7 +262,9 @@ Item {
                 model: _activeVehicle ? _activeVehicle.batteries : 0
 
                 SettingsGroupLayout {
-                    heading:        qsTr("Battery %1").arg(_activeVehicle.batteries.length === 1 ? qsTr("Status") : object.id.rawValue)
+                    heading:        object.id.rawValue === 0 ? 
+                        qsTr("Battery %1").arg(_activeVehicle.batteries.length === 1 ? qsTr("Status") : object.id.rawValue) : 
+                        qsTr("Sprayer Status")
                     contentSpacing: 0
                     showDividers:   false
 
@@ -252,7 +280,11 @@ Item {
                     LabelledLabel {
                         label:  qsTr("Charge State")
                         labelText:  object.chargeState.enumStringValue
-                        visible:    batteryValuesAvailable.chargeStateAvailable
+                        visible:    if (object.id.rawValue === 0) {
+                            batteryValuesAvailable.chargeStateAvailable
+                        } else {
+                            return false
+                        }
                     }
 
                     LabelledLabel {
@@ -270,12 +302,21 @@ Item {
                     LabelledLabel {
                         label:      qsTr("Voltage")
                         labelText:  object.voltage.valueString + " " + object.voltage.units
+                        visible:   if (object.id.rawValue === 0) {
+                            return true
+                        } else {
+                            return false
+                        }
                     }
 
                     LabelledLabel {
                         label:      qsTr("Consumed")
                         labelText:  object.mahConsumed.valueString + " " + object.mahConsumed.units
-                        visible:    batteryValuesAvailable.mahConsumedAvailable
+                        visible:    if (object.id.rawValue === 0) {
+                            return batteryValuesAvailable.mahConsumedAvailable
+                        } else {
+                            return false
+                        }
                     }
 
                     LabelledLabel {
@@ -303,14 +344,14 @@ Item {
             FactPanelController { id: controller }
 
             SettingsGroupLayout {
-                heading:            qsTr("Battery Display")
+                heading:            _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? qsTr("Battery Display") : qsTr("Spraying Display")
                 Layout.fillWidth:   true
 
                 LabelledFactComboBox {
                     id:             editModeCheckBox
                     label:          qsTr("Value")
                     fact:           _fact
-                    visible:        _fact,visible
+                    visible:        _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? true : false
 
                     property Fact _fact: QGroundControl.settingsManager.batteryIndicatorSettings.valueDisplay
                 }
@@ -325,7 +366,7 @@ Item {
                         RowLayout {
                             spacing: ScreenTools.defaultFontPixelWidth * 0.05  // Tighter spacing for icon and label
                             QGCColoredImage {
-                                source: "/qmlimages/BatteryGreen.svg"
+                                source: _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? "/qmlimages/BatteryGreen.svg" : "/qmlimages/liquid.svg"
                                 width: ScreenTools.defaultFontPixelWidth * 6
                                 height: width
                                 fillMode: Image.PreserveAspectFit
@@ -338,7 +379,7 @@ Item {
                         RowLayout {
                             spacing: ScreenTools.defaultFontPixelWidth * 0.05  // Tighter spacing for icon and field
                             QGCColoredImage {
-                                source: "/qmlimages/BatteryYellowGreen.svg"
+                                source: _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? "/qmlimages/BatteryYellowGreen.svg" : "/qmlimages/liquid.svg"
                                 width: ScreenTools.defaultFontPixelWidth * 6
                                 height: width
                                 fillMode: Image.PreserveAspectFit
@@ -361,7 +402,7 @@ Item {
                         RowLayout {
                             spacing: ScreenTools.defaultFontPixelWidth * 0.05  // Tighter spacing for icon and field
                             QGCColoredImage {
-                                source: "/qmlimages/BatteryYellow.svg"
+                                source: _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? "/qmlimages/BatteryYellow.svg" : "/qmlimages/liquid.svg"
                                 width: ScreenTools.defaultFontPixelWidth * 6
                                 height: width
                                 fillMode: Image.PreserveAspectFit
@@ -383,7 +424,7 @@ Item {
                         RowLayout {
                             spacing: ScreenTools.defaultFontPixelWidth * 0.05  // Tighter spacing for icon and label
                             QGCColoredImage {
-                                source: "/qmlimages/BatteryOrange.svg"
+                                source: _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? "/qmlimages/BatteryOrange.svg" : "/qmlimages/liquid.svg"
                                 width: ScreenTools.defaultFontPixelWidth * 6
                                 height: width
                                 fillMode: Image.PreserveAspectFit
@@ -396,7 +437,7 @@ Item {
                         RowLayout {
                             spacing: ScreenTools.defaultFontPixelWidth * 0.05  // Tighter spacing for icon and label
                             QGCColoredImage {
-                                source: "/qmlimages/BatteryCritical.svg"
+                                source: _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? "/qmlimages/BatteryCritical.svg" : "/qmlimages/liquid.svg"
                                 width: ScreenTools.defaultFontPixelWidth * 6
                                 height: width
                                 fillMode: Image.PreserveAspectFit
@@ -415,14 +456,20 @@ Item {
 
             SettingsGroupLayout {
                 visible: _activeVehicle.autopilotPlugin.knownVehicleComponentAvailable(AutoPilotPlugin.KnownPowerVehicleComponent) &&
-                            QGroundControl.corePlugin.showAdvancedUI
+                            QGroundControl.corePlugin.showAdvancedUI  
 
                 LabelledButton {
-                    label:      qsTr("Vehicle Power")
+                    label: _activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 0 ? qsTr("Vehicle Power") : qsTr("Sprayer Setting") 
                     buttonText: qsTr("Configure")
 
                     onClicked: {
-                        mainWindow.showKnownVehicleComponentConfigPage(AutoPilotPlugin.KnownPowerVehicleComponent)
+
+                        if (_activeVehicle && _activeVehicle.batteries.count > 0 && _activeVehicle.batteries.get(0).id.rawValue === 1) {
+                            mainWindow.showKnownVehicleComponentConfigPage(AutoPilotPlugin.KnownSprayingVehicleComponent)
+                        } else {
+                            mainWindow.showKnownVehicleComponentConfigPage(AutoPilotPlugin.KnownPowerVehicleComponent)
+                        }
+
                         mainWindow.closeIndicatorDrawer()
                     }
                 }                

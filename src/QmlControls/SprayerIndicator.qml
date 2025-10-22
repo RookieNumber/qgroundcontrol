@@ -26,7 +26,7 @@ Item {
     anchors.bottom: parent.bottom
     width:          sprayerIndicatorRow.width
     
-    property bool showIndicator: true
+    property bool showIndicator: false   // Hide Sprayer Indicator for no
     property var _activeVehicle: QGroundControl.multiVehicleManager.activeVehicle
 
     // Tank capacity (mL) sourced from parameter BATT2_CAPACITY

@@ -109,7 +109,7 @@ QGCPopupDialog {
                 unitsLabel:         fact.units
                 showUnits:          fact.units != ""
                 focus:              setFocus && visible
-                inputMethodHints:   (fact.typeIsString || ScreenTools.isiOS) ? // iOS numeric keyboard has no done button, we can't use it
+                inputMethodHints:   (fact.typeIsString || ScreenTools.isiOS || ScreenTools.isAndroid) ? // iOS numeric keyboard has no done button, we can't use it. Android has display issues with ImhFormattedNumbersOnly
                                         Qt.ImhNone :
                                         Qt.ImhFormattedNumbersOnly  // Forces use of virtual numeric keyboard
                 visible:            !_showCombo || validate || manualEntry.checked

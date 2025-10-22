@@ -41,6 +41,7 @@ public:
         KnownSensorsVehicleComponent,
         KnownSafetyVehicleComponent,
         KnownPowerVehicleComponent,
+        KnownSprayingVehicleComponent,
         UnknownVehicleComponent // Firmware specific vehicle components
     };
     Q_ENUM(KnownVehicleComponent)

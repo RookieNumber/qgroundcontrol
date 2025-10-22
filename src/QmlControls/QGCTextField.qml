@@ -14,9 +14,9 @@ TextField {
     antialiasing:       true
     font.pointSize:     ScreenTools.defaultFontPointSize
     font.family:        ScreenTools.normalFontFamily
-    inputMethodHints:   numericValuesOnly && !ScreenTools.isiOS ?
+    inputMethodHints:   numericValuesOnly && !ScreenTools.isiOS && !ScreenTools.isAndroid ?
                             Qt.ImhFormattedNumbersOnly:  // Forces use of virtual numeric keyboard instead of full keyboard
-                            Qt.ImhNone                   // iOS numeric keyboard has no done button, we can't use it.
+                            Qt.ImhNone                   // iOS numeric keyboard has no done button, we can't use it. Android has display issues with ImhFormattedNumbersOnly
     leftPadding:        _marginPadding
     rightPadding:       _marginPadding + unitsHelpLayout.width
     topPadding:         _marginPadding

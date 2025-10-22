@@ -40,7 +40,7 @@ ColumnLayout {
             text:                   subEditConfig.localPort.toString()
             focus:                  true
             Layout.preferredWidth:  _secondColumnWidth
-            inputMethodHints:       Qt.ImhFormattedNumbersOnly
+            inputMethodHints:       ScreenTools.isAndroid ? Qt.ImhNone : Qt.ImhFormattedNumbersOnly
             onTextChanged:          subEditConfig.localPort = parseInt(portField.text)
         }
     }

@@ -114,7 +114,7 @@ Item {
             text:               _activeJoystick.axisFrequencyHz
             enabled:            advancedSettings.checked
             validator:          DoubleValidator { bottom: _activeJoystick.minAxisFrequencyHz; top: _activeJoystick.maxAxisFrequencyHz; }
-            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+            inputMethodHints:   ScreenTools.isAndroid ? Qt.ImhNone : Qt.ImhFormattedNumbersOnly
             Layout.alignment:   Qt.AlignVCenter
             onEditingFinished: {
                 _activeJoystick.axisFrequencyHz = parseFloat(text)
@@ -132,7 +132,7 @@ Item {
             text:               _activeJoystick.buttonFrequencyHz
             enabled:            advancedSettings.checked
             validator:          DoubleValidator { bottom: _activeJoystick.minButtonFrequencyHz; top: _activeJoystick.maxButtonFrequencyHz; }
-            inputMethodHints:   Qt.ImhFormattedNumbersOnly
+            inputMethodHints:   ScreenTools.isAndroid ? Qt.ImhNone : Qt.ImhFormattedNumbersOnly
             Layout.alignment:   Qt.AlignVCenter
             onEditingFinished: {
                 _activeJoystick.buttonFrequencyHz = parseFloat(text)

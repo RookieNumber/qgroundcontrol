@@ -38,6 +38,6 @@ GridLayout {
         id:                     portField
         Layout.preferredWidth:  _secondColumnWidth
         text:                   subEditConfig.port.toString()
-        inputMethodHints:       Qt.ImhFormattedNumbersOnly
+        inputMethodHints:       ScreenTools.isAndroid ? Qt.ImhNone : Qt.ImhFormattedNumbersOnly
     }
 }

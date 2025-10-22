@@ -161,7 +161,7 @@ Item {
     property bool showLandAbort:            _guidedActionsEnabled && _vehicleFlying && _fixedWingOnApproach
     property bool showGotoLocation:         _guidedActionsEnabled && _vehicleFlying
     property bool showSetHome:              _guidedActionsEnabled
-    property bool showGripper:              _initialConnectComplete ? _activeVehicle.hasGripper : false
+    property bool showGripper:              _guidedActionsEnabled && (_initialConnectComplete ? _activeVehicle.hasGripper : false)
     property bool showSetEstimatorOrigin:   _activeVehicle && !(_activeVehicle.sensorsPresentBits & Vehicle.SysStatusSensorGPS)
     property bool showChangeHeading:        _guidedActionsEnabled && _vehicleFlying
 
@@ -175,7 +175,7 @@ Item {
 
     property var    _corePlugin:            QGroundControl.corePlugin
     property var    _corePluginOptions:     QGroundControl.corePlugin.options
-    property bool   _guidedActionsEnabled:  (!ScreenTools.isDebug && _corePluginOptions.guidedActionsRequireRCRSSI && _activeVehicle) ? _rcRSSIAvailable : _activeVehicle
+    property bool   _guidedActionsEnabled:  _showGuidedActions && (((!ScreenTools.isDebug && _corePluginOptions.guidedActionsRequireRCRSSI && _activeVehicle) ? _rcRSSIAvailable : _activeVehicle))
     property string _flightMode:            _activeVehicle ? _activeVehicle.flightMode : ""
     property bool   _missionAvailable:      missionController.containsItems
     property bool   _missionActive:         _activeVehicle ? _vehicleArmed && (_vehicleInLandMode || _vehicleInRTLMode || _vehicleInMissionMode) : false
@@ -208,7 +208,7 @@ Item {
     
 
     // Hide Guided Actions
-    property bool _showGuidedActions:       true
+    property bool _showGuidedActions:       false
 
     // Allow custom builds to add custom actions by overriding CustomGuidedActionsController.qml
     CustomGuidedActionsController {
@@ -463,7 +463,7 @@ Item {
             confirmDialog.message = takeoffMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showTakeoff })
             // guidedValueSlider.visible = _activeVehicle.guidedTakeoffSupported 
-            guidedValueSlider.visible = !_showGuidedActions
+            guidedValueSlider.visible = _showGuidedActions
             break;
         case actionStartMission:
             showImmediate = false
@@ -508,7 +508,7 @@ Item {
             confirmDialog.title = changeAltTitle
             confirmDialog.message = changeAltMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showChangeAlt })
-            guidedValueSlider.visible = !_showGuidedActions
+            guidedValueSlider.visible = _showGuidedActions
             break;
         case actionChangeLoiterRadius:
             confirmDialog.title = changeLoiterRadiusTitle
@@ -530,7 +530,7 @@ Item {
             confirmDialog.title = orbitTitle
             confirmDialog.message = orbitMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showOrbit })
-            guidedValueSlider.visible = !_showGuidedActions
+            guidedValueSlider.visible = _showGuidedActions
             break;
         case actionLandAbort:
             confirmDialog.title = landAbortTitle
@@ -541,7 +541,7 @@ Item {
             confirmDialog.title = pauseTitle
             confirmDialog.message = pauseMessage
             confirmDialog.hideTrigger = Qt.binding(function() { return !showPause })
-            guidedValueSlider.visible = !_showGuidedActions
+            guidedValueSlider.visible = _showGuidedActions
             break;
         case actionMVPause:
             confirmDialog.title = mvPauseTitle
@@ -567,7 +567,7 @@ Item {
             confirmDialog.hideTrigger = true
             confirmDialog.title = changeSpeedTitle
             confirmDialog.message = changeSpeedMessage
-            guidedValueSlider.visible = !_showGuidedActions
+            guidedValueSlider.visible = _showGuidedActions
             break
         case actionGripper:
             confirmDialog.hideTrigger = true

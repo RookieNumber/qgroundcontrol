@@ -10,7 +10,7 @@
  #include "APMSprayingComponent.h"
 
  APMSprayingComponent::APMSprayingComponent(Vehicle *vehicle, AutoPilotPlugin *autopilot, QObject *parent)
-     : VehicleComponent(vehicle, autopilot, AutoPilotPlugin::KnownPowerVehicleComponent, parent)
+     : VehicleComponent(vehicle, autopilot, AutoPilotPlugin::KnownSprayingVehicleComponent, parent)
  {
  
  }
