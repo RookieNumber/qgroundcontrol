@@ -3962,7 +3962,7 @@ Please place your vehicle in water, click the button, and wait. Note that the th
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="31"/>
         <source>Vehicle</source>
-        <translation>Kendaraan</translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml" line="36"/>
@@ -4797,7 +4797,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/FlightMap/Widgets/CenterMapDropButton.qml" line="222"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/FlightMap/Widgets/CenterMapDropButton.qml" line="234"/>
@@ -4830,7 +4830,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/FlightMap/Widgets/CenterMapDropPanel.qml" line="64"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/FlightMap/Widgets/CenterMapDropPanel.qml" line="75"/>
@@ -5497,7 +5497,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/FWLandingPatternEditor.qml" line="107"/>
         <source>Flight Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan terbang</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/FWLandingPatternEditor.qml" line="118"/>
@@ -8571,13 +8571,13 @@ Click Ok to start the auto-tuning process.
         <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="42"/>
         <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="47"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Iya</translation>
     </message>
     <message>
         <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="42"/>
         <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="47"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak</translation>
     </message>
     <message>
         <location filename="../src/UI/toolbar/JoystickIndicator.qml" line="45"/>
@@ -9597,7 +9597,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="48"/>
         <source>Disconnected - Click to manually connect</source>
-        <translation>Terputus - Klik untuk menyambung secara manual</translation>
+        <translation>Terputus - Klik untuk menyambungkan secara manual</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
@@ -9627,7 +9627,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="360"/>
         <source>Vehicle Parameters</source>
-        <translation>Parameter Kendaraan</translation>
+        <translation>Parameter Drone</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="362"/>
@@ -9638,7 +9638,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="369"/>
         <source>Vehicle Configuration</source>
-        <translation>Konfigurasi Kendaraan</translation>
+        <translation>Konfigurasi Drone</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="388"/>
@@ -9784,7 +9784,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/UI/MainWindow.qml" line="353"/>
         <source>Plan Flight</source>
-        <translation>Rencanakan Penerbangan</translation>
+        <translation>Buat Misi Terbang</translation>
     </message>
     <message>
         <location filename="../src/UI/MainWindow.qml" line="429"/>
@@ -10194,12 +10194,12 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="43"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="131"/>
         <source>Flight speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="158"/>
@@ -10224,32 +10224,32 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="68"/>
         <source>All Altitudes</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua konf. ketinggian</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="115"/>
         <source>Initial Waypoint Alt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian waypoint awal</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="220"/>
         <source>The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nilai kecepatan berikut digunakan untuk menghitung waktu tempuh total sebuah misi. Mereka tidak mempengaruhi kecepatan terbang misi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="225"/>
         <source>Cruise speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan cruise</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="236"/>
         <source>Hover speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan hover</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="270"/>
         <source>Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MissionSettingsEditor.qml" line="282"/>
@@ -10273,7 +10273,7 @@ Click Ok to start the auto-tuning process.
         <location filename="../src/MissionManager/MissionSettingsItem.h" line="75"/>
         <location filename="../src/MissionManager/MissionSettingsItem.h" line="76"/>
         <source>Mission Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Inisiasi Misi</translation>
     </message>
 </context>
 <context>
@@ -10625,7 +10625,7 @@ Do you wish to proceed?</source>
         <location filename="../src/UI/toolbar/MultiVehicleSelector.qml" line="52"/>
         <location filename="../src/UI/toolbar/MultiVehicleSelector.qml" line="113"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drones</translation>
     </message>
     <message>
         <location filename="../src/UI/toolbar/MultiVehicleSelector.qml" line="52"/>
@@ -10820,7 +10820,7 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/FirstRunPromptDialogs/OfflineVehicleFirstRunPrompt.qml" line="68"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
 </context>
 <context>
@@ -12069,7 +12069,7 @@ Is this really what you want?</source>
     <message>
         <location filename="../src/QmlControls/ParameterDiffDialog.qml" line="87"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/ParameterDiffDialog.qml" line="90"/>
@@ -12374,7 +12374,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="399"/>
         <source>Storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyimpanan</translation>
     </message>
     <message>
         <location filename="../src/FlightMap/Widgets/PhotoVideoControl.qml" line="426"/>
@@ -12665,12 +12665,12 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="132"/>
         <source>Selected Waypoint</source>
-        <translation type="unfinished"></translation>
+        <translation>Waypoint terpilih</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="137"/>
         <source>Alt diff:</source>
-        <translation type="unfinished"></translation>
+        <translation>Perb. Ketinggian:</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="146"/>
@@ -12680,7 +12680,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="190"/>
         <source>Distance:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Tempuh:</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="162"/>
@@ -12701,7 +12701,7 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="155"/>
         <source>Dist prev WP:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak WP sebelumnya</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="171"/>
@@ -12711,17 +12711,17 @@ Note that this will also completely reset everything, including UAVCAN nodes, al
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="185"/>
         <source>Total Mission</source>
-        <translation type="unfinished"></translation>
+        <translation>Parameter Misi Total</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="199"/>
         <source>Max telem dist:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak max telemetri:</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="206"/>
         <source>Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu tempuh:</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanToolBarIndicators.qml" line="221"/>
@@ -12954,7 +12954,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="899"/>
         <source>Are you sure you want to remove all mission items and clear the mission from the vehicle?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah anda yakin ingin menghapus seluruh misi dari drone?</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="933"/>
@@ -12969,7 +12969,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1063"/>
         <source>Open...</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka...</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="178"/>
@@ -12992,7 +12992,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="887"/>
         <source>Are you sure you want to remove current plan and create a new plan? </source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah anda yakin ingin menghapus misi saat ini dan membuat misi baru?</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="969"/>
@@ -13008,22 +13008,22 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
         <location filename="../src/QmlControls/PlanView.qml" line="886"/>
         <location filename="../src/QmlControls/PlanView.qml" line="984"/>
         <source>Create Plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Buat Misi</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1053"/>
         <source>Storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Penyimpanan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1091"/>
         <source>Save As...</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan sebagai...</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1103"/>
         <source>Save Mission Waypoints As KML...</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan Misi Waypoint sebagai KML...</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1108"/>
@@ -13040,7 +13040,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1120"/>
         <source>Vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Drone</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanView.qml" line="1140"/>
@@ -13081,7 +13081,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="58"/>
         <source>Exit Plan</source>
-        <translation>Keluar dari Rencana</translation>
+        <translation>Kembali</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/PlanViewToolBar.qml" line="131"/>
@@ -14032,12 +14032,12 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="134"/>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="143"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="137"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="140"/>
@@ -14052,7 +14052,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="149"/>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Iya</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="152"/>
@@ -14092,7 +14092,7 @@ Click &apos;Ok&apos; to upload the Plan anyway.</source>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="176"/>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/QGCPopupDialog.qml" line="179"/>
@@ -16211,12 +16211,12 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="104"/>
         <source>Click in map to set planned Takeoff location.</source>
-        <translation>Klik di peta untuk mengatur lokasi Takeoff yang direncanakan.</translation>
+        <translation>Klik di peta untuk mengatur lokasi Takeoff.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="105"/>
         <source>Click in map to set planned Launch location.</source>
-        <translation>Klik di peta untuk mengatur lokasi Peluncuran yang direncanakan.</translation>
+        <translation>Klik di peta untuk mengatur lokasi Peluncuran.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="128"/>
@@ -16231,7 +16231,7 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     <message>
         <location filename="../src/QmlControls/SimpleItemEditor.qml" line="242"/>
         <source>Flight Speed</source>
-        <translation>Kecepatan Penerbangan</translation>
+        <translation>Kecepatan</translation>
     </message>
 </context>
 <context>
@@ -16617,6 +16617,54 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/SurveyItemEditor.qml" line="106"/>
+        <source>Select Polygon File</source>
+        <translation>Pilih File Polygon</translation>
+    </message>
+</context>
+<context>
+    <name>SprayingItemEditor</name>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="17"/>
+        <source>Use the Polygon Tools to create the polygon which outlines your survey area.</source>
+        <translation>Gunakan Alat Polygon untuk membuat poligon yang menggarisbawahi area operasi Anda.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="18"/>
+        <source>Transects</source>
+        <translation>Transect</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="38"/>
+        <source>Angle</source>
+        <translation>Sudut</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="60"/>
+        <source>Turnaround dist</source>
+        <translation>Jarak putar balik</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="76"/>
+        <source>Hover and capture image</source>
+        <translation>Melayang dan ambil gambar</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="82"/>
+        <source>Refly at 90 deg offset</source>
+        <translation>Terbang ulang dengan offset 90 derajat</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="88"/>
+        <source>Images in turnarounds</source>
+        <translation>Gambar saat putar balik</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="94"/>
+        <source>Fly alternate transects</source>
+        <translation>Terbang dengan transect alternatif</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SprayingItemEditor.qml" line="106"/>
         <source>Select Polygon File</source>
         <translation>Pilih File Polygon</translation>
     </message>
@@ -17040,7 +17088,7 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="103"/>
         <source>Spacing</source>
-        <translation>Jarak</translation>
+        <translation>Spacing</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="122"/>
