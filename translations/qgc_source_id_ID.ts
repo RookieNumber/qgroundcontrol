@@ -17157,6 +17157,21 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
         <source>Preset name cannot include the &quot;/&quot; character.</source>
         <translation>Nama preset tidak boleh menyertakan karakter &quot;/&quot;.</translation>
     </message>
+    <message>
+        <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="145"/>
+        <source>Cruise Speed</source>
+        <translation>Kecepatan Cruising</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="164"/>
+        <source>Flow Rate</source>
+        <translation>Laju aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/TransectStyleComplexItemEditor.qml" line="184"/>
+        <source>Auto-calculated: %1 L/ha (Area: %2 ha)</source>
+        <translation>Dihitung secara otomatis: %1 L/ha (Area: %2 ha)</translation>
+    </message>
 </context>
 <context>
     <name>TransectStyleComplexItemStats</name>

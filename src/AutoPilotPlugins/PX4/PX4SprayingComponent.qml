@@ -82,7 +82,7 @@ SetupPage {
                     Layout.alignment: Qt.AlignVCenter
 
                     QGCLabel {
-                        text:       qsTr("TANK_C_FULL")
+                        text:       qsTr("Volume Tanki Kalibrasi")
                         visible:    true
                     }
 
@@ -117,7 +117,7 @@ SetupPage {
                     spacing: _margins
 
                     QGCLabel {
-                        text:       qsTr("TANK_FULL")
+                        text:       qsTr("Volume Tanki")
                         visible:    true
                     }
 
@@ -227,7 +227,7 @@ SetupPage {
                     spacing: _margins
 
                     QGCLabel {
-                        text:       qsTr("TANK_SET_FLOW")
+                        text:       qsTr("Flow Rate")
                         visible:    true
                     }
 
@@ -262,7 +262,7 @@ SetupPage {
                     Layout.alignment: Qt.AlignVCenter
 
                     QGCLabel {
-                        text:       qsTr("TANK_MAX_FLOW")
+                        text:       qsTr("Flow Rate Kalibrasi")
                         visible:    true
                     }
 
@@ -296,7 +296,7 @@ SetupPage {
                     spacing: _margins
 
                     QGCLabel {
-                        text:       qsTr("TANK_T_RTL")
+                        text:       qsTr("RTL Treshold")
                         visible:    true
                     }
 
