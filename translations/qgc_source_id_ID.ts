@@ -9557,7 +9557,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="49"/>
         <source>Armed</source>
-        <translation>Bersenjata</translation>
+        <translation>Armed</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="50"/>
@@ -9587,7 +9587,7 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
         <source>Disarm</source>
-        <translation>Lepas Senjata</translation>
+        <translation>Disarm</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="45"/>
@@ -9602,12 +9602,12 @@ Click Ok to start the auto-tuning process.
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
         <source>Force Arm</source>
-        <translation>Paksa Senjata</translation>
+        <translation>Paksa Arming</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="194"/>
         <source>Arm</source>
-        <translation>Senjata</translation>
+        <translation>Arm</translation>
     </message>
     <message>
         <location filename="../src/QmlControls/MainStatusIndicator.qml" line="218"/>
@@ -16932,7 +16932,7 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="131"/>
         <source>Save logs even if vehicle was not armed</source>
-        <translation>Simpan log meskipun kendaraan tidak bersenjata</translation>
+        <translation>Simpan log meskipun kendaraan tidak Armed</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/TelemetrySettings.qml" line="140"/>
@@ -18318,7 +18318,7 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="97"/>
         <source>Stop recording when disarmed</source>
-        <translation>Hentikan perekaman saat tidak bersenjata</translation>
+        <translation>Hentikan perekaman saat tidak Arming</translation>
     </message>
     <message>
         <location filename="../src/UI/AppSettings/VideoSettings.qml" line="104"/>
