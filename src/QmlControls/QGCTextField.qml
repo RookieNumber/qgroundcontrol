@@ -50,7 +50,10 @@ TextField {
 
     function checkActiveFocus() {
         if (activeFocus) {
-            selectAll()
+            // Don't auto-select on Android due to keyboard synchronization issues
+            if (!ScreenTools.isAndroid) {
+                selectAll()
+            }
             if (validationError) {
                 validationToolTip.visible = true
             }
