@@ -24,6 +24,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         APMMotorComponent.h
         APMPowerComponent.cc
         APMPowerComponent.h
+        APMSpeedComponent.cc
+        APMSpeedComponent.h
         APMRadioComponent.cc
         APMRadioComponent.h
         APMRemoteSupportComponent.cc
@@ -88,8 +90,10 @@ qt_add_qml_module(AutoPilotPluginsAPMModule
         APMSensorIdDecoder.qml
         APMSensorParams.qml
         APMSprayingComponent.qml
+        APMSpeedComponent.qml
         APMSpreaderComponent.qml
         APMSprayingComponentSummary.qml
+        APMSpeedComponentSummary.qml
         APMSubFrameComponent.qml
         APMSubFrameComponentSummary.qml
         APMSubMotorComponent.qml

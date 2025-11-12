@@ -16,6 +16,7 @@
 #include "APMMotorComponent.h"
 #include "APMPowerComponent.h"
 #include "APMSprayingComponent.h"
+#include "APMSpeedComponent.h"
 #include "APMSpreaderComponent.h"
 #include "APMRadioComponent.h"
 #include "APMRemoteSupportComponent.h"
@@ -98,6 +99,10 @@ const QVariantList &APMAutoPilotPlugin::vehicleComponents()
             _sprayingComponent = new APMSprayingComponent(_vehicle, this);
             _sprayingComponent->setupTriggerSignals();
             _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_sprayingComponent)));
+
+            _speedComponent = new APMSpeedComponent(_vehicle, this);
+            _speedComponent->setupTriggerSignals();
+            _components.append(QVariant::fromValue(qobject_cast<VehicleComponent*>(_speedComponent)));
 
             _spreaderComponent = new APMSpreaderComponent(_vehicle, this);
             _spreaderComponent->setupTriggerSignals();
