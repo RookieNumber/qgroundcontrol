@@ -91,6 +91,11 @@ QGCPopupDialog {
             spacing:            ScreenTools.defaultFontPixelWidth
 
             QGCButton {
+                text:       qsTr("Close")
+                onClicked:  root.close()
+            }
+
+            QGCButton {
                 text:       qsTr("Set Password")
                 primary:    true
                 enabled:    newPassword.text.length > 0 && newPassword.text === confirmPassword.text

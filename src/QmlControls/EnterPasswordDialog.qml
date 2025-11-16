@@ -83,6 +83,11 @@ QGCPopupDialog {
             spacing:            ScreenTools.defaultFontPixelWidth
 
             QGCButton {
+                text:       qsTr("Close")
+                onClicked:  root.close()
+            }
+
+            QGCButton {
                 text:       qsTr("Unlock")
                 primary:    true
                 enabled:    passwordField.text.length > 0

@@ -20,54 +20,55 @@ Item {
 
     FactPanelController { id: controller; }
 
-    property Fact _sprayEnable:           controller.getParameterFact(-1, "SPRAY_ENABLE", false)
-    property Fact _tankCapacity:          controller.getParameterFact(-1, "SPRAY_TANK_CAPACITY", false)
-    property Fact _flowRate:              controller.getParameterFact(-1, "SPRAY_FLOW_RATE", false)
-    property Fact _flowMonitor:           controller.getParameterFact(-1, "SPRAY_FLOW_MONITOR", false)
-    property Fact _tankLow:               controller.getParameterFact(-1, "SPRAY_TANK_LOW", false)
-    property Fact _tankCritical:          controller.getParameterFact(-1, "SPRAY_TANK_CRITICAL", false)
+    // Tank Configuration parameters
+    property Fact _tankcFull:              controller.getParameterFact(-1, "TANK_C_FULL", false)
+    property Fact _tankFull:               controller.getParameterFact(-1, "TANK_FULL", false)
+    property Fact _tankIFlow:              controller.getParameterFact(-1, "TANK_I_FLOW", false)
+    property Fact _tankPFlow:              controller.getParameterFact(-1, "TANK_P_FLOW", false)
+    
+    // Flow Control parameters
+    property Fact _tankMaxFlow:            controller.getParameterFact(-1, "TANK_MAX_FLOW", false)
+    property Fact _tankSetFlow:           controller.getParameterFact(-1, "TANK_SET_FLOW", false)
+    property Fact _tankTRt:                controller.getParameterFact(-1, "TANK_T_RTL", false)
 
-    property bool _sprayEnabled:          _sprayEnable && _sprayEnable.rawValue !== 0
-    property bool _flowMonitorEnabled:    _flowMonitor && _flowMonitor.rawValue !== 0
+    // Parameter availability checks
+    property bool _tankcFullAvailable:     controller.parameterExists(-1, "TANK_C_FULL")
+    property bool _tankFullAvailable:      controller.parameterExists(-1, "TANK_FULL")
+    property bool _tankSetFlowAvailable:   controller.parameterExists(-1, "TANK_SET_FLOW")
+    property bool _tankMaxFlowAvailable:   controller.parameterExists(-1, "TANK_MAX_FLOW")
+    property bool _tankTRtAvailable:       controller.parameterExists(-1, "TANK_T_RTL")
 
     Column {
         anchors.fill:       parent
 
         VehicleSummaryRow {
-            labelText: qsTr("Spraying System:")
-            valueText: _sprayEnable ? _sprayEnable.enumStringValue : qsTr("N/A")
+            labelText: qsTr("Tank Volume:")
+            valueText: _tankFullAvailable && _tankFull ? _tankFull.valueString + " " + _tankFull.units : qsTr("N/A")
+            visible:    _tankFullAvailable
         }
 
         VehicleSummaryRow {
-            labelText: qsTr("Tank Capacity:")
-            valueText: _sprayEnabled && _tankCapacity ? _tankCapacity.valueString + " " + _tankCapacity.units : ""
-            visible:    _sprayEnabled && _tankCapacity
+            labelText: qsTr("Calibration Tank Volume:")
+            valueText: _tankcFullAvailable && _tankcFull ? _tankcFull.valueString + " " + _tankcFull.units : ""
+            visible:    _tankcFullAvailable && _tankcFull
         }
 
         VehicleSummaryRow {
             labelText: qsTr("Flow Rate:")
-            valueText: _sprayEnabled && _flowRate ? _flowRate.valueString + " " + _flowRate.units : ""
-            visible:    _sprayEnabled && _flowRate
+            valueText: _tankSetFlowAvailable && _tankSetFlow ? _tankSetFlow.valueString + " " + _tankSetFlow.units : ""
+            visible:    _tankSetFlowAvailable && _tankSetFlow
         }
 
         VehicleSummaryRow {
-            labelText: qsTr("Flow Monitor:")
-            valueText: _sprayEnabled && _flowMonitor ? _flowMonitor.enumStringValue : ""
-            visible:    _sprayEnabled && _flowMonitor
+            labelText: qsTr("Calibration Flow Rate:")
+            valueText: _tankMaxFlowAvailable && _tankMaxFlow ? _tankMaxFlow.valueString + " " + _tankMaxFlow.units : ""
+            visible:    _tankMaxFlowAvailable && _tankMaxFlow
         }
 
         VehicleSummaryRow {
-            labelText: qsTr("Low Tank Warning:")
-            valueText: _sprayEnabled && _tankLow ? _tankLow.valueString + " " + _tankLow.units : ""
-            visible:    _sprayEnabled && _tankLow
-        }
-
-        VehicleSummaryRow {
-            labelText: qsTr("Critical Tank Level:")
-            valueText: _sprayEnabled && _tankCritical ? _tankCritical.valueString + " " + _tankCritical.units : ""
-            visible:    _sprayEnabled && _tankCritical
+            labelText: qsTr("RTL Threshold:")
+            valueText: _tankTRtAvailable && _tankTRt ? _tankTRt.valueString + " " + _tankTRt.units : ""
+            visible:    _tankTRtAvailable && _tankTRt
         }
     }
 }
-
-
