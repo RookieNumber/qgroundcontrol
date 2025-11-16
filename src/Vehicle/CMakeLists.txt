@@ -68,6 +68,8 @@ add_library(Vehicle
 	TrajectoryPoints.h
 	VehicleBatteryFactGroup.cc
 	VehicleBatteryFactGroup.h
+	VehicleFrogsSprayFactGroup.cc
+    VehicleFrogsSprayFactGroup.h
 	Vehicle.cc
 	VehicleClockFactGroup.cc
 	VehicleClockFactGroup.h

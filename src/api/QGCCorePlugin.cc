@@ -361,10 +361,9 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(const QString& defaultSet
     // value->setShowUnits(false);
 
     value = column->value<InstrumentValueData*>(rowIndex++);
-    value->setFact("Vehicle", "SprayedVolume");
-    value->setText("Sprayed");
+    value->setFact("frogsSpray", "volWater");
+    value->setText("liquid.svg");
     value->setShowUnits(true);
-
 
     value = column->value<InstrumentValueData*>(rowIndex++);
     value->setFact("Vehicle", "MissionItemIndex");

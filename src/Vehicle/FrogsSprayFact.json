@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "fileType": "FactMetaData",
+    "QGC.MetaData.Facts": [
+        {
+            "name": "timestamp",
+            "shortDesc": "Timestamp",
+            "type": "uint64",
+            "units": "us"
+        },
+        {
+            "name": "volWater",
+            "shortDesc": "Water Volume",
+            "type": "float",
+            "decimalPlaces": 2,
+            "units": "L"
+        },
+        {
+            "name": "flowRate",
+            "shortDesc": "Flow Rate",
+            "type": "double",
+            "decimalPlaces": 3,
+            "units": "L/min"
+        },
+        {
+            "name": "cActuator",
+            "shortDesc": "Actuator Control",
+            "type": "double",
+            "decimalPlaces": 2,
+            "units": ""
+        }
+    ]
+}

@@ -107,6 +107,7 @@ const char* Vehicle::_gps2FactGroupName =               "gps2";
 const char* Vehicle::_windFactGroupName =               "wind";
 const char* Vehicle::_vibrationFactGroupName =          "vibration";
 const char* Vehicle::_temperatureFactGroupName =        "temperature";
+const char* Vehicle::_frogsSprayFactGroupName =         "frogsSpray";
 const char* Vehicle::_clockFactGroupName =              "clock";
 const char* Vehicle::_setpointFactGroupName =           "setpoint";
 const char* Vehicle::_distanceSensorFactGroupName =     "distanceSensor";
@@ -469,6 +470,7 @@ void Vehicle::_commonInit()
     _addFactGroup(&_windFactGroup,              _windFactGroupName);
     _addFactGroup(&_vibrationFactGroup,         _vibrationFactGroupName);
     _addFactGroup(&_temperatureFactGroup,       _temperatureFactGroupName);
+    _addFactGroup(&_frogsSprayFactGroup,        _frogsSprayFactGroupName);
     _addFactGroup(&_clockFactGroup,             _clockFactGroupName);
     _addFactGroup(&_setpointFactGroup,          _setpointFactGroupName);
     _addFactGroup(&_distanceSensorFactGroup,    _distanceSensorFactGroupName);

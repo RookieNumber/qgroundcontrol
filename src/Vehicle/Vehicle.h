@@ -37,6 +37,7 @@
 #include "VehicleSetpointFactGroup.h"
 #include "VehicleTemperatureFactGroup.h"
 #include "VehicleVibrationFactGroup.h"
+#include "VehicleFrogsSprayFactGroup.h"
 #include "VehicleEscStatusFactGroup.h"
 #include "VehicleEstimatorStatusFactGroup.h"
 #include "VehicleHygrometerFactGroup.h"
@@ -316,6 +317,7 @@ public:
     Q_PROPERTY(FactGroup*           wind            READ windFactGroup              CONSTANT)
     Q_PROPERTY(FactGroup*           vibration       READ vibrationFactGroup         CONSTANT)
     Q_PROPERTY(FactGroup*           temperature     READ temperatureFactGroup       CONSTANT)
+    Q_PROPERTY(FactGroup*           frogsSpray      READ frogsSprayFactGroup        CONSTANT)
     Q_PROPERTY(FactGroup*           clock           READ clockFactGroup             CONSTANT)
     Q_PROPERTY(FactGroup*           setpoint        READ setpointFactGroup          CONSTANT)
     Q_PROPERTY(FactGroup*           escStatus       READ escStatusFactGroup         CONSTANT)
@@ -714,6 +716,7 @@ public:
     FactGroup* windFactGroup                () { return &_windFactGroup; }
     FactGroup* vibrationFactGroup           () { return &_vibrationFactGroup; }
     FactGroup* temperatureFactGroup         () { return &_temperatureFactGroup; }
+    FactGroup* frogsSprayFactGroup          () { return &_frogsSprayFactGroup; }
     FactGroup* clockFactGroup               () { return &_clockFactGroup; }
     FactGroup* setpointFactGroup            () { return &_setpointFactGroup; }
     FactGroup* distanceSensorFactGroup      () { return &_distanceSensorFactGroup; }
@@ -1423,6 +1426,7 @@ private:
     VehicleWindFactGroup            _windFactGroup;
     VehicleVibrationFactGroup       _vibrationFactGroup;
     VehicleTemperatureFactGroup     _temperatureFactGroup;
+    VehicleFrogsSprayFactGroup      _frogsSprayFactGroup;
     VehicleClockFactGroup           _clockFactGroup;
     VehicleSetpointFactGroup        _setpointFactGroup;
     VehicleDistanceSensorFactGroup  _distanceSensorFactGroup;
@@ -1485,6 +1489,7 @@ private:
     static const char* _windFactGroupName;
     static const char* _vibrationFactGroupName;
     static const char* _temperatureFactGroupName;
+    static const char* _frogsSprayFactGroupName;
     static const char* _clockFactGroupName;
     static const char* _setpointFactGroupName;
     static const char* _distanceSensorFactGroupName;
