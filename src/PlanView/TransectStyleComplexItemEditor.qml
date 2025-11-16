@@ -37,6 +37,34 @@ Rectangle {
     property string _doneAdjusting:             qsTr("Done")
     property bool   _presetsAvailable:          _missionItem.presetNames.length !== 0
 
+     // Spraying-specific properties
+    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "TANK_SET_FLOW", false)
+    property Fact _cruiseSpeed: _paramController.getParameterFact(-1, "WPNAV_SPEED", false)
+    property real _liquidVolume: _paramController.getParameterFact(-1, "TANK_FULL", false) 
+    property real _missionDistance: _missionItem.masterController.missionController.missionPlannedDistance  // Total mission distance in meters
+    property real _calculatedFlowRate: _missionDistance > 0 ? (_liquidVolume / (_missionItem.coveredArea / 10000.0)) : 0.0  // L/ha
+
+    // Auto-calculate flow rate when mission distance or liquid volume changes
+    on_MissionDistanceChanged: {
+        if (_missionDistance > 0 && _liquidVolume > 0 && _sprayPumpRate) {
+            _sprayPumpRate.rawValue = _calculatedFlowRate
+        }
+    }
+    
+    on_LiquidVolumeChanged: {
+        if (_missionDistance > 0 && _liquidVolume > 0 && _sprayPumpRate) {
+            _sprayPumpRate.rawValue = _calculatedFlowRate
+        }
+    }
+    
+    // Force update when calculated flow rate changes
+    on_CalculatedFlowRateChanged: {
+        if (_missionDistance > 0 && _liquidVolume > 0 && _sprayPumpRate) {
+            _sprayPumpRate.rawValue = _calculatedFlowRate
+        }
+    }
+
+
     function polygonCaptureStarted() {
         _missionItem.clearPolygon()
     }
@@ -120,24 +148,51 @@ Rectangle {
                     // Bind to autopilot parameter if available (APM: SPRAY_PUMP_RATE)
                     property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "SPRAY_PUMP_RATE", false)
 
-                    QGCLabel { text: qsTr("Cruise speed") }
-                    FactTextField {
+                    QGCLabel { text: qsTr("Cruise Speed") }
+                    RowLayout {
                         Layout.fillWidth:   true
-                        showUnits:          true
-                        fact:               QGroundControl.settingsManager.appSettings.offlineEditingCruiseSpeed
+                        spacing:            _margin
+                        
+                        FactTextField {
+                            Layout.fillWidth:   true
+                            showUnits:          false
+                            fact:               _cruiseSpeed
+                        }
+                        
+                        QGCLabel {
+                            text:               "m/s"
+                            color:              qgcPal.colorGrey
+                        }
                     }
 
-                    QGCLabel { text: qsTr("Flow rate") }
-                    FactTextField {
+                    QGCLabel { text: qsTr("Flow Rate") }
+                    RowLayout {
                         Layout.fillWidth:   true
-                        showUnits:          true
-                        fact:               _sprayPumpRate
-                        visible:            _sprayPumpRate
+                        spacing:            _margin
+                        
+                        QGCLabel {
+                            Layout.fillWidth:   true
+                            text:               _calculatedFlowRate.toFixed(2)
+                            color:              qgcPal.text
+                            font.pointSize:     ScreenTools.defaultFontPointSize
+                        }
+                        
+                        QGCLabel {
+                            text:               "L/ha"
+                            color:              qgcPal.colorGrey
+                        }
                     }
                     // QGCLabel {
                     //     text:               qsTr("Not available")
                     //     visible:            !_sprayPumpRate
                     // }
+                }
+
+                 QGCLabel { 
+                        text: qsTr("Auto-calculated: %1 L/ha (Area: %2 ha)").arg(_calculatedFlowRate.toFixed(1)).arg((_missionItem.coveredArea / 10000.0).toFixed(2))
+                        color: qgcPal.colorGrey
+                        font.pointSize: ScreenTools.smallFontPointSize
+                        visible: _missionItem.coveredArea > 0 && tabBar.isSpraying
                 }
 
                 SectionHeader {
