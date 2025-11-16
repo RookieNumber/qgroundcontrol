@@ -66,11 +66,11 @@ add_library(Vehicle
 	TerrainProtocolHandler.h
 	TrajectoryPoints.cc
 	TrajectoryPoints.h
+	Vehicle.cc
 	VehicleBatteryFactGroup.cc
 	VehicleBatteryFactGroup.h
 	VehicleFrogsSprayFactGroup.cc
-    VehicleFrogsSprayFactGroup.h
-	Vehicle.cc
+	VehicleFrogsSprayFactGroup.h
 	VehicleClockFactGroup.cc
 	VehicleClockFactGroup.h
 	VehicleDistanceSensorFactGroup.cc
