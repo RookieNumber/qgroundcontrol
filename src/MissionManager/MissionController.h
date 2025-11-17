@@ -354,7 +354,10 @@ private:
     FlightPathSegment*      _createFlightPathSegmentWorker      (VisualItemPair& pair, bool mavlinkTerrainFrame);
     void                    _allItemsRemoved                    (void);
     void                    _firstItemAdded                     (void);
-
+    static void             _appendMissionSettingsHomePositionOnly(MissionSettingsItem* settingsItem, QList<MissionItem*>& items, QObject* missionItemParent);
+    static void             _appendSprayingActuatorCommand       (QList<MissionItem*>& items, QObject* missionItemParent, int seqNum);
+    static void             _appendSprayingActuatorStopCommand   (QList<MissionItem*>& items, QObject* missionItemParent, int seqNum);
+    
     static double           _calcDistanceToHome                 (VisualMissionItem* currentItem, VisualMissionItem* homeItem);
     static double           _normalizeLat                       (double lat);
     static double           _normalizeLon                       (double lon);

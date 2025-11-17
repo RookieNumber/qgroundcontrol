@@ -256,12 +256,40 @@ bool MissionController::_convertToMissionItems(QmlObjectListModel* visualMission
 
     bool endActionSet = false;
     int lastSeqNum = 0;
+    bool hasSprayingItem = false;
+
+    // Check if we have a spraying complex item
+    for (int i=0; i<visualMissionItems->count(); i++) {
+        SprayingComplexItem* sprayingItem = qobject_cast<SprayingComplexItem*>(visualMissionItems->get(i));
+        if (sprayingItem) {
+            hasSprayingItem = true;
+            qCDebug(MissionControllerLog) << "Found spraying complex item, will insert actuator commands";
+            break;
+        }
+    }
 
     for (int i=0; i<visualMissionItems->count(); i++) {
         VisualMissionItem* visualItem = qobject_cast<VisualMissionItem*>(visualMissionItems->get(i));
+        MissionSettingsItem* settingsItem = qobject_cast<MissionSettingsItem*>(visualItem);
+        SprayingComplexItem* sprayingItem = qobject_cast<SprayingComplexItem*>(visualItem);
 
-        lastSeqNum = visualItem->lastSequenceNumber();
-        visualItem->appendMissionItems(rgMissionItems, missionItemParent);
+        if (settingsItem && hasSprayingItem) {
+            // For spraying missions, only append home position from mission settings
+            // Camera and speed sections will be handled separately
+            _appendMissionSettingsHomePositionOnly(settingsItem, rgMissionItems, missionItemParent);
+            lastSeqNum = settingsItem->sequenceNumber(); 
+        } else if (sprayingItem && hasSprayingItem) {
+             // Insert actuator command before spraying waypoints
+             _appendSprayingActuatorCommand(rgMissionItems, missionItemParent, lastSeqNum + 1);
+             lastSeqNum++;
+
+                        // Now append the spraying complex item waypoints
+            lastSeqNum = sprayingItem->lastSequenceNumber();
+            sprayingItem->appendMissionItems(rgMissionItems, missionItemParent);
+        } else {
+            lastSeqNum = visualItem->lastSequenceNumber();
+            visualItem->appendMissionItems(rgMissionItems, missionItemParent);
+        }
 
         qCDebug(MissionControllerLog) << "_convertToMissionItems seqNum:lastSeqNum:command"
                                       << visualItem->sequenceNumber()
@@ -273,6 +301,31 @@ bool MissionController::_convertToMissionItems(QmlObjectListModel* visualMission
     MissionSettingsItem* settingsItem = visualMissionItems->value<MissionSettingsItem*>(0);
     if (settingsItem) {
         endActionSet = settingsItem->addMissionEndAction(rgMissionItems, lastSeqNum + 1, missionItemParent);
+
+        // For spraying missions, also add actuator command to stop spraying
+        if (hasSprayingItem) {
+            _appendSprayingActuatorStopCommand(rgMissionItems, missionItemParent, lastSeqNum + 1);
+        }
+    }
+
+
+    // Filter out camera trigger distance commands for spraying missions
+    if (hasSprayingItem) {
+        QList<MissionItem*> filteredItems;
+        for (MissionItem* item : rgMissionItems) {
+            if (item->command() != MAV_CMD_DO_SET_CAM_TRIGG_DIST) {
+                filteredItems.append(item);
+            } else {
+                qCDebug(MissionControllerLog) << "Removing camera trigger distance command at sequence" << item->sequenceNumber() << "for spraying mission";
+                item->deleteLater();
+            }
+        }
+        rgMissionItems = filteredItems;
+        
+        // Re-sequence the remaining items to maintain proper sequence numbers
+        for (int i = 0; i < rgMissionItems.count(); i++) {
+            rgMissionItems[i]->setSequenceNumber(i);
+        }
     }
 
     return endActionSet;
@@ -2681,6 +2734,61 @@ MissionController::SendToVehiclePreCheckState MissionController::sendToVehiclePr
         return SendToVehiclePreCheckStateFirwmareVehicleMismatch;
     }
     return SendToVehiclePreCheckStateOk;
+}
+
+void MissionController::_appendMissionSettingsHomePositionOnly(MissionSettingsItem* settingsItem, QList<MissionItem*>& items, QObject* missionItemParent)
+{
+    int seqNum = settingsItem->sequenceNumber();
+
+    // Only append planned home position
+    MissionItem* item = new MissionItem(seqNum++,
+                                        MAV_CMD_NAV_WAYPOINT,
+                                        MAV_FRAME_GLOBAL,
+                                        0,                      // Hold time
+                                        0,                      // Acceptance radius
+                                        0,                      // Not sure?
+                                        0,                      // Yaw
+                                        settingsItem->coordinate().latitude(),
+                                        settingsItem->coordinate().longitude(),
+                                        settingsItem->plannedHomePositionAltitude()->rawValue().toDouble(),
+                                        true,                   // autoContinue
+                                        false,                  // isCurrentItem
+                                        missionItemParent);
+    items.append(item);
+}
+
+void MissionController::_appendSprayingActuatorCommand(QList<MissionItem*>& items, QObject* missionItemParent, int seqNum)
+{
+    // Insert actuator command to enable spraying system
+    qCDebug(MissionControllerLog) << "Inserting spraying actuator enable command at sequence" << seqNum;
+    MissionItem* item = new MissionItem(seqNum,
+                                        MAV_CMD_DO_SET_ACTUATOR,
+                                        MAV_FRAME_MISSION,
+                                        1.0,                    // Actuator 1 (spraying system)
+                                        1.0,                    // Enable spraying (value = 1.0)
+                                        qQNaN(), qQNaN(),       // param 3-4 unchanged
+                                        qQNaN(), qQNaN(), qQNaN(), // param 5-7 (lat, lon, alt) not used
+                                        true,                   // autoContinue
+                                        false,                  // isCurrentItem
+                                        missionItemParent);
+    items.append(item);
+}
+
+void MissionController::_appendSprayingActuatorStopCommand(QList<MissionItem*>& items, QObject* missionItemParent, int seqNum)
+{
+    // Insert actuator command to disable spraying system
+    qCDebug(MissionControllerLog) << "Inserting spraying actuator disable command at sequence" << seqNum;
+    MissionItem* item = new MissionItem(seqNum,
+                                        MAV_CMD_DO_SET_ACTUATOR,
+                                        MAV_FRAME_MISSION,
+                                        1.0,                    // Actuator 1 (spraying system)
+                                        0.0,                    // Disable spraying (value = 0.0)
+                                        qQNaN(), qQNaN(),       // param 3-4 unchanged
+                                        qQNaN(), qQNaN(), qQNaN(), // param 5-7 (lat, lon, alt) not used
+                                        true,                   // autoContinue
+                                        false,                  // isCurrentItem
+                                        missionItemParent);
+    items.append(item);
 }
 
 QGroundControlQmlGlobal::AltMode MissionController::globalAltitudeMode(void)
