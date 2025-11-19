@@ -5619,6 +5619,87 @@ Click Ok to start the auto-tuning process.
     </message>
 </context>
 <context>
+    <name>EnterPasswordDialog</name>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="21"/>
+        <source>Enter Password</source>
+        <translation>Masukkan Kata Sandi</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="33"/>
+        <source>No password set. Please set a password in General Settings first.</source>
+        <translation>Tidak ada kata sandi yang diatur. Silakan atur kata sandi di Pengaturan Umum terlebih dahulu.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="41"/>
+        <source>Password cannot be empty.</source>
+        <translation>Kata sandi tidak boleh kosong.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="46"/>
+        <source>Incorrect password.</source>
+        <translation>Kata sandi salah.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="60"/>
+        <source>Please enter your password to continue.</source>
+        <translation>Silakan masukkan kata sandi Anda untuk melanjutkan.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="68"/>
+        <source>Password</source>
+        <translation>Kata Sandi</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/EnterPasswordDialog.qml" line="96"/>
+        <source>Unlock</source>
+        <translation>Buka Kunci</translation>
+    </message>
+</context>
+<context>
+    <name>SetPasswordDialog</name>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="21"/>
+        <source>Set Password</source>
+        <translation>Atur Kata Sandi</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="32"/>
+        <source>Password cannot be empty.</source>
+        <translation>Kata sandi tidak boleh kosong.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="37"/>
+        <source>Passwords do not match.</source>
+        <translation>Kata sandi tidak cocok.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="42"/>
+        <source>Failed to set password.</source>
+        <translation>Gagal mengatur kata sandi.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="56"/>
+        <source>Enter a new password and confirm.</source>
+        <translation>Masukkan kata sandi baru dan konfirmasi.</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="65"/>
+        <source>New Password</source>
+        <translation>Kata Sandi Baru</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="73"/>
+        <source>Confirm Password</source>
+        <translation>Konfirmasi Kata Sandi</translation>
+    </message>
+    <message>
+        <location filename="../src/QmlControls/SetPasswordDialog.qml" line="94"/>
+        <source>Set Password</source>
+        <translation>Atur Kata Sandi</translation>
+    </message>
+</context>
+<context>
     <name>EditPositionDialog</name>
     <message>
         <location filename="../src/QmlControls/EditPositionDialog.qml" line="24"/>
