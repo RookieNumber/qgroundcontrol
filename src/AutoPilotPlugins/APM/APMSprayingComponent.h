@@ -21,7 +21,7 @@
      QStringList setupCompleteChangedTriggerList() const final { return QStringList(); }
  
      QString name() const final { return _name; }
-     QString description() const final { return tr("The Spraying Component is used to setup spraying parameters."); }
+     QString description() const final { return tr("Pengaturan spraying digunakan untuk mengatur parameter spraying."); }
      QString iconResource() const final { return QStringLiteral("/qmlimages/SprayingIcon.svg"); }
      bool requiresSetup() const final { return false; }
      bool setupComplete() const final { return true; }

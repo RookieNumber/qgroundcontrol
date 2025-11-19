@@ -35,7 +35,7 @@ QString APMSpeedComponent::description() const
     case MAV_TYPE_OCTOROTOR:
     case MAV_TYPE_TRICOPTER:
     default:
-        return tr("Configure default mission and loiter speeds used by the vehicle.");
+        return tr("Mengatur kecepatan default misi dan loiter yang digunakan oleh kendaraan.");
     }
 }
 

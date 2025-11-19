@@ -21,7 +21,7 @@
      QStringList setupCompleteChangedTriggerList() const final { return QStringList(); }
  
      QString name() const final { return _name; }
-     QString description() const final { return tr("The Spreader Component is used to setup spreader parameters."); }
+     QString description() const final { return tr("Pengaturan spreader digunakan untuk mengatur parameter spreader."); }
      QString iconResource() const final { return QStringLiteral("/qmlimages/SpreaderIcon.svg"); }
      bool requiresSetup() const final { return false; }
      bool setupComplete() const final { return true; }

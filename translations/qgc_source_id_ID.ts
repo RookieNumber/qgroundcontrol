@@ -272,6 +272,104 @@
     </message>
 </context>
 <context>
+    <name>APMSpreaderComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="73"/>
+        <source>Spreader system is not available on this vehicle. The vehicle firmware may not support spreading or the SPRAY_ENABLE parameter is missing.</source>
+        <translation>Sistem penyebar tidak tersedia pada kendaraan ini. Firmware kendaraan mungkin tidak mendukung penyebaran atau parameter SPRAY_ENABLE hilang.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="84"/>
+        <source>Spreader System</source>
+        <translation>Sistem Penyebar</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="103"/>
+        <source>Spreader System:</source>
+        <translation>Sistem Penyebar:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="113"/>
+        <source>Enable or disable the spreader system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyebar</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="129"/>
+        <source>Hopper Configuration</source>
+        <translation>Konfigurasi Hopper</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="150"/>
+        <source>Hopper Capacity:</source>
+        <translation>Kapasitas Hopper:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="175"/>
+        <source>Configure hopper capacity and warning levels for material monitoring</source>
+        <translation>Konfigurasi kapasitas hopper dan tingkat peringatan untuk pemantauan material</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="190"/>
+        <source>Spread Control</source>
+        <translation>Kontrol Penyebaran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="212"/>
+        <source>Spread Rate:</source>
+        <translation>Laju Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="222"/>
+        <source>Minimum Spread Rate:</source>
+        <translation>Laju Penyebaran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="242"/>
+        <source>Configure spread rate settings and monitoring</source>
+        <translation>Konfigurasi pengaturan laju penyebaran dan pemantauan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="258"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="275"/>
+        <source>Hide Advanced</source>
+        <translation>Sembunyikan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="275"/>
+        <source>Show Advanced</source>
+        <translation>Tampilkan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="285"/>
+        <source>Spread Sensor Pin:</source>
+        <translation>Pin Sensor Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="294"/>
+        <source>Motor Control Pin:</source>
+        <translation>Pin Kontrol Motor:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="303"/>
+        <source>Spread Multiplier:</source>
+        <translation>Pengali Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="310"/>
+        <source>Spread Offset:</source>
+        <translation>Offset Penyebaran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpreaderComponent.qml" line="319"/>
+        <source>Advanced hardware configuration for spread sensors and motor control</source>
+        <translation>Konfigurasi hardware lanjutan untuk sensor penyebaran dan kontrol motor</translation>
+    </message>
+</context>
+<context>
     <name>APMCameraComponent</name>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMCameraComponent.qml" line="175"/>
@@ -1954,209 +2052,209 @@
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="65"/>
         <source>Requires vehicle reboot</source>
-        <translation type="unfinished"></translation>
+        <translation>Memerlukan reboot kendaraan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="78"/>
         <source>Low action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi rendah:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="85"/>
         <source>Critical action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi kritis:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="92"/>
         <source>Low voltage threshold:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambang tegangan rendah:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="100"/>
         <source>Critical voltage threshold:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambang tegangan kritis:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="107"/>
         <source>Low mAh threshold:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambang mAh rendah:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="114"/>
         <source>Critical mAh threshold:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambang mAh kritis:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="135"/>
         <source>Reboot vehicle</source>
-        <translation type="unfinished"></translation>
+        <translation>Reboot kendaraan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="146"/>
         <source>Battery1 Failsafe Triggers</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Baterai1</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="180"/>
         <source>Battery2 Failsafe Triggers</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Baterai2</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="219"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="278"/>
         <source>Failsafe Triggers</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="237"/>
         <source>Throttle PWM threshold:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambang PWM throttle:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="251"/>
         <source>GCS failsafe</source>
-        <translation type="unfinished"></translation>
+        <translation>Failsafe GCS</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="295"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="365"/>
         <source>Ground Station failsafe:</source>
-        <translation type="unfinished"></translation>
+        <translation>Failsafe Ground Station:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="302"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="372"/>
         <source>Throttle failsafe:</source>
-        <translation type="unfinished"></translation>
+        <translation>Failsafe throttle:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="309"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="382"/>
         <source>PWM threshold:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambang PWM:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="315"/>
         <source>Failsafe Crash Check:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemeriksaan Failsafe Crash:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="344"/>
         <source>General Failsafe Triggers</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemicu Failsafe Umum</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="374"/>
         <source>Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Dinonaktifkan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="374"/>
         <source>Always RTL</source>
-        <translation type="unfinished"></translation>
+        <translation>Selalu RTL</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="375"/>
         <source>Continue with Mission in Auto Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjutkan dengan Misi dalam Mode Auto</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="375"/>
         <source>Always Land</source>
-        <translation type="unfinished"></translation>
+        <translation>Selalu Mendarat</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="416"/>
         <source>GeoFence</source>
-        <translation type="unfinished"></translation>
+        <translation>GeoFence</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="433"/>
         <source>Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Diaktifkan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="442"/>
         <source>Maximum Altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian Maksimum</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="459"/>
         <source>Circle centered on Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Lingkaran berpusat di Home</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="477"/>
         <source>Inclusion/Exclusion Circles+Polygons</source>
-        <translation type="unfinished"></translation>
+        <translation>Lingkaran+Poligon Inklusi/Eksklusi</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="505"/>
         <source>Breach action</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksi pelanggaran</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="514"/>
         <source>Fence margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Margin pagar</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="543"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="672"/>
         <source>Return to Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali ke Launch</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="573"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="686"/>
         <source>Return at current altitude</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali pada ketinggian saat ini</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="584"/>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="697"/>
         <source>Return at specified altitude:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kembali pada ketinggian yang ditentukan:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="605"/>
         <source>Loiter above Home for:</source>
-        <translation type="unfinished"></translation>
+        <translation>Loiter di atas Home selama:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="623"/>
         <source>Final land stage altitude:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ketinggian tahap pendaratan akhir:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="638"/>
         <source>Final land stage descent speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan turun tahap pendaratan akhir:</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="724"/>
         <source>Arming Checks</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemeriksaan Arming</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.qml" line="755"/>
         <source>Warning: Turning off arming checks can lead to loss of Vehicle control.</source>
-        <translation type="unfinished"></translation>
+        <translation>Peringatan: Mematikan pemeriksaan arming dapat menyebabkan hilangnya kendali Kendaraan.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.h" line="34"/>
         <source>Safety</source>
-        <translation type="unfinished"></translation>
+        <translation>Keamanan</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.cc" line="24"/>
         <source>Safety Setup is used to setup failsafe actions, leak detection, and arming checks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Keamanan digunakan untuk mengatur aksi failsafe, deteksi kebocoran, dan pemeriksaan arming.</translation>
     </message>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMSafetyComponent.cc" line="34"/>
         <source>Safety Setup is used to setup triggers for Return to Land as well as the settings for Return to Land itself.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pengaturan Keamanan digunakan untuk mengatur pemicu Return to Land serta pengaturan untuk Return to Land itu sendiri.</translation>
     </message>
 </context>
 <context>
@@ -7343,6 +7441,21 @@ Click Ok to start the auto-tuning process.
         <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="257"/>
         <source>Reset</source>
         <translation>Reset</translation>
+    </message>
+    <message>
+        <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="269"/>
+        <source>Security</source>
+        <translation>Keamanan</translation>
+    </message>
+    <message>
+        <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="272"/>
+        <source>Password Protection</source>
+        <translation>Proteksi Kata Sandi</translation>
+    </message>
+    <message>
+        <location filename="../src/UI/AppSettings/GeneralSettings.qml" line="273"/>
+        <source>Set Password</source>
+        <translation>Set Kata Sandi</translation>
     </message>
 </context>
 <context>
@@ -17685,108 +17798,108 @@ ROTATION_NONE menunjukkan komponen mengarah ke arah penerbangan.</translation>
         <location filename="../src/Settings/UnitsSettings.cc" line="25"/>
         <location filename="../src/Settings/UnitsSettings.cc" line="56"/>
         <source>Feet</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaki</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="25"/>
         <location filename="../src/Settings/UnitsSettings.cc" line="56"/>
         <source>Meters</source>
-        <translation type="unfinished"></translation>
+        <translation>Meter</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="30"/>
         <source>Horizontal Distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Horizontal</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="61"/>
         <source>Vertical Distance</source>
-        <translation type="unfinished"></translation>
+        <translation>Jarak Vertikal</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareFeet</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaki Persegi</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareMeters</source>
-        <translation type="unfinished"></translation>
+        <translation>Meter Persegi</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareKilometers</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilometer Persegi</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>Hectares</source>
-        <translation type="unfinished"></translation>
+        <translation>Hektar</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>Acres</source>
-        <translation type="unfinished"></translation>
+        <translation>Acre</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="86"/>
         <source>SquareMiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Mil Persegi</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="96"/>
         <source>Area</source>
-        <translation type="unfinished"></translation>
+        <translation>Luas</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="122"/>
         <source>Knots</source>
-        <translation type="unfinished"></translation>
+        <translation>Knot</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="131"/>
         <source>Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kecepatan</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="157"/>
         <source>Celsius</source>
-        <translation type="unfinished"></translation>
+        <translation>Celsius</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="157"/>
         <source>Fahrenheit</source>
-        <translation type="unfinished"></translation>
+        <translation>Fahrenheit</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="161"/>
         <source>Temperature</source>
-        <translation type="unfinished"></translation>
+        <translation>Suhu</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Grams</source>
-        <translation type="unfinished"></translation>
+        <translation>Gram</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Kilograms</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilogram</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Ounces</source>
-        <translation type="unfinished"></translation>
+        <translation>Ons</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="187"/>
         <source>Pounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Pon</translation>
     </message>
     <message>
         <location filename="../src/Settings/UnitsSettings.cc" line="195"/>
         <source>Weight</source>
-        <translation type="unfinished"></translation>
+        <translation>Berat</translation>
     </message>
 </context>
 <context>
