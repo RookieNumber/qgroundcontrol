@@ -131,6 +131,147 @@
     </message>
 </context>
 <context>
+    <name>APMSpeedComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="51"/>
+        <source>Mission Speed</source>
+        <translation>Kecepatan Misi</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="73"/>
+        <source>Waypoint cruise speed:</source>
+        <translation>Kecepatan jelajah waypoint:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="84"/>
+        <source>Sets the default cruise speed used for waypoint navigation.</source>
+        <translation>Mengatur kecepatan jelajah default yang digunakan untuk navigasi waypoint.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="98"/>
+        <source>Loiter Speed</source>
+        <translation>Kecepatan Loiter</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="120"/>
+        <source>Manual loiter speed:</source>
+        <translation>Kecepatan loiter manual:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="131"/>
+        <source>Sets the default speed when the vehicle loiters or is manually flown without mission commands.</source>
+        <translation>Mengatur kecepatan default ketika kendaraan loiter atau diterbangkan secara manual tanpa perintah misi.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="146"/>
+        <source>Speed configuration is not available.</source>
+        <translation>Konfigurasi kecepatan tidak tersedia.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSpeedComponent.qml" line="151"/>
+        <source>The connected vehicle firmware does not expose speed parameters required by this panel.</source>
+        <translation>Firmware kendaraan yang terhubung tidak mengekspos parameter kecepatan yang diperlukan oleh panel ini.</translation>
+    </message>
+</context>
+<context>
+    <name>APMSprayingComponent</name>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="75"/>
+        <source>Spraying system is not available on this vehicle. The vehicle firmware may not support spraying or the SPRAY_ENABLE parameter is missing.</source>
+        <translation>Sistem penyemprotan tidak tersedia pada kendaraan ini. Firmware kendaraan mungkin tidak mendukung penyemprotan atau parameter SPRAY_ENABLE hilang.</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="86"/>
+        <source>Spraying System</source>
+        <translation>Sistem Penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="105"/>
+        <source>Spraying System:</source>
+        <translation>Sistem Penyemprotan:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="115"/>
+        <source>Enable or disable the spraying system</source>
+        <translation>Aktifkan atau nonaktifkan sistem penyemprotan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="130"/>
+        <source>Tank Configuration</source>
+        <translation>Konfigurasi Tangki</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="151"/>
+        <source>Tank Capacity:</source>
+        <translation>Kapasitas Tangki:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="177"/>
+        <source>Configure tank capacity and warning levels for liquid monitoring</source>
+        <translation>Konfigurasi kapasitas tangki dan tingkat peringatan untuk pemantauan cairan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="194"/>
+        <source>Flow Control</source>
+        <translation>Kontrol Aliran</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="216"/>
+        <source>Flow Rate:</source>
+        <translation>Laju Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="226"/>
+        <source>Minimum Flow Rate:</source>
+        <translation>Laju Aliran Minimum:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="246"/>
+        <source>Configure flow rate settings and monitoring</source>
+        <translation>Konfigurasi pengaturan laju aliran dan pemantauan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="262"/>
+        <source>Advanced Settings</source>
+        <translation>Pengaturan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="279"/>
+        <source>Hide Advanced</source>
+        <translation>Sembunyikan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="279"/>
+        <source>Show Advanced</source>
+        <translation>Tampilkan Lanjutan</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="289"/>
+        <source>Flow Sensor Pin:</source>
+        <translation>Pin Sensor Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="298"/>
+        <source>Pump Control Pin:</source>
+        <translation>Pin Kontrol Pompa:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="307"/>
+        <source>Flow Multiplier:</source>
+        <translation>Pengali Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="314"/>
+        <source>Flow Offset:</source>
+        <translation>Offset Aliran:</translation>
+    </message>
+    <message>
+        <location filename="../src/AutoPilotPlugins/APM/APMSprayingComponent.qml" line="323"/>
+        <source>Advanced hardware configuration for flow sensors and pump control</source>
+        <translation>Konfigurasi hardware lanjutan untuk sensor aliran dan kontrol pompa</translation>
+    </message>
+</context>
+<context>
     <name>APMCameraComponent</name>
     <message>
         <location filename="../src/AutoPilotPlugins/APM/APMCameraComponent.qml" line="175"/>
