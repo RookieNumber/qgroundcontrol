@@ -27,7 +27,7 @@ message(Qt version $$[QT_VERSION])
 
 include(QGCCommon.pri)
 
-TARGET   = CustomGroundControl
+TARGET   = FrogsIndonesia
 TEMPLATE = app
 QGCROOT  = $$PWD
 
@@ -60,11 +60,11 @@ WindowsBuild {
 # Branding
 #
 
-QGC_APP_NAME        = "CustomGroundControl"
-QGC_ORG_NAME        = "CustomGroundControl.org"
+QGC_APP_NAME        = "FrogsGroundControl"
+QGC_ORG_NAME        = "frogs.id"
 QGC_ORG_DOMAIN      = "org.customgroundcontrol"
-QGC_APP_DESCRIPTION = "customgroundcontrol by client name"
-QGC_APP_COPYRIGHT   = "Copyright (C) 2025 CustomGroundControl Development Team. All rights reserved."
+QGC_APP_DESCRIPTION = "Frogs Ground Control by Frogs Indonesia"
+QGC_APP_COPYRIGHT   = "Copyright (C) 2025 Frogs Ground Control Development Team. All rights reserved."
 
 WindowsBuild {
     QGC_INSTALLER_SCRIPT        = "$$SOURCE_DIR\\deploy\\windows\\nullsoft_installer.nsi"
@@ -356,9 +356,9 @@ CustomBuild {
         RESOURCES += $$PWD/resources/InstrumentValueIcons/InstrumentValueIcons.qrc
     }
 } else {
-    DEFINES += QGC_APPLICATION_NAME=\"\\\"CustomGroundControl\\\"\"
-    DEFINES += QGC_ORG_NAME=\"\\\"CustomGroundControl.org\\\"\"
-    DEFINES += QGC_ORG_DOMAIN=\"\\\"org.customgroundcontrol\\\"\"
+    DEFINES += QGC_APPLICATION_NAME=\"\\\"FrogsGroundControl\\\"\"
+    DEFINES += QGC_ORG_NAME=\"\\\"frogs.id\\\"\"
+    DEFINES += QGC_ORG_DOMAIN=\"\\\"frogs.id\\\"\"
     RESOURCES += \
         $$PWD/qgroundcontrol.qrc \
         $$PWD/qgcresources.qrc \
