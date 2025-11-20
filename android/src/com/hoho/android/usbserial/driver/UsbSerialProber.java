@@ -101,6 +101,42 @@ public enum UsbSerialProber {
             final UsbSerialDriver driver = new ProlificSerialDriver(usbDevice);
             return Collections.singletonList(driver);
         }
+    },
+
+    /**
+     * Generic CDC/ACM prober that works with any device implementing CDC/ACM USB class.
+     * This allows detection of devices like Skydroid and other generic CDC/ACM devices
+     * that may not have their vendor IDs in the supported devices list.
+     */
+    GENERIC_CDC_ACM_SERIAL {
+        @Override
+        public List<UsbSerialDriver> probe(final UsbManager manager, final UsbDevice usbDevice) {
+            // Check if device implements CDC/ACM by looking for USB_CLASS_COMM interface
+            boolean hasCdcAcmInterface = false;
+            for (int i = 0; i < usbDevice.getInterfaceCount(); i++) {
+                android.hardware.usb.UsbInterface iface = usbDevice.getInterface(i);
+                if (iface.getInterfaceClass() == android.hardware.usb.UsbConstants.USB_CLASS_COMM) {
+                    hasCdcAcmInterface = true;
+                    break;
+                }
+            }
+            
+            // Only probe if it has CDC/ACM interface and hasn't been matched by vendor-specific prober
+            if (!hasCdcAcmInterface) {
+                return Collections.emptyList();
+            }
+            
+            // Check if this device was already matched by the vendor-specific CDC_ACM_SERIAL prober
+            // by testing against known vendor IDs
+            if (testIfSupported(usbDevice, CdcAcmSerialDriver.getSupportedDevices())) {
+                // Already handled by vendor-specific prober, skip
+                return Collections.emptyList();
+            }
+            
+            // This is a generic CDC/ACM device, create driver for it
+            final UsbSerialDriver driver = new CdcAcmSerialDriver(usbDevice);
+            return Collections.singletonList(driver);
+        }
     };
 
     /**
