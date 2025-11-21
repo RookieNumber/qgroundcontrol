@@ -21,22 +21,22 @@ Item {
     FactPanelController { id: controller; }
 
     // Tank Configuration parameters
-    property Fact _tankcFull:              controller.getParameterFact(-1, "TANK_C_FULL", false)
-    property Fact _tankFull:               controller.getParameterFact(-1, "TANK_FULL", false)
-    property Fact _tankIFlow:              controller.getParameterFact(-1, "TANK_I_FLOW", false)
-    property Fact _tankPFlow:              controller.getParameterFact(-1, "TANK_P_FLOW", false)
+    property Fact _tankcFull:              controller.getParameterFact(-1, "SPRAY_C_FULL", false)
+    property Fact _tankFull:               controller.getParameterFact(-1, "SPRAY_FULL", false)
+    property Fact _tankIFlow:              controller.getParameterFact(-1, "SPRAY_I_FLOW", false)
+    property Fact _tankPFlow:              controller.getParameterFact(-1, "SPRAY_P_FLOW", false)
     
     // Flow Control parameters
-    property Fact _tankMaxFlow:            controller.getParameterFact(-1, "TANK_MAX_FLOW", false)
-    property Fact _tankSetFlow:           controller.getParameterFact(-1, "TANK_SET_FLOW", false)
-    property Fact _tankTRt:                controller.getParameterFact(-1, "TANK_T_RTL", false)
+    property Fact _tankMaxFlow:            controller.getParameterFact(-1, "SPRAY_MAX_FLOW", false)
+    property Fact _tankSetFlow:           controller.getParameterFact(-1, "SPRAY_SET_FLOW", false)
+    property Fact _tankTRt:                controller.getParameterFact(-1, "SPRAY_T_RTL", false)
 
     // Parameter availability checks
-    property bool _tankcFullAvailable:     controller.parameterExists(-1, "TANK_C_FULL")
-    property bool _tankFullAvailable:      controller.parameterExists(-1, "TANK_FULL")
-    property bool _tankSetFlowAvailable:   controller.parameterExists(-1, "TANK_SET_FLOW")
-    property bool _tankMaxFlowAvailable:   controller.parameterExists(-1, "TANK_MAX_FLOW")
-    property bool _tankTRtAvailable:       controller.parameterExists(-1, "TANK_T_RTL")
+    property bool _tankcFullAvailable:     controller.parameterExists(-1, "SPRAY_C_FULL")
+    property bool _tankFullAvailable:      controller.parameterExists(-1, "SPRAY_FULL")
+    property bool _tankSetFlowAvailable:   controller.parameterExists(-1, "SPRAY_SET_FLOW")
+    property bool _tankMaxFlowAvailable:   controller.parameterExists(-1, "SPRAY_MAX_FLOW")
+    property bool _tankTRtAvailable:       controller.parameterExists(-1, "SPRAY_T_RTL")
 
     Column {
         anchors.fill:       parent
