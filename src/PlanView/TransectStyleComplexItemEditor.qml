@@ -38,9 +38,9 @@ Rectangle {
     property bool   _presetsAvailable:          _missionItem.presetNames.length !== 0
 
      // Spraying-specific properties
-    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "TANK_SET_FLOW", false)
+    property Fact _sprayPumpRate: _paramController.getParameterFact(-1, "SPRAY_SET_FLOW", false)
     property Fact _cruiseSpeed: _paramController.getParameterFact(-1, "WPNAV_SPEED", false)
-    property real _liquidVolume: _paramController.getParameterFact(-1, "TANK_FULL", false) 
+    property real _liquidVolume: _paramController.getParameterFact(-1, "SPRAY_FULL", false) 
     property real _missionDistance: _missionItem.masterController.missionController.missionPlannedDistance  // Total mission distance in meters
     property real _calculatedFlowRate: _missionDistance > 0 ? (_liquidVolume / (_missionItem.coveredArea / 10000.0)) : 0.0  // L/ha
 
