@@ -38,10 +38,10 @@ SetupPage {
             // Contain property for frogs custom parameters
             property Fact _tankcFull:              controller.getParameterFact(-1, "SPRAY_C_FULL", false /* reportMissing */)
             property Fact _tankFull:               controller.getParameterFact(-1, "SPRAY_FULL", false /* reportMissing */)
-            property Fact _tankDFlow:              controller.getParameterFact(-1, "SPRAY_PID_EN", false /* reportMissing */)
+            property Fact _tankPIDEnable:           controller.getParameterFact(-1, "SPRAY_PID_EN", false /* reportMissing */)
             property Fact _tankPFlow:              controller.getParameterFact(-1, "SPRAY_P_FLOW", false /* reportMissing */)
             property Fact _tankIFlow:              controller.getParameterFact(-1, "SPRAY_I_FLOW", false /* reportMissing */)
-            property Fact _tankDFlow:              controller.getParameterFact(-1, "SPRAY_D_FLOW", false /* reportMissing */)
+            property Fact _tankDFlow:               controller.getParameterFact(-1, "SPRAY_D_FLOW", false /* reportMissing */)
             property Fact _tankMaxFlow:            controller.getParameterFact(-1, "SPRAY_MAX_FLOW", false /* reportMissing */)
             property Fact _tankSetFlow:            controller.getParameterFact(-1, "SPRAY_SET_FLOW", false /* reportMissing */)
             property Fact _tankTRt:                controller.getParameterFact(-1, "SPRAY_T_RTL", false /* reportMissing */)
@@ -49,7 +49,7 @@ SetupPage {
             // Contain paramter availability checks
             property bool _tankcFullAvailable:       controller.parameterExists(-1, "SPRAY_C_FULL")
             property bool _tankFullAvailable:        controller.parameterExists(-1, "SPRAY_FULL")
-            property bool _tankDFlowAvailable:       controller.parameterExists(-1, "SPRAY_PID_EN")
+            property bool _tankPIDEnableAvailable:   controller.parameterExists(-1, "SPRAY_PID_EN")
             property bool _tankPFlowAvailable:       controller.parameterExists(-1, "SPRAY_P_FLOW")
             property bool _tankIFlowAvailable:       controller.parameterExists(-1, "SPRAY_I_FLOW")
             property bool _tankDFlowAvailable:       controller.parameterExists(-1, "SPRAY_D_FLOW")
@@ -84,7 +84,7 @@ SetupPage {
                     title:              qsTr("Tank Configuration") + (!_tankFullAvailable ? " (DEBUG)" : "")
                     Layout.fillWidth:   true
 
-                    RowLayout {
+                    ColumnLayout {
                         spacing: _margins
 
                         RowLayout {
@@ -210,7 +210,7 @@ SetupPage {
                     title:              qsTr("Flow Control") + (!_tankSetFlowAvailable ? " (DEBUG)" : "")
                     Layout.fillWidth:   true
 
-                    RowLayout {
+                    ColumnLayout {
                         spacing: _margins
 
                         RowLayout {
@@ -294,6 +294,63 @@ SetupPage {
                                 QGCLabel {
                                     text:       qsTr("SPRAY_T_RTL parameter not found")
                                     visible:    !_tankTRtAvailable
+                                    color:      qgcPal.colorOrange
+                                    font.pointSize: ScreenTools.smallFontPointSize
+                                }
+                            }
+                        }
+
+                        // PID Enable checkbox
+                        RowLayout {
+                            Layout.fillWidth: true
+                            spacing: _margins
+
+                            QGCLabel {
+                                text:       qsTr("PID Enable")
+                            }
+
+                            ColumnLayout {
+                                Layout.fillWidth: true
+                                spacing: _margins
+
+                                FactCheckBox {
+                                    text:       qsTr("Enable PID Flow Control")
+                                    fact:       _tankPIDEnable
+                                }
+
+                                QGCLabel {
+                                    text:       qsTr("SPRAY_PID_EN parameter not found")
+                                    visible:    !_tankPIDEnableAvailable
+                                    color:      qgcPal.colorOrange
+                                    font.pointSize: ScreenTools.smallFontPointSize
+                                }
+                            }
+                        }
+
+                        // D Flow parameter
+                        RowLayout {
+                            spacing: _margins
+                            Layout.fillWidth: true
+
+                            QGCLabel {
+                                text:       qsTr("SPRAY_D_FLOW")
+                            }
+
+                            ColumnLayout {
+                                Layout.fillWidth: true
+                                spacing: _margins
+
+                                FactTextField {
+                                    Layout.fillWidth:   true
+                                    fact:               _tankDFlow
+                                    showUnits:          true
+                                    inputMethodHints:   Qt.ImhFormattedNumbersOnly
+                                    validator:          DoubleValidator { bottom: 0; decimals: 2 }
+                                }
+
+                                QGCLabel {
+                                    text:       qsTr("SPRAY_D_FLOW parameter not found")
+                                    visible:    !_tankDFlowAvailable
                                     color:      qgcPal.colorOrange
                                     font.pointSize: ScreenTools.smallFontPointSize
                                 }
