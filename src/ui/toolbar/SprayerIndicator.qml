@@ -30,7 +30,16 @@ Item {
 
     property var _activeVehicle: QGroundControl.multiVehicleManager.activeVehicle
 
-    // Tank capacity (mL) sourced from parameter BATT2_CAPACITY
+    // Access frogsSpray fact group
+    property var _frogsSpray: _activeVehicle ? _activeVehicle.frogsSpray : null
+    property var _volWater: _frogsSpray ? _frogsSpray.volWater : null
+    property var _flowRate: _frogsSpray ? _frogsSpray.flowRate : null
+    property var _cActuator: _frogsSpray ? _frogsSpray.cActuator : null
+
+    // Check if frogsSpray data is available
+    property bool _frogsSprayAvailable: _frogsSpray && _frogsSpray.telemetryAvailable && _volWater && !isNaN(_volWater.rawValue)
+
+    // Tank capacity (mL) sourced from parameter BATT2_CAPACITY (keep for fallback)
     property var _tankCapacityParam: _activeVehicle && _activeVehicle.parameterManager ? _activeVehicle.parameterManager.getParameter(-1, "BATT2_CAPACITY") : null
     property real _tankCapacityML: _tankCapacityParam && !isNaN(_tankCapacityParam.rawValue) ? Number(_tankCapacityParam.rawValue) : NaN
 
@@ -84,14 +93,55 @@ Item {
     property bool _rtlTriggered: false  // Prevent multiple RTL triggers
     property bool _autoRTLEnabled: true  // Enable/disable auto-RTL feature
     
-    // Tank empty detection
+    // Tank empty detection - use frogsSpray volWater if available
     function _checkTankEmpty() {
-        if (!_sprayingEnabled || !_sprayerBattery || _rtlTriggered) return false
+        if (!_sprayingEnabled || _rtlTriggered) return false
         
-        var remaining = _liquidRemainingML()
+        var remaining = NaN
+        if (_frogsSprayAvailable) {
+            // Use frogsSpray volWater (in L), convert to mL
+            remaining = _volWater.rawValue * 1000.0
+        } else if (_sprayerBattery) {
+            // Fallback to battery-based calculation
+            remaining = _liquidRemainingML()
+        }
+        
         if (isNaN(remaining)) return false
-        
         return remaining <= _tankEmptyThreshold
+    }
+    
+    // Helper function for liquid remaining (used in popup)
+    function _liquidRemainingML() {
+        if (_frogsSprayAvailable && _volWater) {
+            var volWaterL = _volWater.rawValue
+            if (!isNaN(volWaterL)) {
+                return volWaterL * 1000.0  // Convert L to mL
+            }
+        }
+        
+        // Fallback to battery-based calculation
+        if (!_sprayerBattery || isNaN(_tankCapacityML)) return NaN
+        var percent = _sprayerBattery.percentRemaining && !isNaN(_sprayerBattery.percentRemaining.rawValue) ? _sprayerBattery.percentRemaining.rawValue : NaN
+        if (isNaN(percent)) return NaN
+        var remaining = _tankCapacityML * Math.max(0, Math.min(100, percent)) / 100.0
+        return remaining
+    }
+    
+    // Helper function for liquid consumed (used in popup)
+    function _liquidConsumedML() {
+        if (isNaN(_tankCapacityML)) return NaN
+        var remaining = _liquidRemainingML()
+        if (isNaN(remaining)) return NaN
+        var consumed = _tankCapacityML - remaining
+        if (consumed < 0) consumed = 0
+        return consumed
+    }
+    
+    // Helper function for formatting (used in popup)
+    function _formatML(value) {
+        if (isNaN(value)) return "N/A"
+        if (value >= 1000) return (value / 1000).toFixed(1) + qsTr(" L")
+        return Math.round(value) + qsTr(" mL")
     }
     
     // RTL trigger function
@@ -193,6 +243,11 @@ Item {
             anchors.bottom:     parent.bottom
             sourceComponent:    sprayerVisual
             property var sprayer: _sprayerBattery
+            property var frogsSpray: _frogsSpray
+            property var volWater: _volWater
+            property var flowRate: _flowRate
+            property var cActuator: _cActuator
+            property bool frogsSprayAvailable: _frogsSprayAvailable
         }
     }
 
@@ -212,6 +267,24 @@ Item {
             spacing:        ScreenTools.defaultFontPixelWidth / 2
 
             function getSprayerColor() {
+                // Use frogsSpray data if available
+                if (frogsSprayAvailable && volWater) {
+                    var volWaterL = volWater.rawValue
+                    if (isNaN(volWaterL)) {
+                        return qgcPal.colorOrange
+                    }
+                    // Assume we have tank capacity to calculate percentage
+                    // For now, use a simple threshold based on volume
+                    if (volWaterL > 1.0) {  // More than 1L
+                        return qgcPal.colorGreen
+                    } else if (volWaterL > 0.2) {  // More than 200mL
+                        return qgcPal.colorOrange
+                    } else {
+                        return qgcPal.colorRed
+                    }
+                }
+                
+                // Fallback to battery-based color
                 if (!sprayer) return qgcPal.colorOrange  // Orange for debugging when no battery
                 
                 // Color based on remaining capacity
@@ -235,7 +308,21 @@ Item {
                 return Math.round(value) + qsTr(" mL")
             }
 
+            function _formatL(value) {
+                if (isNaN(value)) return "N/A"
+                return value.toFixed(2) + qsTr(" L")
+            }
+
             function _liquidRemainingML() {
+                // Use frogsSpray volWater if available
+                if (frogsSprayAvailable && volWater) {
+                    var volWaterL = volWater.rawValue
+                    if (!isNaN(volWaterL)) {
+                        return volWaterL * 1000.0  // Convert L to mL
+                    }
+                }
+                
+                // Fallback to battery-based calculation
                 if (!sprayer || isNaN(_tankCapacityML)) return NaN
                 var percent = sprayer.percentRemaining && !isNaN(sprayer.percentRemaining.rawValue) ? sprayer.percentRemaining.rawValue : NaN
                 if (isNaN(percent)) return NaN
@@ -253,6 +340,16 @@ Item {
             }
 
             function getSprayerConsumedText() {
+                // Use frogsSpray volWater if available
+                if (frogsSprayAvailable && volWater) {
+                    var volWaterL = volWater.rawValue
+                    if (!isNaN(volWaterL)) {
+                        // Show remaining volume from frogsSpray
+                        return _formatL(volWaterL)
+                    }
+                }
+                
+                // Fallback to battery-based display
                 if (!sprayer) return "DEBUG"
                 var consumed = _liquidConsumedML()
                 if (!isNaN(consumed)) return _formatML(consumed)
@@ -267,6 +364,15 @@ Item {
             }
 
             function getSprayerRemainingText() {
+                // Use frogsSpray volWater if available
+                if (frogsSprayAvailable && volWater) {
+                    var volWaterL = volWater.rawValue
+                    if (!isNaN(volWaterL)) {
+                        return qsTr("Remaining: ") + _formatL(volWaterL)
+                    }
+                }
+                
+                // Fallback to battery-based display
                 if (!sprayer) return ""
                 var remaining = _liquidRemainingML()
                 if (!isNaN(remaining)) {
@@ -330,16 +436,23 @@ Item {
 
                 QGCLabel {
                     Layout.alignment:   Qt.AlignCenter
-                    text:               qsTr("Sprayer Status (DEBUG)")
+                    text:               qsTr("Sprayer Status")
                     font.family:        ScreenTools.demiboldFontFamily
                 }
 
-                // Debug information
+                // frogsSpray data section
+                QGCLabel {
+                    text: "FrogsSpray Data: " + (_frogsSprayAvailable ? "Available" : "Not Available")
+                    font.pointSize: ScreenTools.smallFontPointSize
+                    color: _frogsSprayAvailable ? qgcPal.colorGreen : qgcPal.colorOrange
+                }
+
+                // Debug information (keep for troubleshooting)
                 QGCLabel {
                     text: _debugInfo
                     font.pointSize: ScreenTools.smallFontPointSize
                     color: qgcPal.colorOrange
-                    visible: true  // Show debug info for troubleshooting
+                    visible: false  // Hide debug info by default
                 }
 
                 QGCLabel {
@@ -386,9 +499,11 @@ Item {
                             property var sprayer: _sprayerBattery
                         }
 
-                        QGCLabel { text: qsTr("Liquid") }
-                        QGCLabel { text: qsTr("Remaining"); visible: sprayerValuesAvailable.percentRemainingAvailable }
-                        QGCLabel { text: qsTr("Consumed"); visible: sprayerValuesAvailable.mahConsumedAvailable }
+                        QGCLabel { text: qsTr("Water Volume") }
+                        QGCLabel { text: qsTr("Flow Rate"); visible: _frogsSprayAvailable && _flowRate && !isNaN(_flowRate.rawValue) }
+                        QGCLabel { text: qsTr("Actuator Control"); visible: _frogsSprayAvailable && _cActuator && !isNaN(_cActuator.rawValue) }
+                        QGCLabel { text: qsTr("Remaining"); visible: !_frogsSprayAvailable && sprayerValuesAvailable.percentRemainingAvailable }
+                        QGCLabel { text: qsTr("Consumed"); visible: !_frogsSprayAvailable && sprayerValuesAvailable.mahConsumedAvailable }
                         QGCLabel { text: qsTr("Temperature"); visible: sprayerValuesAvailable.temperatureAvailable }
                         QGCLabel { text: qsTr("Function"); visible: sprayerValuesAvailable.functionAvailable }
                         QGCLabel { text: qsTr("Status"); visible: sprayerValuesAvailable.chargeStateAvailable }
@@ -399,14 +514,29 @@ Item {
 
                         property var sprayerValuesAvailable: sprayerValuesAvailableLoader.item
 
-                        QGCLabel { text: "" }
+                        QGCLabel { 
+                            text: _frogsSprayAvailable && _volWater ? 
+                                  (_volWater.valueString + " " + _volWater.units) : 
+                                  (!isNaN(_liquidRemainingML()) ? _formatML(_liquidRemainingML()) : 
+                                  (_sprayerBattery ? _sprayerBattery.percentRemaining.valueString + " " + _sprayerBattery.percentRemaining.units : "N/A"))
+                        }
+                        QGCLabel { 
+                            text: _frogsSprayAvailable && _flowRate ? 
+                                  (_flowRate.valueString + " " + _flowRate.units) : "N/A"
+                            visible: _frogsSprayAvailable && _flowRate && !isNaN(_flowRate.rawValue)
+                        }
+                        QGCLabel { 
+                            text: _frogsSprayAvailable && _cActuator ? 
+                                  (_cActuator.valueString + " " + _cActuator.units) : "N/A"
+                            visible: _frogsSprayAvailable && _cActuator && !isNaN(_cActuator.rawValue)
+                        }
                         QGCLabel {
                             text: !isNaN(_liquidRemainingML()) ? _formatML(_liquidRemainingML()) : (_sprayerBattery ? _sprayerBattery.percentRemaining.valueString + " " + _sprayerBattery.percentRemaining.units : "N/A")
-                            visible: sprayerValuesAvailable.percentRemainingAvailable || !isNaN(_liquidRemainingML())
+                            visible: !_frogsSprayAvailable && (sprayerValuesAvailable.percentRemainingAvailable || !isNaN(_liquidRemainingML()))
                         }
                         QGCLabel {
                             text: !isNaN(_liquidConsumedML()) ? _formatML(_liquidConsumedML()) : (_sprayerBattery && _sprayerBattery.mahConsumed ? _sprayerBattery.mahConsumed.valueString + " " + qsTr("mAh") : "N/A")
-                            visible: !isNaN(_liquidConsumedML()) || sprayerValuesAvailable.mahConsumedAvailable
+                            visible: !_frogsSprayAvailable && (!isNaN(_liquidConsumedML()) || sprayerValuesAvailable.mahConsumedAvailable)
                         }
                         QGCLabel { 
                             text: _sprayerBattery ? _sprayerBattery.temperature.valueString + " " + _sprayerBattery.temperature.units : "N/A"
