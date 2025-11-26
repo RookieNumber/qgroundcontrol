@@ -1083,7 +1083,7 @@ void FirmwarePlugin::_versionFileDownloadFinished(QString& remoteFile, QString& 
 
     qCDebug(FirmwarePluginLog) << "Latest stable version = "  << version;
 
-    int currType = vehicle->firmwareVersionType();
+    // int currType = vehicle->firmwareVersionType();
 
     // Check if lower version than stable or same version but different type
     // if (currType == FIRMWARE_VERSION_TYPE_OFFICIAL && vehicle->versionCompare(version) < 0) {
