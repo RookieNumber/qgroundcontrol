@@ -147,6 +147,34 @@ Item {
         return ""
     }
 
+    // Function to show the dialog programmatically (for debugging)
+    function showDialog() {
+        missionCompleteDialogComponent.createObject(mainWindow).open()
+    }
+
+    // Properties for waypoint completion display
+    property bool _showWaypointInfo: missionController && missionController.missionItemCount > 0
+    property int _totalWaypoints: missionController ? missionController.missionItemCount : 0
+    property int _completedWaypoints: {
+        if (!_activeVehicle || !missionController) return 0
+        // When mission is complete, currentMissionIndex should be at or past the last waypoint
+        var currentIndex = missionController.currentMissionIndex
+        // If vehicle is disarmed and was in mission mode, assume all waypoints completed
+        if (!_vehicleArmed && _vehicleWasInMissionFlightMode) {
+            return _totalWaypoints
+        }
+        // Otherwise return current index (which represents next waypoint, so completed = currentIndex)
+        return currentIndex >= 0 ? currentIndex : 0
+    }
+
+    // Properties for liquid usage display
+    property bool _showLiquidUsed: _sprayingEnabled && _sprayerBattery
+    property real _fuelConsumedML: _liquidConsumedML()
+
+    // Properties for log download
+    property var _logDownloadController: _activeVehicle ? _activeVehicle.logDownloadController : null
+    property bool _tlogDownloadStarted: false
+
     Component {
         id: missionCompleteDialogComponent
 
@@ -245,7 +273,129 @@ Item {
                     visible:            globals.guidedControllerFlyView.showResumeMission
                 }
 
+                // Waypoint completion information
+                RowLayout {
+                    Layout.fillWidth:       true
+                    Layout.alignment:       Qt.AlignHCenter
+                    spacing:                ScreenTools.defaultFontPixelWidth * 2
+                    visible:                _showWaypointInfo
+
+                    // Waypoint icon and completed count
+                    RowLayout {
+                        spacing:            ScreenTools.defaultFontPixelWidth / 2
+                        
+                        QGCColoredImage {
+                            width:          ScreenTools.defaultFontPixelHeight
+                            height:         width
+                            sourceSize.width: width
+                            source:         '/qmlimages/waypoint.svg'
+                            fillMode:       Image.PreserveAspectFit
+                            color:          qgcPal.colorGreen
+                        }
+
+                        QGCLabel {
+                            text:           qsTr("Completed: %1/%2").arg(_completedWaypoints).arg(_totalWaypoints)
+                            horizontalAlignment: Text.AlignHCenter
+                        }
+                    }
+
+                    // Mission progress percentage
+                    QGCLabel {
+                        text:               qsTr("Progress: %1%").arg(_missionProgressPercent())
+                        horizontalAlignment: Text.AlignHCenter
+                        color:              qgcPal.colorGreen
+                    }
+                 }
+
+
+                  // Liquid usage information side by side
+                 RowLayout {
+                     Layout.fillWidth:       true
+                     Layout.alignment:       Qt.AlignHCenter
+                     spacing:                ScreenTools.defaultFontPixelWidth * 2
+                     visible:                _showLiquidUsed
+
+                     // Liquid Used
+                     RowLayout {
+                         spacing:            ScreenTools.defaultFontPixelWidth / 2
+                         
+                         QGCColoredImage {
+                             width:          ScreenTools.defaultFontPixelHeight
+                             height:         width
+                             sourceSize.width: width
+                             source:         '/qmlimages/liquid.svg'
+                             fillMode:       Image.PreserveAspectFit
+                             color:          qgcPal.text
+                         }
+
+                         QGCLabel {
+                             text:           qsTr("Used: %1").arg(_formatLiquidUsed())
+                             horizontalAlignment: Text.AlignHCenter
+                         }
+                     }
+
+                     // Liquid Remaining
+                     RowLayout {
+                         spacing:            ScreenTools.defaultFontPixelWidth / 2
+                         
+                         QGCColoredImage {
+                             width:          ScreenTools.defaultFontPixelHeight
+                             height:         width
+                             sourceSize.width: width
+                             source:         '/qmlimages/liquid.svg'
+                             fillMode:       Image.PreserveAspectFit
+                             color:          qgcPal.text
+                         }
+
+                         QGCLabel {
+                             text:           qsTr("Remaining: %1").arg(_formatLiquidRemaining())
+                             horizontalAlignment: Text.AlignHCenter
+                         }
+                     }
+                 }
+
+
+
             }
         }
+    }
+
+    // Format liquid used for display
+    function _formatLiquidUsed() {
+        var consumed = _liquidConsumedML()
+        if (isNaN(consumed)) return "N/A"
+        if (consumed >= 1000) return ((consumed / 1000).toFixed(1) + qsTr(" L"))
+        return Math.round(consumed) + qsTr(" mL")
+    }
+
+    // Format liquid remaining for display
+    function _formatLiquidRemaining() {
+        var remaining = _liquidRemainingML()
+        if (isNaN(remaining)) return "N/A"
+        if (remaining >= 1000) return ((remaining / 1000).toFixed(1) + qsTr(" L"))
+        return Math.round(remaining) + qsTr(" mL")
+    }
+
+    // Calculate mission progress percentage
+    function _missionProgressPercent() {
+        if (_totalWaypoints <= 0) return 0
+        return Math.round((_completedWaypoints / _totalWaypoints) * 100)
+    }
+
+    // Start automatic tlog download
+    function _startAutoTlogDownload() {
+        if (!_logDownloadController || _tlogDownloadStarted) return
+        
+        _tlogDownloadStarted = true
+        
+        // Refresh log list first, then download
+        _logDownloadController.refresh()
+        
+        // Wait a moment for refresh to complete, then start download
+        Qt.callLater(function() {
+            if (_logDownloadController) {
+                _logDownloadController.download()
+            }
+        })
     }
 }

@@ -65,6 +65,7 @@ Item {
     }
 
     FlyViewMissionCompleteDialog {
+        id:                     missionCompleteDialog
         missionController:      _missionController
         geoFenceController:     _geoFenceController
         rallyPointController:   _rallyPointController
@@ -309,6 +310,20 @@ Item {
     Component {
         id: preFlightChecklistPopup
         FlyViewPreFlightChecklistPopup {
+        }
+    }
+
+    // Debug button to show mission complete dialog
+    QGCButton {
+        id:                     debugMissionCompleteButton
+        anchors.margins:        _toolsMargin
+        anchors.bottom:         parent.bottom
+        anchors.left:           parent.left
+        text:                   qsTr("Debug: Show Mission Complete")
+        visible:                true
+        z:                      QGroundControl.zOrderTopMost
+        onClicked: {
+            missionCompleteDialog.showDialog()
         }
     }
 }
